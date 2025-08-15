@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<params xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Tree.xsd" >
+  <param name="SHOWSPECIALNODES" value="N"></param>
+  <param name="SHOWSPECIALNODESONSUBROOTS" value="Y"></param>
+  <param name="RECURSIVEACL" value="Y"></param>
+  <param name="RECURSIVEACLINCLUDEDOCUMENTS" value="N"></param>
+  <param name="DRAGDROP" value="Y"></param>
+  <param name="DEFAULTROOTACTION" value="Browse"></param>
+  <param name="DEFAULTROOTSEARCHSCREEN" value="0"></param>
+  <param name="DEFAULTROOTRESULTSCREEN" value="0"></param>
+  <param name="SHOWDOCUMENTCOUNT" value="0"></param>
+  <param name="ORDERBY" value="OBJ_UNAME ASC"></param>
+  <param name="INITIALCOLLAPSEROOTNODE" value="Y"></param>
+  <param name="HIDDENSPECIALNODES" value=""/>
+    <param name="HIDEROOT" value="N"/>
+  
+  <param name="SHOWFAVORITEFOLDERS" value="0"></param>
+  <param name="SHOWBASKETFOLDERS" value="0"></param>
+  
+
+  <param name="SEARCHHIERARCHICAL" value="0"/>
+  <param name="MAXSEARCHRESULTS" value="100"/>
+
+  <param name="OBJECTTYPES" value="Dossier,Query,Folder"/>
+  <param name="ROOT" value=""/>
+  <!-- <param- name="ADVANCEDSEARCHSCREEN" value="4064188"></param>-->
+      <filters>
+
+    <filter index="2"  name="Language" enabled="False"  value="(IDX_11546 = 'N' or IDX_11546 is Null)" disabledvalue="" visible="False" ></filter>
+    <filter index="3" name="Name" enabled="False" value="OBJ_NAME like 'f%'" disabledvalue="" visible="False"></filter>
+    <filter index="4" name="Standard Folders only" enabled="False" autopostback="True" value="CAT_ID=1000" disabledvalue="" visible="True"></filter>
+    <filter index="5" name="Security Folders only" enabled="False" autopostback="True" value="OBJ_ID=OBJ_ACL_ID" disabledvalue="" visible="True"></filter>
+  </filters> 
+  
+</params>

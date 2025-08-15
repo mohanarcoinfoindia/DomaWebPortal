@@ -1,0 +1,117 @@
+﻿/// <reference path="Variables.less" />
+
+.domaBody.compact {
+
+    .List,
+    .RadGrid_Default,
+    .RadGrid_Default .rgMasterTable {
+        tr {
+            height: @list-row-height-compact;
+        }
+    }
+
+    .SubList {
+        tr {
+            height: @list-row-height-compact;
+        }
+    }
+    //sticky headers
+    .DocPage .StickyHeaders {
+        // general rules (de facto: toolbar not present)
+        .List {
+            .ListFilter > td {
+                top: @list-row-height-compact;
+            }
+        }
+        // when toolbar is present:
+        .RadToolBar.RadToolBar_GridToolbar + .SubListDiv .List {
+
+            .ListFilter > td {
+                top: calc(@grid-toolbar-height + @list-row-height-compact);
+            }
+        }
+    }
+
+    .CustomStickyListHeader {
+        height: @list-row-height-compact;
+    }
+
+    .List.StickyHeaders {
+        .ListFilter > td,
+        .ListHeaderLevel2 > th {
+            top: @list-row-height-compact;
+        }
+    }
+
+    .detail-form-container .detail-form-row {
+
+        .LabelCell, .FieldCell, .ReadOnlyFieldCell {
+            margin-top: 0;
+            font-size: 12px !important;
+        }
+
+        .FieldCell {
+            min-height: 26px;
+
+            input[type=text]:not(.rcbInput),
+            input[type=password],
+            input[type=email],
+            input[type=number],
+            select,
+            .RadInput.riSingle input.riTextBox,
+            .RadInput.RadInput_Default .riTextBox,
+            .RadUpload_Default .ruFakeInput {
+                height: 26px;
+                font-size: 12px !important;
+            }
+
+            .RadComboBox.RadComboBox_SelectionComboBox {
+                height: 26px;
+
+                .rcbInner {
+                    height: 24px;
+                    padding: 0 !important;
+                }
+
+                .rcbInput {
+                    margin-top: 0;
+                }
+
+                .rcbActionButton {
+                    padding-top: 2px;
+                }
+            }
+        }
+
+        .ReadOnlyFieldCell {
+            min-height: 26px;
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=email],
+        input[type=number],
+        select,
+        .RadInput.riSingle input.riTextBox,
+        .RadInput.RadInput_Default .riTextBox,
+        .RadUpload_Default .ruFakeInput {
+            height: 26px;
+        }
+
+        .RadComboBox.RadComboBox_SelectionComboBox {
+            .rcbInner {
+                height: 24px;
+                padding: 0 !important;
+            }
+
+            .rcbInput {
+                margin-top: 0;
+            }
+
+            .rcbActionButton {
+                padding-top: 2px;
+            }
+        }
+    }
+}
+

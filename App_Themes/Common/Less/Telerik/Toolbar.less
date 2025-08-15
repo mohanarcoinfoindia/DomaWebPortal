@@ -1,0 +1,189 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+
+.rtbPopup .rtbLink {
+    padding: 4px 0px 4px 34px !important;
+}
+
+.RadToolBar {
+    /*#region Overwrite styles for RenderMode="LightWeight" */
+    border-style: none !important;
+    line-height: 1.5 !important;
+    z-index: 2000 !important;
+
+    &:before {
+        float: none !important;
+        padding: 0 !important;
+        height: 0 !important;
+    }
+
+    &:after {
+        display: inline-block !important;
+        clear: none !important;
+    }
+    /*#endregion */
+    .rtbIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    &.RadToolBar_GridToolbar,
+    &.RadToolbar_DefaultToolbar {
+        .rtbWrap, .rtbTemplate {
+            line-height: 20px;
+        }
+    }
+
+}
+
+.RadToolBar .rtbIconOnly .rtbIn:before {
+    display: none !important;
+}
+
+#radSplitterMain {
+    .RadToolBar.RadToolBar_Horizontal.RadToolBar_DefaultToolbar.RadToolBar_DefaultToolbar_Horizontal {
+        .rtbOuter {
+            .rtbMiddle {
+                .rtbInner {
+                    ul.rtbUL {
+                        li.rtbItem {
+                            height: 50px;
+
+                            .rtbDomaCheckbox {
+                                display: flex;
+                                align-items: flex-end;
+                                height: 100%;
+                                margin-top: 0;
+                                padding-bottom: 3px;
+                            }
+                        }
+
+                        li.rtbSeparator {
+                            width: 20px;
+                        }
+
+                        li.rtbBtn {
+
+                            a.rtbWrap {
+                                display: flex;
+                                align-items: flex-end;
+                                height: 100%;
+                            }
+
+                            .rtbIn {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                vertical-align: top !important;
+                            }
+                        }
+
+                        li.rtbDropDown {
+                            height: 50px;
+
+                            a.rtbExpandDown {
+                                display: flex;
+                                height: 100%;
+                                align-items: flex-end;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar {
+    padding: 0;
+    border-width: 1px;
+
+    ul.rtbActive {
+        width: 100%;
+    }
+
+    li.rtbItem {
+        width: 100%;
+
+        .rtbWrap {
+            padding: 5px 7px;
+        }
+    }
+
+    .rtbIcon {
+        display: inline;
+        position: static;
+        left: auto;
+        top: auto;
+        margin-right: 6px;
+        vertical-align: text-bottom;
+    }
+}
+
+.RadToolBar.RadToolBar_DefaultToolbar { //DefaultToolbar skin is rendered in LightWeight mode -- needs extra styling.
+    padding: 0;
+    margin: 10px 0 0 0;
+
+    .rtbUL {
+        display: inline-block;
+        vertical-align: middle;
+
+        .rtbItem {
+            &:first-child {
+                margin-left: 0;
+            }
+
+            margin: 0 0 0 2px;
+            height: 50px;
+
+            .rtbButton {
+                &:before {
+                    display: none;
+                    content: none;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                &.rtbMenuButton.rtbExpandDown {
+                    display: inline-block;
+                    > span.rtbText {
+                        vertical-align: bottom;
+                    }
+                }
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 3px 3px 0px 3px;
+                height: 100%;
+                line-height: 20px;
+                cursor: pointer;
+                text-align: left;
+                width: auto;
+
+                .rtbImage {
+                    margin: 0 !important;
+                }
+            }
+
+            .rtbText {
+                vertical-align: middle;
+                padding: 3px;
+            }
+
+            .rtbArrow {
+                margin: 16px 16px 0px 0px;
+                width: 15px;
+                padding: 0px;
+            }
+        }
+
+        .rtbSeparator {
+            width: 20px;
+        }
+    }
+}

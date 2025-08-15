@@ -1,0 +1,64 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+
+.RadPanelBar.RadPanelBar_Default {
+
+    .rpRootGroup {
+        border: none;
+    }
+
+    .rpTemplate {
+        font-family: @baseFontFamily;
+        font-size: @baseFontSize;
+        font-weight: @baseFontWeight;
+    }
+
+    a.rpLink {
+        background-image: none;
+        background-color: @color-bg-white;
+        line-height: 22px; // max value for telerik height calculation. If set higher, bottom of last element will be clipped.
+        font-family: @baseFontFamily;
+        border-bottom: none;
+        border-top: 1px solid @color-primary-light-10;
+        border-left: 8px solid @color-primary-light-10;
+        font-size: @smallFontSize;
+        font-weight: @baseFontWeight;
+        color: @color-shade-90;
+        /*text-align: center;*/
+        .rpOut {
+            border: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .rpText {
+                flex-grow: 1;
+                text-align: center;
+            }
+
+            .rpImage {
+                margin-left: 5px;
+            }
+        }
+
+        &.rpSelected {
+            font-weight: @semiBoldFontWeight;
+            background-color: @color-primary-light-10;
+        }
+
+        &:hover, &.rpSelected {
+            .rpOut {
+                padding-bottom: 0;
+            }
+        }
+
+        &:hover {
+            border-left-color: @color-primary-light-30;
+        }
+    }
+
+    .rpLast a.rpLink {
+        border-bottom: 1px solid @color-primary-light-10;
+    }
+}

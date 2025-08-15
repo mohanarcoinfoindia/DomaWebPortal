@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Toolbar enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\GridToolbar.xsd">
+  <Item Text="Show Sidepanel" LabelN="Zijpaneel tonen" LabelF="Montrer le panneau latéral" ImageClass="icon-chevron-expand icon-color-light" NavigateUrl="javascript:#GRID#.ToggleShowSideBar();"/>
+  <Item Text="Refresh" ImageClass="icon-refresh" LabelN="Hernieuwen" LabelF="Rafraîchir" NavigateUrl="javascript:#GRID#.Reload();"/>
+
+
+  <Item Text="What's new" ImageClass="icon-folder-mynewdocs" LabelE="" LabelN="Nieuwe items" LabelF="Quoi de neuf" NavigateUrl="javascript:#GRID#.ToggleWhatsNew();"/>
+  <Item Text="Show Locked" ImageClass="icon-lock-closed" LabelE="" LabelN="Vergrendelde workflows tonen" LabelF="Montrer les workflows vérrouillés" NavigateUrl="javascript:#GRID#.ToggleShowLocked();"/>
+
+  <Item Text="Show Suspended" ImageClass="icon-action-show-suspended" LabelE="" LabelN="Gedeactiveerde workflows tonen" LabelF="Montrer les workflows suspendu" NavigateUrl="javascript:#GRID#.ToggleShowSuspended();"/>
+  <Item Text="Select work" ImageClass="icon-workflow-group" LabelE="Select work" LabelN="Werk kiezen" LabelF="Choisir travail" NavigateUrl="javascript:#GRID#.ToggleHideDelegated();"/>
+
+  <Item isSeparator="true"></Item>
+  
+  <Item  Text="Start workflow" visible="false" LabelE="Start workflow" LabelN="Workflow starten" LabelF="Démarrer workflow"  ImageClass="icon-workflow" ToggleOnMultiSelect="true" NavigateUrl="javascript:#GRID#.StartProcedureFromCaseSelection();"/>
+  <Item Text="Create Object" visible="false" LabelE="Create Object" LabelN="Object aanmaken" LabelF="Créer objet" ImageClass="icon-add-new" ToggleOnMultiSelect="true" NavigateUrl="javascript:#GRID#.CreateObjectFromCaseSelection();"/>
+  <Item isSeparator="true" visible="false"></Item>
+
+  <Item Text="Print" LabelE="Print" LabelN="Afdrukken" LabelF="Imprimer" LabelG="Abdrucken" ImageClass="icon-printer"  NavigateUrl="javascript:#GRID#.PrintCaseGrid('CasePrintGrid.xml');"/>
+  <Item Text="Export to Excel" LabelE="Export to Excel" LabelN="Exporteren naar Excel" LabelF="Exporter vers Excel" LabelG="Export to Excel" ImageClass="icon-filetype-excel"  NavigateUrl="javascript:#GRID#.PrintCaseGridToExcel('auto');"/>
+
+  <Item Text="Download files to ZIP" ToggleOnMultiSelect="true" LabelE="" LabelN="Bestanden downloaden naar ZIP" LabelF="Télécharger les fichiers en ZIP" LabelG="" ImageClass="icon-download-zip" NavigateUrl="javascript:#GRID#.DoDocumentListAction(2,0);"/>
+
+  <Item Text="Send by mail" ToggleOnMultiSelect="true" ImageClass="icon-message-mail-attach"  LabelE="" LabelN="Versturen per mail" LabelF="Envoyer par courriel" LabelG="" NavigateUrl="javascript:#GRID#.MailSelection();" />
+  <Item Text="Compare Documents" ToggleOnMultiSelect="true" ImageClass="icon-document-compare" ShowText="false"  LabelE="" LabelN="Documenten vergelijken" LabelF="Comparer les documents" LabelG="" NavigateUrl="Javascript:PC().OpenWindow('./Tools/DocCompare.aspx?docs=' + #GRID#.GetSelection(),'compdocs');" />
+  <Item Text="Compare Files" ToggleOnMultiSelect="true" ImageClass="icon-file-compare" ShowText="false" LabelE="" LabelN="Bestanden vergelijken" LabelF="Compares les fichiers" LabelG="" NavigateUrl="Javascript:PC().OpenWindow('./Tools/FileCompare.aspx?docs=' + #GRID#.GetSelection(),'compfiles');" />
+  <Item isCustomActionPlaceHolder="true"></Item>
+
+  <Item isSeparator="true"></Item>
+  <Item Text="Open workflows" LabelN="Workflows openen" LabelF="Ouvrir les workflows" ToggleOnCaseMultiSelect="true" ImageClass="icon-workflow-open" NavigateUrl="javascript:#GRID#.DoCaseListAction(8,0);"/>
+
+  <Item Text="Unlock workflows" LabelN="Workflows ontgrendelen" LabelF="Déverrouiller les workflows" ToggleOnCaseMultiSelect="true" ImageClass="icon-lock-open" NavigateUrl="javascript:#GRID#.DoCaseListAction(2,0);"/>
+  <Item Text="Release workflows" LabelN="Workflows vrijgeven" LabelF="Libérer les workflows" ToggleOnCaseMultiSelect="true" ImageClass="icon-action-release" NavigateUrl="javascript:#GRID#.DoCaseListAction(3,0);"/>
+
+  <Item Text="Recalculate Work" visible="false" LabelN="Werk herberekenen" LabelF="Récalculer le travail" ToggleOnCaseMultiSelect="true" ImageClass="icon-work-calc" NavigateUrl="javascript:#GRID#.DoCaseListAction(9,0);"/>
+  <Item Text="Finish workflows" visible="false" LabelN="Workflows beïindigen" LabelF="Terminer les workflows" RequiredFolderAcl="42" ToggleOnCaseMultiSelect="true" ImageClass="icon-action-finish" NavigateUrl="javascript:#GRID#.DoCaseListAction(6,0);"/>
+  
+  <Item Text="Delete workflows" LabelN="Workflows verwijderen" LabelF="Supprimer les workflows" RequiredFolderAcl="42" ToggleOnCaseMultiSelect="true" ImageClass="icon-delete" NavigateUrl="javascript:#GRID#.DoCaseListAction(7,0);"/>
+
+
+  <Item Text="Copy/Move to Folder" ToggleOnMultiSelect="true"  LabelE="Copy/Move/Shortcut to folder" ImageClass="icon-folder-moveto" LabelN="Kopieren/Verplaatsen/Snelkoppeling naar map" LabelF="Copier/Deplacer/Raccourci vers..." LabelG=""  NavigateUrl="javascript:#GRID#.CopyMoveSelection();" />
+
+  <Item isSeparator="true"></Item>
+
+  <Item Text="Add to Clipboard" ToggleOnMultiSelect="true" ImageClass="icon-copy-clipboard"  LabelE="" LabelN="Toevoegen aan het DocRoom Klembord" LabelF="Ajouter au Clipboard DocRoom" LabelG="" NavigateUrl="Javascript:#GRID#.AddToSelection(7);" />
+  <Item Text="Add to favorites" ToggleOnMultiSelect="true" ImageClass="icon-favorites-add"  LabelE="" LabelN="Toevoegen aan de favorieten" LabelF="Ajouter aux favoris" LabelG="" NavigateUrl="Javascript:#GRID#.AddToSelection(3);" />
+  <Item Text="Add to basket" ToggleOnMultiSelect="true" ImageClass="icon-basket-add"  LabelE="Add to your basket" LabelN="Toevoegen aan mand" LabelF="Ajouter au panier" LabelG="In den Korb legen" NavigateUrl="Javascript:#GRID#.AddToSelection(2);" />
+</Toolbar>

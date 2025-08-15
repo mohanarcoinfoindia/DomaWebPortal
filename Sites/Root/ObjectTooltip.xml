@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <item name="type"></item>
+  <item name="title"></item>
+  <item name="din"></item>
+  <item name="id"></item>
+  <item name="version"></item>
+  <item name="folder"></item>
+  <item name="doccount"></item>
+  <item name="creationdate"></item>
+  <item name="createdby"></item>
+  <item name="modifdate"></item>
+  <item name="modifby"></item>
+  <item name="status"></item>
+  <item name="rights"></item>
+</items>

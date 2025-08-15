@@ -1,0 +1,39 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+/// <reference path="../variables-icons.less" />
+/// <reference path="../.less" />
+
+.RadSearchBox,
+.RadSearchBox_Default {
+    .rsbButton.rsbButtonSearch {
+        height: 30px;
+        width: 30px;
+        &:hover {
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    .rsbInput {
+        height: 25px !important;
+    }
+    
+    .rsbSCInner {
+        border-style: none !important;
+        background-image: none !important;
+    }
+
+    .rsbSCIcon,
+    .rsbIcon {
+        background-image: none !important;
+        background-position: 0px;
+    }
+
+    .rsbIcon {
+        /* remove all default webresource styles*/
+        position: inherit !important;
+        top: 0 !important;
+        left: 0 !important;
+        margin: 0px !important;
+    }
+}

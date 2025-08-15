@@ -1,0 +1,52 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+/// <reference path="../Button.less" />
+
+
+.RadUpload.RadUpload_Default {
+
+    *, a, input {
+        .font-default();
+    }
+
+    .ruButton {
+        background-position: unset;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        text-decoration: underline;
+        background-image: none !important;
+        .less-button();
+        color: @color-shade-80;
+
+
+        &.ruBrowse {
+            background-image: none;
+            background-position: unset;
+            border-style: solid;
+            border-color: @color-border-input;
+            background-color: @color-primary-light-10-grey;
+            font-size: @smallFontSize !important;
+            font-weight: @baseFontWeight;
+
+            &:hover, &:active {
+                color: @color-primary-light;
+            }
+        }
+
+        &.ruRemove {
+            background-image: @url-delete !important;
+        }
+    }
+
+    .ruDropZone {
+        background-color: transparent;
+        border-style: solid;
+        border-color: @color-primary-light;
+        border-radius: @input-border-radius;
+    }
+
+    .ruUploadSuccess {
+        background-position: 0 4px;
+        background-image: @url-arrow-right;
+    }
+}

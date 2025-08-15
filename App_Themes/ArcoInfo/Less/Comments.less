@@ -1,0 +1,35 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+.comments {
+    .commentLines {
+        .commentLine {
+            .commentInfo {
+                color: @color-shade-90;
+                font-style: normal;
+            }
+
+            tr {
+                background-color: @color-bg-white;
+            }
+        }
+    }
+}
+
+//specific for list on detail page
+
+.RowCell {
+    .comments {
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-bottom-color: @color-border-default;
+        border-left-color: @color-border-default;
+        border-right-color: @color-border-default;
+        border-radius: 0 0 @input-border-radius @input-border-radius;
+        background-color: @color-bg-white;
+    }
+}
+
+
+

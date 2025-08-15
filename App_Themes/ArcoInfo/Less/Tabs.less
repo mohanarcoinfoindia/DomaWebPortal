@@ -1,0 +1,88 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+.RadMultiPage {
+    border-style: solid;
+    border-color: @color-border-default;
+    border-radius: @input-border-radius;
+}
+
+.RadTabStrip_Simple,
+.nav-tabs {
+    border-style: solid !important;
+    border-color: @color-border-default !important;
+    background-color: fade(@color-primary-light-10, 30%);
+
+    li {
+        border: none;
+        border-bottom-style: solid;
+        border-bottom-color: transparent;
+
+        a,
+        a.rtsLink {
+            color: inherit !important;
+            font-size: @largeFontSize;
+            font-weight: @baseFontWeight;
+            background-color: transparent;
+            border-bottom-style: solid !important;
+            border-bottom-color: transparent !important;
+
+            em,
+            .rtsTxt {
+                color: inherit !important;
+                font-size: @baseFontSize + 1px;
+                font-weight: @baseFontWeight;
+            }
+
+            &:hover {
+                background: none;
+            }
+
+            &.rtsSelected, &.nav-link.active {
+                border-bottom-color: @color-primary-light !important;
+                color: @color-primary-light !important;
+                background-color: transparent;
+            }
+        }
+
+        a.nav-link {
+            font-size: @baseFontSize + 1px;
+        }
+
+        &.selected {
+            border-bottom-style: solid;
+            border-bottom-color: @color-primary-light;
+            color: @color-primary-light;
+        }
+    }
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -3px;
+}
+
+
+/*#region skin: DetailWindowTabStrip */
+
+.RadTabStrip_DetailWindowTabStrip {
+    .rtsLink {
+        color: @color-shade-80;
+        font: @baseFontFamily;
+        background: none;
+        padding-bottom: 4px;
+        border-bottom: 2px solid transparent;
+
+        &.rtsSelected {
+            color: @color-primary-dark;
+            font-weight: @semiBoldFontWeight;
+            border-bottom-color: @color-primary-dark;
+        }
+
+        &.rtsDisabled {
+            color: @color-shade-70;
+            cursor: default;
+        }
+    }
+}
+
+/*#endregion*/

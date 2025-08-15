@@ -1,0 +1,17 @@
+﻿.MainLogo_Default {
+    background: transparent url('../Img/KBC_Brussels.png') no-repeat;
+    width: 210px;
+    height: 65px;
+    background-size: 185px 35px;
+    background-position: 25px 12px;
+}
+
+
+
+.BigLogo_Default {
+    content: "";
+    width: 250px;
+    height: 48px;
+    background: transparent url('../Img/KBC_Brussels.png') no-repeat;
+    background-size: 250px 48px;
+}

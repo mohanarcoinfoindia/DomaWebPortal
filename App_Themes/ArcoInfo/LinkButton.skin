@@ -1,0 +1,4 @@
+<asp:LinkButton runat="server" CssClass="ButtonLink"/>
+<asp:LinkButton runat="server" CssClass="button secondary" SkinID="ArcoButton"/>
+<asp:LinkButton runat="server" CssClass="button positive" SkinID="OkButton"/>
+<asp:LinkButton runat="server" CssClass="button negative" SkinID="CancelButton"/>

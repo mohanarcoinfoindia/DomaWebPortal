@@ -1,0 +1,90 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+/// <reference path="paths.less" />
+
+.GroupingPanel {
+
+    .Header {
+        text-decoration: none;
+        background-image: none;
+        .font-header();
+    }
+
+    .Content {
+        .Item {
+            font-size: @font-size-groupingpanel-item;
+
+            a {
+                color: @color-primary-dark;
+
+                span.Label {
+                    font-weight: @boldFontWeight;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
+
+
+.DocPage {
+
+    .listControlSide {
+        background-color: @color-bg-grey;
+    }
+
+    .listControlBody {
+        background-color: @color-bg-white;
+    }
+
+    #pagefooter {
+        background-color: @color-bg-grey;
+    }
+
+
+    img[src*="./Images/Expand.gif"] {
+        background-image: @url-arrow-right;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    img[src*="./Images/Collapse.gif"] {
+        background-image: @url-arrow-down;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+// sticky stuff
+.DocPage .StickyHeaders {
+    .RadToolBar.RadToolBar_GridToolbar {
+        background-color: @color-bg-white;
+    }
+
+    .List {
+        .ListHeader > th {
+            background-color: @color-bg-white;
+        }
+
+        .ListFilter > td {
+            background-color: @color-bg-white;
+        }
+    }
+}
+
+.List.StickyHeaders {
+    .ListHeader,
+    .ListHeaderLevel2 {
+        > th {
+            background-color: @color-bg-white;
+        }
+    }
+
+    .ListFilter > td {
+        background-color: @color-bg-white;
+    }
+}
+
+.CustomStickyListHeader {
+    background-color: @color-bg-white;
+}

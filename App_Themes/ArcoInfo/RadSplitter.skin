@@ -1,0 +1,5 @@
+﻿<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<telerik:RadSplitter runat="server" RenderMode="Classic" EnableEmbeddedSkins="true" Skin="Default" />
+<telerik:RadSplitBar runat="server" RenderMode="Classic" EnableEmbeddedSkins="true" Skin="Default" />
+    

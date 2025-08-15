@@ -1,0 +1,13 @@
+<?xml version="1.0"  ?>
+<Menu>
+  <Group Flow="Horizontal">
+    <Item Text="Application Server" LabelN="Applicatie Server" LabelF="Serveur d'Application" NavigateUrl="javascript:parent.AppServer();"></Item>
+    <Item Text="System Logs" LabelN="Systeemlogboek" LabelF="Journal du système" NavigateUrl="javascript:parent.SysLog();" ImageUrl="~/Images/bricks.png" />
+    <Item Text="BatchJobs" LabelE="Batchjobs" LabelF="Tâches" LabelN="Geplande taken" NavigateUrl="javascript:parent.BatchJobs();"/>
+    <Item Text="Drum Logs" LabelE="Drum Logs" LabelF="Journal du Drum" LabelN="Drum Logboek" NavigateUrl="javascript:parent.DrumLog();" />
+       
+    <Item Text="Reports" LabelE="Reports" LabelN="Rapporten" LabelF="Rapports" NavigateUrl="javascript:OpenUrl('Reports.aspx');"></Item>
+    <Item Text="Logged in Users" LabelN="Ingelogde gebruikers" LabelF="Utilisateurs connectés"  NavigateUrl="javascript:parent.LoggedInUsers();"></Item>
+    <Item Text="About" LabelN="Info" LabelF="Info" NavigateUrl="javascript:parent.AboutDocroom();" ></Item>
+  </Group>
+</Menu>

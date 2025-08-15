@@ -1,0 +1,42 @@
+﻿/// <reference path="Variables.less" />
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadio + .rbText:before,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadioChecked + .rbText:before {
+    border-style: solid;
+    border-color: @color-border-input;
+    border-radius: 100%;
+    background: @color-bg-white;
+}
+[type="radio"]:checked + label:hover:before,
+[type="radio"]:not(:checked) + label:hover:before,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadio + .rbText:hover:before,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadioChecked + .rbText:hover:before {
+    background-color: @color-shade-30;
+}
+
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadio + .rbText:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadioChecked + .rbText:after {
+    background: @color-primary-light;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadio + .rbText:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadioChecked + .rbText:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

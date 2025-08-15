@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="isAuthenticated">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vsPath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vsUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vsPass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="isAuthenticatedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="isAuthenticatedResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="isAuthenticatedSoapIn">
+    <wsdl:part name="parameters" element="tns:isAuthenticated" />
+  </wsdl:message>
+  <wsdl:message name="isAuthenticatedSoapOut">
+    <wsdl:part name="parameters" element="tns:isAuthenticatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="isAuthenticatedHttpGetIn">
+    <wsdl:part name="vsPath" type="s:string" />
+    <wsdl:part name="vsUser" type="s:string" />
+    <wsdl:part name="vsPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="isAuthenticatedHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="ValidatorSoap">
+    <wsdl:operation name="isAuthenticated">
+      <wsdl:input message="tns:isAuthenticatedSoapIn" />
+      <wsdl:output message="tns:isAuthenticatedSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ValidatorHttpGet">
+    <wsdl:operation name="isAuthenticated">
+      <wsdl:input message="tns:isAuthenticatedHttpGetIn" />
+      <wsdl:output message="tns:isAuthenticatedHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ValidatorSoap" type="tns:ValidatorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="isAuthenticated">
+      <soap:operation soapAction="http://tempuri.org/isAuthenticated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ValidatorSoap12" type="tns:ValidatorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="isAuthenticated">
+      <soap12:operation soapAction="http://tempuri.org/isAuthenticated" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ValidatorHttpGet" type="tns:ValidatorHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="isAuthenticated">
+      <http:operation location="/isAuthenticated" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Validator">
+    <wsdl:port name="ValidatorSoap" binding="tns:ValidatorSoap">
+      <soap:address location="http://localhost/ValidateNTUser/Validator.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ValidatorSoap12" binding="tns:ValidatorSoap12">
+      <soap12:address location="http://localhost/ValidateNTUser/Validator.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ValidatorHttpGet" binding="tns:ValidatorHttpGet">
+      <http:address location="http://localhost/ValidateNTUser/Validator.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

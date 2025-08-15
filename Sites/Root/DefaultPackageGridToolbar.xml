@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Toolbar enabled="true" fullwidth="false" disablefixedbuttons="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\GridToolbar.xsd">
+ 
+  <Item Text="Add Clipboard" ImageClass="icon-copy-clipboard-addto" ImageUrl="copyfromclipboard.png"  LabelE="" LabelN="Klembord toevoegen" LabelF="Ajoute le clipboard" LabelG="" NavigateUrl="Javascript:#GRID#.AddSelectionToPackage(7,true);" />
+
+  <Item Text="Add Basket" ImageClass="icon-basket-addto"  LabelE="" LabelN="Mand toevoegen" LabelF="Ajoute le panier" LabelG="" NavigateUrl="Javascript:#GRID#.AddSelectionToPackage(2,true);" />
+
+  
+
+</Toolbar>

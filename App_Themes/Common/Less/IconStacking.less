@@ -1,0 +1,125 @@
+﻿/// <reference path="variables-icons.less" />
+
+/*BASED ON FONT AWESOME https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself */
+
+.icon-stack-container,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container {
+    display: inline-block;
+    height: @icon-size-default;
+    width: @icon-size-default;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+
+    .icon-stack-xs, .icon-stack-s, .icon-stack-m, .icon-stack-l, .icon-stack-xl {
+        &.icon {
+            left: 0;
+            position: absolute;
+            text-align: center;
+            min-height: 0px;
+            min-width: 0px;
+        }
+    }
+
+    .icon-stack-xs,
+    .icon-stack-s {
+        &.icon {
+            font-weight: 600;
+        }
+    }
+
+    .icon-stack-xs {
+        height: calc(@icon-stack-size-xs + 3px) !important;
+        width: calc(@icon-stack-size-xs + 3px) !important;
+        font-size: @icon-stack-size-xs !important;
+        font-weight: 600 !important;
+        line-height: inherit;
+    }
+
+    .icon-stack-s {
+        height: calc(@icon-stack-size-s + 3px) !important;
+        width: calc(@icon-stack-size-s + 3px) !important;
+        font-size: @icon-stack-size-s !important;
+        line-height: inherit;
+    }
+
+    .icon-stack-l {
+        height: calc(@icon-stack-size-l + 3px) !important;
+        width: calc(@icon-stack-size-l + 3px) !important;
+        font-size: @icon-stack-size-l !important;
+    }
+
+    .icon-stack-xl {
+        height: calc(@icon-stack-size-xl + 3px) !important;
+        width: calc(@icon-stack-size-xl + 3px) !important;
+        font-size: @icon-stack-size-xl !important;
+    }
+    //m is default size (defined in icons.less)
+    /* POSITIONING */
+    .icon-center-h {
+        &.icon-stack-xs {
+            left: 33%;
+        }
+
+        &.icon-stack-s {
+            left: 25%;
+        }
+    }
+
+    .icon-center-v {
+        &.icon-stack-xs {
+            top: 33%;
+        }
+
+        &.icon-stack-s {
+            top: 25%;
+        }
+    }
+
+    .icon-pull-left {
+        /*needs to be padding*/
+        padding-right: @icon-stack-horizontalpull-left;
+    }
+
+    .icon-pull-right {
+
+        &.icon-stack-xs {
+            left: @icon-stack-horizontalpull-xs;
+        }
+
+        &.icon-stack-s {
+            left: @icon-stack-horizontalpull-default;
+        }
+
+        &.icon-stack-m {
+            left: @icon-stack-pull-m;
+        }
+    }
+
+    .icon-pull-down {
+
+        &.icon-stack-xs {
+            top: @icon-stack-verticalpull-xs;
+        }
+
+        &.icon-stack-s {
+            top: @icon-stack-verticalpull-default;
+        }
+
+        &.icon-stack-m {
+            top: @icon-stack-pull-m;
+        }
+    }
+
+    .icon-pull-up {
+        bottom: @icon-stack-verticalpull-default;
+
+        &.icon-stack-m {
+            bottom: @icon-stack-pull-m;
+        }
+
+        &.icon-stack-xs {
+            bottom: @icon-stack-verticalpull-xs;
+        }
+    }
+}

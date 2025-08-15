@@ -1,0 +1,22 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="Telerik" %>
+<Telerik:RadToolBar runat="server" Skin="DefaultToolbar" EnableEmbeddedSkins="false" />
+<Telerik:RadToolBar runat="server" SkinID="GridToolbar" Skin="GridToolbar" EnableEmbeddedSkins="false" />
+<Telerik:RadToolBar runat="server" SkinID="SubGridToolbar" Skin="SubGridToolbar" EnableEmbeddedSkins="false" />
+<Telerik:RadToolBar runat="server" SkinID="NavigationBar" Skin="MainNavigation" EnableEmbeddedSkins="false" />
+<Telerik:RadToolBar runat="server" SkinID="DetailSideBar" Orientation="Vertical" Skin="SideNavigation" EnableEmbeddedSkins="false"/>
+<Telerik:RadMenu runat="server" OnClientItemClicked="onMainMenuClicked" EnableAutoScroll="true" EnableScreenBoundaryDetection="true"  EnableSelection="true" ClickToOpen="false" SkinID="MainNavigationMenu" Skin="MainNavigation" EnableEmbeddedSkins="false" EnableImageSprites="true" />

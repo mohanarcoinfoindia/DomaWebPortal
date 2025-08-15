@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resource>
+
+  <item name="but_addtoBasket">Toevoegen aan de mand</item>
+  <item name="ctx_addtoBasket">Toevoegen aan de mand</item>
+
+  <item name="but_removefromBasket">Verwijderen uit de mand</item>
+  <item name="ctx_removefromBasket">Verwijderen uit de mand</item>
+
+  <item name="but_addtoFavorites">Favoriet toevoegen</item>
+  <item name="ctx_addtoFavorites">Favoriet toevoegen</item>
+
+  <item name="but_removefromFavorites">Verwijderen als favoriet</item>
+  <item name="ctx_removefromFavorites">Verwijderen als favoriet</item>
+  
+  <item name="but_addmail">Mail toevoegen</item>
+  <item name="tlt_addmail">Mail toevoegen</item>
+  <item name="ctx_addmail">Mail toevoegen</item>
+
+  <item name="but_mails">Mails</item>
+  <item name="tlt_mails">Mails</item>
+  <item name="ctx_mails">Mails</item>
+
+
+  <item name="but_addsubscription">Abonnement toevoegen</item>
+  <item name="tlt_addsubscription">Abonnement toevoegen</item>
+  <item name="ctx_addsubscription">Abonnement toevoegen</item>
+
+  <item name="but_subscriptions">Abonnementen</item>
+  <item name="tlt_subscriptions">Abonnementen</item>
+  <item name="ctx_subscriptions">Abonnementen</item>
+
+  <item name="but_versionhistory">Versie historiek</item>
+  <item name="tlt_versionhistory">Versie historiek</item>
+  <item name="ctx_versionhistory">Versie historiek</item>
+  
+  <item name="but_linkeddocs">Gelinkte documenten</item>
+  <item name="tlt_linkeddocs">Gelinkte documenten</item>
+  <item name="ctx_linkeddocs">Gelinkte documenten</item>
+
+  <item name="but_messageattach">Add file as message</item>
+  <item name="tlt_messageattach">Add file as message</item>
+  <item name="ctx_messageattach">Add file as message</item>
+  
+  <item name="but_editDeadlines">Duedates</item>
+  <item name="ctx_editDeadlines">Duedates</item>
+  <item name="tlt_editDeadlines">Duedates</item>
+
+  <item name="but_procedureImg">Procedure Image</item>
+  <item name="but_procedureImg">Procedure Image</item>
+  <item name="but_procedureImg">Procedure Image</item>
+
+  <item name="but_aclsetacl"></item>
+  <item name="tlt_aclsetacl">Acl-Management</item>
+  <item name="ctx_aclsetacl">Acl-Management</item>
+  <item name="but_save">Speichern</item>
+  <item name="tlt_save">Speichern</item>
+  <item name="but_saveandnext"></item>
+  <item name="tlt_saveandnext">Save and edit next</item>
+  <item name="but_saveandclose"></item>
+  <item name="tlt_saveandclose">Speichern</item>
+  <item name="but_saveandclosewindow"></item>
+  <item name="tlt_saveandclosewindow">Save and close window</item>
+  <item name="but_new">Neu</item>
+  <item name="tlt_new">Neu</item>
+  <item name="but_duplicate"></item>
+  <item name="tlt_duplicate">Duplicate</item>
+  <item name="but_copymovetofolder"></item>
+  <item name="tlt_copymovetofolder">Kopieren/Verschieben in Ordner</item>
+  <item name="ctx_copymovetofolder">Kopieren/Verschieben in Ordner</item>
+  <item name="but_edit"></item>
+  <item name="tlt_edit">Bearbeiten</item>
+  <item name="but_editadminon">Edit in Admin Mode</item>
+  <item name="tlt_editadminon">Edit in Admin Mode</item>
+  <item name="but_editadminoff">Back to Normal Mode</item>
+  <item name="tlt_editadminoff">Back to Normal Mode</item>
+  <item name="but_finishcase">Finish</item>
+  <item name="but_deletecase">Delete</item>
+  <item name="tlt_finishcase">Finish</item>
+  <item name="tlt_deletecase">Delete</item>
+  <item name="but_unlock">Entsperren</item>
+  <item name="tlt_unlock">Entsperren</item>
+  <item name="ctx_unlock">Entsperren</item>
+  <item name="but_close"></item>
+  <item name="tlt_close">Schließen</item>
+  <item name="but_cancel"></item>
+  <item name="tlt_cancel">Abbrechen</item>
+  <item name="but_delete"></item>
+  <item name="tlt_delete">Löschen</item>
+  <item name="ctx_delete">Löschen</item>
+  <item name="but_transferwork">Transfer Work</item>
+  <item name="tlt_transferwork">Transfer Work</item>
+  <item name="but_restoreto">Restore to</item>
+  <item name="tlt_restoreto"></item>
+  <item name="but_movecaseto">Move to</item>
+  <item name="tlt_movecaseto"></item>
+  <item name="but_releaseto"></item>
+  <item name="tlt_releaseto"></item>
+  <item name="but_release">Next step</item>
+  <item name="tlt_release">Next step</item>
+  <item name="but_suspend">Suspend</item>
+  <item name="tlt_suspend">Suspend</item>
+  <item name="ctx_suspend">Suspend</item>
+  <item name="but_reject">Reject</item>
+  <item name="tlt_reject">Reject</item>
+  <item name="but_messages"></item>
+  <item name="tlt_messages">Messages</item>
+  <item name="but_checkout"></item>
+  <item name="tlt_checkout">Auschecken</item>
+  <item name="ctx_checkout">Auschecken</item>
+  <item name="but_cancelcheckout"></item>
+  <item name="tlt_cancelcheckout">Auschecken abbrechen</item>
+  <item name="ctx_cancelcheckout">Auschecken abbrechen</item>
+  <item name="but_checkin"></item>
+  <item name="tlt_checkin">Einchecken</item>
+  <item name="ctx_checkin">Einchecken</item>
+  <item name="but_editwork"></item>
+  <item name="tlt_editwork">Edit work list</item>
+  <item name="ctx_editwork">Edit work list</item>
+  <item name="but_addfile"></item>
+  <item name="tlt_addfile">Datei hinzufügen</item>
+  <item name="ctx_addfile">Datei hinzufügen</item>
+ <item name="but_promotetodoc"></item>
+  <item name="tlt_promotetodoc">Promote to document</item>
+  <item name="ctx_promotetodoc">Promote to document</item>
+
+  <item name="but_clear"></item>
+  <item name="tlt_clear">Clear</item>
+  <item name="but_history"></item>
+  <item name="tlt_history">Verlauf</item>
+
+  <item name="but_mywork"></item>
+  <item name="tlt_mywork">Meine arbeit</item>
+  <item name="but_opencases"></item>
+  <item name="tlt_opencases">Workflows öffnen</item>
+  <item name="but_browse"></item>
+  <item name="tlt_browse">Browse</item>
+  <item name="but_addcomment"></item>
+  <item name="tlt_addcomment">Kommentar hinzufügen</item>
+  <item name="but_addmessage"></item>
+  <item name="tlt_addmessage">Add message</item>
+  <item name="but_comments"></item>
+  <item name="tlt_comments">Kommentaren</item>
+
+  <item name="ctx_checkoutfile">Datei auschecken</item>  
+  <item name="ctx_cancelcheckoutfile">Datei Auschecken abbrechen</item> 
+  <item name="ctx_checkinfile">Datei einchecken</item>
+  <item name="but_addnote"></item>
+  <item name="tlt_addnote">Add note</item>
+  <item name="but_notes"></item>
+  <item name="tlt_notes">Notes</item>
+
+</Resource>

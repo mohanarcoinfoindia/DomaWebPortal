@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="screendef" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="screendef" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OrderBy" type="xs:string" minOccurs="0" />          
+        <xs:element name="columns">
+          <xs:complexType>
+            <xs:sequence>
+              
+              <xs:element name="column" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="name">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="status"/>
+                          <xs:enumeration value="icon"/>
+                          <xs:enumeration value="language"/>
+                          <xs:enumeration value="thumbnail"/>
+                          <xs:enumeration value="title"/>
+                          <xs:enumeration value="author"/>
+                          <xs:enumeration value="date"/>
+                          <xs:enumeration value="id"/>
+                          <xs:enumeration value="fin"/>
+                          <xs:enumeration value="renditions"/>
+                          <xs:enumeration value="iconpreview"/>
+                          <xs:enumeration value="index"/>
+                          <xs:enumeration value="abstract"/>
+                          <xs:enumeration value="keywords"/>
+                          <xs:enumeration value="pages"/>
+                          <xs:enumeration value="constant"/>
+                          <xs:enumeration value="edit"/>
+                          <xs:enumeration value="package"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

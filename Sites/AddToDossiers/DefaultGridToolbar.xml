@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<Toolbar enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\GridToolbar.xsd">
+<Item Text="Show Sidepanel" LabelN="Zijpaneel tonen" LabelF="Montrer le panneau latéral" ImageClass="icon-chevron-expand icon-color-light" NavigateUrl="javascript:#GRID#.ToggleShowSideBar();"/> 
+ <Item Text="Refresh" ImageClass="icon-refresh" LabelN="Hernieuwen" LabelF="Rafraîchir" NavigateUrl="javascript:#GRID#.Reload();"/>
+ 
+  <Item isSeparator="true"/>
+  
+
+</Toolbar>
+

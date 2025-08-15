@@ -1,0 +1,453 @@
+﻿@import "Variables.less";
+@import "variables-icons.less";
+
+@import "Common.less";
+
+@import "CMS.less";
+@import "CMS-ActionButton.less";
+
+@import "Login.less";
+
+@import "HeaderAndMenu.less";
+
+@import "DocumentListPage.less";
+@import "DetailPage.less";
+
+@import "List.less";
+@import "Tabs.less";
+@import "Comments.less";
+@import "NewObject.less";
+@import "Preview.less";
+
+@import "Form.less";
+@import "Checkbox.less";
+@import "Radio.less";
+
+@import "Telerik/Toolbar.less";
+@import "Telerik/RadWindow.less";
+@import "Telerik/RadEditor.less";
+@import "Telerik/RadSplitter.less";
+@import "Telerik/RadUpload.less";
+@import "Telerik/RadListBox.less";
+@import "Telerik/RadMenu.less";
+@import "Telerik/ComboBox.SelectionCombobox.less";
+@import "Telerik/RadSearchBox.less";
+@import "Telerik/RadProgressBar.less";
+
+@import "ScreenItems.less";
+
+@import "HelperClasses.less";
+
+@import "Compact.less";
+
+body.domaBodyModal {
+    height: auto;
+}
+
+.PreviewPage {
+    overflow: auto;
+}
+
+html body .RadInput .riTextBox,
+html body .RadInputMgr {
+    vertical-align: top !important;
+}
+
+.Panel .Header {
+    height: 30px;
+    text-align: center;
+}
+
+.PanelPage {
+    width: 100%;
+    background-color: #FDFDFD;
+
+    .Panel.Centered {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-style: solid;
+        border-color: #fff;
+        border-radius: 10px;
+
+        .Content {
+            border-radius: 10px;
+            border: 1px solid #fff;
+            box-shadow: -40px 40px 160px 0 rgba(0, 0, 0, 0.08), -8px 8px 15px 0 rgba(120, 120, 120, 0.04), 3px 3px 30px 0 rgba(0, 0, 0, 0.04) !important;
+
+            .Title {
+                font-weight: bold;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+
+            span,
+            Label {
+                font-size: 17px;
+            }
+
+            span {
+                font-weight: 300;
+            }
+
+            Label {
+                font-weight: bold;
+            }
+
+            .LabelInline {
+                display: inline-block !important;
+            }
+
+            .TooltipImg {
+                font-size: 22px;
+            }
+
+            .TooltipImg:hover {
+                cursor: help;
+            }
+
+            .forgotWrapper a {
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .forgotWrapper a.ForgotUserName {
+                display: none
+            }
+
+            ol > li a.button.positive {
+                width: 100%;
+                margin-left: unset;
+            }
+        }
+    }
+
+    .BigLogo {
+        position: static !important;
+        margin-bottom: 25px;
+    }
+
+    .langList {
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li:first-child {
+            border-right: 1px solid rgb(0,54,101);
+        }
+
+        li .code a {
+            border: unset;
+            text-decoration: unset;
+            color: rgb(0,54,101);
+            margin: unset;
+            font-weight: bold;
+            font-size: 16px !important;
+            height: unset;
+            line-height: unset;
+            -webkit-transition: all 200ms ease-out;
+            transition: all 200ms ease-out;
+            float: left;
+        }
+
+        li .code a:hover {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+
+    .Footer {
+        width: 100%;
+        position: absolute;
+        bottom: 4px;
+    }
+}
+
+.authInput div {
+    line-height: 14px;
+}
+
+.checkboxDoma {
+    margin-top: unset;
+}
+
+.checkboxDoma label {
+    font-size: 14px !important;
+    font-weight: 300 !important;
+}
+
+.DetailHeaderContent {
+    padding: 5px 30px 15px 30px;
+    height: 30px;
+    width: 100%;
+}
+
+.DetailHeader {
+    height: 30px;
+}
+
+tr.PanelHeader {
+    background-color: #ADC9F7
+}
+
+.PanelHeader TD, .Panel TH {
+    text-align: left;
+    padding: 4px;
+}
+
+.datefilter .form-dropdown-item {
+    padding: 15px 11px;
+}
+
+.form-dropdown-footer .button {
+    padding: 4px 15px;
+}
+
+.filter-container > .clear {
+    right: 3px;
+    line-height: 21px;
+}
+
+.gridfilter,
+input[type="text"].gridfilter {
+    display: inline-block;
+    border-width: 1px;
+    height: 27px;
+    min-width: 100px;
+    line-height: normal;
+    padding: 3px 8px;
+}
+
+.numberfilter .form-dropdown-expansion input {
+    padding: 8px;
+}
+
+.RadDock .rdTop .rdTitleBar img {
+    max-height: 24px;
+    margin-right: 10px;
+}
+
+#mailReceivers {
+    table tr {
+        height: 38px;
+    }
+
+    .mailReceiversLabel {
+        vertical-align: middle;
+    }
+
+    .RadAutoCompleteBox_Default .racTokenList {
+        overflow: hidden;
+        height: 30px;
+        border-width: 1px;
+    }
+
+    .composeSubject {
+        height: unset;
+    }
+}
+
+.multi-items-table thead th {
+    border-top: none;
+    border-bottom: none;
+}
+
+.multi-items-table td {
+    border-top-width: 1px;
+}
+
+td.ob_t4 div.ob_d4 {
+    margin-right: 4px;
+    /*> img {
+        width:18px;
+        height: 18px;
+    }*/
+}
+
+.messages {
+
+    .message {
+        justify-content: center;
+
+        .datetime {
+            white-space: nowrap;
+            display: none;
+
+            @media only screen and (min-width: 310px) {
+                display: block;
+            }
+        }
+
+        .from-container {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        &.self {
+            .card {
+                border-width: 1px;
+            }
+
+            .card-header, .card-footer {
+                border: none;
+            }
+        }
+
+        &.other {
+
+            .card-header, .card-footer {
+                border: none;
+            }
+        }
+
+        .from {
+            line-height: 1em;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .file {
+        img {
+            vertical-align: text-top;
+        }
+
+        span {
+            margin-left: 5px;
+        }
+    }
+
+    .avatar {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-width: 1px;
+        margin-right: 10px;
+
+        &.picture {
+            line-height: 0;
+            font-size: 0;
+        }
+    }
+}
+
+.edit-page-button {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+#tt {
+    position: absolute;
+    display: block;
+    word-wrap: break-word;
+    z-index: 10;
+}
+
+#tttop {
+    display: block;
+    height: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+#ttcont {
+    display: block;
+    padding: 10px 12px;
+    margin-left: 5px;
+    background: infobackground;
+    color: infotext;
+    border: 1px solid black;
+
+    ul {
+        padding-left: 20px;
+    }
+}
+
+#ttbot {
+    display: block;
+    height: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.stepgroup-step {
+    text-align: center;
+
+    p {
+        margin-top: 10px;
+    }
+
+    &.active {
+        .stepgroup-step-icon {
+            width: 60px;
+            height: 60px;
+            margin-top: 4px;
+            line-height: 60px;
+        }
+    }
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-height: 900px) {
+    .PanelPage {
+        .Footer {
+            position: relative;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .PanelPage {
+        width: 100%;
+        min-width: unset;
+        padding: 25px !important;
+        margin-bottom: auto;
+
+        .BigLogo {
+            position: unset;
+            margin-bottom: 38px;
+        }
+
+        .Panel.Centered {
+            width: 100%;
+        }
+
+        .forgotWrapper {
+            float: unset;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            width: 100%;
+            padding-top: 18px;
+            align-items: center;
+        }
+
+        .hideOnMobile {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .PanelPage {
+        .Panel.Centered {
+            margin-bottom: 24px;
+        }
+    }
+}

@@ -1,0 +1,254 @@
+﻿.action-btn {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border-width: 1px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    align-items: inherit;
+    text-align: inherit;
+    padding: 0px;
+}
+
+.tiles {
+    display: flex !important;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.cms-buttons {
+    display: flex !important;
+    padding: 0;
+    &.cms-buttons-vertical {
+        flex-flow: column nowrap;
+        .cms-button {
+            padding: 2px 4px;
+            border-right-width: 3px;
+        }
+    }
+    &.cms-buttons-horizontal {
+        flex-flow: row wrap;
+        .cms-button {
+            padding: 0 6px;
+            border-bottom-width: 3px;
+        }
+    }
+}
+
+.tile {
+    margin: .5rem;
+}
+
+.cms-button {
+    white-space: nowrap;
+    min-height: 24px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.tile-content {
+    padding: 10px;
+    display: flex;
+}
+
+.tile.parts-1 .tile-content {
+    height: 100%;
+}
+
+.tile.parts-2 .tile-content {
+    height: 50%;
+}
+
+.tile.parts-3 .tile-content.image-content {
+    height: 40%;
+}
+
+.tile.parts-3 .tile-content.image-content:first-child {
+    height: 50%;
+}
+
+.tile.parts-3 .tile-content {
+    height: 25%;
+}
+
+.tile.parts-3 .tile-content:first-child {
+    height: 35%;
+}
+
+.tile-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.action-btn:hover {
+    border-width: 1px;
+}
+
+.large-tiles .action-btn {
+    height: 152px;
+    width: 240px;
+}
+
+.small-tiles .action-btn {
+    height: 128px;
+    width: 128px;
+}
+
+.tile h6 {
+    width: 100%;
+}
+
+.large-tiles .large-img {
+    height: 56px;
+    max-width: 100%;
+    width: auto;
+    &.wide-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.large-tiles .small-img {
+    height: 38px;
+    max-width: 100%;
+    width: auto;
+    &.wide-img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+.small-tiles .large-img {
+    height: 44px;
+    max-width: 100%;
+    width: auto;
+    &.wide-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.small-tiles .small-img {
+    height: 22px;
+    max-width: 100%;
+    width: auto;
+    &.wide-img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+.bg-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.small-img.bg-img {
+    max-height: 70%;
+}
+
+.large-img.bg-img {
+    max-height: 90%;
+}
+
+.menu-btn-img {
+    max-height: 16px;
+}
+
+.tile-thumbnail {
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.tile-header {
+    align-items: center;
+    flex-direction: column;
+}
+
+.tile-horizontal .tile-header {
+    flex-grow: 0;
+}
+
+.imagelist-tile {
+    width: 250px;
+}
+
+.imagelist-tile.horizontal {
+    width: 400px;
+}
+
+.imagelist-tile .tile-title {
+    margin-bottom: 0;
+    height: 132px;
+    display: flex;
+    align-items: center;
+}
+
+.imagelist-tile .tile-title span {
+    width: 200px;
+    display: inline-block;
+    overflow-y: hidden;
+    text-align: center;
+}
+
+.imagelist-tile .tile-thumbnail + .tile-title {
+    height: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.imageimagelist-tile .tile-thumbnail + .tile-title span {
+    max-height: 30px;
+}
+
+.tile-property-table {
+    padding: 0 0 20px;
+}
+
+.tile-horizontal .tile-property-table {
+    padding-top: 25px;
+}
+
+.tile-horizontal .tile-header .tile-title span {
+    width: 120px;
+}
+
+.tile-property-table > table {
+    margin-top: auto;
+    width: 100%;
+}
+
+.property-label {
+    text-align: right;
+    padding-left: 16px;
+}
+
+.tile-horizontal .property-label {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}

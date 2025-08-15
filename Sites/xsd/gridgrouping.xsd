@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="grouping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="grouper" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="field" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="value" type="xs:string" />
+                  <xs:attribute name="formatter">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="user"/>
+                        <xs:enumeration value="email"/>
+                        <xs:enumeration value="date"/>
+                        <xs:enumeration value="priority"/>                       
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                
+                  <xs:attribute name="LabelE" type="xs:string" />
+                  <xs:attribute name="LabelN" type="xs:string" />
+                  <xs:attribute name="LabelF" type="xs:string" />
+                  <xs:attribute name="LabelG" type="xs:string" />
+
+                  <xs:attribute name="orderby">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="WordAscending"/>
+                        <xs:enumeration value="WordDescending"/>                    
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="usergrouper" type="xs:boolean" />
+            <xs:attribute name="applyfiltertogrouper" type="xs:boolean" />
+            <xs:attribute name="LabelE" type="xs:string" />
+            <xs:attribute name="LabelN" type="xs:string" />
+            <xs:attribute name="LabelF" type="xs:string" />
+            <xs:attribute name="LabelG" type="xs:string" />
+            <xs:attribute name="showinsearchscreen" type="xs:boolean" />
+            <xs:attribute name="defaultenabled" type="xs:boolean" />
+            <xs:attribute name="height" type="xs:string" />
+            <xs:attribute name="width" type="xs:string" />
+            <xs:attribute name="linktogrouper" type="xs:string" />
+            <xs:attribute name="hideicons" type="xs:boolean" />
+            <xs:attribute name="orderbyvalue" type="xs:boolean" />
+            <xs:attribute name="orderbyascending" type="xs:boolean" />
+            <xs:attribute name="maxresults" type="xs:int" />
+            <xs:attribute name="itemsperrow" type="xs:int" />
+            <xs:attribute name="shownull" type="xs:boolean" />
+            <xs:attribute name="checkacl" type="xs:boolean" />
+            <xs:attribute name="position">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="left"/>
+                  <xs:enumeration value="top"/>
+                  <xs:enumeration value="bottom"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+
+            <xs:attribute name="display">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="list"/>
+                  <xs:enumeration value="table"/>
+                  <xs:enumeration value="pie"/>
+                  <xs:enumeration value="bar"/>
+                  <xs:enumeration value="line"/>
+                  <xs:enumeration value="area"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="enabled" type="xs:string" />
+      <xs:attribute name="width" type="xs:string" />
+      <xs:attribute name="height" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="grouping" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,10 @@
+﻿<%@ Master Language="VB" CodeFile="Tooltip.master.vb" EnableTheming="false" Inherits="masterpages_Tooltip"  MasterPageFile="~/masterpages/Base.master" %>
+<%@ Register TagPrefix="Arco" TagName="PageController" Src="~/PageController/DM_PageController.ascx" %>
+
+    <asp:Content ID="Content1" ContentPlaceHolderID="Plh1" Runat="Server">
+     
+            <Arco:PageController ID="PC" runat="server" PageLocation="Popup"  />
+
+            <asp:contentplaceholder id="Plh1" runat="server"/>                
+        
+    </asp:Content>

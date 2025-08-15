@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <mode>0</mode>
+  <ImageListColumnCount>3</ImageListColumnCount>
+  <ImageListOrientation>0</ImageListOrientation>
+  <DefaultOrderBy></DefaultOrderBy>
+  <DefaultFileOrderBy></DefaultFileOrderBy>
+  <KeepSearchScreenVisible>false</KeepSearchScreenVisible>
+  <FolderText>false</FolderText>
+  <FiltersFile></FiltersFile>
+  <GroupingFile>NoGrouping.xml</GroupingFile>
+  <ToolbarFile>FavoritesGridToolbar.xml</ToolbarFile>
+<ShowQueries>false</ShowQueries>
+  <columns>
+    <column name="multiselect"></column>
+    <column name="status" />
+    <column name="expand" ></column>
+    <column name="documentlinks" size="80" ShowToolTip="1" extra="cellpadding='0'"/>
+    <column name="title" chars="100" extra="NOWRAP" labelE="Title" labelN="Titel" labelF="Titre" ></column>
+    <column name="version"></column>
+    <column name="category" size="100" hidefilter="n" ></column>
+    <column name="selectiondate"/>
+    <column name="creationdate"></column>
+    <column name="read" hidefilter="y" ></column>
+    <column name="linktome"/>
+
+    <column name="objecttype" hidden="true"></column>
+    <column name="basket" hidden="true"></column>
+    <column name="favorites" hidden="true"></column>
+    <column name="cdrom" hidden="true"></column>
+    <column name="comments" hidden="true"></column>
+    <column name="previousversions" hidden="true"></column>
+    <column name="links" hidden="true"></column>
+    <column name="folder" hidden="true"></column>
+  </columns>
+  <rows>
+
+
+  </rows>
+</screendef>

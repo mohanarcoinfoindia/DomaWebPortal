@@ -1,0 +1,100 @@
+﻿/// <reference path="typography.less" />
+/// <reference path="Variables.less" />
+/// <reference path="Paths.less" />
+
+.RadDock .rdTop .rdTitleBar span {
+    font-size: @baseFontSize;
+}
+
+.cms-page-container.edit-mode .RadDock {
+    background-color: @color-bg-white;
+}
+
+.RadDock_Default tr.rdMiddle td.rdCenter,
+.RadDock_Default tr.rdBottom td.rdCenter {
+    background-color: transparent;
+}
+
+.cms-page-container.edit-mode .RadDockZone {
+    background-color: @color-shade-20;
+    border-style: solid !important;
+    border-color: @color-bg-white !important;
+}
+
+.cms-page-container.edit-mode .RadDockZone.IsDropZone {
+    background-color: @color-primary-light-10;
+}
+
+.panelEdit {
+    border-style: dotted;
+    border-color: @color-shade-100;
+}
+
+.cms-form-button {
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+
+.rdNoBorder .rdMiddle .rdLeft,
+.rdNoBorder .rdMiddle .rdRight,
+.rdNoBorder .rdBottom .rdLeft,
+.rdNoBorder .rdBottom .rdCenter,
+.rdNoBorder .rdBottom .rdRight,
+.rdNoBorder .rdTop .rdLeft,
+.rdNoBorder .rdTop .rdCenter,
+.rdNoBorder .rdTop .rdRight {
+    background-image: none !important;
+}
+
+.cms-global-search {
+
+    .TextBox {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .button {
+        border-radius: @input-border-radius;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        background-image: @url-search;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 15px;
+    }
+}
+
+.cms-highlight-zone {
+    background-color: @color-primary-light-10-grey;
+    border-right: 1px solid @color-border-default;
+    border-bottom: 1px solid @color-border-default;
+}
+
+.cms-thumbnail-container {
+    .cms-thumbnail {
+        background-color: @color-shade-20;
+        cursor: pointer;
+
+        &.selected {
+            background-color: @color-primary-light-40;
+        }
+
+        .cms-thumbnail-row {
+            .cms-thumbnail-col {
+                border: 1px solid @color-shade-50;
+                background-color: white;
+
+                &.cms-thumbnail-highlight {
+                    background-color: @color-primary-light-10;
+                }
+            }
+        }
+    }
+}
+
+.multi-items-table {
+    tr.highlighted {
+        background-color: @color-primary-light-10;
+    }
+}
+

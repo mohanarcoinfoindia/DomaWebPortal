@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resource>
+  
+  <item name="but_addtoBasket">Add to basket</item>
+  <item name="ctx_addtoBasket">Add to basket</item>
+
+  <item name="but_removefromBasket">Remove from basket</item>
+  <item name="ctx_removefromBasket">Remove from basket</item>
+
+  <item name="but_addtoFavorites">Add to favorites</item>
+  <item name="ctx_addtoFavorites">Add to favorites</item>
+
+  <item name="but_removefromFavorites">Remove from favorites</item>
+  <item name="ctx_removefromFavorites">Remove from favorites</item>
+  
+  <item name="but_addmail">Add mail</item>
+  <item name="tlt_addmail">Add mail</item>
+  <item name="ctx_addmail">Add mail</item>
+
+  <item name="but_mails">E-mails</item>
+  <item name="tlt_mails">E-mails</item>
+  <item name="ctx_mails">E-mails</item>
+
+  <item name="but_addsubscription">Subscribe</item>
+  <item name="tlt_addsubscription">Subscribe</item>
+  <item name="ctx_addsubscription">Subscribe</item>
+
+  <item name="but_subscriptions">Subscriptions</item>
+  <item name="tlt_subscriptions">Subscriptions</item>
+  <item name="ctx_subscriptions">Subscriptions</item>
+
+  <item name="but_versionhistory">Version history</item>
+  <item name="tlt_versionhistory">Version history</item>
+  <item name="ctx_versionhistory">Version history</item>
+  
+  <item name="but_linkeddocs">Linked items</item>
+  <item name="tlt_linkeddocs">Linked items</item>
+  <item name="ctx_linkeddocs">Linked items</item>
+
+  <item name="but_messageattach">Add file as message</item>
+  <item name="tlt_messageattach">Add file as message</item>
+  <item name="ctx_messageattach">Add file as message</item>
+  
+  <item name="but_editDeadlines">Duedates</item>
+  <item name="ctx_editDeadlines">Duedates</item>
+  <item name="tlt_editDeadlines">Duedates</item>
+
+  <item name="but_procedureImg">Procedure Image</item>
+  <item name="but_procedureImg">Procedure Image</item>
+  <item name="but_procedureImg">Procedure Image</item>
+  
+    
+  <item name="but_aclsetacl">Acl Management</item>
+  <item name="tlt_aclsetacl">Acl Management</item>
+  <item name="ctx_aclsetacl">Acl Management</item>
+  
+  <item name="but_save">Save</item>
+  <item name="tlt_save">Save</item>
+  <item name="ctx_save">Save</item>
+  
+  <item name="but_saveandnext">Save and edit next</item>
+  <item name="tlt_saveandnext">Save and edit next</item>
+  <item name="ctx_saveandnext">Save and edit next</item>
+
+  <item name="but_saveandclose">Save</item>
+  <item name="tlt_saveandclose">Save</item>
+  <item name="ctx_saveandclose">Save</item>
+  
+  <item name="but_saveandclosewindow">Save and close window</item>
+  <item name="tlt_saveandclosewindow">Save and close window</item>
+  <item name="ctx_saveandclosewindow">Save and close window</item>
+  
+  <item name="but_new">New</item>
+  <item name="tlt_new">New</item>
+  <item name="ctx_new">New</item>
+  
+  <item name="but_duplicate">Duplicate</item>
+  <item name="tlt_duplicate">Duplicate</item>
+  <item name="ctx_duplicate">Duplicate</item>
+  
+  <item name="but_copymovetofolder">Copy/Move to folder</item>
+  <item name="tlt_copymovetofolder">Copy/Move to folder</item>
+  <item name="ctx_copymovetofolder">Copy/Move to folder</item>
+  
+  <item name="but_edit">Edit</item>
+  <item name="tlt_edit">Edit</item>
+  <item name="ctx_edit">Edit</item>
+  
+  <item name="but_editadminon">Edit in Admin Mode</item>
+  <item name="tlt_editadminon">Edit in Admin Mode</item>
+  <item name="ctx_editadminon">Edit in Admin Mode</item>
+  
+  <item name="but_editadminoff">Back to Normal Mode</item>
+  <item name="tlt_editadminoff">Back to Normal Mode</item>
+  <item name="ctx_editadminoff">Back to Normal Mode</item>
+  
+  <item name="but_finishcase">Finish</item>
+  <item name="tlt_finishcase">Finish</item>
+  <item name="ctx_finishcase">Finish</item>
+  
+  <item name="but_deletecase">Delete</item>
+  <item name="tlt_deletecase">Delete</item>
+  <item name="ctx_deletecase">Delete</item>
+  
+  <item name="but_unlock">Unlock</item>
+  <item name="tlt_unlock">Unlock</item>
+  <item name="ctx_unlock">Unlock</item>
+  
+  <item name="but_close">Close</item>
+  <item name="tlt_close">Close</item>
+  <item name="ctx_close">Close</item>
+  
+  <item name="but_cancel">Cancel</item>
+  <item name="tlt_cancel">Cancel</item>
+  <item name="ctx_cancel">Cancel</item>
+  
+  <item name="but_delete">Delete</item>
+  <item name="tlt_delete">Delete</item>
+  <item name="ctx_delete">Delete</item>
+  
+  <item name="but_transferwork">Assign to</item>
+  <item name="tlt_transferwork">Assign to</item>
+  <item name="ctx_transferwork">Assign to</item>
+  
+  <item name="but_restoreto">Restore to</item>
+  <item name="tlt_restoreto">Restore to</item>
+  <item name="ctx_restoreto">Restore to</item>
+  
+  <item name="but_movecaseto">Move to</item>
+  <item name="tlt_movecaseto">Move to</item>
+  <item name="ctx_movecaseto">Move to</item>
+  
+  <item name="but_releaseto"></item>
+  <item name="tlt_releaseto"></item>
+  <item name="ctx_releaseto"></item>
+  
+  <item name="but_release">Next step</item>
+  <item name="tlt_release">Next step</item>
+  <item name="ctx_release">Next step</item>
+  
+  <item name="but_suspend">Suspend</item>
+  <item name="tlt_suspend">Suspend</item>
+  <item name="ctx_suspend">Suspend</item>
+  
+  <item name="but_reject">Reject</item>
+  <item name="tlt_reject">Reject</item>
+  <item name="ctx_reject">Reject</item>
+  
+  <item name="but_messages">Messages</item>
+  <item name="tlt_messages">Messages</item>
+  <item name="ctx_messages">Messages</item>
+  
+  <item name="but_checkout">Check out</item>
+  <item name="tlt_checkout">Check out</item>
+  <item name="ctx_checkout">Check out</item>
+  
+  <item name="but_cancelcheckout">Cancel check out</item>
+  <item name="tlt_cancelcheckout">Cancel check out</item>
+  <item name="ctx_cancelcheckout">Cancel check out</item>
+  
+  <item name="but_checkin">Check in</item>
+  <item name="tlt_checkin">Check in</item>
+  <item name="ctx_checkin">Check in</item>
+  
+  <item name="but_editwork">Edit work list</item>
+  <item name="tlt_editwork">Edit work list</item>
+  <item name="ctx_editwork">Edit work list</item>
+  
+  <item name="but_addfile">Add File</item>
+  <item name="tlt_addfile">Add File</item>
+  <item name="ctx_addfile">Add File</item>
+  
+  <item name="but_promotetodoc">Promote to document</item>
+  <item name="tlt_promotetodoc">Promote to document</item>
+  <item name="ctx_promotetodoc">Promote to document</item>
+
+  <item name="but_reopen">Reopen</item>
+  <item name="tlt_reopen">Reopen</item>
+  <item name="ctx_reopen">Reopen</item>
+  
+  <item name="but_clear">Clear</item>
+  <item name="tlt_clear">Clear</item>
+  <item name="ctx_clear">Clear</item>
+  
+  <item name="but_history">History</item>
+  <item name="tlt_history">History</item>
+  <item name="ctx_history">History</item>
+
+  <item name="but_mywork">My Work</item>
+  <item name="tlt_mywork">My Work</item>
+  <item name="ctx_mywork">My Work</item>
+
+  <item name="but_opencases">Open Workflows</item>
+  <item name="tlt_opencases">Open Workflows</item>
+  <item name="ctx_opencases">Open Workflows</item>
+
+  <item name="but_browse">Browse</item>
+  <item name="tlt_browse">Browse</item>
+  <item name="ctx_browse">Browse</item>
+  
+  <item name="but_addcomment">Add comment</item>
+  <item name="tlt_addcomment">Add comment</item>
+  <item name="ctx_addcomment">Add comment</item>
+
+  <item name="but_addmessage">Add message</item>
+  <item name="tlt_addmessage">Add message</item>
+  <item name="ctx_addmessage">Add message</item>
+
+  <item name="but_comments">Comments</item>
+  <item name="tlt_comments">Comments</item>
+  <item name="ctx_comments">Comments</item>
+
+  <item name="but_checkoutfile">Check out file</item>  
+  <item name="tlt_checkoutfile">Check out file</item>  
+  <item name="ctx_checkoutfile">Check out file</item>  
+
+  <item name="but_cancelcheckoutfile">Cancel check out file</item>
+  <item name="tlt_cancelcheckoutfile">Cancel check out file</item>
+  <item name="ctx_cancelcheckoutfile">Cancel check out file</item>
+
+  <item name="but_checkinfile">Check in file</item>
+  <item name="tlt_checkinfile">Check in file</item>
+  <item name="ctx_checkinfile">Check in file</item>
+
+  <item name="but_addnote">Add note</item> 
+  <item name="tlt_addnote">Add note</item> 
+  <item name="ctx_addnote">Add note</item> 
+  
+  <item name="but_notes">Notes</item>
+  <item name="tlt_notes">Notes</item>
+  <item name="ctx_notes">Notes</item>
+</Resource>
+
+

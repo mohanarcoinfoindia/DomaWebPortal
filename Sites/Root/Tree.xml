@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<params xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Tree.xsd" >
+  <!-- Several configuration examples of this file are available in the Doma Application Administrator Manual Screens and site management -->
+  <param name="SHOWSPECIALNODES" value="Y"></param>
+  <!--  
+	Y: show the special nodes at the right bottom of the tree window (what's new, my documents, ...)
+	N: do not show these folders in the tree window BUT folder My Documents stays visible. See parameter HIDDENSPECIALNODES.
+	-->
+  <param name="SHOWSPECIALNODESONSUBROOTS" value="Y"></param>
+  <!--  
+	Y: show the special nodes at the right bottom of the tree window (what's new, my documents, ...) even when ‘exploring’ a folder
+	N: do not show these folders in the tree window
+	MIND! The value SHOWSPECIALNODESONSUBROOTS =Y is ignored when the value SHOWSPECIALNODES=N
+	-->
+  <param name="RECURSIVEACL" value="Y"></param>
+  <!--  
+	Recursive acl: this means that you will be able to access folders on a lower level without the need of having access to the higher level folders in the tree structure.
+	The higher level folders are shown to the user but the user cannot do anything with these folders. They are only shown to allow the user to navigate to the folder he has access to.			
+	The usage of recursive acl can decrease the performance of tree navigation slightly.
+	MIND! This parameter can be set for every tree structure, but is only taken into consideration when the parameter ArcoInfo.Security.RecursiveTreeAcl = 1.
+	Y: use recursive acl when navigating through the tree structure
+	N: do not use recursive acl. The user needs access to every level of the tree. If this is not the case, the folder will not be shown in the tree (and the user cannot navigate to the lower level folders.
+	-->
+  <param name="RECURSIVEACLINCLUDEDOCUMENTS" value="N"></param>
+  <!--  
+	Recursive acl: this means that you will be able to access folders on a lower level without the need of having access to the higher level folders in the tree structure.
+	The higher level folders are shown to the user but the user cannot do anything with these folders. They are only shown to allow the user to navigate to the folder he has access to.
+	When recursive acl includes documents, you will also see the folder structure when you only have access to 1 document in a folder. This could cause a performance overhead when a large number of folders exist in the tree structure when browsing the tree structure.
+	MIND! This parameter can be set for every tree structure, but is only taken into consideration when the parameter ArcoInfo.Security.RecursiveTreeAclIncludeDocuments = 1.
+	Y: include documents in the recursive acl calculation when navigating through the tree structure
+	N: do not include documents when calculating the recursive acl. The user needs at least access to the lowest level folder to be able to browse to this document. 
+	If this is not the case, the folder will not be shown in the tree (and the user cannot navigate to the lowest level folder).
+	When the number of nodes in the tree structure is very large, browsing is not the recommended to navigate to/find a document. 
+	This parameter is only relevant if the RECURSIVEACL parameter is set to ‘Y’.
+	-->
+  <param name="DRAGDROP" value="Y"></param>
+  <!--  
+	Y: Drag 'n drop in the tree window to move a folder (and subfolders) to a new location, is enabled.
+	N: Drag 'n drop is deactivated in the tree window.
+	-->
+  <param name="ORDERBY" value="OBJ_TYPE DESC,OBJ_UNAME ASC"></param>
+  <!--  
+	Order by: the sorting order of the tree structure.
+	-->
+  <param name="INITIALCOLLAPSEROOTNODE" value="N"></param>
+  <!--  
+	If enabled, the docroom folder will be collapsed when loading the docroom tree structure.
+	-->
+  <param name="INITIALCOLLAPSESPECIALNODES" value="N"></param>
+  <!--  
+	If enabled, the My DocRoom folder will be collapsed when loading the docroom tree structure.
+	-->
+  <param name="HIDDENSPECIALNODES" value="cd"/>
+  <!--  
+	HIDDENSPECIALNODES contains a comma separated list of (special) nodes that you want to hide.
+			possible values are:
+			new
+			basket
+			favorite
+			mail
+			checked
+			recycle
+			recent
+			subscription
+			CD
+			my document
+			creation
+			modified
+			mydocument
+      lists
+		Add mydocument to hide folder My Documents when SHOWSPECIALSNODES=0 -->
+  <param name="SHOWFAVORITEFOLDERS" value="1"></param>
+  <!--  
+	If SHOWSPECIALNODES is activated, this option will show all favorite folders under the ‘Favorites’ folder in my docroom as subfolders.
+	If SHOWSPECIALNODES is not activated, this option will show the favorite folder as a new root folder under which all favorite folders are shown.
+	-->
+  <param name="SHOWBASKETFOLDERS" value="1"></param>
+  <!--  
+	If SHOWSPECIALNODES is activated, this option will show all basket folders under the ‘Basket’ folder in my docroom as subfolders.
+	If SHOWSPECIALNODES is not activated, this option will show the basket folder as a new root folder under which all basket folders are shown.
+	-->
+  <param name="SEARCHHIERARCHICAL" value="0"/>
+  <!--  
+	SEARCHHIERARCHICAL (0/1): 1 = search results are shown hierarchically (pre doma 6.1 mode), 0 = search as flat list (default).
+	-->
+  <param name="MAXSEARCHRESULTS" value="100"/>
+  <!--
+	MAXSEARCHRESULTS (numeric): number of results to be shown after a query in the tree.
+	-->
+
+  <!--     <param name="ROOT" value="level1\level2"></param> -->
+  <!--
+	ROOT: specify the path of the folder that should be used as the root of your tree structure. The root folder doesn't have to be mentioned in the path.
+	-->
+  <!--  <param name="MINFILTERLENGTH" value="3"></param> -->
+  <!--
+MINFILTERLENGTH: specify the number of characters that should be used to filter the result before showing the list of subfolders. This option can be used when a folder has a lot of subfolders. As a consequence of using this option, no more folders are shown by default in the tree location.
+  -->
+  <!--
+      <filters> 	
+    <filter index="1"  name="Language" enabled="False"  value="(IDX_11546 = 'N' or IDX_11546 is Null)" disabledvalue="" visible="False" />
+    <filter index="2" name="Name" enabled="False" value="OBJ_NAME like 'f%'" disabledvalue="" visible="False" />
+    <filter index="3" name="Standard Folders only" enabled="False" autopostback="True" value="CAT_ID=1006" disabledvalue="" visible="True" />
+    <filter index="4" name="Security Folders only" enabled="False" autopostback="True" value="OBJ_ID=OBJ_ACL_ID" disabledvalue="" visible="True" />
+  </filters> 
+-->
+  <!--  
+	Filters allow you to show only subselections of the entire tree in the treestructure.
+	A number of options are foreseen:
+	- index: unique number that identifies the filter
+	- name: this is the name of the filter
+	- nameE: English label for the filter
+	- nameN: Dutch label for the filter
+	- nameF: French label for the filter
+	- nameG: German label for the filter
+	- recursive ("True"/"False") : if 'recursive' will show folders for which the filter does not apply but which are necessary to allow a user to navigate to a foldor for which the filter does apply
+		Activating the recursive parameter might invoke a decrease in performance on big tree structures (> 5000 items)
+	- autopostback ("True"/"False"): automatically refresh the treestructure if the filter is activated or deactivated.
+	- enabled ("True"/"False") : default value for the filter
+	- value: this value is the query syntax that will be applied to the folder selection when the filter is activated
+	- disabledvalue: this value is the query syntax that will be applied to the folder selection when the filter is deactivated. This can be empty.
+	- visible ("True"/"False") : make the filter visible in the tree window or not.
+  -->
+
+</params>

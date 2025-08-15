@@ -1,0 +1,18 @@
+﻿.MainLogo_Default {
+    background: transparent url('../Img/arco-logo.png') no-repeat;
+    width: 210px;
+    height: 65px;
+    background-size: 146px 65px;
+    background-position: 0px 0px;
+}
+
+
+
+
+.BigLogo_Default {
+    content: "";
+    width: 220px;
+    height: 98px;
+    background: transparent url('../Img/arco-logo.png') no-repeat;
+    background-size: 220px 98px;
+}

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"  ?>
+<Menu >
+  <Group Flow="Horizontal">
+    <Item Text="Monitoring" LabelE="Monitoring" LabelF="Surveillance" LabelN="Opvolging">
+      <Group Flow="Vertical">
+        <Item Text="BatchJobs" LabelE="Batchjobs" LabelF="Tâches" LabelN="Geplande taken" NavigateUrl="javascript:BatchJobs();" Selected="true"/>
+        <Item Text="System Logs" LabelN="Systeemlogboek" LabelF="Journal du système" NavigateUrl="javascript:SysLog();" />
+       
+	  <Item Text="Drum Logs" LabelE="Drum Logs" LabelF="Journal du Drum" LabelN="Drum Logboek" NavigateUrl="javascript:DrumLog();" />	
+	  <Item Text="Reports" LabelE="Reports" LabelN="Rapporten" LabelF="Rapports" NavigateUrl="javascript:OpenUrl('Reports.aspx');"></Item>
+     
+        <Item Text="Logged in Users" LabelN="Ingelogde gebruikers" LabelF="Utilisateurs connectés"  NavigateUrl="javascript:LoggedInUsers();"></Item>
+        <Item Text="About" LabelN="Info" LabelF="Info" NavigateUrl="javascript:AboutDocroom();" ></Item>
+      </Group>
+    </Item>
+    <Item Text="Settings" LabelE="Settings" LabelF="Configuration" LabelN="Instellingen">
+      <Group Flow="Vertical">
+        <Item Text="Sitemap" NavigateUrl="javascript:OpenUrl('Sitemap.aspx');"></Item>
+        <Item Text="Main Pages" NavigateUrl="javascript:OpenUrl('Mainpages.aspx');"></Item>
+        <Item Text="File Servers" LabelN="Bestandsservers" LabelF="Serveurs des fichiers" visible="false"  NavigateUrl="javascript:FileServers();" />
+        <Item Text="File Extensions" LabelN="Bestandstypes" LabelF="Type de fichiers"  NavigateUrl="javascript:FileTypes();" />
+        <Item Text="IFilters" NavigateUrl="javascript:IFilters();" />
+        <Item Text="Subscriptions" LabelN="Abonnementen" LabelF="Souscriptions"  NavigateUrl="javascript:OpenUrl('Subscriptions.aspx');" />
+        <Item Text="Action Profiles" LabelN="Actieprofielen" LabelF="Profils sécurité"   NavigateUrl="javascript:ActionProfiles();" />
+        <Item Text="Task Sets" NavigateUrl="javascript:OpenUrl('Tasksets.aspx');"></Item>
+        <Item Text="Pages" NavigateUrl="javascript:OpenUrl('Pages.aspx');"></Item>       
+      </Group>
+    </Item>
+    
+    <Item Text="Managed Lists" LabelN="Beheerde Lijsten" LabelF="Listes gérées"  NavigateUrl="javascript:ManageLists();"></Item>
+ 
+  
+    <Item Text="Manage Users" LabelN="Gebruikersbeheer" LabelF="Gestion d'utilisateurs"  NavigateUrl="javascript:ManageUsers();"></Item>
+    <Item Text="recyclebin" NavigateUrl="javascript:ShowRecyclebin();"></Item>
+    
+  </Group>
+</Menu>

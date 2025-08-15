@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <mode>0</mode>
+  <DefaultOrderBy></DefaultOrderBy>
+  <DefaultFileOrderBy></DefaultFileOrderBy>
+  <KeepSearchScreenVisible>false</KeepSearchScreenVisible>
+  <FolderText>false</FolderText>
+  <FiltersFile></FiltersFile>
+  <GroupingFile></GroupingFile>
+  <ShowQueries>false</ShowQueries>
+  <columns>
+    <column name="read"></column>
+    <column name="status"></column>
+    <column name="version"></column>
+    <column name="title" extra="NOWRAP" labelE="Title" labelN="Titel" labelF="Titre" filterwidth="600px" ></column>
+    <column name="objecttype"></column>
+    <column name="category" labelE="Category" labelN="Categorie" labelF="Catégorie" size="100" hidefilter="n" ></column>
+    <column name="creationdate"></column>
+  </columns>
+</screendef>

@@ -1,0 +1,55 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+.comments {
+    .addComment {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 5px;
+    }
+
+    .commentLines {
+        .commentLine {
+            td.ReadOnlyFieldCell {
+                display: block;
+            }
+
+            .SideHeaderCell {
+                width: 70px;
+                vertical-align: middle;
+                padding-right: 20px;
+
+                .commentLineActions {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+
+//specific for preview on the left
+
+.PreviewPage {
+    .comments {
+        .commentLines {
+            margin-top: 20px;
+        }
+    }
+}
+
+//specific for list on detail page
+
+.RowCell {
+    .comments {
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        padding: 1px 1px 1px 10px;
+    }
+}
+
+
+

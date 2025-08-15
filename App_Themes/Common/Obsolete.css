@@ -1,0 +1,62 @@
+﻿
+.Header3LeftSpacer,.Header3RightSpacer
+{
+	padding:0!important;	
+	width:2px !important;	
+	background-repeat:no-repeat;
+	height:31px;
+}
+.Header3RightSpacer
+{
+    border-right:1px silver solid;
+}
+.ListHeader3LeftSpacerDiv,.ListHeader3RightSpacerDiv
+{
+	width:7px !important;	
+	background-repeat:no-repeat;
+	height:31px;
+	float:left;
+}
+.ListHeader3LeftSpacerDiv, .Header3LeftSpacer{background-image:url(Images/arco_header3_left.png)}
+.ListHeader3RightSpacerDiv, .Header3RightSpacer{background-image:url(Images/arco_header3_right.png)}
+
+.ListHeader3RightFillerDiv
+{
+	height:31px;
+	/*background-image:url(Images/arco_header3_middle.png);
+	background-repeat:repeat-x;*/
+	width:100%;	
+ display:inline-block;	 
+ 	float:right;
+
+}
+
+
+.ListMainHeader
+{
+height:30px;
+/*background-image:url(Images/arco_header3_middle.png);*/
+/*background-repeat:repeat-x;*/
+white-space:nowrap;
+float:left;
+padding-top:1px;
+}
+
+.PanelFooter{
+background-color:#FEFEFE;
+}
+
+
+.ListContent2 td {            
+    vertical-align:top;
+}
+
+.ListContent2{background-color:#f2f8fa}
+.SubListContent2{background-color:#f2f8fa}
+
+
+.ListSubContent2{	background-color:#f2f8fa}
+
+.ListSubContent2 TD{
+font-style:italic;
+}

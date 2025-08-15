@@ -1,0 +1,151 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+.GroupingPanel {
+    margin: 10px 0 10px 15px;
+
+    .Header {
+        padding: 10px 0 5px 0;
+        height: 45px;
+        width: auto;
+    }
+
+    .Content {
+
+        .ob_tree {
+            table {
+                .ob_d2b {
+                    padding-bottom: 5px;
+                }
+            }
+        }
+        .Item {
+            padding-bottom: 5px;
+
+            .GrouperLink {
+                padding-left: 10px;
+            }
+
+            img {
+                height: 16px;
+                width: 16px;
+            }
+        }
+
+        td.ob_t2 {
+            border: none;
+        }
+    }
+}
+
+
+.DocPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .listControlSideAndBody {
+        flex-grow: 1;
+        height: 100%;
+    }
+
+    .listControlSide {
+        margin-top: 40px;
+    }
+
+    .listControlBody {
+        width: 100%;
+        display: table;
+    }
+
+    .listControlBody .RadToolBar {
+        height: @grid-toolbar-height;
+        padding: 10px 0px 10px 7px;
+    }
+
+    .listControlBody .docList {
+        margin-left: 10px;
+    }
+
+    img[src*="./Images/Expand.gif"] {
+        float: right;
+        width: 0;
+        height: 0;
+        padding: 10px;
+    }
+
+    img[src*="./Images/Collapse.gif"] {
+        float: right;
+        width: 0;
+        height: 0;
+        padding: 10px;
+    }
+}
+
+#pagebody {
+    flex-grow: 1;
+
+    > div:nth-child(2) {
+        height: 100%;
+
+        .LayoutTable.listControl {
+            height: 100%;
+        }
+    }
+}
+
+
+// sticky stuff
+.DocPage .StickyHeaders {
+    .RadToolBar.RadToolBar_GridToolbar {
+        position: sticky;
+        top: 0;
+    }
+    // general rules (de facto: toolbar not present)
+    .List {
+        .ListHeader > th {
+            position: sticky;
+            top: 0;
+            z-index: 4;
+        }
+
+        .ListFilter > td {
+            position: sticky;
+            top: @list-row-height;
+            z-index: 4;
+        }
+    }
+    // when toolbar is present:
+    .RadToolBar.RadToolBar_GridToolbar + .SubListDiv .List {
+        .ListHeader > th {
+            top: @grid-toolbar-height;
+        }
+
+        .ListFilter > td {
+            top: calc(@grid-toolbar-height + @list-row-height);
+        }
+    }
+}
+
+.CustomStickyListHeader {
+    position: sticky;
+    z-index: 10;
+    height: @list-row-height;
+    top: 0;
+    width: 100%;
+}
+
+.List.StickyHeaders {
+    .ListHeader > th {
+        position: sticky;
+        top: 0;
+        z-index: 4;
+    }
+
+    .ListFilter > td,
+    .ListHeaderLevel2 > th {
+        position: sticky;
+        top: @list-row-height;
+        z-index: 4;
+    }
+}

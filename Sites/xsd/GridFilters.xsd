@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="filters" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="filters" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:sequence>
+          <xs:element name="filter" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:attribute name="index" type="xs:string" />
+              <xs:attribute name="name" type="xs:string" />
+              <xs:attribute name="nameE" type="xs:string" />
+              <xs:attribute name="nameN" type="xs:string" />
+              <xs:attribute name="nameF" type="xs:string" />
+              <xs:attribute name="nameG" type="xs:string" />
+              <xs:attribute name="autopostback" type="xs:boolean" />
+              <xs:attribute name="role" type="xs:string" />
+              <xs:attribute name="reversefilterwhennotinrole" type="xs:boolean" />
+              <xs:attribute name="enabled" type="xs:boolean" />
+              <xs:attribute name="value" type="xs:string" />
+              <xs:attribute name="disabledvalue" type="xs:string" />
+              <xs:attribute name="visible" type="xs:boolean" />
+            </xs:complexType>
+          </xs:element>
+      </xs:sequence>
+      <xs:attribute name="andor" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

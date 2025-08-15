@@ -1,0 +1,4 @@
+﻿<%@ServiceHost Service="Arco.Doma.WebServices.NtlmAuthentication" %>
+
+
+

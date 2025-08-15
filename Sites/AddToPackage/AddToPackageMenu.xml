@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<Menu>
+  <Group Flow="Horizontal">   
+    <Item Text="View" Value="View">
+      <Group Flow="Vertical">
+        <Item Text="All" NavigateUrl="Javascript:ViewList('');"></Item>
+        <Item Text="DocsandFolders" NavigateUrl="Javascript:ViewList('Document,Folder');"></Item>
+        <Item Text="Cases" NavigateUrl="Javascript:ViewList('Case');"></Item>
+        <Item Text="MyWork" NavigateURL="Javascript:ViewList('mywork');"></Item>
+        <Item Text="Mails" NavigateUrl="Javascript:ViewList('Mail');"></Item>
+        <Item Text="SavedQueries" NavigateURL="Javascript:Goto('Queries.aspx');"></Item>
+      </Group>
+    </Item>
+    <Item Text="Search" Value="Search">
+      <Group Flow="Vertical">
+        <Item Value="SearchAll" Text="all" NavigateUrl="Javascript:SearchList('');"></Item>
+        <Item Text="Documents" NavigateUrl="Javascript:SearchList('Document');"></Item>
+        <Item Text="Folders" NavigateUrl="Javascript:SearchList('Folder');"></Item>
+        <Item Text="Cases" NavigateUrl="Javascript:SearchList('Case');"></Item>
+      </Group>
+    </Item>
+  </Group>
+</Menu>

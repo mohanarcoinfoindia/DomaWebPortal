@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<filters p1:xsi="http://www.w3.org/2001/XMLSchema-instance" p2:noNamespaceSchemaLocation="..\Xsd\GridFilters.xsd" andor="AND" xmlns:p2="xsi" xmlns:p1="xmlns">
+  <filter index="1" name="some filter" visible="False" />
+</filters>

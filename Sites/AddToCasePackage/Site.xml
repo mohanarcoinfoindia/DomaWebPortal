@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<params>
+  <param name="MAINPAGE" value="Main.aspx?hideheader=true&amp;menu=addtopackagemenu&amp;hidetree=true&amp;defaultaction=MyWork&amp;searchscreenmodes=4,3,6,2,13&amp;hidecurrentfolder=true"></param>  
+  <param name="TITLE" value="AddToPackage"></param>
+</params>

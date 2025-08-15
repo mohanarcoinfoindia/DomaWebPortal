@@ -1,0 +1,4 @@
+<asp:DetailsView runat="server" CssClass="DetailTable" GridLines="None">
+         <HeaderStyle CssClass="DetailHeader">         
+         </HeaderStyle>     
+</asp:DetailsView>

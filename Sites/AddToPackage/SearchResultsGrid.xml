@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <GroupingFile></GroupingFile>
+  <ItemContextMenus>false</ItemContextMenus>
+  <HeaderContextMenus>false</HeaderContextMenus>
+  <columns>
+   
+    <column name="status" />
+    <column name="expand" ></column>
+    <column name="documentlinks" size="80" ShowToolTip="1" extra="cellpadding='0'"/>
+    <column name="title" chars="100" extra="NOWRAP" labelE="Title" labelN="Titel" labelF="Titre" ></column>
+    <column name="version"></column>
+    <column name="category" size="100" hidefilter="n" ></column>
+    <column name="creationdate"></column>
+   
+  </columns>
+  <rows>
+    <row>
+      <columns>
+        <column name="constant" colspan="3"/>        
+        <column name="folder" colspan="4" activatelink="y" size="500"></column>
+      </columns>
+    </row>
+  </rows>
+</screendef>  
+

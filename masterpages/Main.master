@@ -1,0 +1,50 @@
+<%@ Master Language="VB" CodeFile="Main.master.vb" Inherits="Main" EnableViewState="true" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">   
+    <title></title>
+
+    <script type="text/javascript">
+        function onMainMenuClicked(sender, eventArgs) {
+            var item = eventArgs.get_item();
+            if (!item.get_selected()) {
+                item.select();
+            }
+        }
+    </script>
+
+
+</head>
+<body style="margin: 0px; height: 100%; overflow: hidden;" scroll="no">
+    <form id="form1" runat="server">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:PlaceHolder ID="keepalive" runat="server">
+            <script type="text/javascript">
+                var keepAliveImage = null;
+                function KeepAlive() {
+                    if (keepAliveImage == null) {
+                        keepAliveImage = document.createElement("img");
+                        keepAliveImage.setAttribute("src", "<%=ResolveClientUrl("~/ScriptServices/KeepAlive.ashx")%>");
+                 keepAliveImage.style.position = "absolute";
+                 keepAliveImage.style.height = "1px";
+                 keepAliveImage.style.width = "1px";
+                 document.body.appendChild(keepAliveImage);
+             }
+             else {
+                 var d = new Date();
+                 var rand = d.getTime();
+                 keepAliveImage.src = "<%=ResolveClientUrl("~/ScriptServices/KeepAlive.ashx")%>?d=" + rand;
+                    }
+                }
+                setInterval('KeepAlive();', 300000);
+            </script>
+        </asp:PlaceHolder>
+    </form>
+</body>
+</html>

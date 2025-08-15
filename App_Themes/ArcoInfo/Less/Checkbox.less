@@ -1,0 +1,66 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+.checkboxDoma,
+.RadButton.rbToggleButton {
+
+    input[type=checkbox],
+    .rbPrimaryIcon {
+
+        & + label:after,
+        &:checked + label:after,
+        &.rbToggleCheckbox + .rbText:after,
+        &.rbToggleCheckboxChecked + .rbText:after {
+            background-color: @color-bg-white;
+            border-style: solid;
+            border-color: @color-border-input;
+            border-radius: @input-border-radius;
+        }
+
+        &:enabled + label:hover:after,
+        &:checked:enabled + label:hover:after,
+        &.rbToggleCheckbox + .rbText:hover:after,
+        &.rbToggleCheckboxChecked + .rbText:hover:after {
+            background-color: @color-shade-30;
+        }
+
+
+        &:checked + label:before,
+        &.rbToggleCheckboxChecked + .rbText:before {
+            border-style: solid;
+            border-color: @color-primary-light;
+        }
+
+        &[disabled] + label, &[readonly] + label {
+            opacity: @disabled-opacity;
+            cursor: default;
+        }
+    }
+}
+
+.RadButton.rbToggleButton.rbDisabled .rbPrimaryIcon {
+    &.rbToggleCheckbox + .rbText,
+    &.rbToggleCheckboxChecked + .rbText {
+        opacity: @disabled-opacity;
+        cursor: default;
+    }
+}
+
+.bootstrap-switch {
+    border-color: @color-border-input;
+
+    &.bootstrap-switch-focused {
+        border-color: @color-border-input;
+        box-shadow: none;
+    }
+
+    .bootstrap-switch-container {
+        span {
+            word-break: keep-all !important;
+
+            &.bootstrap-switch-primary {
+                background-color: @color-primary-light;
+            }
+        }
+    }
+}

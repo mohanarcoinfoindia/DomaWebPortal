@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Toolbar enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\GridToolbar.xsd">
+<Item Text="Show Sidepanel" LabelN="Zijpaneel tonen" LabelF="Montrer le panneau latéral" ImageClass="icon-chevron-expand icon-color-light" NavigateUrl="javascript:#GRID#.ToggleShowSideBar();"/>
+  <Item Text="Refresh" ImageClass="icon-refresh" LabelN="Hernieuwen" LabelF="Rafraîchir" NavigateUrl="javascript:#GRID#.Reload();"/>
+
+  <Item Text="What's new" ImageClass="icon-folder-mynewdocs" ShowText="false" LabelE="" LabelF="Quoi de neuf" LabelN="Nieuwe items" LabelG="Neuigkeiten" NavigateUrl="javascript:#GRID#.ToggleWhatsNew();"/>
+  <Item isSeparator="true"/>
+  <Item Text="Mark Completed" ToggleOnMailMultiSelect="true" LabelN="Als afgewerkt markeren" LabelF="Marquer comme complété" ShowText="true" NavigateUrl="javascript:#GRID#.DoMailListAction(3,0);"/>
+  <Item isSeparator="true"></Item>
+  <Item Text="Mark Read" ShowText="true" LabelN="Markeren als gelezen" LabelF="Marquer comme lu" ToggleOnMailMultiSelect="true" NavigateUrl="javascript:#GRID#.DoMailBoxAction(6,0,1);"/>
+  <Item Text="Mark UnRead" ShowText="true" LabelN="Markeren als ongelezen" LabelF="Marquer comme à lire" ToggleOnMailMultiSelect="true" NavigateUrl="javascript:#GRID#.DoMailBoxAction(7,0,1);"/>
+  <Item isSeparator="true"/>
+  <Item Text="Delete" LabelN="verwijderen" LabelF="Supprimer" LabelG="Löschen" ToggleOnMailMultiSelect="true" ImageClass="icon-delete" NavigateUrl="javascript:#GRID#.DoMailBoxAction(4,0,1);"/>
+</Toolbar>

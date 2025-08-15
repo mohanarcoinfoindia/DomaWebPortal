@@ -1,0 +1,1508 @@
+﻿html {
+    height: 100%;
+    margin: 0
+}
+
+body, form {
+    height: 100%;
+    margin: 0;
+    font-family: Lucida Sans Regular,Lucida Sans Unicode,Lucida Grande;
+    font-size: 7.5pt;
+    color: #000000;
+}
+
+th {
+    white-space: nowrap;
+    text-align: left;
+}
+
+
+/*#region Tree */
+
+tr > td.ob_t4 {
+    vertical-align: middle;
+}
+
+td[class*="ob_t"] {
+    font-size: 14px;
+
+    img {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+/*#endregion */
+
+
+.GroupingPanel .Spacer {
+    background-color: #FFFFFF !important;
+    border-top: 0px !important;
+}
+
+A {
+    text-decoration: none;
+    color: inherit;
+}
+
+#disableWindow {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    opacity: .55;
+    -moz-opacity: .55;
+    filter: alpha(opacity=55);
+    background-color: rgb(170,170,170);
+}
+
+img, input[type=Image] {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+::-ms-clear {
+    width: 0;
+    height: 0;
+}
+
+::-ms-reveal {
+    width: 0;
+    height: 0;
+}
+
+div.RadListBox .rlbText,
+div.RadListBox .rlbItem,
+div.RadListBox .rlbButtonText,
+div.RadListBox .rlbEmptyMessage {
+    line-height: 15px;
+}
+
+.rspPaneHorizontal {
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+}
+
+textarea.RadInputMgr, textarea {
+    height: auto;
+    resize: none;
+    white-space: pre-wrap;
+}
+
+.RadSearchBox .rsbInner {
+    border-color: transparent !important;
+}
+
+.RadToolBarDropDown .rtbText {
+    white-space: nowrap !important;
+}
+
+.RadSplitter_Default {
+    font-size: inherit !important;
+}
+
+.RadMenu {
+    outline: 0;
+}
+
+.RadToolBar .rtbOuter {
+    padding: 0 !important;
+    border-width: 0 !important;
+    border-style: none !important;
+}
+
+.RadComboBoxDropDown_Default .rcbMoreResults a {
+    background-image: none !important;
+}
+
+.RadComboBox .rcbInput {
+    color: #000000;
+    font-weight: normal;
+}
+
+.RadComboBox.RadComboBox_SelectionComboBox .rcbActionButton {
+    background-color: white;
+}
+
+div.RadTabStrip .rtsLevel .rtsIn,
+div.RadTabStrip .rtsLevel .rtsTxt {
+    padding: 0;
+}
+
+
+.ruAdd, .ruBrowse {
+    background-position: 0 -46px !important;
+    width: 146px !important;
+}
+
+.multipleRowsComboBox .rcbItem,
+.multipleRowsComboBox .rcbHovered {
+    float: left;
+    margin: 0 1px;
+    min-height: 13px;
+    overflow: hidden;
+    padding: 2px 19px 2px 6px;
+    width: 100px;
+}
+
+a.FolderLink, .FolderLink {
+    float: left;
+    display: block;
+    line-height: 2;
+    white-space: nowrap;
+}
+
+input.chk {
+    height: 13px;
+    width: 13px;
+    margin: 0;
+    border: 0
+}
+
+.NoOverFlowClass {
+    overflow: hidden !important
+}
+
+.OverFlowClass {
+    overflow: visible !important
+}
+
+.LayoutTable, .DetailTable, .Panel, .SubList, .List, .ListNoHL, .GroupingDiv, .MainMenuTable {
+    width: 100%
+}
+
+.LayoutTable, .MainMenuTable {
+    border-spacing: 0;
+}
+
+.LayoutTable td {
+    vertical-align: top;
+}
+
+.Panel, .SubList, .List, .ListNoHL {
+    border-collapse: collapse
+}
+
+.SubList {
+    clear: both
+}
+
+.PaddedTable {
+    margin: 0 10px;
+    width: calc(100% - 30px);
+}
+
+/**Detail Form*/
+.LabelCell, .RowCell, .ReadOnlyFieldCell, .FieldCell {
+    vertical-align: top;
+    text-align: left;
+}
+
+.DetailTable .LabelCell, .ReadOnlyFieldCell, .FieldCell {
+    padding: 3px;
+}
+
+.LabelCell {
+    white-space: nowrap;
+    width: 200px;
+    /*min-width:200px;*/
+}
+
+.FieldCell {
+    white-space: nowrap
+}
+
+.ReadOnlyFieldCell {
+    min-width: 200px;
+    background-clip: content-box;
+}
+
+.RowCell {
+    padding-left: 0;
+    width: 100%;
+}
+
+.ClosingCell {
+    width: 100%
+}
+
+.tooltip-icon {
+    min-width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-image: url('../Images/info.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+/**End Detail Form*/
+
+/**Grouping Panel*/
+.GroupingPanel {
+    margin-bottom: 10px;
+
+    .Content {
+        overflow: auto;
+    }
+
+    /*.Item {
+        padding: 2px 0 3px 5px;
+    }*/
+
+    .Header {
+        padding: 5px 0 3px 5px;
+        height: 20px;
+        width: auto;
+    }
+}
+
+.GrouperLink {
+    white-space: nowrap;
+}
+
+/**End Grouping Panel*/
+
+
+.ImageListContent {
+    vertical-align: top;
+    cursor: default;
+    padding: 2px 0
+}
+
+.ImageListContent td {
+    padding: 4px
+}
+
+.ImageListContent.listContentHighlighted {
+    border: none;
+    background-color: transparent;
+}
+
+.ImageListCheckBox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#imagepreview {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: #333;
+    padding: 5px;
+    display: none;
+    color: #fff;
+}
+
+
+/**Tooltp*/
+#ajax_tooltipObj {
+    z-index: 10000;
+    text-align: left;
+}
+
+#ajax_tooltipObj div {
+    position: relative;
+}
+
+#ajax_tooltipObj .ajax_tooltip_arrow { /* Left div for the small arrow */
+    background-image: url('../Images/arrow.gif');
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center left;
+    z-index: 10005;
+    height: 60px;
+}
+
+#ajax_tooltipObj .ajax_tooltip_content {
+    border: 2px solid #317082; /* Border width */
+    left: 18px; /* Same as border thickness */
+    top: 0;
+    position: absolute;
+    width: 400px; /* Width of tooltip content */
+    height: 300px; /* Height of tooltip content */
+    background-color: #FFF; /* Background color */
+    padding: 5px; /* Space between border and content */
+    font-size: 0.8em; /* Font size of content */
+    overflow: auto; /* Hide overflow content */
+    z-index: 10001;
+}
+/**End tooltip*/
+
+
+div.HiddenDatePicker .inputCell, input.HiddenDatePicker {
+    padding: 0 !important;
+    width: 1px !important;
+}
+
+input.HiddenDatePicker {
+    border: 0 !important;
+    visibility: hidden !important;
+}
+
+.RadPicker {
+    width: auto !important;
+}
+
+.EditPublishing .advancedSearchSelectionField .RadInputMgr {
+    width: 160px;
+}
+
+/**Buttons*/
+.buttons {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.buttons .button {
+    margin-bottom: 2px;
+}
+
+/**End buttons*/
+
+.InlineHelp {
+    font-size: 7pt;
+    margin: 3px;
+}
+
+
+.LicenceMessage {
+    font-size: 2em;
+    color: red;
+}
+
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset legend {
+    display: none;
+}
+
+fieldset ol {
+    padding: 0;
+    list-style: none;
+}
+
+fieldset ol > li {
+    padding-bottom: 1rem;
+    display: inline-block;
+}
+
+
+.PanelPage {
+    align-items: center;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-flow: column nowrap;
+    height: 100%;
+    justify-content: center;
+}
+
+.Panel .Header {
+    width: 100%;
+}
+
+.Panel.Centered .Label {
+    display: block !important;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.GroupingPanel .GrouperLink .Label {
+    font-weight: bold;
+}
+
+.Panel.Centered .Content {
+    width: 400px;
+    float: right;
+}
+
+.Panel.Centered {
+    width: 550px;
+    box-sizing: content-box;
+}
+
+.Panel > tbody > tr:not([class]) {
+    padding: 20px 20px 10px 20px;
+}
+
+span.Label {
+    cursor: default; //When an asp:Label doesn't have an associated control ID it's rendered as a span. By default it has a cursor:text
+}
+
+.FormLabel {
+    text-align: left;
+    word-break: break-word;
+}
+
+
+/** Grids */
+.ListFilter input, .SubListFilter input,
+.ListFilter .gridfilter, .SubListFilter .gridfilter {
+    width: 100%;
+    line-height: normal;
+}
+
+.Wrap {
+    white-space: nowrap
+}
+
+.List td {
+    vertical-align: top;
+}
+
+.List td, .List th {
+    padding: 0 5px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.SubList td {
+    padding: 3px 3px 3px 5px;
+    white-space: nowrap;
+}
+
+.ListFooter {
+    background-color: white;
+}
+
+.ListFooter td {
+    text-align: center;
+}
+
+/** End Grids */
+
+td.CenterAlign {
+    text-align: center;
+}
+
+td.RightAlign {
+    text-align: right;
+}
+
+.List .RightAlign {
+    margin-right: 2px;
+}
+
+.mainmenu_profile {
+    cursor: pointer;
+    min-width: 50px;
+}
+
+.mainMenu_userName {
+    text-align: right;
+}
+
+.mainmenu_tenant {
+    text-align: right;
+    font-size: 10px;
+}
+
+.mainmenu_img_wrapper {
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.mainmenu_loginbutton_wrapper {
+    padding-top: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.mainmenu_img {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 0;
+    left: 0;
+}
+
+.mainmenu_img_wrapper[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: .6em;
+    background: red;
+    color: white;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
+
+
+.profile_img {
+    height: 100px;
+    width: 100px;
+}
+
+
+.stepgroup {
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative; 
+}
+
+.stepgroup-progress {
+    position: absolute;
+    top: 34px;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+
+.stepgroup-progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+}
+
+.stepgroup-step {
+    position: relative;
+    float: left;
+    padding: 0 10px;
+}
+
+.stepgroup-step-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-top: 4px;
+    background: #ddd;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.stepgroup-step.active .stepgroup-step-icon {
+    width: 68px;
+    height: 68px;
+    margin-top: 0;
+    line-height: 68px;
+}
+
+.stepgroup-step p {
+    color: #ccc;
+}
+
+
+.SideHeader {
+    height: 100%;
+}
+
+.SideHeader .SideMenu {
+    margin-bottom: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.SideHeaderCell {
+    vertical-align: text-top;
+}
+
+.SideHeader .SideMenu img {
+    margin-left: auto;
+}
+
+.SideHeader .SideMenu.Selected {
+    font-weight: bold;
+}
+
+
+
+
+/* Redesign changes */
+.listControlGridScroller {
+    margin-top: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+/*.listContentHighlighted {
+    background-color: #f0fff0;
+    border: 1px solid #1390b4;
+    cursor: pointer;
+}*/
+
+.selectedScrollItem {
+    border: solid 1px #000000;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1px;
+}
+
+/*Set Height of the header and menu*/
+.paneMenuAndHeaderHeight {
+    height: 72px !important;
+}
+
+.paneMenuHeight {
+    height: 30px !important;
+}
+
+.paneHeaderHeight {
+    height: 42px !important;
+}
+
+
+
+/*2 column layout*/
+
+/*.listControl {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100%;
+}*/
+
+.iconCell {
+    white-space: nowrap;
+    width: 20px;
+    height: 20px;
+}
+
+.iconCell > img,
+.iconImage {
+    width: 15px;
+    height: 15px;
+    /*padding: 2px 2px;*/
+    margin-bottom: 3px;
+}
+
+.listControlSideAndBody {
+    display: flex;
+    flex-direction: row;
+}
+
+.listControlBody {
+    width: 100%;
+    position: relative;
+}
+
+.tltProfileLogo {
+    float: left;
+}
+
+.tltProfileUserActions {
+    float: right;
+}
+
+.profileName {
+    padding: 10px;
+}
+
+.profileTenant {
+    margin: 10px;
+}
+
+.profileActionLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.detailRadPaneNavigation {
+    height: 32px !important;
+}
+
+.detailRadPaneNavigationInclRowTabs {
+    height: 55px !important;
+}
+
+.detailTblToolbar {
+    height: 54px;
+}
+
+.cellToolbars {
+    background-color: buttonface;
+}
+
+.detailView {
+    padding: 20px 5px;
+    width: 100%;
+}
+
+
+
+
+/* form */
+
+.ClosingCell {
+    display: none;
+}
+
+.GroupingDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.comboBoxDiv {
+    display: flex;
+    width: 100%;
+}
+
+.detail-form-container .detail-form-row {
+    padding: 0 15px;
+    margin-top: 1rem;
+}
+
+/*.detail-form-container .FormField-Message,*/
+.detail-form-container input[type=text]:not(.rcbInput):not(.riTextBox),
+.detail-form-container input[type=password],
+.detail-form-container textarea,
+.detail-form-container .RadUpload,
+.detail-form-container .formfield-container {
+    width: calc(100% - 50px);
+    max-width: 400px;
+}
+
+.detail-form-container .detail-form-row .RadComboBox_SelectionComboBox:not(.fixedField),
+.detail-form-container .detail-form-row .RadComboBox_Default:not(.fixedField),
+.detail-form-container .detail-form-row .RadListBox_Default:not(.fixedField) {
+    width: calc(100% - 50px);
+    max-width: 400px;
+}
+
+.detail-form-container .LabelCell,
+.detail-form-container .ReadOnlyFieldCell,
+.detail-form-container .FieldCell {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.detail-form-container .formfield-container .TextBox {
+    width: 100%;
+    margin-top: 2px;
+}
+
+.filter-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-weight: normal;
+}
+
+.filter-container > .clear {
+    position: absolute;
+    display: none;
+    right: 1px;
+    top: 3px;
+    padding: 0 3px;
+    line-height: 18px;
+    background-color: #FFF;
+    cursor: pointer;
+    color: #444;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.filter-container.hasvalue > .clear {
+    display: inline;
+}
+
+.form-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100px;
+    margin-right: -1000px; /* to enable the div to grow with it's content and not be bound to parents width */
+    display: none;
+    flex-direction: column;
+    line-height: 1rem;
+    white-space: normal;
+    border: 1px solid #D3D3D3;
+    border-radius: 2px;
+    background-color: #FFF;
+    z-index: 100;
+}
+
+.form-dropdown-items {
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.form-dropdown-items {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-dropdown-items .form-dropdown-item {
+    margin-bottom: 0;
+}
+
+.form-dropdown.expand-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-dropdown.expand-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-dropdown > a:first-of-type,
+.form-dropdown-item.first-visible {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-color: transparent;
+}
+
+.form-dropdown > a:last-of-type,
+.form-dropdown-item.last-visible {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-bottom: 0;
+}
+
+.form-dropdown.select {
+    display: flex;
+}
+
+.form-dropdown-item {
+    margin-bottom: -1px;
+    padding: 6px;
+    border-top: 1px solid #D3D3D3;
+    color: #495057;
+    text-decoration: none;
+    background-color: #FFF;
+
+    &.multi-select {
+        display: flex;
+    }
+}
+
+.form-dropdown-item:hover,
+.form-dropdown-item.selected {
+    color: #495057;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+.form-dropdown-item.hidden {
+    display: none;
+}
+
+.form-dropdown .checkboxDoma {
+    margin-right: 5px;
+}
+
+.form-dropdown-item .checkboxDoma {
+    margin-top: 0;
+}
+
+.form-dropdown-header {
+    padding: 8px 6px 12px;
+}
+
+.form-dropdown-footer {
+    padding: 4px 8px;
+    text-align: right;
+}
+
+.form-dropdown-header input {
+    min-width: 0;
+}
+
+.form-dropdown-expansion {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    min-width: 190px;
+    border: 1px solid #D3D3D3;
+    background-color: #f8f9fa;
+    top: -1px;
+    height: 100%;
+    color: #495057;
+    padding: 0 16px;
+    box-sizing: content-box;
+}
+
+.numberfilter .form-dropdown-expansion {
+    min-width: 120px;
+}
+
+.form-dropdown-expansion > div:not(.buttons) {
+    margin-top: 16px;
+}
+
+.form-dropdown-expansion .Label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.form-dropdown-expansion .button,
+.form-dropdown-footer .button {
+    min-width: 0;
+}
+
+.rcMain > table {
+    width: 100%;
+}
+
+.form-dropdown-expansion .FormField-Message {
+    visibility: hidden;
+}
+
+.form-dropdown.expand-right > .form-dropdown-expansion {
+    display: flex;
+    left: 100%;
+    border-left-width: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.form-dropdown.expand-right > a:first-of-type {
+    border-top-right-radius: 0;
+}
+
+.form-dropdown.expand-right > a:last-of-type {
+    border-bottom-right-radius: 0;
+}
+
+.form-dropdown.expand-right > .selected {
+    border-right-width: 0;
+}
+
+.form-dropdown.expand-left > .form-dropdown-expansion {
+    display: flex;
+    right: 100%;
+    border-right-width: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.form-dropdown.expand-left > a:first-of-type {
+    border-top-left-radius: 0;
+}
+
+.form-dropdown.expand-left > a:last-of-type {
+    border-bottom-left-radius: 0;
+}
+
+.form-dropdown.expand-left > .selected {
+    border-left-width: 0;
+}
+
+.textfilter .gridfilter-btn,
+.numberfilter .gridfilter-btn {
+    width: 30px;
+    min-width: 0px;
+}
+
+.prepend,
+.gridfilter.prepend {
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    margin-right: -1px !important;
+}
+
+.postpend,
+.gridfilter.postpend,
+input[type=text].gridfilter.postpend {
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+.textfilter > input[type=text],
+.numberfilter > input[type=text] {
+    flex-grow: 1;
+}
+
+.textfilter .form-dropdown,
+.numberfilter .form-dropdown {
+    width: auto;
+}
+
+.selectionfilter .form-dropdown {
+    min-width: 140px;
+}
+
+.selectionfilter .form-dropdown-items.fixed-height {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.selectionfilter .gridfilter {
+    display: flex;
+    align-items: center;
+    cursor: text;
+    padding: 0 8px;
+}
+
+.datefilter .form-dropdown-item {
+    padding: 11px;
+}
+
+.numberfilter .form-dropdown-expansion input {
+    width: 70px;
+    min-width: 70px;
+}
+
+.numberfilter .form-dropdown-expansion div div {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+.numberfilter .form-dropdown-expansion div div .button {
+    height: 26px;
+    width: 40px;
+    padding: 0;
+}
+
+.yui-skin-xp {
+    margin-top: 20px;
+}
+
+span.ruFileWrap.ruStyled {
+    display: flex;
+    width: 100%;
+}
+
+.RadUpload_Default input[type="text"].ruFakeInput {
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+
+/* bootstrap styles captions, remove the caption style of bootstrap for RadCalendarPopup */
+.RadCalendarPopup caption {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: inherit;
+    caption-side: top;
+}
+
+
+
+.pnlTopSidePanel {
+    vertical-align: top;
+    white-space: nowrap;
+    padding-right: 5px;
+    padding-left: 2px;
+}
+
+.pnlTopSidePanel .SubList.GroupingPanel {
+    border: 0px;
+    margin: 5px;
+}
+
+table.SubList.GroupingPanel {
+    width: auto;
+
+    th.grouper-column,
+    td.grouper-column {
+        border-top-width: 1px !important;
+    }
+}
+
+.pnlBottomSidePanel {
+    vertical-align: top;
+    white-space: nowrap;
+    padding-right: 5px;
+    padding-left: 2px;
+}
+
+.commentInfo {
+    color: #a6a6a6;
+    font-style: italic;
+    font-size: 7pt;
+}
+
+.listSubContentFillerRow {
+    display: none;
+}
+
+.SubSubList {
+    width: 100%;
+}
+
+.SubListMainHeader,
+.ListMainHeader {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.SubListMainHeader img,
+.ListMainHeader img {
+    height: 100%;
+    max-height: 21px;
+}
+
+.SubListMainHeaderLabel {
+    padding: 5px;
+}
+
+.searchIncludingSuffix {
+    display: flex;
+    width: 100%;
+}
+
+/* Start MainMenu */
+
+A.MainHeaderSubLink {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+.MainMenu_Selected {
+    font-weight: bold;
+}
+
+.MainMenu_header {
+    width: 100%;
+    padding: 0;
+}
+
+/* When navbar is collapsed */
+.MainMenu_MainNav {
+    padding: 0 1rem;
+    z-index: 8500;
+}
+
+/* When navbar items are visible */
+/* Based on bootstrap breakpoint xl (navbar-expand-xl) */
+@media only screen and (min-width: 1200px) {
+
+    .MainMenu_MainNav {
+        padding: 0;
+    }
+
+    .MainMenu_Triangle {
+        position: absolute;
+        bottom: 100%;
+        left: 20px;
+        border: solid transparent;
+        content: "";
+    }
+
+    .TriangleBorderColor {
+        border-bottom-color: rgb(38,38,38);
+        border-width: 4px;
+    }
+
+    .TriangleBackgroundColor {
+        border-bottom-color: #FFFFFF;
+        border-width: 4px;
+    }
+}
+
+.MainMenu_RightNav {
+    margin-right: 10px;
+}
+
+.MainMenu_Toggler {
+    margin-right: 10px;
+    padding: 0 4px;
+}
+
+.MainMenu_DropDown {
+    z-index: 8500;
+    margin-top: 0px;
+}
+
+.MainMenu_DropDownSubmenu {
+    margin: 0px 10px;
+    min-width: 180px;
+}
+
+.MainMenu_NavLink.dropdown-toggle::after {
+    display: none;
+}
+
+.MainMenu_help, .MainMenu_userName, .MainMenu_logoff {
+    font-size: 10px;
+    float: left;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+.MainMenu_logoff {
+    margin-left: 10px;
+}
+
+/* Making the dropdown able to grow based on number of columns needed and available width */
+/* Based on total width of one MainMenu_DropDownSubMenu = 200px */
+@media only screen and (min-width: 430px) {
+    .dd-columns-2, .dd-columns-3, .dd-columns-4, .dd-columns-5,
+    .dd-columns-6, .dd-columns-7, .dd-columns-8, .dd-columns-9, .dd-columns-10 {
+        min-width: 410px;
+    }
+}
+
+@media only screen and (min-width: 630px) {
+    .dd-columns-3, .dd-columns-4, .dd-columns-5,
+    .dd-columns-6, .dd-columns-7, .dd-columns-8, .dd-columns-9, .dd-columns-10 {
+        min-width: 610px;
+    }
+}
+
+@media only screen and (min-width: 830px) {
+    .dd-columns-4, .dd-columns-5,
+    .dd-columns-6, .dd-columns-7, .dd-columns-8, .dd-columns-9, .dd-columns-10 {
+        min-width: 810px;
+    }
+}
+
+@media only screen and (min-width: 1030px) {
+    /*[class*="dd-columns"]:not(.dd-columns-2):not(.dd-columns-3):not(.dd-columns-4) {*/
+    .dd-columns-5,
+    .dd-columns-6, .dd-columns-7, .dd-columns-8, .dd-columns-9, .dd-columns-10 {
+        min-width: 1010px;
+    }
+}
+
+@media only screen and (min-width: 1230px) {
+    .dd-columns-6, .dd-columns-7, .dd-columns-8, .dd-columns-9, .dd-columns-10 {
+        min-width: 1210px;
+    }
+}
+
+@media only screen and (min-width: 1430px) {
+    .dd-columns-7, .dd-columns-8, .dd-columns-9, .dd-columns-10 {
+        min-width: 1410px;
+    }
+}
+
+@media only screen and (min-width: 1630px) {
+    .dd-columns-8, .dd-columns-9, .dd-columns-10 {
+        min-width: 1610px;
+    }
+}
+
+@media only screen and (min-width: 1830px) {
+    .dd-columns-9, .dd-columns-10 {
+        min-width: 1810px;
+    }
+}
+
+@media only screen and (min-width: 2030px) {
+    .dd-columns-10 {
+        min-width: 2010px;
+    }
+}
+
+
+/* End MainMenu*/
+
+.langList {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.langList .code {
+    display: none;
+}
+
+
+.mainMenuTableStart {
+    float: left;
+    padding: 5px;
+}
+
+.mainMenuTableEnd {
+    float: right;
+    padding: 1px;
+}
+
+.invalidField {
+    border: 1px solid red !important;
+}
+
+.selectObjectHeader .filter {
+    display: inline-block;
+}
+
+.selectObjectHeader .multiDocUpload {
+    display: inline-block;
+}
+
+.PanelPage .Panel.Centered .Content ol > li {
+    width: 100%;
+}
+
+
+label {
+    margin-bottom: 0;
+}
+
+.checkboxDoma {
+    display: inline-block;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tabs.bottom {
+    margin-top: auto;
+}
+
+.tabs button:last-of-type,
+.tabs a:last-of-type {
+    margin-left: auto;
+}
+
+.tabs span:first-of-type {
+    margin-right: 10px;
+}
+
+.tabbable {
+    display: none;
+}
+
+.tabbable.active {
+    display: block;
+}
+
+
+.tab {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tab.active {
+    font-weight: 600;
+    cursor: default;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.tabs.bottom .tab {
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.tabs.bottom .tab.active {
+    border-top: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.tabs.top .tab {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.tabs.top .tab.active {
+    border-bottom: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+
+.composeSubject {
+    height: 23px;
+}
+
+.mailReceiversLabel {
+    vertical-align: top;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*.tblSaveQuery .ButtonLink {
+    text-decoration: underline;
+}*/
+
+.ShowPassword {
+    position: absolute;
+    cursor: pointer;
+    top: 9px;
+    right: 8px;
+    height: 16px;
+    width: 16px;
+    background-size: 16px;
+}
+
+.FormField-Message {
+    display: block;
+    //margin: .4em 0;
+    padding: .3em .4em;
+    line-height: 1.2;
+    border-radius: .25rem;
+}
+
+.FormField-Message[style*="inline"] {
+    display: block !important;
+}
+
+.FormField-Message.Inline {
+    display: inline-block !important;
+}
+
+.message {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.message .from,
+.message .datetime {
+    margin: 4px;
+}
+
+.message .file {
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar {
+    background-color: #F5F5F5;
+    color: #333333;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 53px;
+}

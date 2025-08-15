@@ -1,0 +1,468 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+/// <reference path="../Paths.less" />
+
+table.RadCalendar_Default { // added 'table' to increase specificity
+    border-color: @color-border-default;
+    color: @color-shade-100;
+    background-color: @color-bg-white;
+    .font-default();
+
+    caption {
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+    }
+
+    .rcTitlebar {
+        padding: 0;
+        border-color: @color-border-default;
+        background-image: none;
+        background-color: fade(@color-primary-light-10, 40%);
+        color: @color-primary-dark;
+        border-radius: @input-border-radius @input-border-radius 0 0;
+        height: 50px;
+        vertical-align: middle;
+
+        table {
+            font: @baseFontSize @baseFontFamily;
+        }
+
+        .rcPrev,
+        .rcNext,
+        .rcFastPrev,
+        .rcFastNext {
+            margin: 4px;
+            width: 20px !important;
+            height: 20px !important;
+            border: 1px solid transparent;
+            border-radius: @input-border-radius;
+            position: relative;
+            color: @color-primary-light;
+            background-image: none !important;
+        }
+
+        .rcPrev:after {
+            content: '';
+            top: 5px;
+            left: 7px;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 5px solid @color-primary-light;
+        }
+
+        .rcFastPrev:after {
+            content: '';
+            top: 5px;
+            left: 4px;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 5px solid @color-primary-light;
+        }
+
+        .rcFastPrev:before {
+            content: '';
+            top: 5px;
+            bottom: 0;
+            left: 9px;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 5px solid @color-primary-light;
+        }
+
+        .rcNext:after {
+            content: '';
+            top: 5px;
+            left: 7px;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid @color-primary-light;
+        }
+
+        .rcFastNext:after {
+            content: '';
+            top: 5px;
+            left: 6px;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid @color-primary-light;
+        }
+
+        .rcFastNext:before {
+            content: '';
+            top: 5px;
+            bottom: 0;
+            left: 11px;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid @color-primary-light;
+        }
+    }
+
+    .rcMain {
+        border-color: #dedede;
+        border-radius: 0 0 4px 4px;
+        background-color: @color-bg-white;
+
+        .rcRow {
+            td {
+                border-color: transparent;
+                background-image: none;
+                background-color: @color-bg-white;
+            }
+
+            a, span {
+                padding: 0;
+                width: 32px;
+                height: 32px;
+                border: 1px solid transparent;
+                border-radius: @input-border-radius;
+                color: @color-shade-100;
+                text-align: center;
+                line-height: 2.3
+            }
+
+            .rcToday a {
+                border-color: @color-shade-90;
+            }
+
+            .rcSelected a {
+                border-color: @color-primary-light;
+                background-color: @color-primary-light;
+                color: @color-white;
+            }
+
+            .rcHover a {
+                border-color: @color-primary-light;
+                background-color: @color-bg-white;
+                color: @color-shade-100;
+            }
+
+            .rcWeekend a {
+                color: @color-shade-80;
+            }
+
+            .rcOtherMonth a,
+            .rcOutOfRange span {
+                color: @color-shade-70;
+            }
+        }
+    }
+
+    .rcMainTable {
+        font: @baseFontSize @baseFontFamily;
+        padding: 10px;
+    }
+
+    .rcCalendars > .rcMainTable {
+        border-collapse: collapse
+    }
+
+    .rcHeader, .rcFooter {
+        border-color: @color-border-default;
+    }
+
+    th.rcViewSel {
+        padding: 6px 14px;
+        width: 6px;
+        background: fade(@color-primary-light-10, 40%);
+        border-right: 1px solid @color-border-default;
+    }
+
+    .rcWeek th {
+        margin-left: 1px;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        color: @color-shade-100;
+        text-align: center !important;
+    }
+
+    .rcRow th {
+        border-right: 1px solid @color-border-default;
+        background-color: fade(@color-primary-light-10, 40%);
+        color: @color-shade-80;
+    }
+}
+
+.RadCalendarMultiView_Default {
+    .rcTitlebar {
+        padding: 0;
+        border-bottom: 0 none;
+        background: @color-shade-20;
+    }
+
+    .rcMain {
+        border-color: @color-border-default;
+        border-radius: 0 0 @input-border-radius @input-border-radius;
+        border-width: 0 1px 1px 0
+    }
+
+    .rcCalendar {
+        border-color: @color-border-default;
+        border-width: 1px 0 0 1px
+    }
+
+    .rcMainTable .rcTitle {
+        border-color: @color-shade-50;
+        background: @color-bg-white;
+        color: @color-shade-100;
+        line-height: 35px
+    }
+}
+
+
+table.RadCalendarMonthView_Default {
+    width: 203px;
+    font: @baseFontSize @baseFontFamily;
+    border-radius: @input-border-radius;
+    border-color: @color-border-default;
+    background: @color-bg-white;
+    color: @color-shade-100;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    padding: 5px;
+
+    tr td {
+        padding: 0 0 0 3px
+    }
+
+    #rcMView_Feb,
+    #rcMView_Apr,
+    #rcMView_Jun,
+    #rcMView_Aug,
+    #rcMView_Oct,
+    #rcMView_Dec {
+        border-right: 1px solid @color-border-default;
+    }
+
+    a {
+        margin: 1px;
+        padding: 0;
+        width: 50px;
+        height: 25px;
+        line-height: 25px;
+        color: @color-shade-100;
+        border-radius: @input-border-radius;
+        border: 1px solid transparent;
+    }
+
+    a:hover {
+        background-color: @color-bg-white;
+        border-color: @color-primary-light;
+    }
+
+    .rcSelected a {
+        margin: 1px;
+        padding: 0;
+        border-radius: @input-border-radius;
+        border-color: @color-primary-light;
+        background: @color-primary-light;
+        color: @color-white;
+    }
+
+    #rcMView_PrevY a, #rcMView_NextY a {
+        text-indent: 0
+    }
+
+    #rcMView_PrevY a:hover, #rcMView_NextY a:hover {
+        background-color: @color-bg-white;
+        border-color: transparent;
+        color: @color-primary-light;
+    }
+
+    .rcButtons {
+        padding: 7px 0 7px 1px;
+    }
+
+    .rcButtons input {
+        margin: 0 5px 5px;
+        height: 28px;
+        float: left;
+        .font-default();
+        color: @color-primary-light;
+        border-radius: @input-border-radius;
+        background: @color-bg-white;
+        border: 1px solid @color-primary-light;
+    }
+
+    .rcButtons input:hover {
+        background: @color-bg-white;
+        color: @color-primary-light-120;
+        border-color: @color-primary-light-120;
+    }
+
+    #rcMView_Today {
+        margin: 0 11px 0 5px;
+    }
+
+    #rcMView_OK {
+        margin: 0 5px 0 0;
+        background: @color-primary-light;
+        color: @color-white;
+
+        &:hover {
+            background-color: @color-primary-light-120;
+            border-color: @color-primary-light-120;
+        }
+    }
+
+    #rcMView_Cancel {
+        margin-right: 5px;
+        float: right;
+        color: @color-primary-light;
+
+        &:hover {
+            color: @color-primary-light-120;
+        }
+    }
+}
+
+table.RadCalendarTimeView_Default td {
+    border-color: @color-border-default;
+}
+
+.RadPicker_Default, .RadPicker_Default {
+    &.RadPicker.dateSearchDatePicker, &.RadPicker.dateSearchTimePicker {
+        width: 30px !important;
+    }
+}
+
+.RadCalendarPopup {
+    &.RadCalendarPopupShadows {
+        margin-left: 30px;
+    }
+
+    .RadCalendar_Default {
+        box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+        border-radius: @input-border-radius;
+    }
+}
+
+.RadPicker {
+
+    &.RadPicker_Default, &.RadPicker_Default {
+        a.rcCalPopup {
+            width: 25px;
+            height: 25px;
+            background-image: @url-calendar;
+            background-size: 20px 20px;
+            background-position: 2px 2px;
+
+            &:hover {
+                background-position: 2px 2px;
+            }
+        }
+    }
+
+    &.RadTimePicker, &.RadDateTimePicker {
+        &.dateSearchTimePicker {
+            width: 30px !important;
+        }
+
+        .rcInputCell input:not(.HiddenDatePicker) {
+            min-width: 160px;
+        }
+
+        &.RadPicker_Default a.rcTimePopup, &.RadPicker_Default a.rcTimePopup:hover, &.RadPicker_Default a.rcTimePopup, &.RadPicker_Default a.rcTimePopup:hover {
+            background-image: @url-calendar-time;
+            background-position: 2px 2px;
+            height: 25px;
+            width: 25px;
+            background-size: 20px 20px;
+        }
+    }
+
+    &.RadDateTimePicker.RadPicker_Default {
+        a.rcCalPopup {
+            background-image: @url-calendar;
+            background-size: 20px 20px;
+            background-position: 2px 2px;
+        }
+
+        a.rcCalPopup:hover {
+            background-position: 2px 2px;
+        }
+    }
+}
+
+.RadCalendarTimeView {
+    &.RadCalendarTimeView_Default {
+        box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+        border-radius: @input-border-radius;
+        border: 1px solid @color-shade-70;
+        color: @color-shade-100;
+        line-height: 1.8;
+        background-color: @color-bg-white;
+
+        th {
+            border-bottom: 1px solid @color-shade-70;
+            padding: 0 0 1px;
+            background: none;
+            color: inherit;
+            line-height: 23px;
+        }
+
+        td.rcHover a {
+            border-color: @color-primary-light;
+            background: none;
+            background-color: @color-bg-white;
+        }
+
+        td.rcSelected a {
+            color: @color-white;
+            border-color: @color-primary-light;
+            background: @color-primary-light;
+        }
+
+        td.rcSelected a,
+        td.rcHover a {
+            padding: 1px 5px;
+            border-radius: @input-border-radius;
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+        }
+    }
+}
+
+.RadCalendarMonthView {
+
+    .rcHover a, .rcSelected a {
+        border-radius: @input-border-radius;
+    }
+
+    &.RadCalendarMonthView_Default {
+        background-color: @color-bg-white;
+        border: 1px solid @color-shade-70;
+        border-radius: @input-border-radius;
+        padding-bottom: 5px;
+    }
+
+    a {
+        color: @color-shade-100;
+    }
+
+    td.rcButtons input[type=button]:not(#rcMView_Today) {
+        border-radius: 20px;
+        padding: 0 12px;
+        float: right;
+    }
+}
+
+.rcTable.rcSingle tr:hover {
+    background-color: transparent;
+}

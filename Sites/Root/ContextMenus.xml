@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<contextmenus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\ContextMenus.xsd">
+  <objectcontextmenu>
+    <disableditems>     
+      
+      <item roles="">rename</item>
+      <item roles="">sendmail</item>
+      <item roles="">ViewFileVersions</item>
+    </disableditems>
+  </objectcontextmenu> 
+</contextmenus>

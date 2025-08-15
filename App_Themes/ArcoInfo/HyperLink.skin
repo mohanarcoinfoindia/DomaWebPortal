@@ -1,0 +1,10 @@
+﻿<asp:HyperLink runat="server" CssClass="ButtonLink"/>
+<asp:HyperLink runat="server" CssClass="SideLink" SkinID="SideLink"/>
+<asp:HyperLink runat="server" CssClass="ArcoButton" SkinID="ArcoButton"/>
+<asp:HyperLink runat="server" SkinID="MainHeaderSubLink" CssClass="MainHeaderSubLink" />
+<asp:HyperLink runat="server" SkinID="MainNavigationHyperLink" />
+<asp:HyperLink runat="server" SkinID="VocabularyHyperLink" ImageUrl="Img/Search.svg" style="margin-left:5px;margin-top:3px" />
+<asp:HyperLink runat="server" SkinID="AdvancedLookupHyperLink" ImageUrl="Img/Find.svg" style="margin-left:5px;margin-top:3px;" />
+<asp:HyperLink runat="server" CssClass="ButtonLink prevPage" SkinID="PrevPage" />
+<asp:HyperLink runat="server" CssClass="ButtonLink nextPage" SkinID="NextPage" />
+<asp:HyperLink runat="server" CssClass="IconLink" SkinID="IconLink" />

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<screendefs>
+  <screendef>
+    <metadata>
+      <minwindowwidth>0</minwindowwidth>
+      <maxwindowwidth>0</maxwindowwidth>
+    </metadata>
+    <toolbar>
+      <disabledbuttons>
+        <button>CopyMove</button>
+      </disabledbuttons>
+      <disabledseparators_>
+        <separator>2</separator>
+        <separator>3</separator>
+      </disabledseparators_>
+    </toolbar>
+    <tabs default="" disableautoopen="false">
+      <disabledtabs_>
+        <tab>Comments</tab>
+      </disabledtabs_>
+    </tabs>
+  </screendef>
+  <screendef_9001>
+    <metadata>
+      <minwindowwidth>400</minwindowwidth>
+      <maxwindowwidth>400</maxwindowwidth>
+    </metadata>
+    <toolbar>
+      <disabledbuttons_>
+        <button>Email</button>
+        <button>AddFavorite</button>
+        <button>RemoveFavorite</button>
+        <button>Security</button>
+      </disabledbuttons_>
+      <disabledseparators_>
+        <separator>2</separator>
+        <separator>3</separator>
+      </disabledseparators_>
+    </toolbar>
+    <tabs  default="">
+      <disabledtabs_>
+        <tab>Comments</tab>
+      </disabledtabs_>
+    </tabs>
+  </screendef_9001>
+</screendefs>

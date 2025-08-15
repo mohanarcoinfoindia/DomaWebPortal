@@ -1,0 +1,282 @@
+﻿.RadDock .rdTop .rdTitleBar {
+    padding-top: 6px;
+    padding-bottom: 3px;
+}
+
+.RadDock .rdTop .rdTitleBar span {
+    line-height: 1.5;
+}
+
+.RadDock .rdTop .rdTitleBar img {
+    max-height: 24px;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+
+.cms-page-container .RadDock:focus {
+    outline: none; /*to prevent Chrome from adding blue borders on focus */
+}
+
+.panelitem-row input[type="text"] {
+    width: 100%;
+    min-width: 120px;
+}
+
+.panelitem-row select,
+.tbl-footer select {
+    min-width: 100px;
+    width: 100%;
+}
+
+.cl-condition-row select {
+    min-width: 140px;
+    width: calc(100% - 20px);
+    flex-grow: 1;
+}
+
+.cl-condition-col {
+    white-space: nowrap;
+    display: flex;
+}
+
+.cms-page-container.edit-mode .RadDockZone {
+    border-width: 2px !important;
+    height: 100%;
+}
+
+.panelEdit {
+    border-width: 1px;
+}
+
+.cms-form-button {
+    display: inline-block;
+    height: 25px;
+    width: 30px;
+}
+
+.cl-container {
+    text-align: left;
+    min-width: 165px;
+}
+
+.FieldCell > .cl-container {
+    width: 100%;
+}
+
+.cl-condition-row {
+    margin-bottom: 0;
+}
+
+.cl-label {
+    padding-top: 7px;
+}
+
+.cl-field {
+    display: none;
+    margin-bottom: .5rem;
+}
+
+.linked:last-of-type {
+    margin-bottom: 0px;
+}
+
+.cl-field .cl-control {
+    width: 100%;
+}
+
+.cl-dropdown .cl-condition-row {
+    margin-bottom: 0.5rem;
+}
+
+.cl-dropdown .linked {
+    display: flex;
+    margin-right: -200px;
+}
+
+.cl-dropdown.cl-nobutton .linked {
+    margin-right: -15px;
+}
+
+
+/* if cl-control not in multi-items-table */
+
+.FieldCell > .cl-container select {
+    width: 100%;
+}
+
+.FieldCell > .cl-dropdown .linked {
+    margin-right: 0;
+}
+
+.FieldCell > .cl-dropdown.cl-nobutton .linked {
+    margin-right: 0;
+    margin-left: -15px;
+}
+
+/* end */
+
+
+.cmsConfigButton, .cmsDeleteButton {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.RadDock {
+    margin-bottom: 8px !important;
+}
+
+.CMSConfigTable.has-multi-table > .row > .FieldCell > .buttons {
+    max-width: 100%;
+    width: 100%;
+}
+
+.CMSConfigTable > .row > .FieldCell > input[type="number"],
+.CMSConfigTable > .row > .FieldCell > select,
+.CMSConfigTable > .row > .FieldCell > .cl-container .cl-condition-row select,
+.CMSConfigTable > .row > .FieldCell > .cl-container .cl-field {
+    max-width: 400px;
+    width: calc(100% - 50px)
+}
+
+.CMSConfigTable > .row > .FieldCell > .cl-container .cl-field {
+    margin-left: 0;
+}
+
+.CMSConfigTable > .row > .FieldCell > .cl-container .cl-field > .cl-label,
+.CMSConfigTable > .row > .FieldCell > .cl-container .cl-field > .col-8,
+.CMSConfigTable > .row > .FieldCell > .cl-container .cl-field > .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.CMSConfigTable.detail-form-container .detail-form-row .FieldCell,
+.CMSConfigTable.detail-form-container .detail-form-row .LabelCell {
+    padding: 0;
+}
+
+.detail-form-container .multi-items-table {
+    tr {
+        position: relative;
+    }
+
+    .cl-field input[type="text"]:not(.rcbInput):not(.riTextBox),
+    td > input[type="text"]:not(.rcbInput):not(.riTextBox),
+    td > .formfield-container,
+    td > .formfield-container input[type="text"],
+    td select  {
+        width: 100%;
+    }
+
+    td input[type="text"]:not(.rcbInput):not(.riTextBox) {
+        margin-top: 0;
+    }
+}
+
+.CMSConfigTable {
+    min-width: 800px;
+    &.has-multi-table {
+        min-width: 1000px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .cms-page-container .cms-sidebar {
+        max-width: 250px;
+    }
+}
+
+.cms-global-search {
+    width: 100%;
+    max-width: 320px;
+
+    .TextBox {
+        width: calc(95% - 30px);
+        vertical-align: top;
+        margin-left: 2.5%;
+    }
+
+    .button {
+        margin-left: -1px;
+        padding: 0;
+        height: 30px;
+        width: 30px;
+        min-width: 0;
+        margin-right: 2.5%;
+    }
+}
+
+.RadDock div.rdContent {
+    line-height: normal;
+}
+
+.cms-thumbnail-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 400px;
+    height: 150px;
+    overflow-y: auto;
+    position: relative;
+
+    .cms-thumbnail {
+        width: 80px;
+        height: 50px;
+        padding: 5px;
+        margin: 5px;
+        display: inline-flex;
+        flex-flow: column nowrap;
+
+        .cms-thumbnail-row {
+            flex-grow: 1;
+            display: flex;
+            flex-flow: row nowrap;
+
+            &.cms-thumbnail-header {
+                max-height: 20%;
+            }
+
+            .cms-thumbnail-col {
+                flex-grow: 1;
+
+                &.cms-thumbnail-sidebar {
+                    max-width: 20%;
+                }
+            }
+        }
+    }
+}
+
+.cms-page-container {
+    padding-right: 0;
+    padding-left: 0;
+
+    .row > div:first-child,
+    .row > div:last-child {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}
+
+.multi-items-table {
+    tbody {
+        tr:first-child {
+            a[id$="MoveUp"] {
+                display: none;
+            }
+        }
+
+        tr:nth-last-child(2) {
+
+            a[id$="MoveDown"] {
+                display: none;
+            }
+        }
+
+        td {
+            vertical-align: top;
+            text-align: center;
+            &.table-actionbuttoncell {
+                padding-top: 7px;
+            }
+        }
+    }
+}

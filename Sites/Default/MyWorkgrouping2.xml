@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<grouping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Gridgrouping.xsd" enabled="y" width="220px" height="100%">
+  <grouper id="0" LabelE="Procedure" LabelF="Procedure" LabelN="Procedure" LabelG="Procedure" height="200px" applyfiltertogrouper="true">
+    <field value="C.PROC_ID" />
+  </grouper>
+</grouping>

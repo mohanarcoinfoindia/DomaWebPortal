@@ -1,0 +1,28 @@
+<%@ Master Language="VB" CodeFile="DetailSub.master.vb" Inherits="DetailSub" MasterPageFile="~/masterpages/Base.master" %>
+
+<%@ Register TagPrefix="Arco" TagName="PageController" Src="~/PageController/DM_PageController.ascx" %>
+<%@ MasterType TypeName="masterpages_Base" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="HeaderPlaceHolder1" runat="Server">
+    <script type="text/javascript">
+
+        function CloseDetail(force) {
+            if (window.opener) {
+                window.close();
+            }
+            else {
+                parent.CloseDetail(force);
+            }
+        }
+    </script>
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Plh1" runat="Server">
+        <Arco:PageController ID="PC" runat="server" PageLocation="DetailSubPage" />
+
+        <asp:ContentPlaceHolder ID="Plh1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <Arco:PageFooter ID="lblFooter" runat="server" />
+</asp:Content>
+

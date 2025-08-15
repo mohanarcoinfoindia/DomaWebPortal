@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <DefaultOrderBy>MAIL_DATE DESC</DefaultOrderBy>
+  <GroupingFile>MailGrouping.xml</GroupingFile>
+  <ToolbarFile>mailinboxtoolbar.xml</ToolbarFile>
+  <ShowQueries>false</ShowQueries>
+  <columns>
+    <column name="multiselect" />
+    <column name="read" hidefilter="true" />
+    <column name="mailsubject" extra="NOWRAP" chars="100" labelE="Subject" labelF="Sujet" labelN="Onderwerp" />
+    <column name="status" />
+    <column name="mailfrom" labelE="From" labelF="De" labelN="Van" />
+    <column name="maildate" labelE="Date" labelF="Date" labelN="Datum" />
+    <column name="mailtemplate" />
+    <column name="mailreaddate" colspan="0" ShowToolTip="false" />
+    <column name="deletelink" />
+  </columns>
+</screendef>

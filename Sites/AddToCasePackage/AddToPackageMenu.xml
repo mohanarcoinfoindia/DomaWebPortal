@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<Menu>
+  <Group Flow="Horizontal">    
+    <Item Text="MyWork" Selected="true" NavigateUrl="Javascript:MyWork();"></Item>   
+    <Item Text="Mycases" NavigateUrl="Javascript:MyCases();"></Item>
+    <Item Text="Opencases" NavigateUrl="Javascript:OpenCases();"></Item>
+    <Item Text="Archive" NavigateUrl="Javascript:ArchivedCases();"></Item>
+    <Item Text="Search" Value="Search">
+      <Group Flow="Vertical">
+        <Item Value="SearchAll" Text="Current" NavigateUrl="Javascript:SearchInCurrent();"></Item>
+        <Item Text="MyWork" NavigateUrl="Javascript:SearchIn(2);"></Item>
+        <Item Text="MyCases" NavigateUrl="Javascript:SearchIn(6);"></Item>
+        <Item Text="OpenCases" NavigateUrl="Javascript:SearchIn(3);"></Item>
+        <Item Text="Archive" NavigateUrl="Javascript:SearchIn(4);"></Item>
+        <Item Text="openandarchivedcases" NavigateUrl="Javascript:SearchIn(13);"></Item>
+      </Group>
+    </Item>
+  </Group>
+</Menu>

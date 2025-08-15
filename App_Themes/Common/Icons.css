@@ -1,0 +1,314 @@
+﻿/*BASED ON FONT AWESOME https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself */
+.icon-stack-container,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  /* POSITIONING */
+}
+.icon-stack-container .icon-stack-xs.icon,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-xs.icon,
+.icon-stack-container .icon-stack-s.icon,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-s.icon,
+.icon-stack-container .icon-stack-m.icon,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-m.icon,
+.icon-stack-container .icon-stack-l.icon,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-l.icon,
+.icon-stack-container .icon-stack-xl.icon,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-xl.icon {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  min-height: 0px;
+  min-width: 0px;
+}
+.icon-stack-container .icon-stack-xs.icon,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-xs.icon,
+.icon-stack-container .icon-stack-s.icon,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-s.icon {
+  font-weight: 600;
+}
+.icon-stack-container .icon-stack-xs,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-xs {
+  height: calc(0.5em + 3px) !important;
+  width: calc(0.5em + 3px) !important;
+  font-size: 0.5em !important;
+  font-weight: 600 !important;
+  line-height: inherit;
+}
+.icon-stack-container .icon-stack-s,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-s {
+  height: calc(0.75em + 3px) !important;
+  width: calc(0.75em + 3px) !important;
+  font-size: 0.75em !important;
+  line-height: inherit;
+}
+.icon-stack-container .icon-stack-l,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-l {
+  height: calc(1.5em + 3px) !important;
+  width: calc(1.5em + 3px) !important;
+  font-size: 1.5em !important;
+}
+.icon-stack-container .icon-stack-xl,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-stack-xl {
+  height: calc(2em + 3px) !important;
+  width: calc(2em + 3px) !important;
+  font-size: 2em !important;
+}
+.icon-stack-container .icon-center-h.icon-stack-xs,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-center-h.icon-stack-xs {
+  left: 33%;
+}
+.icon-stack-container .icon-center-h.icon-stack-s,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-center-h.icon-stack-s {
+  left: 25%;
+}
+.icon-stack-container .icon-center-v.icon-stack-xs,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-center-v.icon-stack-xs {
+  top: 33%;
+}
+.icon-stack-container .icon-center-v.icon-stack-s,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-center-v.icon-stack-s {
+  top: 25%;
+}
+.icon-stack-container .icon-pull-left,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-pull-left {
+  /*needs to be padding*/
+  padding-right: 0.5em;
+}
+.icon-stack-container .icon-pull-right.icon-stack-xs,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-pull-right.icon-stack-xs {
+  left: 1.8em;
+}
+.icon-stack-container .icon-pull-right.icon-stack-s,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-pull-right.icon-stack-s {
+  left: 1em;
+}
+.icon-stack-container .icon-pull-right.icon-stack-m,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-pull-right.icon-stack-m {
+  left: 0.4em;
+}
+.icon-stack-container .icon-pull-down.icon-stack-xs,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-pull-down.icon-stack-xs {
+  top: 2.2em;
+}
+.icon-stack-container .icon-pull-down.icon-stack-s,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-pull-down.icon-stack-s {
+  top: 1.2em;
+}
+.icon-stack-container .icon-pull-down.icon-stack-m,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-pull-down.icon-stack-m {
+  top: 0.4em;
+}
+.icon-stack-container .icon-pull-up,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-pull-up {
+  bottom: 1.2em;
+}
+.icon-stack-container .icon-pull-up.icon-stack-m,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-pull-up.icon-stack-m {
+  bottom: 0.4em;
+}
+.icon-stack-container .icon-pull-up.icon-stack-xs,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon-stack-container .icon-pull-up.icon-stack-xs {
+  bottom: 2.2em;
+}
+/*#region Stack Variables */
+/*#endregion */
+/*#region GENERAL ICON LAYOUT */
+.icon,
+.icon-stacked,
+.RadToolBar .rtbIcon,
+.RadToolBar .rtbIconOnly .rtbImage,
+.RadToolBar .rtbChoiceArrow,
+.RadToolBar.RadToolBar_DefaultToolbar .radIcon,
+.RadToolBarDropDown .rtbIcon,
+.RadDock .rdCenter .rdCommands a .icon,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon,
+.RadSearchBox_Default .rsbSCIcon,
+.RadSearchBox .rsbButton span.rsbIcon,
+.icon-convert {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+  min-width: 20px;
+  font-size: 20px;
+  /* generated by icomoon online app */
+  /* use !important to prevent issues with browser extensions that change fonts */
+  speak: none;
+  font-style: normal;
+  font-weight: 300;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*overwrite styles*/
+  background-image: none;
+  text-indent: 0 !important;
+}
+.icon.icon-disabled,
+.icon-stacked.icon-disabled,
+.RadToolBar .rtbIcon.icon-disabled,
+.RadToolBar .rtbIconOnly .rtbImage.icon-disabled,
+.RadToolBar .rtbChoiceArrow.icon-disabled,
+.RadToolBar.RadToolBar_DefaultToolbar .radIcon.icon-disabled,
+.RadToolBarDropDown .rtbIcon.icon-disabled,
+.RadDock .rdCenter .rdCommands a .icon.icon-disabled,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon.icon-disabled,
+.RadSearchBox_Default .rsbSCIcon.icon-disabled,
+.RadSearchBox .rsbButton span.rsbIcon.icon-disabled,
+.icon-convert.icon-disabled {
+  cursor: default;
+}
+.icon.button,
+.icon-stacked.button,
+.RadToolBar .rtbIcon.button,
+.RadToolBar .rtbIconOnly .rtbImage.button,
+.RadToolBar .rtbChoiceArrow.button,
+.RadToolBar.RadToolBar_DefaultToolbar .radIcon.button,
+.RadToolBarDropDown .rtbIcon.button,
+.RadDock .rdCenter .rdCommands a .icon.button,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon.button,
+.RadSearchBox_Default .rsbSCIcon.button,
+.RadSearchBox .rsbButton span.rsbIcon.button,
+.icon-convert.button {
+  font-size: 20px;
+}
+/*#region Icon layout helper classes */
+.icon-md {
+  width: 25px !important;
+  min-height: 25px !important;
+  font-size: 25px !important;
+}
+.icon-lg {
+  width: 50px !important;
+  min-height: 50px !important;
+  font-size: 50px !important;
+}
+.icon-image-xs {
+  background-size: 10px !important;
+}
+.icon-s {
+  width: 16px !important;
+  min-height: 16px !important;
+  font-size: 16px !important;
+}
+.icon-xs {
+  width: 10px !important;
+  min-height: 10px !important;
+  font-size: 10px !important;
+}
+.icon-in-circle-s {
+  font-size: calc(20px - 6px);
+  height: calc(20px + 10px);
+  width: calc(20px + 10px);
+}
+.icon-in-circle-lg {
+  font-size: calc(50px - 20px);
+  height: calc(50px + 10px);
+  width: calc(50px + 10px);
+  line-height: 2;
+  text-align: center;
+}
+.icon-clickable {
+  cursor: pointer;
+}
+.icon-disabled {
+  cursor: default;
+}
+/*#endregion */
+/*#endregion */
+/*#region OVERWRITE STYLES */
+.RadDock .rdCenter .rdCommands a {
+  text-indent: 0 !important;
+}
+.button[class*="icon-"] {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.button[class*="icon-"]:before {
+  /*display: inline-flex;
+        justify-content: center;
+        align-items: center;*/
+  position: relative;
+  top: 1px;
+  left: -6px;
+  min-height: calc(20px - 2px);
+  min-width: calc(20px - 2px);
+  font-size: calc(20px - 2px);
+  /* generated by icomoon online app */
+  /* use !important to prevent issues with browser extensions that change fonts */
+  speak: none;
+  font-style: normal;
+  font-weight: 300;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*overwrite styles*/
+  background-image: none;
+  text-indent: 0 !important;
+  color: inherit !important;
+}
+.button[class*="icon-"].button-icon-right {
+  flex-direction: row-reverse;
+}
+.button[class*="icon-"].button-icon-right:before {
+  left: unset;
+  right: -6px;
+}
+.button[class*="icon-"].button-icon-only {
+  min-width: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.button[class*="icon-"].button-icon-only:before {
+  left: unset;
+}
+.button[class*="icon-"] .icon {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+.button[class*="icon-"] .icon:first-child {
+  margin-right: 6px;
+}
+.button[class*="icon-"] .icon:not(:first-child) {
+  margin-left: 8px;
+}
+/*#endregion */
+.icon-chevron-up-xs:before {
+  width: 10px !important;
+  min-height: 10px !important;
+  font-size: 10px !important;
+}
+.icon-chevron-down-xs:before {
+  width: 10px !important;
+  min-height: 10px !important;
+  font-size: 10px !important;
+}
+.icon-arrow-up-xs:before {
+  width: 10px !important;
+  min-height: 10px !important;
+  font-size: 10px !important;
+}
+.icon-arrow-down-xs:before {
+  width: 10px !important;
+  min-height: 10px !important;
+  font-size: 10px !important;
+}
+.icon-edit-page:before {
+  font-size: calc(50px - 20px);
+  height: calc(50px + 10px);
+  width: calc(50px + 10px);
+  line-height: 2;
+  text-align: center;
+}

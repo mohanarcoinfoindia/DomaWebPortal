@@ -1,0 +1,203 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+/// <reference path="../Paths.less" />
+/// <reference path="../variables-icons.less" />
+
+.RadToolBar_DefaultToolbar,
+.RadToolBar_GridToolbar {
+
+    .rtbItemFocused .rtbWrap,
+    .rtbItemHovered .rtbWrap {
+        color: @color-shade-100;
+    }
+
+    .rtbDropDownExpanded, .rtbSplBtnExpanded, .rtbChecked, .rtbItemClicked {
+        .rtbWrap {
+            color: @color-white;
+        }
+    }
+
+    .rtbChecked {
+        background-color: @color-shade-30;
+        border-radius: @input-border-radius;
+    }
+
+    .rtbSplBtn .rtbChoiceArrow,
+    .rtbItem .rtbVOriented .rtbChoiceArrow,
+    .rtbChoiceArrow, .rtbDisabled .rtbChoiceArrow,
+    .rtbDisabled .rtbWrap .rtbChoiceArrow,
+    .RadToolBar.RadToolBar_DefaultToolbar.radIconDown {
+        &:before {
+            content: @icon-chevron-down-filled;
+            font-size: 12px;
+        }
+
+        width: 12px !important;
+        padding: 0px !important;
+        //background-image: @url-droparrows;
+    }
+
+    .rtbExpandUp .rtbChoiceArrow,
+    .rtbExpandUp .rtbVOriented .rtbChoiceArrow {
+        background-image: @url-uparrows;
+    }
+
+    .rtbSplBtnClicked, .rtbItemClicked {
+        .rtbVOriented .rtbChoiceArrow,
+        .rtbChoiceArrow,
+        .rtbVOriented .rtbChoiceArrow,
+        .rtbChoiceArrow {
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-image: @url-clickdroparrows;
+        }
+
+        .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+        .rtbExpandUp .rtbChoiceArrow,
+        .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+        .rtbExpandUp .rtbChoiceArrow {
+            background-image: @url-clickuparrows;
+        }
+    }
+
+    .rtbDisabled {
+        .rtbWrap {
+            color: @color-shade-80;
+        }
+
+        .rtbWrap:hover,
+        .rtbWrap:hover .rtbOut,
+        .rtbWrap:hover .rtbMid,
+        .rtbWrap:hover .rtbIn {
+            background: none;
+        }
+    }
+}
+
+.RadToolBar_DefaultToolbar_Horizontal li.rtbSeparator,
+.RadToolBar_GridToolbar_Horizontal li.rtbSeparator {
+    border: none;
+}
+
+.RadToolBar_DefaultToolbar_Vertical li.rtbSeparator,
+.RadToolBar_GridToolbar_Vertical li.rtbSeparator {
+    border-top: 1px solid @color-shade-80;
+    background: @color-shade-20;
+}
+
+.RadToolBar_GridToolbar .rtbMiddle,
+.RadToolBar_DefaultToolbar .rtbMiddle,
+.RadToolBar_Horizontal .rtbOuter,
+.cellToolbars {
+    background: none;
+}
+
+.RadToolBar {
+
+    .rtbText {
+        font-size: @baseFontSize;
+        font-family: @baseFontFamily;
+        color: @color-primary-dark;
+    }
+
+    .rtbDisabled {
+        opacity: @disabled-opacity !important;
+    }
+}
+
+.RadToolBar_DefaultToolbar .rtbItemHovered .rtbWrap,
+.RadToolBar_DefaultToolbar .rtbItemHovered .rtbIn,
+.RadToolBar_DefaultToolbar .rtbItemHovered .rtbMid,
+.RadToolBar_DefaultToolbar .rtbItemHovered .rtbOut {
+    background: none;
+}
+
+#radSplitterMain {
+    .RadToolBar.RadToolBar_Horizontal.RadToolBar_DefaultToolbar.RadToolBar_DefaultToolbar_Horizontal {
+        .rtbOuter {
+            .rtbMiddle {
+                .rtbInner {
+                    ul.rtbUL {
+                        li.rtbDropDownExpanded {
+                            a.rtbWrap, .rtbOut, .rtbMid, .rtbIn {
+                                background-image: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar,
+.rtbPopup_DefaultToolbar {
+    background-image: none;
+    box-shadow: @box-shadow;
+    border-style: solid;
+    border-color: @color-shade-20;
+    border-radius: @input-border-radius;
+
+    li.rtbItem {
+        background-color: @color-bg-white;
+    }
+
+    li.rtbItem.rtbItemHovered,
+    .rtbLI.rtbItem.rtbHovered {
+        background-color: @color-primary-light-10;
+        background-image: none;
+
+        a.rtbWrap {
+            background-image: none;
+        }
+    }
+
+    .rtbDisabled {
+        opacity: 1;
+
+        .rtbWrap {
+            color: @color-shade-80;
+        }
+    }
+
+    .rtbSeparator {
+        border-color: @color-shade-80;
+        background: @color-shade-20;
+    }
+}
+
+.detailTblToolbar .RadMultiPage {
+    border: none;
+}
+
+.RadToolBar.RadToolBar_DefaultToolbar.radIconDown {
+    &:before {
+        content: @icon-chevron-down-filled;
+    }
+}
+
+.rtbPopup {
+    background-color: @color-bg-white;
+
+    .rtbMenu:before {
+        border: none !important;
+    }
+
+    .rtbLink {
+        border: none;
+    }
+
+    .rtbUL > .rtbSeparator {
+        border-style: none;
+        margin: 2px;
+    }
+
+    .rtbItem {
+
+        .rtbInner {
+            display: inline-block;
+            padding: 10px 32px;
+        }
+    }
+}

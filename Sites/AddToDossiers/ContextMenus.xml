@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<contextmenus>
+  <treecontextmenu>
+    <disableditems>
+      <item>new</item>
+      <item>explore</item>
+      <item>acl</item>
+      <item>addpropexp</item>
+      <item>delete</item>
+      <item>paste</item>
+      <item>cut</item>
+      <item>copy</item>
+      <item>subscribe</item>
+      <item>open</item>
+      <item>edit</item>
+      <item>rename</item>
+      <item>info</item>
+    </disableditems>
+  </treecontextmenu>
+  
+</contextmenus>

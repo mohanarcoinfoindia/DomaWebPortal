@@ -1,0 +1,155 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+.paneMenuAndHeaderHeight {
+    border-bottom-style: solid;
+    border-bottom-color: @color-border-default;
+    background-color: @color-bg-grey;
+}
+
+.MainMenu_header a {
+    color: @color-primary-light;
+}
+
+.MainMenu_NavLink {
+    font-size: @largeFontSize;
+}
+
+.MainMenu_Text {
+    color: @color-primary-dark;
+    font-size: @largeFontSize;
+}
+
+.MainMenu_AppName {
+    font-size: @headerFontSize;
+    font-weight: @semiBoldFontWeight;
+}
+
+.MainMenu_header {
+    font-family: @baseFontFamily;
+    background-color: @color-bg-white;
+}
+
+/* When navbar is collapsed */
+.MainMenu_MainNav {
+    background-color: @color-bg-white;
+    border-bottom-style: solid;
+    border-bottom-color: @color-shade-60;
+
+    .MainMenu_NavItem {
+
+        .dropdown-item:focus,
+        .dropdown-item:hover {
+            color: @color-primary-dark;
+            text-decoration: none;
+        }
+    }
+}
+
+.MainMenu_DropDownItemSmall {
+    font-size: @smallFontSize;
+    font-weight: @baseFontWeight;
+    color: @color-shade-90 !important;
+    padding: 3px 10px 3px 30px !important; 
+}
+
+/* When navbar items are visible */
+/* Based on bootstrap breakpoint xl (navbar-expand-xl) */
+@media only screen and (min-width: 1200px) {
+    .MainMenu_DropDown {
+        padding: 0;
+        box-shadow: @box-shadow;
+        border: 1px solid @color-shade-20;
+
+        a.dropdown-item:not(.MainMenu_DropDownItemSmall) {
+            padding: 10px 20px 10px 20px;
+
+            &:active, &.active {
+                color: inherit;
+            }
+
+            &:hover {
+                background-color: @color-primary-light-10;
+            }
+        }
+    }
+
+
+    .MainMenu_MainNav {
+        background-color: transparent;
+        border-bottom: none;
+    }
+
+    .MainMenu_Triangle {
+        left: 20px;
+    }
+
+    .TriangleBorderColor {
+        border-bottom-color: rgb(38,38,38);
+        border-width: 8px;
+    }
+
+    .TriangleBackgroundColor {
+        border-bottom-color: @color-white;
+        border-width: 8px;
+    }
+
+    .TriangleBorderColor {
+        border-bottom-color: @color-shade-50;
+    }
+
+    .dropdown-item:first-of-type:hover ~ .TriangleBackgroundColor {
+        border-bottom-color: @color-primary-light-10;
+    }
+}
+
+
+
+.MainMenu_Toggler {
+    color: @color-primary-dark;
+    border-color: @color-primary-dark;
+    font-size: @largeFontSize;
+}
+
+.MainMenu_TogglerIcon {
+    background-image: @url-menu-toggler;
+}
+
+@media only screen and (min-width: 768px) {
+    .MainMenu_TogglerIcon {
+        background-image: none;
+    }
+}
+
+.profileActionLink {
+
+    &:hover {
+        background-color: @color-primary-light-10;
+    }
+
+    &:not(:last-child) {
+        border-bottom-style: solid;
+        border-bottom-color: @color-shade-60;
+    }
+
+    a {
+        background: none;
+        color: @color-primary-dark;
+        box-shadow: none;
+    }
+
+    a:active {
+        background: none;
+    }
+}
+
+.MainMenuTable {
+    background-color: @color-bg-grey;
+}
+
+
+/*.RadSearchBox_Default .rsbButtonSearch span.rsbIcon {
+    background-image: @url-search;
+    background-position: top;
+    background-size: 15px;
+}*/

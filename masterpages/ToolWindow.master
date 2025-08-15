@@ -1,0 +1,66 @@
+﻿<%@ Master Language="VB" CodeFile="ToolWindow.master.vb" Inherits="ToolWindow" MasterPageFile="~/masterpages/Base.master" %>
+
+<%@ Register TagPrefix="Arco" TagName="PageController" Src="~/PageController/DM_PageController.ascx" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="HeaderPlaceHolder1" runat="Server">
+    <asp:PlaceHolder ID="plhAutoSize" runat="server" Visible="false">
+        <style type="text/css">
+            html {
+                overflow: hidden;
+                overflow-y: auto;
+            }
+        </style>
+    </asp:PlaceHolder>
+
+    <style type="text/css">
+        .LabelCell {
+            min-width: 0px !important;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="HeaderPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Plh1" runat="Server">
+
+    <script type="text/javascript">
+
+        function AdjustWindow() {
+            <%if EnableAdjustWindow Then %>
+            setTimeout(function () {
+                var oWindow = GetRadWindow();
+                oWindow.autoSize(false);
+                oWindow.SetWidth(oWindow.GetWidth() + 30);
+                oWindow.SetHeight(oWindow.GetHeight() + 30);
+            }, 0);
+            <%End if%>
+        }
+     <% If Modal Then %>
+
+        function MainPage() { return GetRadWindow().BrowserWindow; }
+        function Close(disableParent) {
+            var wnd = GetRadWindow();
+            if (wnd) {
+                wnd.close();
+            }
+            if (disableParent) {
+                MainPage().DisableWindow();
+            }
+        }
+     <% Else %>
+
+
+        function MainPage() { return window.opener; }
+
+        function Close() { self.close(); }
+
+	 <% End If %>
+    </script>
+
+    <Arco:PageController ID="PC" runat="server" PageLocation="Popup" />
+
+    <div style="<%=Margin%>" class="toolWindowPopup">
+        <asp:ContentPlaceHolder ID="Plh1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+

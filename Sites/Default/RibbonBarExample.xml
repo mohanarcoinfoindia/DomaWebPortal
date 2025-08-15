@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonBar >
+  <ApplicationMenu Text="File">
+    <ApplicationMenuItem Text="New" ImageUrl="icons/file/New.png" />
+    <ApplicationMenuItem Text="Open" ImageUrl="icons/file/Open.png" />
+    <ApplicationMenuItem Text="Save" ImageUrl="icons/file/Save.png" />
+    <ApplicationSplitMenuItem Text="Save As" ImageUrl="icons/file/SaveAs.png" Header="Save document as">
+      <ApplicationMenuItem Text="Word Document (*.docx)" ImageUrl="icons/file/Document.png" />
+      <ApplicationMenuItem Text="Word 97-2003 Document (*.doc)" ImageUrl="icons/file/Document.png" />
+      <ApplicationMenuItem Text="PDF (*.pdf)" ImageUrl="icons/file/Document.png" />
+      <ApplicationMenuItem Text="Web Page (*.htm;*.html)" ImageUrl="icons/file/Document.png" />
+      <ApplicationMenuItem Text="Plain Text (*.txt)" ImageUrl="icons/file/Document.png" />
+    </ApplicationSplitMenuItem>
+    <ApplicationMenuItem Text="Close" ImageUrl="icons/file/Close.png" />
+  </ApplicationMenu>
+  <Tab Text="Home">
+    <Group Text="Clipboard" EnableLauncher="true">
+      <Menu Size="Large" Text="Paste" ImageUrl="icons/home/Paste.png">
+        <MenuItem Text="Paste" ImageUrl="icons/home/Paste.png"></MenuItem>
+        <MenuItem Text="Paste Special..." ImageUrl="icons/home/Paste.png"></MenuItem>
+      </Menu>
+      <Button Size="Medium" Text="Cut" ImageUrl="icons/home/Cut.png" />
+      <Button Size="Medium" Text="Copy" ImageUrl="icons/home/Copy.png" />
+      <Button Size="Medium" Text="Format" ImageUrl="icons/home/Format_Painter.png" />
+    </Group>
+    <Group Text="Font">
+      <ControlGroup Orientation="Vertical">
+        <ControlGroup Orientation="Horizontal">
+          <DropDown Width="97">
+            <ListItem Text="Arial" />
+            <ListItem Text="Calibri (body)" Selected="true" />
+            <ListItem Text="Comic Sans" />
+            <ListItem Text="Tahoma" />
+            <ListItem Text="Verdana" />
+          </DropDown>
+          <ComboBox Width="40">
+            <ListItem Text="8" />
+            <ListItem Text="9" />
+            <ListItem Text="10" Selected="true" />
+            <ListItem Text="11" />
+            <ListItem Text="12" />
+            <ListItem Text="14" />
+            <ListItem Text="16" />
+            <ListItem Text="18" />
+            <ListItem Text="20" />
+            <ListItem Text="22" />
+            <ListItem Text="24" />
+            <ListItem Text="26" />
+            <ListItem Text="28" />
+          </ComboBox>
+        </ControlGroup>
+        <ControlGroup Orientation="Horizontal">
+
+          <ToggleButton Size="Small" Text="Bold" ImageUrl="icons/home/font/Bold.png" />
+
+          <ToggleButton Size="Small" Text="Italic" ImageUrl="icons/home/font/Italic.png" />
+
+          <ToggleButton Size="Small" Text="Underline" ImageUrl="icons/home/font/Underline.png" />
+
+          <ToggleButton Size="Small" Text="Strikethrough" ImageUrl="icons/home/font/Strike.png" />
+
+          <ToggleList>
+
+            <ToggleButton Size="Small" Text="Superscript" ImageUrl="icons/home/font/Superscript.png" />
+
+            <ToggleButton Size="Small" Text="Subscript" ImageUrl="icons/home/font/Subscript.png" />
+
+          </ToggleList>
+
+        </ControlGroup>
+
+        <ControlGroup Orientation="Horizontal">
+
+          <Menu Size="Small" Text="Change Case" ImageUrl="icons/home/font/Change_Case.png">
+
+            <MenuItem Text="Sentence case." />
+
+            <MenuItem Text="lowercase" />
+
+            <MenuItem Text="UPPERCASE" />
+
+            <MenuItem Text="Capitalize Each Word" />
+
+            <MenuItem Text="tOGGLE cASE" />
+
+          </Menu>
+
+          <Button Size="Small" Text="Grow Font" ImageUrl="icons/home/font/Grow_Font.png" />
+
+          <Button Size="Small" Text="Shring Font" ImageUrl="icons/home/font/Shrink_Font.png" />
+
+          <Button Size="Small" Text="Clear Formatting" ImageUrl="icons/home/font/Clear_Formatting.png" />
+
+          <ColorPicker ImageUrl="icons/home/font/Font_Color.png" />
+
+        </ControlGroup>
+
+      </ControlGroup>
+
+    </Group>
+
+    <Group Text="Paragraph">
+
+      <ButtonStrip>
+
+        <Button Text="Align Left" ImageUrl="icons/home/paragraph/AlignLeft.png" />
+
+        <Button Text="Align Center" ImageUrl="icons/home/paragraph/AlignCenter.png" />
+
+        <Button Text="Align Right" ImageUrl="icons/home/paragraph/AlignRight.png" />
+
+        <Button Text="Justify" ImageUrl="icons/home/paragraph/Justify.png" />
+
+      </ButtonStrip>
+
+      <ButtonStrip>
+
+        <Button Size="Small" Text="Unordered List" ImageUrl="icons/home/paragraph/UL.png" />
+
+        <Button Size="Small" Text="Numbered List" ImageUrl="icons/home/paragraph/OL.png" />
+
+      </ButtonStrip>
+
+      <ButtonStrip>
+
+        <Button Size="Small" Text="Decrease Indent" ImageUrl="icons/home/paragraph/DecrIndent.png" />
+
+        <Button Size="Small" Text="Increase Indent" ImageUrl="icons/home/paragraph/IncrIndent.png" />
+
+      </ButtonStrip>
+
+    </Group>
+
+    <Group Text="Styles" EnableLauncher="true">
+
+      <Gallery ItemHeight="50px" ItemWidth="60px" Columns="3" ExpandedColumns="4">
+
+        <GalleryCategory>
+
+          <GalleryItem ImageUrl="icons/home/styles/Normal.png" Text="Normal" />
+
+          <GalleryItem ImageUrl="icons/home/styles/NoSpacing.png" Text="No Spacing" />
+
+          <GalleryItem ImageUrl="icons/home/styles/Heading1.png" Text="Heading 1" />
+
+          <GalleryItem ImageUrl="icons/home/styles/Heading2.png" Text="Heading 2" />
+
+          <GalleryItem ImageUrl="icons/home/styles/Title.png" Text="Title" />
+
+          <GalleryItem ImageUrl="icons/home/styles/Subtitle.png" Text="Subtitle" />
+
+          <GalleryItem ImageUrl="icons/home/styles/SubEmphasis.png" Text="Subtle Emphasis" />
+
+          <GalleryItem ImageUrl="icons/home/styles/Emphasis.png" Text="Emphasis" />
+
+          <GalleryItem ImageUrl="icons/home/styles/IntEmphasis.png" Text="Intense Emphasis" />
+
+          <GalleryItem ImageUrl="icons/home/styles/Strong.png" Text="Strong" />
+
+          <GalleryItem ImageUrl="icons/home/styles/Quote.png" Text="Quote" />
+
+          <GalleryItem ImageUrl="icons/home/styles/IntQuote.png" Text="Intense Quote" />
+
+          <GalleryItem ImageUrl="icons/home/styles/SubReference.png" Text="Subtle Reference" />
+
+          <GalleryItem ImageUrl="icons/home/styles/IntReference.png" Text="Intense Reference" />
+
+          <GalleryItem ImageUrl="icons/home/styles/BookTitle.png" Text="Book Title" />
+
+          <GalleryItem ImageUrl="icons/home/styles/ListParagraph.png" Text="List Paragraph" />
+
+        </GalleryCategory>
+
+      </Gallery>
+
+    </Group>
+
+    <Group Text="Editing" EnableLauncher="true">
+
+      <SplitButton Size="Medium" Text="Find" ImageUrl="icons/home/Find.png">
+
+        <Button Text="Find..." ImageUrl="icons/home/Find.png" />
+
+        <Button Text="Go to..." ImageUrl="icons/home/Go.png" />
+
+      </SplitButton>
+
+      <Button Size="Medium" Text="Replace" ImageUrl="icons/home/Replace.png" />
+
+      <Menu Size="Medium" Text="Select" ImageUrl="icons/home/Select.png">
+
+        <MenuItem Text="Select All" ImageUrl="icons/home/Select_All.png"></MenuItem>
+
+        <MenuItem Text="Select Objects" ImageUrl="icons/home/Select.png"></MenuItem>
+
+      </Menu>
+
+    </Group>
+
+  </Tab>
+
+  <Tab Text="Insert">
+
+    <Group Text="Illustrations">
+
+      <Button Size="Large" Text="Picture" ImageUrl="icons/insert/Picture.png" />
+
+      <Button Size="Large" Text="Clip Art" ImageUrl="icons/insert/Clipart.png" />
+
+      <Menu Size="Large" Text="Shapes" ImageUrl="icons/insert/Shapes.png" />
+
+      <Button Size="Large" Text="SmartArt" ImageUrl="icons/insert/SmartArt.png" />
+
+      <Button Size="Large" Text="Chart" ImageUrl="icons/insert/Chart.png" />
+
+    </Group>
+
+    <Group Text="Links">
+
+      <Button Size="Large" Text="Hyperlink" ImageUrl="icons/insert/Link.png" />
+
+      <Button Size="Large" Text="Bookmark" ImageUrl="icons/insert/Bookmark.png" />
+
+      <Button Size="Large" Text="Cross-reference" ImageUrl="icons/insert/Cross_reference.png" />
+
+    </Group>
+
+  </Tab>
+
+  <Tab Text="View">
+
+    <Group Text="Zoom">
+
+      <ToggleList>
+
+        <ToggleButton Size="Large" Text="Zoom" ImageUrl="icons/view/Zoom.png" />
+
+        <ToggleButton Size="Large" Text="100%" ImageUrl="icons/view/100.png" />
+
+      </ToggleList>
+
+      <ToggleList>
+
+        <ToggleButton Size="Medium" Text="One Page" ImageUrl="icons/view/One_Page.png" />
+
+        <ToggleButton Size="Medium" Text="Two Pages" ImageUrl="icons/view/Two_Pages.png" />
+
+        <ToggleButton Size="Medium" Text="Page Width" ImageUrl="icons/view/Page_Width.png" />
+
+      </ToggleList>
+
+    </Group>
+
+    <Group Text="Macros">
+
+      <SplitButton Size="Large" Text="Macros" ImageUrl="icons/view/Macros.png">
+
+        <Button Text="View Macros" ImageUrl="icons/view/Macros.png" />
+
+        <Button Text="Record Macro..." ImageUrl="icons/view/Macros_Record.png" />
+
+      </SplitButton>
+
+    </Group>
+
+  </Tab>
+
+</RibbonBar>

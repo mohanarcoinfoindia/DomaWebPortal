@@ -1,0 +1,86 @@
+/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+/// <reference path="../Paths.less" />
+
+.RadComboBox_SelectionComboBox {
+    color: @color-shade-100;
+    .font-small();
+
+    .rcbInputCell, .rcbArrowCell {
+        background-image: @url-formsprite;
+    }
+
+    .rcbInput {
+        font-size: @smallFontSize;
+    }
+
+    .rcbHovered .rcbInput {
+        color: @color-primary-dark;
+    }
+
+    .rcbFocused .rcbInput {
+        color: @color-primary-dark;
+    }
+
+    .rcbReadOnly .rcbInput {
+        color: @color-primary-dark;
+    }
+
+    .rcbHovered .rcbReadOnly .rcbInput {
+        color: @color-primary-dark;
+    }
+
+    .rcbFocused .rcbReadOnly .rcbInput {
+        color: @color-white;
+    }
+}
+
+.RadComboBoxDropDown_SelectionComboBox {
+    border-color: @color-shade-70;
+    color: @color-shade-100;
+    background-color: @color-white;
+    .font-small();
+
+    .rcbSeparator {
+        color: @color-shade-100;
+        background-color: @color-shade-50;
+    }
+
+    .rcbHovered {
+        color: @color-primary-dark;
+        background-color: @color-shade-50;
+    }
+
+    .rcbSelected {
+        color: @color-white;
+        background-color: @color-shade-80;
+    }
+
+    .rcbLoading {
+        color: @color-black;
+        background-color: @color-shade-50;
+    }
+
+    .rcbItem em {
+        color: @color-black;
+        background-color: @color-shade-50;
+    }
+}
+
+.RadComboBox {
+    &.RadComboBox_SelectionComboBox {
+        border-style: solid;
+        border-color: @color-border-input;
+        border-radius: @input-border-radius;
+    }
+
+    &.RadComboBox_SelectionComboBox .rcbInner {
+        background-color: white;
+    }
+
+    &.RadComboBox_SelectionComboBox .rcbInput {
+        color: @color-primary-dark !important;
+        font-size: @baseFontSize;
+    }
+}
+

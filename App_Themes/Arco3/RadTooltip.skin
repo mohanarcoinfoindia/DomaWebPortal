@@ -1,0 +1,4 @@
+﻿<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<telerik:RadToolTip runat="server" EnableEmbeddedSkins="false" Skin="Default" Width="200px" OffsetY="25" OffsetX="-8" />
+

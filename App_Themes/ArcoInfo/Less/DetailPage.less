@@ -1,0 +1,122 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+.detailMain {
+    background-color: @color-bg-grey;
+}
+
+
+.detailView {
+    background-color: @color-bg-grey;
+
+    & + center {
+        background-color: @color-bg-grey;
+    }
+
+    .SubListDiv {
+        border-radius: 0 0 @input-border-radius @input-border-radius;
+        background-color: @color-bg-white;
+    }
+
+    .SubList {
+        border-collapse: separate;
+        border-spacing: 0;
+
+        th, td {
+            border-bottom-style: solid !important;
+            border-bottom-color: @color-shade-20 !important;
+        }
+    }
+
+    .listControlGridScroller {
+        border-radius: 0 0 @input-border-radius @input-border-radius;
+    }
+}
+
+.detailRadPaneNavigationInclRowTabs {
+    border-bottom-style: solid;
+    border-bottom-color: @color-border-default;
+}
+
+.toolWindowPopup {
+    border-top-style: solid;
+    border-top-color: @color-border-default;
+}
+
+#rowToolbar {
+    background-color: @color-bg-white;
+    border-style: solid;
+    border-color: @color-shade-20;
+}
+
+div.detailToolbarIcons > div.rmpView {
+    font-size: @font-size-detailtoolbar;
+}
+
+.DetailTable {
+    .detail-form-row {
+
+        .LabelCell {
+            font-size: @baseFontSize;
+            font-weight: @form-font-weight;
+            color: @color-label;
+        }
+
+        .ReadOnlyFieldCell {
+            font-size: @baseFontSize;
+            font-weight: @form-font-weight;
+        }
+    }
+}
+
+.dmViewToolbar {
+ 
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        vertical-align: top;
+    }
+
+    tr {
+        background-color: @color-bg-white;
+    }
+}
+
+@keyframes appearAndDisappear {
+    0% {
+        opacity:0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.help-eye-catcher {
+    opacity: 0;
+    background-color: @color-bg-white;
+    border-color: @color-primary-dark;
+    border-style: solid;
+    border-radius: @input-border-radius;
+    animation-name: appearAndDisappear;
+    animation-duration: 7000ms;
+
+    &:before {
+        background-color: @color-bg-white;
+        border-left-color: @color-primary-dark;
+        border-top-color: @color-primary-dark;
+        border-left-style: solid;
+        border-top-style: solid;
+    }
+}
+

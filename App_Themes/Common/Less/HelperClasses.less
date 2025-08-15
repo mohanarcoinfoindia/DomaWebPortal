@@ -1,0 +1,158 @@
+﻿/// <reference path="Variables.less" />
+.title-main,
+.title-header,
+.detail-form-container .detail-form-row .title-main,
+.detail-form-container .detail-form-row .title-header {
+    margin: 10px @form-cell-padding-side 20px;
+}
+
+.title-sub,
+.detail-form-container .detail-form-row .title-sub {
+    margin: 10px @form-cell-padding-side 15px;
+}
+
+.content-main,
+.detail-form-container .detail-form-row .content-main {
+    margin: 0px @form-cell-padding-side 20px;
+}
+
+.content-special,
+.detail-form-container .detail-form-row .content-special {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 24px 40px;
+    line-height: 1.7;
+}
+
+.header-box,
+.detail-form-container .detail-form-row .header-box {
+    .content-special();
+    display: flex;
+    justify-content: space-between;
+
+    & > div:last-child {
+        text-align: right;
+    }
+}
+
+.inline-element {
+    margin: 0px @form-cell-padding-side 0px;
+}
+
+.inline-element > *,
+.inline-element > * > * {
+    width: auto !important;
+    margin: 0;
+}
+
+.wrapper-inline {
+    padding: 20px @form-cell-padding-side;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.inline {
+    margin: 0;
+}
+
+.spacer-1,
+.detail-form-container .detail-form-row .spacer-1 {
+    height: 20px;
+}
+
+.spacer-2,
+.detail-form-container .detail-form-row .spacer-2 {
+    height: 40px;
+}
+
+.ErrorMessage, .InfoMessage, .SuccessMessage,
+.detail-form-container .detail-form-row .ErrorMessage,
+.detail-form-container .detail-form-row .InfoMessage,
+.detail-form-container .detail-form-row .SuccessMessage {
+    margin-top: 20px;
+    display: block;
+    padding: 12px;
+    text-align: center;
+}
+
+.ErrorLabel, .InfoLabel, .WarningLabel, .SuccessLabel,
+.detail-form-container .detail-form-row .ErrorLabel,
+.detail-form-container .detail-form-row .InfoLabel,
+.detail-form-container .detail-form-row .WarningLabel,
+.detail-form-container .detail-form-row .SuccessLabel {
+    border-width: 1px;
+    display: block;
+    &:empty {
+        display: none;
+    }
+}
+
+.ErrorLabel, .InfoLabel, .SuccessLabel, .WarningLabel,
+.detail-form-container .detail-form-row .ErrorLabel,
+.detail-form-container .detail-form-row .InfoLabel,
+.detail-form-container .detail-form-row .SuccessLabel,
+.detail-form-container .detail-form-row .WarningLabel {
+    padding: 20px 10px 20px 60px;
+}
+
+.WarningLabel,
+.detail-form-container .detail-form-row .WarningLabel {
+
+    p {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 1em;
+    }
+}
+
+.RowCell > .ErrorLabel,
+.RowCell > .InfoLabel,
+.RowCell > .SuccessLabel,
+.RowCell > .WarningLabel {
+    margin-left: @form-cell-padding-side;
+    margin-right: @form-cell-padding-side;
+}
+
+.divider,
+.detail-form-container .detail-form-row .divider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &:before {
+        height: 1px;
+        flex-grow: 1;
+        margin-right: 10px;
+        content: '';
+    }
+
+    &:after {
+        height: 1px;
+        flex-grow: 1;
+        margin-left: 10px;
+        content: '';
+    }
+}
+
+.divider-left,
+.detail-form-container .detail-form-row .divider-left {
+    .divider();
+
+    &:before {
+        display: none;
+    }
+}
+
+.divider-right,
+.detail-form-container .detail-form-row .divider-right {
+    .divider();
+
+    &:after {
+        display: none;
+    }
+}
+

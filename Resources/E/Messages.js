@@ -1,0 +1,37 @@
+﻿// JScript File
+var UIMessages = new Array(33);
+
+UIMessages[0] = "Please select an item first";
+UIMessages[1] = "Are you sure you want to delete these items?";
+UIMessages[2] = "Are you sure you want to delete this file?";
+UIMessages[3] = "No Document was pinned";
+UIMessages[4] = "Are you sure you want to delete this item?";
+UIMessages[5] = "Loading content - please wait";
+UIMessages[6] = "This page doesn't support the print option";
+UIMessages[7] = "Are you Sure you want to empty the Recycle bin completely?";
+UIMessages[8] = "Are you sure you want to delete the selected items?";
+UIMessages[9] = "Show files";
+UIMessages[10] = "Hide files";
+UIMessages[11] = "Show all files";
+UIMessages[12] = "Hide all files";
+UIMessages[13] = "Select all";
+UIMessages[14] = "Deselect all";
+UIMessages[15] = "Are you sure you wish to continue without saving first?";
+UIMessages[16] = "Are you sure you want to move this item?";
+UIMessages[17] = "Your subscription has been created";
+UIMessages[18] = "The item has been added to the package";
+UIMessages[19] = "The items have been added to the selection";
+UIMessages[20] = "Are you sure you want to finish this workflow?";
+UIMessages[21] = "Are you sure you want to delete this row?";
+UIMessages[22] = "The recyclebin has been marked for clearing";
+UIMessages[23] = "The selected items have been marked for clearing";
+UIMessages[24] = "By doing this all customized security on the sub objects will be lost, continue?";
+UIMessages[25] = "Add comment";
+UIMessages[26] = "Are you sure you want to finish the selected workflows?";
+UIMessages[27] = "Are you sure you want to remove this link?";
+UIMessages[28] = "Are you sure you want to remove all links?";
+UIMessages[29] = "Are you sure you want to delete #ITEM#?";
+UIMessages[30] = "Are you sure you want to unlock all the work for this user?";
+UIMessages[31] = "Are you sure you want to transfer all the work for this user?";
+UIMessages[32] = "Are you sure you want to delete all rows?";
+UIMessages[33] = "It seems your browser is blocking some popups. Please change your browser settings to allow popups for this website.";

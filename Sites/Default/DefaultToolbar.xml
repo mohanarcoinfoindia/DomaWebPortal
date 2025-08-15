@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<buttons>
+  <button description="New Folder" descriptionN="Nieuwe Map"  icon="newfoldericon.gif" commandname="FOLDER" commandargument="" isseparator="N" AdminOnly="Y"></button>
+  <button description="New Document" descriptionN="Nieuw Document" icon="new.gif" commandname="DOCUMENT" commandargument="" isseparator="N" Roles="testrole12345"></button>
+
+</buttons>

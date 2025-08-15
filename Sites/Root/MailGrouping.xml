@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grouping enabled="y" width="200px" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Gridgrouping.xsd" >
+  <grouper id="2" hideicons="true" usergrouper="false" applyfiltertogrouper="false" LabelE="From" LabelN="Van" LabelF="De" LabelG="From" >
+    <field value="MAIL_FROM" formatter="email" />    
+  </grouper>
+  <grouper id="3" hideicons="true" usergrouper="false" applyfiltertogrouper="false" LabelE="Template" LabelN="Template" LabelF="Template" LabelG="Template" >
+    <field value="TEMPLATE_ID" />
+  </grouper>
+</grouping>

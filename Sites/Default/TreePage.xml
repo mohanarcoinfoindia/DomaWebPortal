@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<treepage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\TreePage.xsd">
+  <tree  file="Tree.xml"  name="Tree.xml" nameE="" nameN="" nameF="" nameG=""  role="" Selected="true"/>
+  <tree- file="Tree2.xml"   name="Tree2" nameE="" nameN="" nameF="" nameG=""  role=""  />  
+  <menu- file="TreeAdminMenu.xml"  name="Admin" nameE="" nameN="" nameF="" nameG=""  role=""  />
+  <link- ImageUrl="Images/Case.gif" name="somesublink" file="javascript:parent.AboutDocroom();"/>
+  <link- ImageUrl="Images/Case.gif" name="somelink" file="javascript:parent.AboutDocroom();"/>
+  
+</treepage>

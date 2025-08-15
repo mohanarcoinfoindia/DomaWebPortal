@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" ?>
+<Resource>
+
+  <item name="but_addtoBasket">Ajouter au panier</item>
+  <item name="ctx_addtoBasket">Ajouter au panier</item>
+
+  <item name="but_removefromBasket">Supprimer du panier</item>
+  <item name="ctx_removefromBasket">Supprimer du panier</item>
+
+  <item name="but_addtoFavorites">Ajouter aux favoris</item>
+  <item name="ctx_addtoFavorites">Ajouter aux favoris</item>
+
+  <item name="but_removefromFavorites">Supprimer des favoris</item>
+  <item name="ctx_removefromFavorites">Supprimer des favoris</item>
+  
+  <item name="but_addmail">Ajouter un courriel</item>
+  <item name="tlt_addmail">Ajouter un courriel</item>
+  <item name="ctx_addmail">Ajouter un courriel</item>
+
+  <item name="but_mails">Courriels</item>
+  <item name="tlt_mails">Courriels</item>
+  <item name="ctx_mails">Courriels</item>
+
+  <item name="but_addsubscription">Souscrire</item>
+  <item name="tlt_addsubscription">Souscrire</item>
+  <item name="ctx_addsubscription">Souscrire</item>
+
+  <item name="but_subscriptions">Souscriptions</item>
+  <item name="tlt_subscriptions">Souscriptions</item>
+  <item name="ctx_subscriptions">Souscriptions</item>
+
+  <item name="but_versionhistory">Versions précédentes</item>
+  <item name="tlt_versionhistory">Versions précédentes</item>
+  <item name="ctx_versionhistory">Versions précédentes</item>
+  
+  <item name="but_linkeddocs">Documents liés</item>
+  <item name="tlt_linkeddocs">Documents liés</item>
+  <item name="ctx_linkeddocs">Documents liés</item>
+
+  <item name="but_messageattach">Ajouter fichier comme message</item>
+  <item name="tlt_messageattach">Ajouter fichier comme message</item>
+  <item name="ctx_messageattach">Ajouter fichier comme message</item>
+  
+  <item name="but_editDeadlines">Echéances</item>
+  <item name="ctx_editDeadlines">Echéances</item>
+  <item name="tlt_editDeadlines">Echéances</item>
+
+  <item name="but_procedureImg">Procedure Image</item>
+  <item name="but_procedureImg">Procedure Image</item>
+  <item name="but_procedureImg">Procedure Image</item>
+
+
+  <item name="but_aclsetacl">Gestion des accès</item>
+  <item name="tlt_aclsetacl">Gestion des accès</item>
+  <item name="ctx_aclsetacl">Gestion des accès</item>
+  
+  <item name="but_save">Sauvegarder</item>
+  <item name="tlt_save">Sauvegarder</item>
+  <item name="ctx_save">Sauvegarder</item>
+	
+  <item name="but_saveandnext">Sauvegarder et editer la suivante</item>
+  <item name="tlt_saveandnext">Sauvegarder et editer la suivante</item>
+  <item name="ctx_saveandnext">Sauvegarder et editer la suivante</item>
+  
+  <item name="but_saveandclose">Sauvegarder</item>
+  <item name="tlt_saveandclose">Sauvegarder</item>
+  <item name="ctx_saveandclose">Sauvegarder</item>
+  
+  <item name="but_saveandclosewindow">Sauvegarder et fermer la fenêtre</item>
+  <item name="tlt_saveandclosewindow">Sauvegarder et fermer la fenêtre</item>
+  <item name="ctx_saveandclosewindow">Sauvegarder et fermer la fenêtre</item>
+  
+  <item name="but_new">Ajouter</item>
+  <item name="tlt_new">Ajouter</item>
+  <item name="ctx_new">Ajouter</item>
+	
+  <item name="but_duplicate">Dupliquer</item>
+  <item name="tlt_duplicate">Dupliquer</item>
+  <item name="ctx_duplicate">Dupliquer</item>
+  
+  <item name="but_copymovetofolder">Copier/Déplacer vers répertoire</item>
+  <item name="tlt_copymovetofolder">Copier/Déplacer vers répertoire</item>
+  <item name="ctx_copymovetofolder">Copier/Déplacer vers répertoire</item>
+  
+  <item name="but_edit">Editer</item>
+  <item name="tlt_edit">Editer</item>
+  <item name="ctx_edit">Editer</item>
+  
+  <item name="but_editadminon">Editer en mode Administration</item>
+  <item name="tlt_editadminon">Editer en mode Administration</item>
+  <item name="ctx_editadminon">Editer en mode Administration</item>
+  
+  <item name="but_editadminoff">Mode Normal</item>
+  <item name="tlt_editadminoff">Mode Normal</item>
+  <item name="ctx_editadminoff">Mode Normal</item>
+  
+  <item name="but_finishcase">Terminer</item>
+  <item name="tlt_finishcase">Terminer</item>
+  <item name="ctx_finishcase">Terminer</item>
+
+  <item name="but_deletecase">Supprimer</item>
+  <item name="tlt_deletecase">Supprimer</item>
+  <item name="ctx_deletecase">Supprimer</item>
+
+  <item name="but_unlock">Déverrouiller</item>
+  <item name="tlt_unlock">Déverrouiller</item>
+  <item name="ctx_unlock">Déverrouiller</item>
+
+  <item name="but_close">Fermer</item>
+  <item name="tlt_close">Fermer</item>
+  <item name="ctx_close">Fermer</item>
+
+  <item name="but_cancel">Annuler</item>
+  <item name="tlt_cancel">Annuler</item>
+  <item name="ctx_cancel">Annuler</item>
+
+  <item name="but_delete">Supprimer</item>
+  <item name="tlt_delete">Supprimer</item>
+  <item name="ctx_delete">Supprimer</item>
+
+  <item name="but_transferwork">Assigner à</item>
+  <item name="tlt_transferwork">Assigner à</item>
+  <item name="ctx_transferwork">Assigner à</item>
+
+  <item name="but_restoreto">Restaurer dans</item>
+  <item name="tlt_restoreto">Restaurer dans</item>
+  <item name="ctx_restoreto">Restaurer dans</item>
+  
+  <item name="but_movecaseto">Déplacer vers</item>
+  <item name="tlt_movecaseto">Déplacer vers</item>
+  <item name="ctx_movecaseto">Déplacer vers</item>
+  
+  <item name="but_releaseto"></item>
+  <item name="tlt_releaseto"></item>  
+  <item name="ctx_releaseto"></item>  
+
+  <item name="but_release">Etape suivante</item>
+  <item name="tlt_release">Etape suivante</item>
+  <item name="ctx_release">Etape suivante</item>
+
+  <item name="but_suspend">Suspendre</item>
+  <item name="tlt_suspend">Suspendre</item>
+  <item name="ctx_suspend">Suspendre</item>
+
+  <item name="but_reject">Rejeter</item>
+  <item name="tlt_reject">Rejeter</item>
+  <item name="ctx_reject">Rejeter</item>
+
+  <item name="but_messages">Messages</item>
+  <item name="tlt_messages">Messages</item>
+  <item name="ctx_messages">Messages</item>
+  
+
+  <item name="but_checkout">Réserver</item>
+  <item name="tlt_checkout">Réserver</item>
+  <item name="ctx_checkout">Réserver</item>
+
+  <item name="but_cancelcheckout">Annuler la réservation</item>
+  <item name="tlt_cancelcheckout">Annuler la réservation</item>
+  <item name="ctx_cancelcheckout">Annuler la réservation</item>
+
+  <item name="but_checkin">Enregistrer</item>
+  <item name="tlt_checkin">Enregistrer</item>
+  <item name="ctx_checkin">Enregistrer</item>
+
+  <item name="but_editwork">Gérer le travail</item>
+  <item name="tlt_editwork">Gérer le travail</item>
+  <item name="ctx_editwork">Gérer le travail</item>
+
+  <item name="but_addfile">Ajouter fichier</item>
+  <item name="tlt_addfile">Ajouter fichier</item>
+  <item name="ctx_addfile">Ajouter fichier</item>
+
+  <item name="but_promotetodoc">Promouvoir en document</item>
+  <item name="tlt_promotetodoc">Promouvoir en document</item>
+  <item name="ctx_promotetodoc">Promouvoir en document</item>
+  
+  <item name="but_reopen">Réouvrir</item>
+  <item name="tlt_reopen">Réouvrir</item>
+  <item name="ctx_reopen">Réouvrir</item>
+
+  <item name="but_clear">Vider</item>
+  <item name="tlt_clear">Vider</item>
+  <item name="ctx_clear">Vider</item>
+  
+  <item name="but_history">Historique</item>
+  <item name="tlt_history">Historique</item>
+  <item name="ctx_history">Historique</item>
+
+  <item name="but_mywork">Mon travail</item>
+  <item name="tlt_mywork">Mon travail</item>
+  <item name="ctx_mywork">Mon travail</item>
+
+  <item name="but_opencases">Workflows ouverts</item>
+  <item name="tlt_opencases">Workflows ouverts</item>
+  <item name="ctx_opencases">Workflows ouverts</item>
+
+  <item name="but_browse">Browse</item>
+  <item name="tlt_browse">Browse</item>
+  <item name="ctx_browse">Browse</item>
+
+  <item name="but_addcomment">Ajouter commentaire</item>
+  <item name="tlt_addcomment">Ajouter commentaire</item>
+  <item name="ctx_addcomment">Ajouter commentaire</item>
+
+  <item name="but_addmessage">Ajouter message</item>
+  <item name="tlt_addmessage">Ajouter message</item>
+  <item name="ctx_addmessage">Ajouter message</item>
+
+  <item name="but_comments">Commentaires</item>
+  <item name="tlt_comments">Commentaires</item>
+  <item name="ctx_comments">Commentaires</item>
+
+  <item name="but_checkoutfile">Réserver fichier</item>  
+  <item name="tlt_checkoutfile">Réserver fichier</item>  
+  <item name="ctx_checkoutfile">Réserver fichier</item>  
+
+  <item name="but_cancelcheckoutfile">Annuler la réservation du fichier</item>
+  <item name="tlt_cancelcheckoutfile">Annuler la réservation du fichier</item>
+  <item name="ctx_cancelcheckoutfile">Annuler la réservation du fichier</item>
+
+  <item name="but_checkinfile">Enregistrer fichier</item>
+  <item name="tlt_checkinfile">Enregistrer fichier</item>
+  <item name="ctx_checkinfile">Enregistrer fichier</item>
+
+  <item name="but_addnote">Ajouter annotation</item>
+  <item name="tlt_addnote">Ajouter annotation</item>
+  <item name="ctx_addnote">Ajouter annotation</item>
+
+  <item name="but_notes">Annotations</item>
+  <item name="tlt_notes">Annotations</item>
+  <item name="ctx_notes">Annotations</item>
+  <item name="true">Vrais</item>
+  <item name="false">Pas vrais</item>
+  <item name="on">On</item>
+  <item name="off">Off</item>
+</Resource>

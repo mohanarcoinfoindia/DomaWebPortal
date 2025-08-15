@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <DefaultOrderBy>OBJ_UNAME ASC</DefaultOrderBy>
+  <GroupingFile>Nogrouping.xml</GroupingFile>
+  <ToolbarFile>RecyclebinGridToolbar.xml</ToolbarFile>
+  <ShowQueries>false</ShowQueries>
+  <columns>
+    <column name="status"></column>
+    <column name="multiselect"></column>
+    <column name="version"></column>
+    <column name="title" extra="NOWRAP" labelE="Title" labelN="Titel" labelF="Titre"></column>
+    <column name="category" size="100" hidefilter="n"></column>
+    <column name="creationdate"></column>
+    <column name="documentlinks" size="80"></column>
+
+  </columns>
+  <rows>
+    <row>
+      <columns>
+        <column name="constant" colspan="2"/>
+        <column name="folder" colspan="4" size="500" activatelink="n"></column>
+      </columns>
+    </row>
+
+  </rows>
+  </screendef>
+

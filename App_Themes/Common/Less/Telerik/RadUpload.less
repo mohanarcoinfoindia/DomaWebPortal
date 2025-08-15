@@ -1,0 +1,71 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+/// <reference path="../Button.less" />
+
+
+.RadUpload.RadUpload_Default {
+
+    .ruInputs li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .ruFileInput {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .ruButton {
+        height: unset;
+        border: 0;
+        padding-bottom: 0;
+        margin-top: 2px;
+
+        &.ruBrowse {
+            border-width: 1px;
+            margin: 0;
+            padding: 7px 15px;
+            width: 100% !important;
+            height: 50px;
+            cursor: default;
+        }
+
+        &.ruRemove {
+            border: 0;
+            padding: 0;
+            min-width: 20px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .ruDropZone {
+        left: 0;
+        top: 0;
+        border-width: 2px;
+
+        span {
+            display: none;
+        }
+    }
+}
+
+
+//input type file
+.FieldCell {
+    .RadUpload .ruFileWrap {
+        height: inherit;
+    }
+
+    .RadUpload_Default .ruFakeInput {
+        display: none;
+    }
+
+    .RadUpload .ruInputs li {
+        margin: 5px 0;
+        .ruUploadProgress.ruUploadFailure {
+            align-self: baseline;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<Toolbar enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\GridToolbar.xsd">
+  <Item Text="Show Sidepanel" LabelN="Zijpaneel tonen" LabelF="Montrer le panneau latéral" ImageClass="icon-chevron-expand icon-color-light" NavigateUrl="javascript:#GRID#.ToggleShowSideBar();"/>
+  <Item Text="Refresh" ImageClass="icon-refresh" LabelN="Hernieuwen" NavigateUrl="javascript:#GRID#.Reload();"/>
+
+  <Item Text="What's new" ImageClass="icon-folder-mynewdocs" ShowText="false" LabelE="" LabelF="Quoi de neuf" LabelN="Nieuwe items" LabelG="Neuigkeiten" NavigateUrl="javascript:#GRID#.ToggleWhatsNew();"/>
+  <Item isSeparator="true"/>
+  <Item Text="Delete" LabelE="Delete" LabelN="Verwijderen" LabelF="Supprimer" LabelG="Löschen" ToggleOnMailMultiSelect="true" ImageClass="icon-delete" NavigateUrl="javascript:#GRID#.DoMailBoxAction(4,0,0);"/>  
+</Toolbar>

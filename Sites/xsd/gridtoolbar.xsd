@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Toolbar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="Item" />
+        </xs:choice>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="Group" />
+        </xs:choice>               
+      </xs:sequence>
+      <xs:attribute name="enabled" type="xs:boolean" />
+      <xs:attribute name="fullwidth" type="xs:boolean" />
+      <xs:attribute name="disablefixedbuttons" type="xs:boolean" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Item">
+    <xs:complexType>
+      <xs:attribute name="Text" type="xs:string" />
+      <xs:attribute name="LabelE" type="xs:string" />
+      <xs:attribute name="LabelN" type="xs:string" />
+      <xs:attribute name="LabelF" type="xs:string" />
+      <xs:attribute name="LabelG" type="xs:string" />
+      <xs:attribute name="ImageUrl" type="xs:string" />
+      <xs:attribute name="NavigateUrl" type="xs:string" />
+       <xs:attribute name="Endpoint" type="xs:string" />
+      <xs:attribute name="ToggleOnMultiSelect" type="xs:boolean" />
+      <xs:attribute name="ToggleOnCaseMultiSelect" type="xs:boolean"/>
+      <xs:attribute name="ToggleOnMailMultiSelect" type="xs:boolean"/>
+      <xs:attribute name="isSeparator" type="xs:boolean" />
+      <xs:attribute name="ShowText" type="xs:boolean" />
+      <xs:attribute name="isCustomActionPlaceHolder" type="xs:boolean" />
+      <xs:attribute name="RequiredFolderAcl" type="xs:int"/>
+      <xs:attribute name="Roles" type="xs:string"/>
+      <xs:attribute name="visible" type="xs:boolean" />
+     <xs:attribute name="siteVersion" type="xs:int" />
+     <xs:attribute name="isPrimary" type="xs:boolean" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Group" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Item" />
+      </xs:choice>
+      <xs:attribute name="Text" type="xs:string" />
+      <xs:attribute name="LabelE" type="xs:string" />
+      <xs:attribute name="LabelN" type="xs:string" />
+      <xs:attribute name="LabelF" type="xs:string" />
+      <xs:attribute name="LabelG" type="xs:string" />
+      <xs:attribute name="ImageUrl" type="xs:string" />
+      <xs:attribute name="ShowText" type="xs:boolean" />
+      <xs:attribute name="RequiredFolderAcl" type="xs:int"/>
+      <xs:attribute name="Roles" type="xs:string"/>
+      <xs:attribute name="visible" type="xs:boolean" />
+    </xs:complexType>
+
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Toolbar" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Toolbar enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\GridToolbar.xsd">
+  <Item Text="Empty Recycle bin" ShowText="true" LabelF="Vider la poubelle" LabelN="Prullenmand leegmaken" ToggleOnMultiSelect="false" NavigateUrl="Javascript:#GRID#.EmptyRecyclebin();"/>
+  <Item Text="Delete selected items" ShowText="true" LabelF="Supprimer les éléments sélectionnés" LabelN="Geselecteerde items verwijderen" ToggleOnMultiSelect="true" NavigateUrl="Javascript:#GRID#.EmptyRecyclebinSelection();"/>
+  <Item Text="Restore selected items" ShowText="true" LabelF="Restaurer les éléments sélectionnés" LabelN="De geselecteerde items terugzetten" ToggleOnMultiSelect="true" NavigateUrl="Javascript:#GRID#.RestoreRecycleBinSelection();"/>
+</Toolbar>

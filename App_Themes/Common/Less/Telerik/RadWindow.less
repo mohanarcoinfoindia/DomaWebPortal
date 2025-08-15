@@ -1,0 +1,54 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../variables-icons.less" />
+/// <reference path="../typography.less" />
+
+.RadWindow.RadWindow_Default {
+    border-width: 1px;
+    z-index: 10000 !important;
+
+    .rwTitlebarControls {
+        margin-bottom: 10px;
+        margin-top: 5px;
+        width: 90%;
+
+        a.rwIcon {
+            display: none;
+        }
+
+        a.rwMaximizeButton {
+            background-size: calc(@icon-size-medium - 3px) !important;
+            width: calc(@icon-size-medium - 3px);
+            height: calc(@icon-size-medium - 3px);
+            position: absolute;
+            right: 50px;
+            top: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-size: calc(@icon-size-medium - 3px) !important;
+            }
+        }
+
+        a.rwCloseButton {
+            background-size: calc(@icon-size-medium - 3px) !important;
+            width: calc(@icon-size-medium - 3px);
+            height: calc(@icon-size-medium - 3px);
+            position: absolute;
+            right: 12px;
+            top: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-size: calc(@icon-size-medium - 3px) !important;
+            }
+        }
+    }
+}
+
+body.domaBodyModal .DetailTable .detail-form-container {
+    padding: 0 10px 0 10px;
+}
+
+.RadWindow.RadWindow_Default.rwNormalWindow.rwTransparentWindow {
+    height: unset !important;
+}

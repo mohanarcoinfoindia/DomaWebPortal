@@ -1,0 +1,249 @@
+﻿<root>
+	<modules>
+
+		<module name="RadEditorTestModule" scriptFile="RadEditorTestModule.js"  dockingZone="Module" enabled="true" visible="true" />
+		<module name="RadEditorDiagnostics" scriptFile="RadEditorDiagnostics.js" dockingZone="Module" enabled="true" visible="true" dockable="true" />
+
+
+		<module name="RadEditorStatistics" dockingZone="Bottom" enabled="true" visible="true"/>
+		<module name="RadEditorDomInspector" dockingZone="Module" enabled="true" visible="true" />
+		<module name="RadEditorNodeInspector" dockingZone="Module" enabled="true" visible="true" dockable="false" />
+		<module name="RadEditorHtmlInspector" dockingZone="Module" enabled="true" visible="true" />
+		<module name="RadEditorXhtmlValidator" dockingZone="Module" enabled="true" visible="true" dockable="true" />
+
+	</modules>
+	<tools name="MainToolbar" dockable="false">
+		<tool name="SpellCheck" />
+		<tool name="Print" />
+		<tool name="FindAndReplace" />
+		<tool separator="true"/>
+		<tool name="Cut" />
+		<tool name="Copy" />
+		<tool name="Paste" />
+		<tool name="PasteFromWord" />
+		<tool name="PastePlainText" />
+		<tool name="PasteAsHtml"  />
+		<tool separator="true"/>
+		<tool name="Undo" />
+		<tool name="Redo" />
+	</tools>
+	<tools name="InsertToolbar">
+		<tool name="InsertTable" />
+		<tool name="ImageManager" />
+		<tool name="AbsolutePosition" />
+		<tool name="FlashManager" />
+		<tool name="MediaManager" />
+		<tool name="DocumentManager" />
+	</tools>
+	<tools>
+		<tool name="Bold" />
+		<tool name="Italic" />
+		<tool name="Underline" />
+		<tool separator="true"/>
+		<tool name="JustifyLeft" />
+		<tool name="JustifyCenter" />
+		<tool name="JustifyRight" />
+		<tool name="JustifyFull" />
+		<tool separator="true"/>
+		<tool name="Indent" />
+		<tool name="Outdent" />
+		<tool name="InsertOrderedList" />
+		<tool name="InsertUnorderedList" />
+		<tool separator="true"/>
+		<tool name="LinkManager" />
+		<tool name="Unlink" />
+		<tool name="InsertSnippet" />
+		<tool name="InsertFormElement" />
+		<tool name="InsertSymbol" />
+		<tool name="FormatStripper" />
+	</tools>
+	<tools name="DropdownToolbar">
+		<tool name="ForeColor" />
+		<tool name="BackColor"></tool>
+		<tool name="FontName"></tool>
+		<tool name="FontSize"></tool>
+		<tool name="ApplyClass"></tool>
+		<tool name="InsertCustomLink"></tool>
+		<tool name="FormatBlock"></tool>
+	</tools>
+	<tools name="DialogToolbar" dockingZone="Right" enabled="true">
+		<tool name="TemplateManager" />
+		<tool name="Superscript" />
+		<tool name="Subscript" />
+		<tool name="StrikeThrough" />
+		<tool name="InsertParagraph" />
+		<tool name="InsertHorizontalRule" />
+		<tool name="InsertDate" />
+		<tool name="InsertTime" />
+		<tool separator="true"/>
+		<tool name="RADCOMMAND_SHOW_OPEN_DIALOG" enabled="false" />
+		<tool name="RADCOMMAND_SHOW_SAVEAS_DIALOG" enabled="false" />
+		<tool name="AboutDialog" />
+		<tool name="Help" />
+	</tools>
+	<tools name="EnhancedEditToolbar" dockingZone="Bottom" dockable="true">
+		<tool name="ToggleScreenMode" />
+		<tool name="ToggleTableBorder" />
+		<tool name="Zoom" />
+		<tool name="ModuleManager" />
+		<tool name="ToggleDocking" />
+		<tool name="RepeatLastCommand" />
+	</tools>
+	<links>
+		<link name="telerik" href="http://www.telerik.com">
+			<link name="Products" href="http://www.telerik.com/products">
+				<link name="r.a.d.controls suite" href="http://www.telerik.com/radcontrols" />
+				<link name="r.a.d.navigation suite" href="http://www.telerik.com/radnavigation" />
+				<link name="r.a.d.editor" href="http://www.telerik.com/radeditor" />
+				<link name="r.a.d.designer" href="http://www.telerik.com/raddesigner" />
+				<link name="r.a.d.spell" href="http://www.telerik.com/radspell" />
+				<link name="r.a.d.chart" href="http://www.telerik.com/radchart" />
+				<link name="r.a.d.menu" href="http://www.telerik.com/radmenu" />
+				<link name="r.a.d.treeview" href="http://www.telerik.com/radtreeview" />
+				<link name="r.a.d.panelbar" href="http://www.telerik.com/radpanelbar" />
+				<link name="r.a.d.rotator" href="http://www.telerik.com/radrotator" />
+				<link name="r.a.d.tabstrip" href="http://www.telerik.com/radtabstrip" tooltip="Tooltip" />
+			</link>
+			<link name="Purchase" href="http://www.telerik.com/purchase" />
+			<link name="Support" href="http://www.telerik.com/support" />
+			<link name="Client.Net" href="http://www.telerik.com/clientnet" />
+		</link>
+		<link name="Microsoft">
+			<link name="Main Site" href="http://www.microsoft.com" />
+			<link name="MSDN Online" href="http://msdn.microsoft.com" />
+			<link name="Windows Update" href="http://windowsupdate.microsoft.com" />
+		</link>
+		<link name="Search Engines">
+			<link name="Google" href="http://www.google.com" />
+			<link name="Yahoo" href="http://www.yahoo.com" />
+			<link name="AltaVista" href="http://www.altavista.com" />
+		</link>
+	</links>
+	<snippets>
+		<snippet name="Order Confirmation">
+			<![CDATA[
+					<div style="width:300px;border:2px outset #D8D2BD;padding:34px;font-family:Arial, Verdana; font-size:11px;background-color:#F1EFE6;">
+					Dear ____________________,<br />
+					Thank you for inquiring about ____________. Your request will be processed in 48 hours and shipped at the address you have provided. 
+					<br /><br />
+						<b>Please, contact us if you have any problems.</b>
+					</div>
+				]]>
+		</snippet>
+		<snippet name="Email Signature">
+			<![CDATA[
+					<div style="margin-top:30px;width:80%;border-top:1px dotted gray;padding-top:4px;font-family:Arial, Verdana; font-size:11px;">
+					<b>John Wigham</b><br />
+					Senior Web Developer<br />
+						<a href="#">john@mysite.com</a>
+						<br />
+							<br />
+								<i>Disclaimer: The contents of this e-mail are privileged and confidential and intended for the addressees at the specified e-mail addresses only.</i>
+					</div>
+				]]>
+		</snippet>
+		<snippet name="Problem Report Feedback">
+			<![CDATA[
+					<div style="width:300px;border:2px outset #D8D2BD;padding:34px;font-family:Arial, Verdana; font-size:11px;background-color:#F1EFE6;">
+					Hi ____________________,<br />
+					Thank you for reporting this issue. We have verified the problem and it is logged in our system. We will notify you once we have a solution. 
+					<br /><br />
+						<b>Please, contact us if you have any problems.</b>
+					</div>
+				]]>
+		</snippet>
+	</snippets>
+	<symbols></symbols>
+	<fontNames>	</fontNames>
+	<fontSizes></fontSizes>
+	<colors></colors>
+	<paragraphs></paragraphs>
+	<classes></classes>
+	<dialogParameters></dialogParameters>
+	<languages></languages>
+</root>
+<!-- ==============================================================================================
+	Tools File valid structure:
+	<root>
+		<tools>
+			<tool />
+			<tool />
+			...
+		</tools>
+		<tools>
+			<tool />
+			...
+		</tools>
+		...
+	</root>
+
+	"tool" element valid attributes:
+	name (required):
+				Bold, Italic, Underline, StrikeThrough, Superscript, Subscript,
+				JustifyLeft, JustifyCenter, JustifyRight, JustifyFull, InsertOrderedList,
+				InsertUnorderedList, Outdent, Indent, Cut, Copy, Paste, PasteFromWord, PastePlainText, Print,
+				Undo, Redo, InsertImage, AbsolutePosition, CreateLink, Unlink,
+				InsertHorizontalRule, InsertTable, ToggleBorders, Paragraph, Class, Font, FontSize,
+				Links, Custom, Symbols, BackColor, ForeColor, InsertFlash,
+				InsertMedia, SpellCheck, Sweeper, InsertParagraph, InsertSnippet,
+				Help, FindAndReplace, MultiLanguageSpellChecker
+	title (required):
+				Some hint string
+	enabled (required):
+				true/false (Indicates whether the tool should appear in the toolbar or not)
+	separator (not required):
+				true/false (Indicates whether a separator should appear after the tool)
+
+	"link" element valid attributes:
+	(link elements should appear as child elements of a tool element with "name" attribute set to "Links")
+	name (required):
+				Link/Category Name/Alias
+	href (not required):
+				URL of the link/category
+	target (not required):
+				target window of the link
+	tooltip (not required):
+				the tooltip for the link
+
+	"symbol" element valid attributes:
+	(symbol elements should appear as child elements of a tool element with "name" attribute set to "Symbols")
+	value (required)
+				the symbol to be displayed
+
+	"font" element valid attributes:
+	(font elements should appear as child elements of a tool element with "name" attribute set to "Font")
+	name (required):
+				Font Name
+
+	"class" element valid attributes:
+	(class elements should appear as child elements of a tool element with "name" attribute set to "Class")
+	name (required):
+				Class Alias
+	value (required):
+				Class Name
+
+	"paragraph" element valid attributes:
+	(paragraph elements should appear as child elements of a tool element with "name" attribute set to "Paragraph")
+	name (required):
+				Paragraph Alias
+	value (required):
+				Paragraph Name
+
+	"color" element valid attributes:
+	(color elements should appear as child elements of a tool element with "name" attribute set to "ForeColor" or "BackColor")
+	value (required):
+				Hex value of the color
+
+	"snippet" element valid attributes:
+	(snippet elements should appear as child elements of a tool element with "name" attribute set to "InsertSnippet")
+	name (required):
+				Snippet Alias
+
+	"language" element valid attributes:
+	(language elements should appear as child elements of a tool element with "name" attribute set to "MultiLanguageSpellChecker")
+	code (required):
+				Language Code
+	title (required):
+				Language title
+
+=============================================================================================== -->

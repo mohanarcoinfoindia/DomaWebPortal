@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <FolderText>false</FolderText>
+  <FiltersFile></FiltersFile>
+  <ToolbarFile>DefaultCasePackageGridToolbar.xml</ToolbarFile>
+
+  <AllowOrderBy>true</AllowOrderBy>
+
+  <ShowFilters>true</ShowFilters>
+  <ShowScroller>true</ShowScroller>
+  <ShowSideBar>false</ShowSideBar>
+
+  <HeaderContextMenus>true</HeaderContextMenus>
+  <ItemContextMenus>true</ItemContextMenus>
+  <SelectionSite></SelectionSite>
+  <ForceJoinOnDMObject>false</ForceJoinOnDMObject>
+  <columns>      
+    <column name="status"></column>
+    <column name="expand"></column>
+    <column name="documentlinks" size="80" ShowToolTip="1" extra="cellpadding='0'"></column>   
+    <column name="procedure" filterwidth="50"></column>
+    <column name="step" labelE="Step" labelN="Stap" labelF="Etape"></column>  
+    <column name="title" chars="100" extra="NOWRAP" labelE="Title" labelN="Titel" labelF="Titre" ></column>
+   
+  </columns>
+
+</screendef>

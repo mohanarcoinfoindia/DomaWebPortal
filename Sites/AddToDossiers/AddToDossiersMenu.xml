@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<Menu>
+  <Group Flow="Horizontal">
+    <Item Text="New" Value="New" NavigateUrl="javascript:AddObject('Dossier');"></Item>
+    <Item Text="Search" NavigateUrl="Javascript:SearchList('Dossier');"></Item>  
+  </Group>
+</Menu>

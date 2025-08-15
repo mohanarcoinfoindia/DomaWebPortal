@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<grouping enabled="y" width="220px" height="100%" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Gridgrouping.xsd">
+  <grouper id="1" usergrouper="true" applyfiltertogrouper="true" LabelE="Category" LabelN="Categorie" LabelF="Catégorie" LabelG="Category" position="top" itemsperrow="10" >
+    <field value="CAT_ID"/>
+  </grouper>
+  <grouper- id="2" showinsearchscreen="true" defaultenabled="true" usergrouper="true" applyfiltertogrouper="true" LabelE="Type + Cat" LabelN="Type + Cat" LabelF="Type + Cat" LabelG="Type + Cat" orderbyvalue="false">
+    <field value="OBJ_TYPE"/>
+    <field value="CAT_ID"/>
+  </grouper->
+  <grouper id="2" usergrouper="true" defaultenabled="false" applyfiltertogrouper="true" LabelE="Name"  itemsperrow="10" orderbyvalue="true">
+    <field value="OBJ_NAME"/>
+    <field value="OBJ_STATUS"/>
+  </grouper>
+  <grouper- id="5" usergrouper="false" applyfiltertogrouper="true" LabelE="Country" LabelN="Country" LabelF="Country" LabelG="Country" height="200px">
+    <field value="IDX_4031216"/>
+  </grouper->
+  <grouper id="4" usergrouper="true" applyfiltertogrouper="false" LabelE="Category" LabelN="Categorie" LabelF="Category" LabelG="Category" >
+    <field value="IDX_11892" />
+  </grouper>
+  <grouper id="6" usergrouper="true" applyfiltertogrouper="true" linktogrouper="5">
+    <field value="IDX_11892" />
+  </grouper>
+  <grouper id="7" usergrouper="true" applyfiltertogrouper="false"  LabelE="CreationDate" LabelN="Creatiedatum detailed" LabelF="Creatiedatum" LabelG="Creatiedatum">
+    <field value="dbo.TestFormatDate(obj_creation_date)" ></field>
+    <field value="obj_creation_date" ></field>
+
+    
+  </grouper>
+  <grouper- id="8" hideicons="false" showinsearchscreen="false" defaultenabled="true" usergrouper="false" applyfiltertogrouper="true" LabelE="Date Prop" LabelN="Date Prop" LabelF="Date Prop" LabelG="Keywords" height="200px">
+    <field value="IDX_4031159" formatter="date"/>
+  </grouper->
+  <grouper- id="9" hideicons="false" showinsearchscreen="false" defaultenabled="true" usergrouper="false" applyfiltertogrouper="true" LabelE="Datetime Prop" LabelN="Datetime Prop" LabelF="Datetime Prop" LabelG="Keywords" height="200px">
+    <field value="IDX_4031238" formatter="date"/>
+  </grouper->
+  <grouper- id="8" hideicons="false" showinsearchscreen="false" defaultenabled="true" usergrouper="false" applyfiltertogrouper="true" LabelE="Keywords" LabelN="Keywords" LabelF="Keywords" LabelG="Keywords" height="200px">
+    <field value="IDX_12387"/>
+  </grouper->
+  <grouper- id="8" hideicons="false" showinsearchscreen="false" defaultenabled="false" usergrouper="true" applyfiltertogrouper="true" LabelE="test_lookup" LabelN="test_lookup" LabelF="test_lookup" LabelG="test_lookup" height="200px">
+    <field value="property:test_lookup"/>
+  </grouper->
+</grouping>

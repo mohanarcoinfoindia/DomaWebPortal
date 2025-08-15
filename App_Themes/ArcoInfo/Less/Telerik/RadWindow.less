@@ -1,0 +1,66 @@
+﻿﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+/// <reference path="../variables-icons.less" />
+
+.RadWindow.RadWindow_Default {
+    border-radius: @input-border-radius;
+    background-color: @color-bg-white;
+    border-style: solid;
+    border-color: @color-shade-80;
+
+    .rwTopLeft,
+    .rwTopRight,
+    .rwTitlebar,
+    .rwFooterLeft,
+    .rwFooterRight,
+    .rwFooterCenter,
+    .rwTopResize,
+    .rwStatusbar div,
+    .rwStatusbar,
+    .rwPopupButton,
+    .rwPopupButton span,
+    &.rwMinimizedWindow .rwCorner,
+    .rwBodyLeft,
+    .rwBodyRight,
+    .rwStatusbarRow .rwCorner {
+        background: none !important;
+    }
+
+    .rwControlButtons {
+        a, a:hover {
+            //remove maximize and close image
+            background: none !important;
+        }
+    }
+
+    .rwTitlebarControls {
+
+        a.rwMaximizeButton {
+            background-image: @url-fullscreen !important;
+            background-repeat: no-repeat !important;
+        }
+
+        a.rwCloseButton {
+            background-image: @url-close !important;
+            background-repeat: no-repeat !important;
+        }
+
+        td em {
+            text-align: center;
+            .font-large();
+        }
+    }
+}
+
+body.domaBodyModal .DetailTable .detail-form-container {
+    padding: 0 10px 0 10px;
+}
+
+.RadWindow.RadWindow_Default.rwNormalWindow.rwTransparentWindow {
+    height: unset !important;
+}
+
+.TelerikModalOverlay{
+    background-color: @color-black !important;
+    opacity: 0.4 !important;
+}

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <mode>0</mode>
+
+  <DefaultOrderBy>MAIL_DATE DESC</DefaultOrderBy>
+  <DefaultFileOrderBy></DefaultFileOrderBy>
+  <KeepSearchScreenVisible>false</KeepSearchScreenVisible>
+  <FolderText>false</FolderText>
+  <FiltersFile></FiltersFile>
+  <GroupingFile>MailGrouping.xml</GroupingFile>
+  <ToolbarFile>mymailtoolbar.xml</ToolbarFile>
+
+  <columns>
+    <column name="multiselect"></column>
+    <column name="status" />
+    <column name="mailbox"></column>
+    <column name="mailsubject" chars="100" extra="NOWRAP" labelE="Subject" labelN="Onderwerp" labelF="Sujet" ></column>
+    <column name="mailfrom" labelE="From" labelN="Van" labelF="De"></column>
+    <column name="mailto" labelE="To" labelN="Aan" labelF="Vers"></column>
+    <column name="maildate" labelE="Date" labelN="Datum" labelF="Date"></column>
+    <column name="deletelink"></column>
+  </columns>
+  <rows>
+
+
+  </rows>
+</screendef>

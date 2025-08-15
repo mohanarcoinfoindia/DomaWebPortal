@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <ShowQueries>false</ShowQueries>
+  <ShowFilters>false</ShowFilters>
+  <columns>
+    <column name="multiselect" />
+    <column name="status" />
+    <column name="expand" />
+    <column name="documentlinks" size="80" extra="cellpadding='0'" ShowToolTip="false" />
+    <column name="title" extra="NOWRAP" chars="100" labelE="Title" labelF="Titre" labelN="Titel" />
+    <column name="version" />
+    <column name="category" size="100" />
+    <column name="creationdate" />
+    <column name="read" hidefilter="true" />
+    <column name="linktome" />
+  </columns>
+</screendef>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Toolbar enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\GridToolbar.xsd">
+  <Item Text="Clear Favorites" LabelN="Favorieten leegmaken" LabelF="Effacer tous les favoris" ImageClass="icon-favorites-remove-all" NavigateUrl="javascript:#GRID#.ClearSelection(3,true);" />
+  <Item Text="Remove from Favorites" ToggleOnMultiSelect="true" LabelN="Verwijderen uit favorieten" LabelF="Supprimer de la liste des favoris" ImageClass="icon-favorites-remove" NavigateUrl="javascript:#GRID#.RemoveFromSelection(3,true);" /> 
+  <Item isSeparator="true"></Item>
+  <Item Text="Refresh" ImageClass="icon-refresh" LabelN="Hernieuwen" LabelF="Rafraïchir" NavigateUrl="javascript:#GRID#.Reload();"/>
+  <Item Text="What's new" ImageClass="icon-folder-mynewdocs" ShowText="false" LabelE="" LabelF="Quoi de neuf" LabelN="Nieuwe items" LabelG="Neuigkeiten" NavigateUrl="javascript:#GRID#.ToggleWhatsNew();"/>
+  <Item isSeparator="true"></Item>
+  <Item Text="Print" LabelE="Print" LabelN="Afdrukken" LabelF="Imprimer" LabelG="Abdrucken" ImageClass="icon-printer"  NavigateUrl="javascript:#GRID#.PrintGrid();"/>
+  <Item Text="Send by mail" ToggleOnMultiSelect="true" ImageClass="icon-message-mail-attach"  LabelE="Send by e-mail" LabelN="Versturen per mail" LabelF="Envoyer par courriel" LabelG="" NavigateUrl="javascript:#GRID#.MailSelection();" />
+  <Item Text="Download files to ZIP" ToggleOnMultiSelect="true" LabelE="" LabelN="Bestanden downloaden naar ZIP" LabelF="Télécharger les fichiers en ZIP" LabelG="" ImageClass="icon-download-zip" NavigateUrl="javascript:#GRID#.DoDocumentListAction(2,0);"/>
+  <Item Text="Compare Documents" ToggleOnMultiSelect="true" ImageClass="icon-document-compare" ShowText="false"  LabelE="" LabelN="Documenten vergelijken" LabelF="Comparer les documents" LabelG="" NavigateUrl="Javascript:PageController().OpenWindow('./Tools/DocCompare.aspx?docs=' + #GRID#.GetSelection(),'compdocs');" />
+  <Item Text="Compare Files" ToggleOnMultiSelect="true" ImageClass="icon-file-compare" ShowText="false" LabelE="" LabelN="Bestanden vergelijken" LabelF="Comparer les fichiers" LabelG="" NavigateUrl="Javascript:PageController().OpenWindow('./Tools/FileCompare.aspx?docs=' + #GRID#.GetSelection(),'compfiles');" />
+  <Item isCustomActionPlaceHolder="true"></Item>
+  <Item isSeparator="true"></Item>
+  <Item Text="Copy/Move to Folder" ToggleOnMultiSelect="true"  LabelE="Copy/Move/Shortcut to folder" ImageClass="icon-folder-moveto" LabelN="Kopieren/Verplaatsen/Snelkoppeling naar map" LabelF="Copier/Deplacer/Raccourci vers..." LabelG=""  NavigateUrl="javascript:#GRID#.CopyMoveSelection();" />
+  <Item Text="Delete" ToggleOnMultiSelect="true" LabelE="Delete" LabelN="Verwijderen" LabelF="Supprimer" LabelG="Löschen" ImageClass="icon-delete" NavigateUrl="javascript:#GRID#.DoDocumentListAction(4,0);"/>
+  <Item isSeparator="true"></Item>
+  <Item Text="Add to Clipboard" ToggleOnMultiSelect="true" ImageClass="icon-copy-clipboard"  LabelE="Add to Docroom Clipboard" LabelN="Toevoegen aan het DocRoom Klembord" LabelF="Ajouter au Clipboard" LabelG="" NavigateUrl="Javascript:#GRID#.AddToSelection(7);" />
+  <Item Text="Add to basket" ToggleOnMultiSelect="true" ImageClass="icon-basket-add"  LabelE="Add to your basket" LabelN="Toevoegen aan mand" LabelF="Ajouter au panier" LabelG="In den Korb legen" NavigateUrl="Javascript:#GRID#.AddToSelection(2);" />
+</Toolbar>

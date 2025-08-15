@@ -1,0 +1,77 @@
+﻿/// <reference path="Variables.less">
+/// <reference path="typography.less">
+/// <reference path="../../Common/Less/Paths.less">
+
+.PanelPage {
+    background-image: @url-login-background;
+    background-color: @color-shade-60;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .Panel.Centered {
+        background-color: rgba(256, 256, 256, 0.6);
+        border-style: solid;
+        border-color: @color-shade-50;
+        border-radius: 10px;
+
+        .Content {
+
+            fieldset {
+                legend {
+                    color: @color-primary-dark;
+                }
+            }
+
+            ol > li {
+
+                a {
+                    font-size: @baseFontSize;
+                }
+            }
+
+            span, Label {
+                font-weight: @baseFontWeight;
+                font-size: @largeFontSize;
+            }
+
+            input[type=text],
+            input[type=email],
+            input[type=password],
+            input,
+            input:hover,
+            input:focus,
+            input:active {
+                -webkit-box-shadow: 0 0 0 30px white inset !important;
+                border-radius: @input-border-radius;
+                border-color: @color-border-input;
+            }
+
+            select {
+                border-radius: @input-border-radius;
+                border-color: @color-border-input;
+            }
+        }
+    }
+
+    .langList {
+        li {
+            .code {
+                a {
+                    color: @color-primary-dark;
+
+                    &:hover {
+                        color: @color-primary-light;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ShowPassword {
+    background-image: @url-showpassword;
+}
+

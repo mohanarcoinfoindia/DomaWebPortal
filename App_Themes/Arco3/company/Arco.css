@@ -1,0 +1,81 @@
+﻿.MainLogo_Default {
+    background: transparent url(../Img/Arco_Logo_Logo_WHITE.png) no-repeat;
+    width: auto;
+    height: 40px;
+    background-size: contain;
+}
+
+.BigLogo_Default {
+    content: "";
+    width: 190px;
+    height: 64px;
+    background: transparent url(../Img/arco_logo_blue.png) no-repeat;
+    background-size: 190px 64px;
+}
+
+.RadWindow.RadWindow_Default .rwTitlebarControls a.rwCloseButton {
+	filter: brightness(0) saturate(100%) invert(9%) sepia(22%) saturate(4053%) hue-rotate(237deg) brightness(100%) contrast(102%);
+}
+
+.RadWindow.RadWindow_Default .rwTitlebarControls a.rwMaximizeButton {
+	filter: brightness(0) saturate(100%) invert(9%) sepia(22%) saturate(4053%) hue-rotate(237deg) brightness(100%) contrast(102%);
+}
+
+img.mainmenu_img {
+	filter: brightness(0) saturate(100%)  invert(100%) sepia(0%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
+}
+
+
+.FolderLink img {
+	 /* filter: brightness(0) saturate(100%) invert(12%) sepia(10%) saturate(4928%) hue-rotate(225deg) brightness(95%) contrast(106%);  */
+	 width: 20px;
+	 border-radius: 5px;
+}
+
+.rtbItem.rtbBtn .rtbWrap.rtbIconOnly .rtbOut .rtbMid .rtbIn .rtbIcon {
+	color: #21123d !important;
+}
+
+.rtbItem.rtbBtn.rtbDisabled .rtbWrap.rtbIconOnly .rtbOut .rtbMid .rtbIn .rtbIcon{
+	color: #999999 !important;
+}
+a.FolderLink:hover{
+	text-decoration:underline;
+}
+
+.RadAjaxPanel img {
+    max-width: 20px;
+}
+
+.dmViewFileName {
+	color: #eb808f;
+}
+
+.MainMenu_NavLink, .mainmenu_username {
+	color: white !important;
+}
+
+.MainMenu_header {
+	background-color: #21123d !important;
+}
+
+.mainmenu_username {
+	margin-top: 5px;
+}
+
+table.List .ListContent:nth-child(odd):not(.ListFooter):not(.ListSubContent):not(.ListFilter):not(.SubSubList):not(.ListHeader) { /*, Table.SubList tr:nth-child(even):not(.ListFooter):not(.ListSubContent) {*/
+     background-color: #f4f1ed; 
+}
+
+.MainMenu_TogglerIcon  {
+	filter: brightness(0) saturate(100%)  invert(100%) sepia(0%) saturate(7500%) hue-rotate(285deg) brightness(114%) contrast(105%);
+}
+
+.FieldCell img {
+	width: 20px;
+}
+
+.detail-form-container .detail-form-row input:not([type=button]),
+.detail-form-container .detail-form-row textarea {
+  padding: 0 10px 0 10px !important;
+}

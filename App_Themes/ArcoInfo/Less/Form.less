@@ -1,0 +1,214 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+/// <reference path="Paths.less" />
+
+//only for detail page
+.detailView {
+    .detail-form-container {
+        .detail-form-row {
+            .ReadOnlyFieldCell {
+                span {
+                    font-size: @baseFontSize;
+                    font-weight: @form-font-weight;
+                }
+            }
+        }
+    }
+}
+
+.detail-form-container {
+    .detail-form-row {
+
+        input:not(.gridfilter) {
+            border-radius: @input-border-radius;
+        }
+
+
+        .FieldCell {
+            font-size: @baseFontSize !important;
+            font-weight: @form-font-weight !important;
+
+
+            input[type=text]:not(.rcbInput),
+            input[type=password] {
+                font-size: @baseFontSize !important;
+            }
+
+            .RadListBox_Default {
+                .font-default();
+
+                .rlbGroup {
+                    color: @color-primary-dark;
+                }
+            }
+        }
+
+        .RowCell {
+            font-size: @baseFontSize !important;
+            font-weight: @form-font-weight !important;
+        }
+
+        .LabelCell {
+            font-size: @baseFontSize !important;
+            font-weight: @form-font-weight !important;
+            color: @color-label;
+        }
+    }
+}
+
+.tooltip-icon {
+    background-image: @url-help;
+}
+
+.GroupingDiv {
+    border-radius: @input-border-radius;
+}
+
+.groupingRow {
+    background-color: @color-bg-white;
+    border-radius: 0 0 @input-border-radius @input-border-radius;
+}
+
+.level0 > .RowCell > .yui-skin-xp {
+    border-style: solid;
+    border-color: @color-border-default;
+}
+
+.level0 > .GroupingDiv > .SubListHeader3RightFullFillerDiv + .groupingRow {
+    border-left-style: solid;
+    border-left-color: @color-border-default;
+    border-right-style: solid;
+    border-right-color: @color-border-default;
+    border-bottom-style: solid;
+    border-bottom-color: @color-border-default;
+}
+
+.level0 > .GroupingDiv > .SubListHeader3RightFillerDiv,
+.level0 > .GroupingDiv > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > div > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > div > div > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > span > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > span > div > div > div > div > div > .SubListHeader3RightFullFillerDiv,
+.ListHeader3RightFillerDiv {
+    border-top-style: solid !important;
+    border-top-color: @color-border-default !important;
+    border-left-style: solid !important;
+    border-left-color: @color-border-default !important;
+    border-right-style: solid !important;
+    border-right-color: @color-border-default !important;
+    background-color: fade(@color-primary-light-10, 40%);
+
+    &.collapsed {
+        border-bottom-style: solid !important;
+        border-bottom-color: @color-border-default !important;
+        border-radius: @input-border-radius;
+    }
+}
+
+.level0 > .RowCell > .SubListDiv,
+.level0 > .RowCell > span > div > .SubListDiv,
+.level0 > .RowCell > span > div > div > .SubListDiv,
+.level0 > .RowCell > span > span > .SubListDiv,
+.level0 > .RowCell > span > span > div > div > div > div > div > .SubListDiv,
+.ListDiv {
+    border-left-style: solid;
+    border-left-color: @color-border-default;
+    border-right-style: solid;
+    border-right-color: @color-border-default;
+    border-bottom-style: solid;
+    border-bottom-color: @color-border-default;
+}
+
+// start grouper layout: card
+.level0, .level1 {
+    > .GroupingDiv.layout-card {
+        > .SubListHeader3RightFillerDiv,
+        > .SubListHeader3RightFullFillerDiv {
+            border-top-style: solid;
+            border-top-color: @color-border-darker !important;
+            border-left-style: solid;
+            border-left-color: @color-border-darker !important;
+            border-right-style: solid;
+            border-right-color: @color-border-darker !important;
+            background-color: @color-bg-white;
+
+            &.collapsed {
+                border-bottom-color: @color-border-darker !important;
+            }
+
+            + .groupingRow {
+                border-left-style: solid;
+                border-left-color: @color-border-darker;
+                border-right-style: solid;
+                border-right-color: @color-border-darker;
+                border-bottom-style: solid;
+                border-bottom-color: @color-border-darker;
+            }
+        }
+
+        .groupingRow:first-child {
+            border-style: solid;
+            border-color: @color-border-darker;
+            border-radius: @input-border-radius;
+        }
+    }
+}
+// end grouper layout: card
+
+textarea.MultiLine {
+    border-radius: @input-border-radius;
+    border-style: solid;
+    border-color: @color-border-input;
+    .font-default();
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+select,
+.RadInput.riSingle input.riTextBox,
+.RadInput.RadInput_Default .riTextBox,
+.RadUpload_Default .ruFakeInput {
+    border-radius: @input-border-radius;
+    border-style: solid;
+    border-color: @color-border-input;
+    .font-default();
+}
+
+.detailView .RadComboBox .rcbInput {
+    .font-default();
+}
+
+textarea {
+    border-radius: @input-border-radius;
+    border-style: solid;
+    border-color: @color-border-input;
+    font-weight: @baseFontWeight;
+    color: @color-primary-dark;
+}
+
+
+.invalidField {
+    border-style: solid !important;
+    border-color: @color-error-120 !important;
+    color: @color-error-120 !important;
+}
+
+html body .detailView .RadInput_Default .riTextBox, html body .detailView .RadInputMgr_Default {
+    .font-default();
+}
+
+select {
+    background-position: right 7px top 11px;
+    background-size: 7px;
+    background-image: @url-dropdown;
+    background-repeat: no-repeat;
+}
+
+.FormField-Message {
+    font-size: @baseFontSize !important;
+    font-weight: @baseFontWeight !important;
+    color: @color-shade-80;
+}

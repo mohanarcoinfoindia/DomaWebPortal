@@ -1,0 +1,137 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+/// <reference path="../Paths.less" />
+
+.RadToolTip_Default {
+    border: 1px solid @color-shade-60;
+    background-color: @color-bg-white;
+    color: @color-primary-dark;
+    border-radius: @input-border-radius;
+    font-family: @baseFontFamily;
+    font-size: @baseFontSize;
+    top: 70px;
+}
+
+.RadToolTip_Default.rtShadow {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.31);
+}
+
+.RadToolTip_Default table.rtWrapper tr.rtVisibleTitleBar td {
+    height: 34px;
+}
+
+.RadToolTip_Default .rtWrapperTopCenter div.rtTitlebar {
+    margin: 0 0 0 7px;
+    font: @largeFontSize/22px @baseFontFamily;
+}
+
+.RadToolTip_Default.rtLoading {
+    background: @url-loading no-repeat center;
+    box-shadow: none;
+}
+
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton,
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:hover,
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:active,
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:focus {
+    background-image: @url-action-sprite;
+    background-position: -115px -1915px;
+    width: 20px;
+    height: 20px;
+    border-radius: 45px;
+    margin: -2px -2px 0 0;
+    *background-color: @color-primary-dark;
+}
+
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton span {
+    background-color: @color-primary-dark;
+    *background-color: transparent;
+    position: relative;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 45px;
+}
+
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:hover span {
+    background-color: @color-primary-dark;
+    *background-color: transparent;
+}
+
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:active span,
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:focus span {
+    background-color: @color-primary-dark;
+    *background-color: transparent;
+}
+
+.RadToolTip_Default table.rtWrapper td.rtWrapperContent {
+    background-color: transparent;
+    color: @color-primary-dark;
+    font-family: @baseFontFamily;
+    font-size: @baseFontSize;
+    padding: 0;
+}
+
+.RadToolTip_Default.rtVisibleCallout div.rtCallout {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-right: 1px solid @color-shade-60;
+    border-bottom: 1px solid @color-shade-60;
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    z-index: -1;
+}
+
+        
+ 
+
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutTopRight,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutTopCenter,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutTopLeft {
+    background-position: 0 0;
+    margin-top: -7px;
+}
+
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutTopRight {
+    margin-left: -40px;
+}
+
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomRight,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomCenter,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomLeft {
+    background-position: 0 -10px;
+}
+
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutMiddleRight {
+    background-position: 7px -40px;
+}
+
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutMiddleLeft {
+    background-position: 0 -60px;
+    margin-left: -7px;
+}
+
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomRight,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomCenter,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomLeft {
+    background-position: 0 -13px;
+}
+
+.RadToolTip_Default.RadToolTip_rtl table.rtShadow .rtCloseButton,
+.RadToolTip_Default.RadToolTip_rtl table.rtShadow .rtCloseButton:hover {
+    left: -8px;
+}
+
+.rtWrapperLeftMiddle, .rtWrapperRightMiddle, .rtWrapperTopLeft, .rtWrapperTopCenter, .rtWrapperTopRight, .rtWrapperBottomLeft, .rtWrapperBottomCenter, .rtWrapperBottomRight {
+    display: none;
+}

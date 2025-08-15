@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="columns">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="column" nillable="true" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:simpleContent msdata:ColumnName="column_Text" msdata:Ordinal="16">
+              <xs:extension base="xs:string">
+                <xs:attribute name="name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="linktome"/>
+                      <xs:enumeration value="read"/>
+                      <xs:enumeration value="status"/>
+                      <xs:enumeration value="multiselect"/>
+                      <xs:enumeration value="expand"/>
+                      <xs:enumeration value="version"/>
+                      <xs:enumeration value="custom"/>
+                      <xs:enumeration value="objecttype"/>
+                      <xs:enumeration value="category"/>
+                      <xs:enumeration value="creationdate"/>
+                      <xs:enumeration value="documentlinks"/>
+                      <xs:enumeration value="basket"/>
+                      <xs:enumeration value="favorites"/>
+                      <xs:enumeration value="cdrom"/>
+                      <xs:enumeration value="comments"/>
+                      <xs:enumeration value="links"/>
+                      <xs:enumeration value="previousversions"/>
+                      <xs:enumeration value="procedure"/>
+                      <xs:enumeration value="title"/>
+                      <xs:enumeration value="caseenddate"/>
+                      <xs:enumeration value="step"/>
+                      <xs:enumeration value="worklist"/>
+                      <xs:enumeration value="createdby"/>
+                      <xs:enumeration value="stepdate"/>
+                      <xs:enumeration value="duedate"/>
+                      <xs:enumeration value="caseduedate"/>
+                      <xs:enumeration value="stepduedate"/>
+                      <xs:enumeration value="deadlineicon"/>
+                      <xs:enumeration value="duedateicon"/>
+                      <xs:enumeration value="expiredicon"/>
+                      <xs:enumeration value="locked"/>
+                      <xs:enumeration value="rejected"/>                   
+                      <xs:enumeration value="relevance"/>
+                      <xs:enumeration value="checkoutstart"/>
+                      <xs:enumeration value="checkoutend"/>
+                      <xs:enumeration value="checkoutby"/>
+                      <xs:enumeration value="checkoutcomment"/>
+                      <xs:enumeration value="checkincomment"/>
+                      <xs:enumeration value="linktype"/>
+                      <xs:enumeration value="property"/>                      
+                      <xs:enumeration value="constant"/>
+                      <xs:enumeration value="folder"/>
+                      <xs:enumeration value="mainfile"/>
+                      <xs:enumeration value="file"/>
+                      <xs:enumeration value="rank"/>
+                      <xs:enumeration value="icon"/>
+                      <xs:enumeration value="dragdrop"/>
+                      <xs:enumeration value="name"/>
+                      <xs:enumeration value="modifby"/>
+                      <xs:enumeration value="modificationdate"/>
+                      <xs:enumeration value="id"/>
+                      <xs:enumeration value="din"/>
+                      <xs:enumeration value="restorelink"/>
+                      <xs:enumeration value="deletelink"/>
+                      <xs:enumeration value="linktorouting"/>
+                      <xs:enumeration value="linktopackage"/>
+                      <xs:enumeration value="thumbnail"/>
+                      <xs:enumeration value="abstract"/>
+                      <xs:enumeration value="context"/>
+                      <xs:enumeration value="keywords"/>
+                      <xs:enumeration value="listinfo"/>
+                      <xs:enumeration value="listinfo1"/>
+                      <xs:enumeration value="listinfo2"/>
+                      <xs:enumeration value="listinfo3"/>
+                      <xs:enumeration value="description"/>
+                      <xs:enumeration value="mailsubject"/>
+                      <xs:enumeration value="mailto"/>
+                      <xs:enumeration value="mailfrom"/>
+                      <xs:enumeration value="mailcc"/>
+                      <xs:enumeration value="mailbcc"/>
+                      <xs:enumeration value="maildate"/>
+                      <xs:enumeration value="mailreaddate"/>
+                      <xs:enumeration value="mailreplieddate"/>
+                      <xs:enumeration value="mailcloseddate"/>
+                      <xs:enumeration value="mailtemplate"/>
+                      <xs:enumeration value="mailbox"/>
+                      <xs:enumeration value="priority"/>
+                      <xs:enumeration value="history"/>
+                      <xs:enumeration value="laststepexecutor"/>
+                      <xs:enumeration value="combined"/>                      
+                      <xs:enumeration value="selectiondate"/>
+                      <xs:enumeration value="casestatus"/>
+                      <xs:enumeration value="package"/>
+                      <xs:enumeration value="packagedate"/>
+                      <xs:enumeration value="retentionpolicy"/>
+                      <xs:enumeration value="customaction"/>
+                      <xs:enumeration value="userevent"/>
+                      <xs:enumeration value="lastnote"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute name="assembly" type="xs:string" />
+                <xs:attribute name="class" type="xs:string" />
+                <xs:attribute name="formatter" type="xs:string" />
+                <xs:attribute name="chars" type="xs:int" />
+                <xs:attribute name="extra" type="xs:string" />
+                <xs:attribute name="labelE" type="xs:string" />
+                <xs:attribute name="labelN" type="xs:string" />
+                <xs:attribute name="labelF" type="xs:string" />
+                <xs:attribute name="filterwidth" type="xs:string" />
+                <xs:attribute name="size" type="xs:string" />
+                <xs:attribute name="min-size" type="xs:string" />
+                <xs:attribute name="max-size" type="xs:string" />
+                <xs:attribute name="hidefilter" type="xs:string" />
+                <xs:attribute name="ShowToolTip" type="xs:string" />
+                <xs:attribute name="colspan" type="xs:int" />
+                <xs:attribute name="activatelink" type="xs:string" />
+                <xs:attribute name="value" type="xs:string" />
+                <xs:attribute name="hidden" type="xs:boolean" />
+                <xs:attribute name="fixed" type="xs:boolean" />
+                <xs:attribute name="siteVersion" type="xs:int" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="screendef">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="mode" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:int">
+              <xs:enumeration value="0"></xs:enumeration>
+              <xs:enumeration value="1"></xs:enumeration>
+            </xs:restriction>
+            
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ImageListColumnCount" type="xs:int" minOccurs="0" />
+        <xs:element name="ImageListOrientation" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:int">
+              <xs:enumeration value="0"></xs:enumeration>
+              <xs:enumeration value="1"></xs:enumeration>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ScrollerAlign" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="Center"></xs:enumeration>
+              <xs:enumeration value="Left"></xs:enumeration>
+              <xs:enumeration value="Right"></xs:enumeration>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="DefaultOrderBy" type="xs:string" minOccurs="0" />
+        <xs:element name="DefaultFileOrderBy" type="xs:string" minOccurs="0" />
+        <xs:element name="KeepSearchScreenVisible" type="xs:boolean" minOccurs="0" />
+        <xs:element name="FolderText" type="xs:boolean" minOccurs="0" />
+        <xs:element name="FiltersFile" type="xs:string" minOccurs="0" />
+        <xs:element name="GroupingFile" type="xs:string" minOccurs="0" />
+        <xs:element name="ToolbarFile" type="xs:string" minOccurs="0" />
+        <xs:element name="ContextMenuFile" type="xs:string" minOccurs="0"/>
+        <xs:element name="ForceJoinOnDMObject" type="xs:boolean" minOccurs="0" />
+        <xs:element name="ShowQueries" type="xs:boolean" minOccurs="0" />
+        <xs:element name="ShowSearchedFor" type="xs:boolean" minOccurs="0" />
+        <xs:element name="AllowOrderBy" type="xs:boolean" minOccurs="0"  />
+        <xs:element name="ShowFilters" type="xs:boolean" minOccurs="0"/>
+        <xs:element name="ShowScroller" type="xs:boolean" minOccurs="0"/>
+        <xs:element name="ShowSideBar" type="xs:boolean" minOccurs="0"/>
+        <xs:element name="HeaderContextMenus" type="xs:boolean" minOccurs="0"/>
+        <xs:element name="ItemContextMenus" type="xs:boolean" minOccurs="0"/>
+        <xs:element name="AutoLoad" type="xs:boolean" minOccurs="0"/>
+        <xs:element name="Category" type="xs:int" minOccurs="0"/>
+        <xs:element name="Procedure" type="xs:int" minOccurs="0"/>
+        <xs:element name="SelectionSite" type="xs:string" minOccurs="0"/>
+        <xs:element name="RecordsPerPage" type="xs:int" minOccurs="0"/>
+        <xs:element name="OpenDetailWindowsModal" type="xs:boolean" minOccurs="0"/>
+        <xs:element name="EnableQuickUpload" type="xs:boolean" minOccurs="0"/>
+        <xs:element ref="columns" minOccurs="0" maxOccurs="1" />              
+        <xs:element name="rows" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="row" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="columns" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>               
+      </xs:all>
+      
+    
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="1">        
+        <xs:element ref="screendef" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

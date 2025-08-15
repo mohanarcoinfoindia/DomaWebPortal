@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lists>
+  <list name="objects" value=""></list>
+  <list name="files" value="FILE_ATT ASC,FILE_TITLE ASC"></list>
+  <list name="files_" value="FILE_ATT ASC,FILE_FIN DESC"></list>
+</lists>

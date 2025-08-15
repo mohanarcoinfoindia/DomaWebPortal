@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<Menu>
+  <Group Flow="Horizontal">
+    <Item Text="Whatsnew" NavigateUrl="javascript:ShowWhatsNew();" />
+    <Item Text="Basket" NavigateUrl="javascript:ShowBasket();"/>
+    <Item Text="Favorites" NavigateUrl="javascript:ShowFavorites();"/>    
+    <Item Text="MyCheckedOutDocs" NavigateUrl="javascript:ShowMyCheckedOutDocs();"/>   
+    <Item Text="Mywork" NavigateUrl="javascript:ShowMyWork();"/>
+  </Group>
+</Menu>    
+      

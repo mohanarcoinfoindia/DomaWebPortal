@@ -1,0 +1,77 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+@selected-tab-border-width: 2px;
+
+.yui-skin-xp {
+    margin-top: 0px;
+}
+
+.RadTabStrip_Simple {
+    width: 100%;
+    border-width: 1px 1px 0px 1px;
+}
+
+.RadMultiPage {
+    border-width: 0px 1px 1px 1px;
+}
+
+
+.RadTabStrip_Simple li {
+    margin: 0 0 -3px 0 !important; //fix border alignment
+}
+
+.PreviewPage .RadTabStrip_Simple li {
+    a,
+    a.rtsLink {
+        padding: 2px 10px 5px 10px !important; //add extra padding to bottom because of -3px margin
+    }
+}
+
+.RadTabStrip_Simple,
+.nav-tabs {
+    border-width: 1px !important;
+    padding: 0 !important;
+
+    li {
+        border: none;
+        border-bottom-width: @selected-tab-border-width;
+        padding: 0 !important;
+        zoom: 1;
+
+        .rtsOut {
+            padding: 0 !important;
+        }
+
+        a,
+        a.rtsLink {
+            margin: 0 !important;
+            border: none !important;
+            border-bottom-width: @selected-tab-border-width !important;
+            padding: 15px 30px 13px !important;
+
+            em,
+            .rtsTxt {
+                padding: 0px !important;
+                border: none !important;
+            }
+
+            &.rtsSelected {
+
+                &, &:focus, &:hover {
+                    height: inherit !important;
+                }
+            }
+        }
+
+        &.selected {
+            border-bottom-width: @selected-tab-border-width;
+
+            a {
+                &, &:focus, &:hover {
+                    height: inherit !important;
+                }
+            }
+        }
+    }
+}

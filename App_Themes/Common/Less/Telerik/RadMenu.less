@@ -1,0 +1,199 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+
+.RadMenu_Context .rmGroup .rmLeftImage {
+    width: 15px;
+    height: 15px;
+    font-size: 17px;
+}
+/*.RadMenu span.rmLeftImage {
+    float:right; //so font-icons as imagesprite are aligned right.
+}*/
+
+.RadMenu_MainNavigation {
+    float: right !important;
+
+    .rmLink, .rmText, .rmLeftArrow, .rmRightArrow, .rmTopArrow, .rmBottomArrow {
+        cursor: pointer;
+    }
+
+    .rmLink {
+
+        img.rmLeftImage[src*="Images/FolderLinkSep.png"] {
+            float: right;
+            width: 0;
+            height: 0;
+            padding: 8px;
+        }
+    }
+
+    &.RadMenu {
+        .rmLeftImage {
+            margin: 2px 5px 0px -6px;
+            width: 15px;
+            height: 15px;
+            font-size: 15px; //display icons smaller
+            float: right !important; //we want dropdown icons in radmenuitems to be aligned right.
+        }
+
+        .rmItem {
+            line-height: initial;
+        }
+
+        .rmGroup {
+
+            &.rmVertical {
+                padding: 0;
+
+                > .rmSeparator .rmText {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    border-width: 1px 0px 0px 0px;
+                }
+            }
+
+            .rmText {
+                margin: 0 0 0 -21px;
+                padding: 0 54px 0 28px;
+            }
+
+            .rmItem {
+                .rmLink {
+                    padding: 8px;
+
+                    .rmLeftImage {
+                        position: static;
+                        margin-top: 0;
+                    }
+                }
+
+                .rmLink, .rmLink:hover, .rmFocused, .rmSelected, .rmExpanded {
+                    border: 0;
+                }
+            }
+
+            li.rmSeparator.rmItem + li.rmItem {
+                border-top: none;
+            }
+        }
+    }
+
+    ul.rmRootGroup.rmHorizontal {
+        display: flex;
+        align-items: center;
+        /*.rmLink.rmRootLink {
+            display: flex;
+            flex-direction: row-reverse;
+        }*/
+        .rmItem.rmLast.rmTemplate {
+            .RadSearchBox {
+                width: 100%;
+            }
+
+            padding-left: 20px;
+        }
+    }
+
+    .rmVertical.rmGroup,
+    .rmScrollWrap.rmGroup {
+        border-width: 1px;
+    }
+
+    .RadSearchBox {
+        box-sizing: border-box;
+        height: 30px;
+
+        .rsbInner, .rsbHovered:not(.rsbButtonSearch) {
+            display: block;
+            box-sizing: border-box;
+            height: 100%;
+            padding: 0;
+        }
+
+        .rsbButtonSearch {
+            margin: 0;
+        }
+
+        .rsbInput {
+            height: 30px;
+            margin-left: 6px;
+        }
+
+        .rsbInner {
+            width: 250px;
+        }
+
+        .rsbButtonSearch, .rsbButton:hover {
+            border: none;
+            height: 32px;
+            width: 32px;
+            margin: -1px -1px 0 0;
+        }
+    }
+
+    .rmSlide {
+        margin: 0 0 0 -1px;
+    }
+
+    .rmRootGroup {
+        li.rmItem .rmGroup {
+            padding-bottom: 0;
+        }
+    }
+
+    .rmScrollWrap .rmVertical {
+        border: 0;
+    }
+
+    a.rmTopArrow, a.rmBottomArrow {
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 3px;
+
+        &:before {
+            content: '';
+            padding: 3px;
+            border-width: 0 2px 2px 0;
+            width: 0;
+            height: 0;
+        }
+    }
+
+    .rmTopArrow {
+        align-items: flex-end;
+
+        &:before {
+            transform: rotate(-135deg);
+        }
+    }
+
+
+    .rmBottomArrow {
+        align-items: flex-start;
+
+        &:before {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.RadMenu_MainNavigation .rmVertical .rmSlide,
+.RadMenu_MainNavigation .rmSlide .rmSlide,
+.RadMenu_MainNavigation_Context .rmGroup .rmSlide {
+    margin: 0 0 0 -5px;
+}
+
+.RadMenu_MainNavigation_rtl .rmSlide {
+    margin: 0 0 0 0;
+}
+
+.RadMenu_MainNavigation_rtl .rmFirst .rmSlide {
+    margin-left: 1px;
+}
+
+.RadMenu_MainNavigation_rtl .rmVertical .rmSlide,
+.RadMenu_MainNavigation_rtl .rmSlide .rmSlide,
+.RadMenu_MainNavigation_Context_rtl .rmGroup .rmSlide {
+    margin: 0 0 0 5px;
+}

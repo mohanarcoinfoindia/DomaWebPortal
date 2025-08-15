@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <mode>1</mode>
+  <ImageListColumnCount>5</ImageListColumnCount>
+  <ImageListOrientation>1</ImageListOrientation>
+  <DefaultOrderBy>case DM_OBJECT.OBJ_TYPE when 'Folder' then 1 when 'Dossier' then 2 else 99 end, OBJ_UNAME ASC</DefaultOrderBy>
+  
+  <KeepSearchScreenVisible>false</KeepSearchScreenVisible>
+  <FolderText>false</FolderText>
+  <FiltersFile></FiltersFile>
+  <GroupingFile></GroupingFile>
+  <ToolbarFile></ToolbarFile>
+  <ShowQueries>false</ShowQueries>
+  <ShowSearchedFor>false</ShowSearchedFor>
+  <columns> 
+    <column  name="title"   labelE="Title" labelN="Titel" labelF="Titre" chars="10"></column>
+   
+  </columns>
+  
+ </screendef>
+
+

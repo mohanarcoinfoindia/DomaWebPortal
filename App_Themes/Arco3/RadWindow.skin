@@ -1,0 +1,4 @@
+﻿<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<telerik:RadWindow runat="server" RenderMode="Classic" EnableEmbeddedSkins="true" Skin="Default" />
+    

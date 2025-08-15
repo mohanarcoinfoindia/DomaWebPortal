@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<grouping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Gridgrouping.xsd" enabled="y" width="220px" height="100%">
+  <grouper id="1" applyfiltertogrouper="true" LabelE="Category" LabelF="Catégorie" LabelN="Categorie" LabelG="Category" display="bar">
+    <field value="ddd" formatter="dddd" />
+  </grouper>
+  <grouper id="2" shownull="false" LabelE="dsds" LabelF="sdsd" LabelN="sdzs" LabelG="sdsds" height="" width="">
+    <field value="ddsdsd" formatter="dddd" />
+  </grouper>
+</grouping>

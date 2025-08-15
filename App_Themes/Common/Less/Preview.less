@@ -1,0 +1,38 @@
+﻿.dmViewFileName {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #1390b4;
+    font-weight: bold;
+    font-size: 7.5pt;
+    font-family: Lucida Sans Regular,Lucida Sans Unicode,Lucida Grande;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dmViewToolbar {
+    height: 30px;
+    padding: 5px;
+    margin: 10px 5px 10px 5px;
+    /*tr {
+        background-color: #d3d3d3;
+    }*/
+}
+
+.viewFilePane {
+    width: 100%;
+    height: calc(100% - 50px); //- toolbar height
+
+    &.viewTop {
+        top: 30px;
+        bottom: 0px;
+        padding-right: 5px;
+    }
+
+    &.viewBottom {
+        top: 0px;
+        bottom: 30px;
+    }
+
+}
+

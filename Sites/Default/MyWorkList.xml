@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <mode>0</mode>
+  <ImageListColumnCount>3</ImageListColumnCount>
+  <ImageListOrientation>0</ImageListOrientation>
+  <DefaultOrderBy>CASE_PRIORITY DESC,STEP_START DESC</DefaultOrderBy>
+  <DefaultFileOrderBy></DefaultFileOrderBy>
+  <KeepSearchScreenVisible>false</KeepSearchScreenVisible>
+  <FolderText>false</FolderText>
+  <FiltersFile></FiltersFile>
+  <GroupingFile>MyWorkGrouping.xml</GroupingFile>
+  <ToolbarFile>MyWorkGridToolbar.xml</ToolbarFile>
+  <ForceJoinOnDMObject>false</ForceJoinOnDMObject>
+  <ShowQueries>false</ShowQueries>
+  <RecordsPerPage>5</RecordsPerPage>
+  <ShowFilters>false</ShowFilters>
+  <columns>     
+    <column name="title" chars="10" extra="NOWRAP" labelE="Title" labelN="Titel" labelF="Titre" ></column>   
+  </columns>
+
+</screendef>

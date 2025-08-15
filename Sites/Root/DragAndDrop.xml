@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<params xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Tree.xsd" >
+  <filters>
+    <filter index="1" name="geen folders" value="CAT_ID &lt;&gt; 1006"  disabledvalue="" enabled="false"></filter>
+  </filters>
+</params>

@@ -1,0 +1,529 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+.row {
+    > .FieldCell,
+    > .ReadOnlyFieldCell {
+        > .buttons {
+            width: calc(100% - 50px);
+            margin-top: 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .row {
+        > .FieldCell,
+        > .ReadOnlyFieldCell {
+            > .buttons {
+                flex-wrap: nowrap;
+                max-height: 39px;
+                white-space: nowrap;
+                max-width: 400px;
+
+                > .button {
+                    min-width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container { // override bootstrap behavior. Container full-width until screen > 992px
+        width: auto;
+        max-width: none;
+    }
+}
+
+//only for detail page
+.detailView {
+    .detail-form-container {
+        padding-bottom: @container-padding-bottom;
+
+        .detail-form-row {
+
+            .FieldCell {
+                display: flex;
+
+                > span {
+                    width: 100%;
+                    max-width: 400px;
+                }
+
+                a.ArcoButton {
+                    margin-top: 10px;
+                }
+            }
+
+            .ReadOnlyFieldCell {
+                display: flex;
+
+                span {
+                    white-space: normal;
+                    word-break: break-word;
+                }
+            }
+        }
+    }
+}
+
+.detail-form-container {
+    .detail-form-row {
+        padding: 0 15px;
+        margin-top: 0;
+
+        input[type=text]:not(.rcbInput):not(.gridfilter) {
+            height: 30px;
+        }
+
+        input:not([type=button]), textarea {
+            padding: 0 0 0 5px !important;
+        }
+
+        select {
+            padding: 0 20px 0 5px !important;
+        }
+
+        .RadComboBox_SelectionComboBox:not(.fixedField),
+        .RadListBox_Default:not(.fixedField),
+        select {
+            width: calc(100% - 50px);
+            max-width: 400px;
+        }
+
+        &.level1, &.level2 {
+            min-height: 36px;
+        }
+
+        .ClosingCell {
+            display: none;
+        }
+
+
+        .FieldCell {
+            white-space: normal !important;
+            min-height: 38px;
+            line-height: 21px;
+
+            input[type=text]:not(.rcbInput),
+            input[type=password],
+            .RadComboBox.RadComboBox_SelectionComboBox {
+                height: 30px;
+                margin: 2px 0 0 0;
+            }
+
+            span label {
+                margin: 0px 10px 0px 10px;
+            }
+
+            input[type=radio] + label {
+                margin-top: 7px;
+            }
+
+            td > input[type=radio] + label { // listproperty with radiobuttons
+                margin-top: 6px;
+            }
+        }
+
+        .ReadOnlyFieldCell {
+            min-height: 38px;
+        }
+
+        .RowCell {
+            padding-right: 0px;
+            white-space: normal !important;
+        }
+
+        &.level0:not(.valSumm):not(.valSummNonMand) > .RowCell {
+            margin-top: @row-cell-margin-top-bottom;
+            margin-bottom: @row-cell-margin-top-bottom;
+            padding-left: @row-cell-padding-side;
+            padding-right: @row-cell-padding-side;
+        }
+
+        .LabelCell {
+            white-space: normal !important;
+            display: flex;
+            margin-top: @form-cell-margin-top;
+            width: auto;
+            padding-top: @form-cell-padding-top;
+
+            > .FormLabel, > div > .FormLabel, > span > .FormLabel, > div > span > .FormLabel {
+                margin-bottom: 0px;
+            }
+        }
+
+        .LabelCell, .ReadOnlyFieldCell, .FieldCell {
+            padding-left: @form-cell-padding-side;
+            padding-right: @form-cell-padding-side;
+            align-items: flex-start;
+            display: flex;
+        }
+
+        @media @min-medium-screen {
+            .ReadOnlyFieldCell {
+                padding-top: @form-cell-padding-top;
+            }
+
+            .FieldCell, .ReadOnlyFieldCell {
+                margin-top: @form-cell-margin-top;
+            }
+        }
+
+        .SubList select {
+            width: auto;
+        }
+
+        .HtmlCell, .HtmlCellHalfline {
+            margin-top: calc(@form-cell-margin-top + @form-cell-padding-top);
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        .HtmlCell {
+            margin-left: @form-cell-padding-side;
+            margin-right: @form-cell-padding-side;
+        }
+
+        .FullWidthField {
+            max-width: none !important;
+
+            .RadComboBox_SelectionComboBox, input[type="text"], .RadListBox_Default, select, .RadUpload, textarea, .formfield-container, .buttons {
+                max-width: none;
+            }
+        }
+    }
+}
+
+.GroupingDiv {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100%;
+}
+
+.groupingRow .level1 .GroupingDiv,
+.level1 .col-lg-6.GroupingDiv {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: @form-cell-margin-top;
+}
+
+.groupingRow .level2 .GroupingDiv,
+.level2 .col-lg-6.GroupingDiv {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.groupingRow {
+    padding: 10px;
+    width: 100%;    
+}
+
+.comboBoxDiv {
+    display: flex;
+
+    .rlbGroup.rlbGroupRight {
+        border-width: 0px;
+    }
+}
+
+.level0 > .RowCell > .yui-skin-xp {
+    border-width: 1px;
+}
+
+.level0 > .GroupingDiv > .SubListHeader3RightFullFillerDiv + .groupingRow {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.level0 > .GroupingDiv > .SubListHeader3RightFillerDiv,
+.level0 > .GroupingDiv > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > div > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > div > div > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > span > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > span > div > div > div > div > div > .SubListHeader3RightFullFillerDiv,
+.ListHeader3RightFillerDiv {
+    border-top-width: 1px !important;
+    border-left-width: 1px !important;
+    border-right-width: 1px !important;
+    position: relative;
+
+    &.collapsed {
+        border-bottom-width: 1px !important;
+    }
+}
+
+.level0 > .RowCell > .SubListDiv,
+.level0 > .RowCell > span > div > .SubListDiv,
+.level0 > .RowCell > span > div > div > .SubListDiv,
+.level0 > .RowCell > span > span > .SubListDiv,
+.level0 > .RowCell > span > span > div > div > div > div > div > .SubListDiv,
+.ListDiv {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+
+// start grouper layout: card
+.level0, .level1 {
+    > .GroupingDiv.layout-card {
+        > .SubListHeader3RightFillerDiv,
+        > .SubListHeader3RightFullFillerDiv {
+            border-top-width: 1px !important;
+            border-left-width: 1px !important;
+            border-right-width: 1px !important;
+
+            &.collapsed {
+                border-bottom-width: 1px !important;
+            }
+
+            + .groupingRow {
+                border-left-width: 1px;
+                border-right-width: 1px;
+                border-bottom-width: 1px;
+            }
+        }
+
+        > .groupingRow:first-child {
+            border-width: 1px;
+        }
+    }
+
+    > .GroupingDiv.layout-default {
+        > .SubListHeader3RightFillerDiv,
+        > .SubListHeader3RightFullFillerDiv {
+            border-top-width: 0px !important;
+            border-left-width: 0px !important;
+            border-right-width: 0px !important;
+
+            &.collapsed {
+                border-bottom-width: 0px !important;
+            }
+
+            + .groupingRow {
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 0px;
+            }
+        }
+
+        > .groupingRow:first-child {
+            border-width: 0px;
+        }
+    }
+}
+
+.level1 .groupingDiv.layout-default {
+    padding-left: @form-cell-padding-side;
+    padding-right: @form-cell-padding-side;
+}
+.level1 .groupingDiv.layout-card {
+    padding-left: @form-cell-padding-side;
+    padding-right: @form-cell-padding-side;
+}
+// end grouper layout: card
+
+.RadInputMgr {
+    padding: 0 !important;
+}
+
+.RightAlign {
+    text-align: right !important;
+}
+
+textarea.MultiLine {
+    height: 60px;
+    border-width: 1px;
+    padding: 0 5px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+select,
+.RadInput.riSingle input.riTextBox,
+.RadInput.RadInput_Default .riTextBox,
+.RadUpload_Default .ruFakeInput {
+    height: 30px;
+    border-width: 1px;
+    padding: 0 5px;
+}
+
+textarea {
+    border-width: 1px;
+    padding: 0 0 0 5px;
+}
+
+.searchDropDown {
+    img {
+        height: 100%;
+        max-height: 17px;
+    }
+}
+
+.addNewItemLink {
+    margin-left: 5px;
+    margin-top: 3px;
+
+    img {
+        height: 100%;
+        max-height: 17px;
+    }
+}
+
+
+.invalidField {
+    border-width: 1px !important;
+}
+
+
+td.LabelCell, td.RowCell, td.ReadOnlyFieldCell, td.FieldCell {
+    vertical-align: middle;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 20px;
+}
+
+
+select::-ms-expand {
+    display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+.FormField-Message {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+/* DateSearchField classes */
+.dateSearchField {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dateSearchType {
+    flex-grow: 1;
+}
+
+.dateSearchInput {
+    display: inline-flex;
+    visibility: hidden;
+    justify-content: flex-end;
+}
+
+.labelInclPrefixGrouper {
+    display: inline-flex;
+    width: 0px;
+    flex-flow: row-reverse nowrap;
+    overflow: visible;
+}
+
+.mandatoryMarker {
+    margin-right: 5px;
+}
+
+.TextBox {
+    vertical-align: middle;
+}
+
+.form-stacked {
+    div.detail-form-row {
+
+        div.LabelCell, div.FieldCell {
+            width: 100%;
+            max-width: 100%;
+            flex: none;
+        }
+
+        div.FieldCell {
+            margin-top: 3px;
+
+            .RadComboBox_SelectionComboBox, input[type="text"], input[type="password"], .RadListBox_Default, select, .RadUpload, textarea, .formfield-container, .buttons {
+                max-width: none;
+            }
+
+            > span {
+                max-width: none !important;
+            }
+        }
+
+        > .col-lg-6 {
+            padding: 0;
+        }
+    }
+}
+
+.multi-language-textbox {
+    position: relative;
+    display: block;
+
+    .multi-language-dropdown {
+        display: none;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        background-color: white;
+    }
+
+    .multi-language-inputwrapper {
+        position: relative;
+    }
+
+    input[type='text'] {
+        width: 100% !important;
+    }
+
+    &.focus {
+        z-index: 300;
+
+        input[type='text'] {
+            border-bottom-left-radius: 0 !important;
+            border-top-left-radius: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 2px !important;
+        }
+
+        .multi-language-dropdown {
+            display: block;
+        }
+
+        .multi-language-inputwrapper::before {
+            content: attr(data-language);
+            position: absolute;
+            right: 100%;
+            top: 0px;
+            height: calc(100% - 2px);
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            text-transform: uppercase;
+            font-size: 10px;
+            background-color: #f0f0f0;
+            padding-top: 2px;
+            border: 1px solid #dfdfdf;
+            border-right: none;
+        }
+    }
+}
+
+.multi-language-htmleditor {
+    width: 100%;
+    max-width: 1000px;
+
+    .RadMultiPage {
+        border-width: 0;
+    }
+}

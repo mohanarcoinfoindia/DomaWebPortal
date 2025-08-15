@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\GridFilters.xsd" andor="AND">
+  <filter  index="1"  name="Limit to dossiers" nameE="" nameN="" nameF="" nameG="" autopostback="true"  role="" reversefilterwhennotinrole="false" enabled="true" value="OBJ_TYPE='Dossier'" disabledvalue="" visible="false" />
+</filters>

@@ -1,0 +1,351 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+.RadGrid {
+    border-style: none !important;
+
+    &:focus {
+        outline: none;
+    }
+}
+.RadGrid_Default .rgPager td.rgPagerCell {
+    background-color: @color-bg-white;
+    border-style: none;
+}
+
+.RadGrid_Default,
+.RadGrid_Default .rgMasterTable {
+    .font-default();
+    border-bottom-color: @color-shade-70 !important;
+
+    .rgHeader {
+        color: @color-primary-light;
+    }
+
+    .rgHeader,
+    .rgFilterRow,
+    .rgAltRow,
+    .rgRow {
+        background: none !important;
+        background-color: @color-bg-white !important;
+        border-bottom-style: solid !important;
+        border-bottom-color: @color-shade-20 !important;
+
+        a {
+            color: @color-primary-light !important;
+            font-weight: @semiBoldFontWeight;
+        }
+
+        td.rgSorted {
+            background-color: transparent;
+        }
+    }
+
+    .rgFilterRow,
+    .rgAltRow,
+    .rgRow {
+
+        > td {
+            border-bottom-style: none !important;
+        }
+
+        &:hover {
+            background-color: @color-primary-light-05 !important;
+        }
+    }
+
+    .rgSelectedRow {
+
+        > td,
+        > td.rgSorted {
+            border-bottom-style: none;
+            background-color: @color-primary-light-10;
+        }
+    }
+}
+
+.List tr {
+    border-top-style: solid;
+    border-top-color: @color-shade-20;
+}
+
+.List,
+.RadGrid_Default,
+.RadGrid_Default .rgMasterTable {
+    .font-default();
+    color: @color-primary-light;
+    background-color: @color-bg-white;
+
+    tr {
+        &:hover {
+            background-color: @color-primary-light-05;
+
+            + tr.ListSubContent {
+                background-color: @color-primary-light-05;
+            }
+
+            th {
+                background-color: @color-bg-white;
+            }
+        }
+    }
+
+    tr.ListSubContent:hover {
+        background-color: @color-bg-white;
+    }
+
+    tr.ListFooter {
+
+        &:hover {
+            background-color: @color-bg-white;
+        }
+
+        td {
+            color: @color-primary-dark-60;
+            font-size: @smallFontSize !important;
+
+            a {
+                text-decoration: none;
+                font-weight: @baseFontWeight;
+                color: @color-primary-dark;
+            }
+
+            a.aspNetDisabled {
+                color: @color-shade-50;
+                opacity: @disabled-opacity;
+            }
+
+            .selectedScrollItem {
+                border-style: solid;
+                border-color: @color-primary-dark;
+                border-radius: 30px;
+                color: @color-primary-dark;
+            }
+
+            a.prevPage {
+                background-image: @url-arrow-long-left;
+                background-position: 0px 2px;
+                background-repeat: no-repeat;
+            }
+
+
+            a.nextPage {
+                background-image: @url-arrow-long-right;
+                background-position: 0px 2px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    thead > tr {
+        &:hover {
+            background-color: @color-bg-white;
+        }
+    }
+
+    td,
+    td.rgFilterRow {
+        font-size: @smallFontSize;
+        .font-default();
+        color: @color-shade-90;
+    }
+
+    .doctitle {
+        color: @color-primary-dark;
+        font-weight: @semiBoldFontWeight;
+    }
+}
+
+.pnlFilter {
+    background-color: @color-bg-white;
+
+    .includeSubFolders {
+
+        label {
+            font-size: @baseFontSize !important;
+            color: @color-label;
+        }
+    }
+}
+
+.pnlTopSidePanel {
+    background-color: @color-bg-white;
+
+    .SubList.GroupingPanel .Spacer {
+        background-color: transparent !important;
+    }
+
+    .SubList {
+        border-style: solid !important;
+        border-color: @color-shade-60 !important;
+        border-radius: 10px;
+        .font-default();
+
+        td {
+            font-size: @smallFontSize !important;
+            color: @color-primary-light;
+        }
+
+        th, td {
+            border-left-style: solid !important;
+            border-top-style: solid !important;
+            border-left-color: @color-shade-30 !important;
+            border-top-color: @color-shade-30 !important;
+
+            a {
+                color: @color-primary-dark;
+            }
+
+            a.ButtonLink {
+                font-weight: @baseFontWeight;
+                text-decoration: underline;
+            }
+        }
+
+        &.GroupingPanel {
+
+            .property-cell {
+                color: @color-primary-light;
+
+                &::before {
+                    background-color: @color-shade-70;
+                }
+
+                .property-name {
+                    background-color: @color-bg-white;
+                }
+            }
+
+            thead {
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                box-shadow: 0px 1px 0px 0px @color-shade-30;
+            }
+
+            tfoot {
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                box-shadow: 0px -1px 0px 0px @color-shade-50;
+            }
+        }
+    }
+}
+
+tr.ListHeader:hover {
+    background-color: @color-bg-white;
+}
+
+.ListHeader {
+    color: @color-primary-light;
+    background-color: @color-bg-white;
+}
+
+tr.ListFilter, tr.SubListFilter {
+    color: @color-primary-light;
+    background-color: @color-bg-white;
+
+    &:hover {
+        background-color: @color-bg-white;
+    }
+
+    > td {
+        background-clip: padding-box;
+    }
+
+    input, select, input[type=text] {
+        color: @color-shade-100;
+        border-radius: @input-border-radius;
+        border-style: solid;
+        border-color: @color-shade-50;
+    }
+
+    + tr {
+        border-top: none;
+    }
+}
+
+.SubList {
+
+    th {
+        font-size: @baseFontSize;
+        font-family: @baseFontFamily;
+        color: @color-primary-light;
+        text-decoration: none;
+        font-weight: @semiBoldFontWeight;
+    }
+
+    tr {
+        border-top-style: solid;
+        border-top-color: @color-border-default;
+    }
+
+    td {
+        font-size: @smallFontSize;
+        font-family: @baseFontFamily;
+        color: @color-shade-90;
+        font-weight: @baseFontWeight;
+    }
+}
+
+.Sub {
+    background: none;
+}
+
+.ListSubContent td {
+    font-style: italic;
+}
+
+.List, .SubList {
+    tr.listContentHighlighted {
+        background-color: @color-primary-light-10;
+
+        &:hover {
+            background-color: @color-primary-light-10;
+        }
+    }
+
+    tr:first-child {
+        border-top: none;
+    }
+
+    tr.ListSubContent {
+        border-top: none;
+    }
+
+    .SubSubList tr {
+        border-top: none;
+    }
+}
+
+.listControlGridScroller {
+    background: @color-bg-white;
+}
+
+.SubListHeader3RightFillerDiv,
+.SubListHeader3RightFullFillerDiv,
+.ListHeader3RightFillerDiv {
+    background-color: @color-bg-white;
+    font-size: @largeFontSize;
+    border-radius: @input-border-radius @input-border-radius 0 0;
+    border-top-style: solid;
+    border-top-color: @color-border-default;
+}
+
+.level1 > .RowCell:not(.col-lg-6) .SubListHeader3RightFullFillerDiv {
+    border-top-style: solid;
+    border-top-color: @color-border-default;
+    border-radius: 0;
+}
+/*.tblSaveQuery, .queries {
+    background-color: @color-bg-white;
+}*/
+.SubSubList {
+    td {
+        font-size: @smallFontSize !important;
+        color: @color-shade-80;
+
+        b {
+            font-weight: @semiBoldFontWeight;
+        }
+    }
+}

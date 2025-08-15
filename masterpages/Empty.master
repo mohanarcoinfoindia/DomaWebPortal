@@ -1,0 +1,18 @@
+﻿<%@ Master Language="VB" CodeFile="Empty.master.vb" Inherits="Empty" MasterPageFile="~/masterpages/Base.master" %>
+<%@ Register TagPrefix="Arco" TagName="PageController" Src="~/PageController/DM_PageController.ascx" %>
+
+ 
+    <asp:Content ID="Content2" ContentPlaceHolderID="HeaderPlaceHolder1" Runat="Server">
+        <asp:contentplaceholder id="HeaderPlaceHolder1" runat="server"/>
+    </asp:Content>
+
+        <asp:Content ID="Content1" ContentPlaceHolderID="Plh1" Runat="Server">
+     
+            <Arco:PageController ID="PC" runat="server" PageLocation="MainPage"  />
+
+            <asp:contentplaceholder id="Plh1" runat="server"/>                
+        
+            <arco:PageFooter id="lblFooter" runat="server"/>
+
+    </asp:Content>
+  

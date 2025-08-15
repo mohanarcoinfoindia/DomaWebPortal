@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">    
+  <DefaultOrderBy>OBJ_UNAME ASC</DefaultOrderBy>
+  <DefaultFileOrderBy>FILE_TITLE ASC</DefaultFileOrderBy>
+  <KeepSearchScreenVisible>false</KeepSearchScreenVisible>
+  <FolderText>false</FolderText>
+  <FiltersFile></FiltersFile>
+  <GroupingFile>NoGrouping.xml</GroupingFile>
+  <ToolbarFile>ListItemGridToolbar.xml</ToolbarFile>
+  <ShowQueries>false</ShowQueries>
+  <ShowSearchedFor>true</ShowSearchedFor>
+ 
+  <columns>
+    <column name="multiselect"></column>
+    <column name="icon" />
+    <column name="file" ></column>    
+    <column  name="title" chars="100" extra="NOWRAP" labelE="Title" labelN="Titel" labelF="Titre" ></column>        
+  </columns>
+
+ </screendef>
+
+

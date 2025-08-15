@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <mode>0</mode>
+  <ImageListColumnCount>3</ImageListColumnCount>
+  <ImageListOrientation>0</ImageListOrientation>
+  <DefaultOrderBy>STEP_START DESC</DefaultOrderBy>
+  <DefaultFileOrderBy></DefaultFileOrderBy>
+  <KeepSearchScreenVisible>false</KeepSearchScreenVisible>
+  <FolderText>false</FolderText>
+  <FiltersFile></FiltersFile>
+  <GroupingFile>CaseGrouping.xml</GroupingFile>
+  <ToolbarFile>CaseGridToolbar.xml</ToolbarFile>
+  <ShowSearchedFor>false</ShowSearchedFor>
+  <columns>
+    <column name="status"></column>
+    <column name="expand"></column>
+    <column name="priority" hidden="true"></column>
+    <column name="procedure" filterwidth="50"></column>
+    <column name="step"></column>
+    <column name="title" chars="100" extra="NOWRAP" labelE="Title" labelN="Titel" labelF="Titre" ></column>
+    <column name="worklist"></column>
+    <column name="createdby"></column>
+    <column name="creationdate"></column>
+    <column name="stepdate"></column>
+    <column name="expiredicon"></column>
+    <column name="duedate"></column>
+    <column name="caseduedate" hidden="true"></column>
+    <column name="stepduedate" hidden="true"></column>
+
+  </columns>
+  
+</screendef>

@@ -1,0 +1,1 @@
+<%@ Application Inherits="Doma.Global" Language="VB" %>

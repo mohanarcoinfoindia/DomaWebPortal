@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\GridFilters.xsd" andor="AND">
+  <filter  index="1"  name="Enkel Documenten" nameE="Visible workflows list" nameN="" nameF="Liste des workflow visibles" nameG=""
+           autopostback="true"  role="" reversefilterwhennotinrole="false"    enabled="false" value="(dm_cat_id = 111024)" disabledvalue="" visible="true"/>
+</filters>

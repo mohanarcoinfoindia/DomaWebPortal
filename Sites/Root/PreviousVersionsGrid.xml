@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <DefaultOrderBy>OBJ_CREATION_DATE DESC</DefaultOrderBy>
+  <GroupingFile>NoGrouping.xml</GroupingFile>
+  <columns>
+    
+    <column name="status"></column>
+    <column name="version"></column>
+    <column name="expand"></column>
+    <column name="title" chars="100" extra="NOWRAP" labelE="Title" labelN="Titel" labelF="Titre"></column>
+    <column name="category" size="100" hidefilter="n" hidden="true"></column>
+    <column name="creationdate"></column>        
+    <column name="checkoutstart"></column>
+    <column name="checkoutend"></column>
+    <column name="checkoutby"></column>
+    <column name="checkoutcomment"></column>
+    <column name="checkincomment"></column>
+  </columns>
+</screendef>  
+

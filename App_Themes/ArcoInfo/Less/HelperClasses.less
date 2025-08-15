@@ -1,0 +1,160 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+/// <reference path="Paths.less" />
+
+.title-main, .title-header, .title-sub, .content-main, .content-special {
+    font-family: @baseFontFamily !important;
+    color: @color-primary-dark;
+}
+
+.title-header {
+    color: @color-primary-light;
+}
+
+.title-main,
+.title-header,
+.detail-form-container .detail-form-row .title-main,
+.detail-form-container .detail-form-row .title-header {
+    font-weight: @boldFontWeight;
+}
+
+.title-main,
+.detail-form-container .detail-form-row .title-main {
+    font-size: @titleFontSize;
+}
+
+.title-header,
+.detail-form-container .detail-form-row .title-header {
+    font-size: @headerFontSize;
+}
+
+.title-sub,
+.detail-form-container .detail-form-row .title-sub {
+    font-weight: @boldFontWeight;
+    font-size: @largeFontSize;
+}
+
+.content-main,
+.detail-form-container .detail-form-row .content-main {
+    font-weight: @baseFontWeight;
+    font-size: @baseFontSize;
+}
+
+.content-special,
+.detail-form-container .detail-form-row .content-special {
+    background-color: @color-primary-light-10;
+    font-weight: @baseFontWeight;
+    font-size: @baseFontSize;
+    border-radius: 22px;
+}
+
+.header-box,
+.detail-form-container .detail-form-row .header-box {
+    .content-special();
+    font-weight: @semiBoldFontWeight;
+    font-size: @largeFontSize;
+}
+
+.disabled,
+.detail-form-container .detail-form-row .disabled {
+    color: @color-shade-70;
+}
+
+.InfoMessage,
+.detail-form-container .detail-form-row .InfoMessage {
+    color: @color-black;
+}
+
+.ErrorMessage,
+.detail-form-container .detail-form-row .ErrorMessage {
+    color: @color-error;
+}
+
+.SuccessMessage,
+.detail-form-container .detail-form-row .SuccessMessage {
+    color: @color-ok;
+}
+
+.ErrorLabel, .InfoLabel, .WarningLabel, .SuccessLabel,
+.detail-form-container .detail-form-row .ErrorLabel,
+.detail-form-container .detail-form-row .InfoLabel,
+.detail-form-container .detail-form-row .WarningLabel,
+.detail-form-container .detail-form-row .SuccessLabel {
+    border-style: solid;
+    border-radius: @input-border-radius;
+    background-color: @color-shade-10;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: center;
+    font-size: @baseFontSize;
+
+    .ButtonLink {
+        text-decoration: underline;
+    }
+}
+
+.ErrorLabel,
+.detail-form-container .detail-form-row .ErrorLabel {
+    color: @color-error-120;
+    border-color: @color-error-120;
+    background-image: @url-error;
+}
+
+.SuccessLabel,
+.detail-form-container .detail-form-row .SuccessLabel {
+    color: @color-ok-120;
+    border-color: @color-ok-120;
+    background-image: @url-success;
+}
+
+.InfoLabel,
+.detail-form-container .detail-form-row .InfoLabel {
+    border-color: @color-border-default;
+    background-image: @url-info;
+}
+
+.WarningLabel,
+.detail-form-container .detail-form-row .WarningLabel {
+    color: @color-warning;
+    border-color: @color-warning;
+    background-image: @url-warning;
+}
+
+.button.small-button {
+    border-radius: 10px;
+    padding: 1px 10px;
+    min-width: unset;
+
+    &.positive {
+        padding-top: 2px;
+    }
+}
+
+.divider, .divider-left, .divider-right,
+.detail-form-container .detail-form-row .divider,
+.detail-form-container .detail-form-row .divider-left,
+.detail-form-container .detail-form-row .divider-right {
+    color: @color-primary-light;
+    font-weight: bolder;
+
+    &:before {
+        background-color: @color-primary-light;
+    }
+
+    &:after {
+        background-color: @color-primary-light;
+    }
+}
+
+.font-size-normal {
+    font-size: @baseFontSize !important;
+}
+
+.font-size-smaller {
+    font-size: @smallFontSize !important;
+}
+
+.font-size-larger {
+    font-size: @largeFontSize !important;
+}
+

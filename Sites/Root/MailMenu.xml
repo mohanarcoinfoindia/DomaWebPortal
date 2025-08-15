@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<Menu>
+  <Group Flow="Horizontal">
+    <Item Text="Inbox" Selected="true" NavigateUrl="Javascript:Inbox();"></Item>
+    <Item Text="MyMailWork" NavigateUrl="Javascript:MyMailWork();"></Item>
+    <Item Text="Outbox" NavigateUrl="Javascript:Outbox();"></Item>
+    <Item Text="mymailfollowup" NavigateUrl="Javascript:FollowUp();"></Item>
+    <Item Text="mymail" NavigateUrl="Javascript:MyMails();"></Item>
+    <Item Text="recyclebin" NavigateUrl="Javascript:MyDeletedBox();"></Item>
+    <Item Text="Search" Value="Search">
+      <Group Flow="Vertical">
+        <Item Value="SearchAll" Text="Current" NavigateUrl="Javascript:SearchInCurrent();"></Item>
+        <Item Text="mymail" NavigateUrl="Javascript:SearchIn(7);"></Item>
+        <Item Text="Inbox" NavigateUrl="Javascript:SearchIn(8);"></Item>
+        <Item Text="Outbox" NavigateUrl="Javascript:SearchIn(9);"></Item>
+        <Item Text="MyMailWork" NavigateUrl="Javascript:SearchIn(10);"></Item>
+        <Item Text="recyclebin" NavigateUrl="Javascript:SearchIn(11);"></Item>
+      </Group>
+    </Item>
+   
+  </Group>
+</Menu>

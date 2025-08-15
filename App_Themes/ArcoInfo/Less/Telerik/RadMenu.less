@@ -1,0 +1,126 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+/// <reference path="../Paths.less" />
+
+.RadMenu_Context .rmGroup .rmLeftImage {
+    background:none;
+}
+
+.RadMenu_Default .rmGroup {
+    background-color: @color-bg-white !important;
+    background-image: none !important;
+}
+
+.RadMenu_MainNavigation {
+    text-align: left;
+    text-decoration: none;
+
+    a.rmSelected .rmText {
+        font-weight: bold !important;
+    }
+
+    .rmLink {
+        font-family: @baseFontFamily;
+        font-size: @font-size-regular;
+        color: @color-primary-dark;
+        background: none;
+        text-decoration: none;
+
+        img.rmLeftImage[src*="Images/FolderLinkSep.png"] {
+            background-image: @url-dropdown;
+        }
+    }
+
+    &.RadMenu {
+
+        .rmGroup {
+            background-image: none;
+
+            &.rmVertical {
+
+                > .rmSeparator .rmText {
+                    border-color: @color-primary-light;
+                }
+            }
+
+            .rmVertical {
+                > .rmSeparator {
+                    border-top: 1px solid @color-primary-light;
+                }
+            }
+
+            .rmItem {
+
+                .rmLink:hover {
+                    background-color: @color-primary-light-10;
+                }
+            }
+        }
+    }
+
+    .rmVertical.rmGroup,
+    .rmScrollWrap.rmGroup {
+        border-style: solid;
+        border-color: @color-shade-60;
+        background-color: @color-bg-white;
+        color: @color-primary-dark;
+        border-radius: @input-border-radius;
+        font-size: @baseFontSize;
+        -webkit-box-shadow: @box-shadow;
+        -moz-box-shadow: @box-shadow;
+        box-shadow: @box-shadow;
+    }
+
+    .rmText {
+        background: none;
+    }
+
+    .rmDisabled, .rmDisabled:hover {
+        color: @color-shade-80;
+        background-color: transparent;
+    }
+
+    .rmSlide {
+        .rmScrollWrap {
+            background-image: none;
+        }
+    }
+
+    .rmRootGroup {
+        .rmHorizontal {
+            background-image: none;
+        }
+    }
+
+    a.rmTopArrow, a.rmBottomArrow {
+        background-color: @color-bg-white;
+
+        &:before {
+            border: solid @color-primary-light;
+            border-width: 0 2px 2px 0;
+        }
+    }
+}
+
+// example: in the tree accordeon, menu-node
+.RadMenu.RadMenu_Default {
+    .rmRootGroup {
+        background-image: none;
+        background-color: @color-bg-white;
+        border: none;
+
+        .rmLink {
+            border: none;
+            padding: 5px 20px;
+            color: @color-primary-dark;
+            font-family: @baseFontFamily;
+            font-size: @baseFontSize;
+            font-weight: @baseFontWeight;
+
+            &:hover {
+                border: none;
+                background-color: @color-primary-light-05;
+            }
+        }
+    }
+}

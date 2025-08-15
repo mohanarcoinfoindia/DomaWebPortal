@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<packageinformation>
+  <site></site>
+  <list>Shared Documents</list>
+  <fields>
+    <field>
+      <internalname>FileLeafRef</internalname>
+      <displayname>Name</displayname>
+      <fieldtype>File</fieldtype>
+    </field>
+   
+  
+   
+  </fields>
+</packageinformation>
+

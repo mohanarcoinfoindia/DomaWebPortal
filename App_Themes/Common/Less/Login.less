@@ -1,0 +1,144 @@
+﻿/// <reference path="Variables.less">
+/// <reference path="typography.less">
+/// <reference path="Paths.less">
+
+.PanelPage {
+    padding: 50px;
+    min-height: 100%;
+    height: auto;
+
+    .Panel.Centered {
+        background-color: rgba(256, 256, 256, 0.6);
+        border-style: solid;
+        border-color: @color-shade-50;
+        border-radius: 10px;
+        background-color: rgba(256, 256, 256, 0.6);
+        border-width: 1px;
+        position: relative;
+
+        .Content {
+            width: auto !important;
+            float: unset !important;
+            padding: 20px 40px 20px 40px;
+
+            fieldset {
+                legend {
+                    display: block;
+                    text-align: center;
+                    color: @color-primary-dark;
+                }
+            }
+
+            ol > li {
+                padding-top: 5px;
+                width: 100%;
+
+                #pnlExtra {
+                    width: 100% !important;
+                }
+
+
+                input[type=text], input[type=password], input[type=email] {
+                    width: 100% !important;
+                }
+
+
+                input[type=submit] {
+                    width: unset !important;
+                }
+
+                .ArcoButton {
+                    float: right;
+                }
+
+                .RadCaptcha > span {
+                    display: none;
+                }
+
+                .RadCaptcha.rcInvalid > span {
+                    display: block;
+                }
+
+                .RadCaptcha.RadCaptcha_Default {
+                    width: 100% !important;
+                }
+            }
+
+            input[type=text],
+            input[type=email],
+            input[type=password],
+            input,
+            input:hover,
+            input:focus,
+            input:active {
+                -webkit-box-shadow: 0 0 0 30px white inset !important;
+                border-radius: @input-border-radius;
+                border-color: @color-border-input;
+            }
+
+            input[type=text],
+            input[type=email],
+            input[type=password],
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover,
+            input:-webkit-autofill:focus,
+            input:-webkit-autofill:active {
+                height: 40px;
+            }
+
+            .riStrengthBar.riStrengthBarL0 {
+                width: unset !important;
+            }
+
+            select {
+                border-radius: @input-border-radius;
+                border-color: @color-border-input;
+                height: 40px;
+            }
+        }
+    }
+
+    .langList {
+        display: flex;
+        justify-content: center;
+
+        li {
+            .flag {
+                display: none;
+            }
+
+            .code {
+                display: inline-block;
+
+                a {
+                    color: @color-primary-light;
+                    width: 50px;
+                    text-align: center;
+
+                    &:hover {
+                        color: @color-white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .BigLogo {
+        position: fixed;
+        top: 30px;
+        left: 50px;
+
+        img {
+            max-width: 400px;
+        }
+    }
+}
+
+.ShowPassword {
+    /*background-image: @url-showpassword;*/
+}
+
+.PanelPage.SelectTenantPage .Panel.Centered .Content input.rcbInput {
+    height: 1.42857143em;
+}

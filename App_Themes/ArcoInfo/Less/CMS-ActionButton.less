@@ -1,0 +1,142 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+
+.action-btn {
+    background-color: @color-bg-white;
+    background-clip: border-box;
+    border-style: solid;
+    color: inherit;
+    .font-default();
+    h6 {
+        font-weight: @baseFontWeight;
+    }
+}
+
+.tile {
+    border-color: @color-border-default;
+    border-radius: @input-border-radius;
+    box-shadow: 1px 1px 2px lightgrey;
+
+    &:hover {
+        box-shadow: 2px 2px 4px -2px @color-primary-light;
+        border-style: solid;
+        border-color: @color-primary-light;
+    }
+
+    &.active {
+        border-style: solid;
+        border-color: @color-primary-light;
+    }
+}
+
+.action-btn:active {
+    box-shadow: none;
+}
+
+.cms-button {
+    border-color: transparent;
+}
+
+.cms-buttons-vertical {
+    .cms-button {
+        border-bottom-color: @color-border-darker;
+
+        &:last-of-type {
+            border-bottom-color: transparent;
+        }
+
+        &:hover {
+            border-right-color: @color-border-default;
+        }
+
+        &.active {
+            border-right-color: @color-primary-light;
+        }
+    }
+}
+
+.cms-buttons-horizontal {
+    .cms-button {
+        border-right-color: @color-border-darker;
+
+        &:last-of-type {
+            border-right-color: transparent;
+        }
+
+        &:hover {
+            border-bottom-color: @color-border-default;
+        }
+
+        &.active {
+            border-bottom-color: @color-primary-light;
+        }
+    }
+}
+
+.btn-counter {
+    background-color: @color-primary-light;
+    color: @color-white;
+}
+
+.small-tiles h6 {
+    font-size: @baseFontSize;
+}
+
+.bg-img {
+    opacity: 0.1;
+}
+
+.imagelist-tile .tile-title {
+    font-size: @smallFontSize;
+}
+
+.status-content {
+    font-weight: @baseFontWeight;
+    font-size: @smallFontSize;
+}
+
+.status-indicator {
+    border-radius: 50%;
+}
+
+.status-ok {
+    .status-content {
+        color: @color-ok;
+    }
+
+    .status-indicator, &.status-indicator {
+        background-color: @color-ok;
+    }
+}
+
+.status-warning {
+    .status-content {
+        color: @color-warning-light;
+    }
+
+    .status-indicator, &.status-indicator {
+        background-color: @color-warning-light;
+    }
+}
+
+.status-error {
+    .status-content {
+        color: @color-error;
+    }
+
+    .status-indicator, &.status-indicator {
+        background-color: @color-error-light;
+    }
+}
+
+.status-disabled {
+    .status-content {
+        color: @color-shade-80;
+    }
+
+    .status-indicator, &.status-indicator {
+        background-color: @color-shade-60;
+    }
+}
+

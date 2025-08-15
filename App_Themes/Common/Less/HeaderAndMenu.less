@@ -1,0 +1,195 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+
+.paneMenuAndHeaderHeight {
+    height: 105px !important;
+    box-sizing: content-box;
+    border-bottom-width: 1px;
+    padding-bottom: 15px;
+}
+.paneMenuHeight {
+    height: 40px !important;
+}
+.paneHeaderHeight {
+    height: 65px !important;
+}
+
+.MainMenu_NavLink {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.MainMenu_Text {
+    margin-left: 30px;
+}
+
+.MainMenu_AppName {
+    padding-left: 90px;
+    padding-top: 7px;
+    display: block;
+    white-space: normal;
+    line-height: 28px;
+}
+
+.MainMenu_header {
+    height: 65px;
+    align-items: center;
+    max-height: 65px;
+}
+
+/* When navbar is collapsed */
+.MainMenu_MainNav {
+    border-bottom-width: 1px;
+
+    .MainMenu_NavItem {
+        &.nav-item.dropdown a {
+            outline: none;
+        }
+
+        .dropdown-menu {
+            border: none;
+            margin-left: 30px;
+        }
+    }
+}
+
+/* When navbar items are visible */
+/* Based on bootstrap breakpoint xl (navbar-expand-xl) */
+@media only screen and (min-width: 1200px) {
+    .MainMenu_DropDown {
+        padding: 0;
+        border-width: 1px;
+
+        a.dropdown-item:not(.MainMenu_DropDownItemSmall) {
+            padding: 10px 20px 10px 20px;
+        }
+    }
+
+
+    .MainMenu_MainNav {
+        border-bottom: none;
+    }
+    .MainMenu_Triangle {
+        left: 20px;
+    }
+
+    .TriangleBorderColor {
+        border-width: 8px;
+    }
+
+    .TriangleBackgroundColor {
+        border-width: 8px;
+    }
+
+    .MainMenu_NavItem:first-child .MainMenu_NavLink {
+        margin-left: 30px;
+    }
+}
+
+
+
+.MainMenu_Toggler {
+    border-width: 2px;
+    height: 28px;
+    margin-top: 1px;
+    padding: 0 2px;
+}
+
+@media only screen and (min-width: 768px) {
+    .MainMenu_TogglerIcon {
+        width: 50px;
+    }
+
+    .MainMenu_TogglerIcon:before {
+        content: "Menu";
+        display: inline-block;
+        margin-top: 5px;
+    }
+}
+
+.tltProfileLogo {
+    display: none;
+}
+
+.tltProfileUserActions {
+    float: none;
+}
+
+.profileActionLinks {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+.rtWrapperContent {
+    width: 200px;
+}
+
+.mainmenu_profile {    
+    padding-left:20px;
+    display:flex;   
+    justify-content:flex-end;
+}
+.profileActionLink {
+    height: 60px;
+    flex-grow: 1;
+
+    &:not(:last-child) {
+        border-bottom-width: 1px;
+    }
+
+    a {
+        display: block;
+        border: none;
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        padding:0;
+    }
+
+    a:active {
+        display: block;
+        border: none;
+    }
+}
+
+.MainMenuTable {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    height: 53px;
+}
+
+
+.mainMenuTableEnd {
+    .RadMenu.RadMenu_MainNavigation {
+        width:100%;
+    }
+}
+
+.mainmenu_img {
+    height: 30px;
+    width: 30px;
+}
+
+.mainmenu_img_wrapper {
+    height: 30px;
+    width: 30px;
+}
+
+.MainLogo {
+    min-width: 210px;
+    height: 65px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-height: 90%;
+        max-width: 100%;
+    }
+}

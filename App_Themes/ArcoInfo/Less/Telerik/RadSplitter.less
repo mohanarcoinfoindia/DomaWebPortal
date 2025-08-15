@@ -1,0 +1,58 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+
+#radSplitterMain {
+    table.RadSplitter.RadSplitter_Default {
+        border-color: transparent;
+        font-family: @baseFontFamily;
+
+        .rspResizeBarHorizontal {
+            border-color: transparent;
+            background-color: transparent;
+            background-image: none;
+        }
+    }
+}
+
+.RadSplitter .RadSplitter_Default .rspNested,
+.RadSplitter_Default {
+    
+    .rspPane {
+        border-color: @color-shade-50 !important;
+    }
+
+    .rspResizeBar {
+        background-image: none;
+        background: none !important;
+        border-color: @color-shade-50;
+
+        .rspCollapseBarExpand {
+            background-image: @url-col;
+            background-repeat: no-repeat;
+            background-size: 10px;
+            background-position: center;
+            background-color: @color-shade-20;
+
+            &.rspCollapseBarExpandOver {
+                background-color: @color-shade-50;
+            }
+        }
+
+        .rspCollapseBarCollapse {
+            background-image: @url-exp;
+            background-repeat: no-repeat;
+            background-size: 10px;
+            background-position: center;
+            background-color: @color-shade-20;
+
+            &.rspCollapseBarCollapseOver {
+                background-color: @color-shade-50;
+            }
+        }
+    }
+
+    .rspResizeBarOver {
+        background-image: none;
+        background: none;
+    }
+}

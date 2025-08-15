@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<Menu>
+  <Group  Flow="Horizontal">
+    <Item  Text="File" LabelE="" labelN="Bestand" LabelF="Fichier" LabelG="" AccessKey="F" >
+    <Group Flow="Vertical">
+        <Item Text="New Document" LabelE="New Document" LabelN="Nieuw Document" LabelF="Nouveau document" LabelG="" LeftLogo="../Images/newDocument.png" NavigateURL="Javascript:OpenRadWindow('DM_SELECT_OBJ_CAT.aspx?CAT_TYPE=Document','NewObject','RELOAD');"/>
+        <Item Text="New Folder" LabelE="New Folder" LabelN="Nieuwe Map" LabelF="Nouveau répertoire" LabelG=""  LeftLogo="../Images/newFolder.png"  NavigateURL="Javascript:OpenRadWindow('DM_SELECT_OBJ_CAT.aspx?CAT_TYPE=Folder','NewObject','RELOAD');" />
+        <Item Text="New Dossier" LabelE="New Routing dossier" LabelN="Nieuw routing dossier" LabelF="Nouveau dossier routing" LabelG="" LeftLogo="../Images/case.png" NavigateURL="Javascript:GotoWorkFlowPage('WF_Procs.asp',3);" />
+        <Item Text="New Mail" LabelE="" LabelN="Nieuwe mail" LabelF="Nouveau courriel" LabelG="" LeftLogo="../Images/newMail.png" NavigateURL="Javascript:OpenNormalWindow('./MailClient/Compose2.aspx','Mail');" />
+        <Item Text="New Property Expansion" LabelE="" LabelN="Nieuwe Property Expansion" LabelF="Nouvel expansion d'une propriété" LabelG="" LeftLogo="../Images/TreeView.gif" NavigateURL="Javascript:OpenRadWindow('DM_EDIT_QUERY.aspx','EditQuery','RELOAD');" />
+        <Item Text="New Subscription" LabelE="Subscribe" LabelN="Abonneren" LabelF="Subscription" LabelG="" LeftLogo="../Images/newSubscribtion.png" NavigateURL="Javascript:Subscribe();" />
+        <Item IsSeparator="True" />
+        
+        <Item Text="Link as" LabelE="" LabelN="Linken als" LabelF="Lier comme" LabelG="" LeftLogo="../Images/documentAddLink.png"/>
+        <Item Text="Generate the CD" LeftLogo="../Images/GenerateCD.png" LabelE="" LabelN="CD genereren" LabelF="Créer CD" LabelG="" NavigateUrl="Javascript:GenCD();"/>
+      </Group>
+    </Item>
+
+    <Item  Text="View" LabelE="" LabelN="Weergave" LabelF="Affichage" LabelG="" AccessKey="V" >
+      <Group Flow="Vertical">
+        <Item text="What's New" LabelE="" LabelF="Quoi de neuf" LabelN="Nieuwe items" NavigateUrl="javascript:ToggleWhatsNew();"></Item>
+        <Item Text="Documents" LabelE="" LabelN="Documenten" LabelF="Documents" LabelG="" >
+          <Group Flow="Vertical">
+            <Item Text="All documents" LabelE="" LabelN="Alle documenten" LabelF="" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=browse',8);"/>
+            <Item Text="My favorite documents" LabelE="" LabelN="Mijn favoriete documenten" LabelF="Mes documents favoris" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=browse&amp;seltype=3',8);" />
+            <Item Text="My recent documents" LabelE="" LabelN="Mijn recente documenten" LabelF="Mes documents récents" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=browse&amp;seltype=4',8);">
+              <Group Flow="Vertical">
+                <Item Text="Last day" LabelE="" LabelN="Laatste dag" LabelF="Dernier jour" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=browse&amp;seltype=4&amp;seldate=>-1',8);"/>
+                <Item Text="Last week" LabelE="" LabelN="Laatste week" LabelF="Dernière semaine" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=browse&amp;seltype=4&amp;seldate=>-7',8);"/>
+                <Item Text="Last month" LabelE="" LabelN="Laatste maand" LabelF="Dernier mois" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=browse&amp;seltype=4&amp;seldate=>-31',8);"/>
+              </Group>
+            </Item>
+          </Group>
+        </Item>
+        <Item Text="Bewaarde queries" LabelE="" LabelN="Bewaarde queries" LabelF="Recherches sauvegardées" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=openquery&amp;seltype=4&amp;seldate=>-31',8);"/>        
+        <Item Text="E-Mails" LabelE="" LabelN="E-Mails" LabelF="Courriel" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=browse&amp;object_type=Mail',8);"/>
+        <Item Text="Workflow" LabelE="" LabelN="Workflow" LabelF="" LabelG="" >
+          <Group Flow="Vertical" >
+            <Item Text="My Work" LabelE="" LabelN="Mijn werk" LabelF="Mon travail" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=mywork',8);" />
+            <Item Text="My Dossiers" LabelE="" LabelN="Mijn Routing dossiers" LabelF="Mes dossiers" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=opendossiers',8);" />
+            <Item Text="Open Dossiers" LabelE="" LabelN="Open Routing dossiers" LabelF="Dossiers ouverts" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=opendossiers',8);"/>
+            <Item Text="Archive" LabelE="" LabelN="Archief" LabelF="Archives" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=archiveddossiers',8);"/>
+            <Item IsSeparator="True" />
+            <Item Text="Distributions" LabelE="" LabelN="Distributies" LabelF="Distributions" LabelG="" />
+            <Item Text="My Distributions" LabelE="" LabelN="Mijn distributies" LabelF="Mes distributions" LabelG="" />
+            <Item Text="Basket" LabelE="" LabelN="Mand" LabelF="Panier" LabelG="" NavigateURL="Javascript:GotoWorkFlowPage('WF_Basket.asp');"/>
+          </Group>
+        </Item>
+        <Item IsSeparator="True" />
+        <Item Text="Basket" LeftLogo="../Images/basket.png"  LabelE="" LabelN="Mand" LabelF="Panier" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=browse&amp;seltype=2',8);" />
+        <Item Text="CD-List" LeftLogo="../Images/cd.png"  LabelE="" LabelN="Cd-List" LabelF="CD-List" LabelG="" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=browse&amp;seltype=6',8);" />
+      </Group>
+    </Item>
+
+    <Item Text="Search_" LabelE="Search" LabelN="Zoeken" LabelF="Recherche" LabelG="Search" AccessKey="E" >
+      <Group Flow="Vertical" >
+        <Item Text="Search All" LabelE="" LabelN="Alles" LabelF="Tous" LabelG="" LeftLogo="../images/find.png" NavigateURL ="Javascript:Goto('DM_DocumentList.aspx?screenmode=query&amp;dm_screen_id=-1',8,0);" >
+        </Item>
+        
+        <Item Text="Search Documents" LabelE="" LabelN="Documenten" LabelF="Documents" LabelG="" LeftLogo="../images/findindocument.png" NavigateURL ="Javascript:Goto('DM_DocumentList.aspx?screenmode=query&amp;object_type=Document',8,0);" >
+        </Item>
+        <Item Text="Search Folders" LabelE="" LabelN="Mappen" LabelF="Répertoires" LabelG="" LeftLogo="../images/findinfolder.png" NavigateURL ="Javascript:Goto('DM_DocumentList.aspx?screenmode=query&amp;object_type=Folder',8,0);" >
+        </Item>
+        <Item Text="My Work" LabelE="" LabelN="Mijn werk" LabelF="My Work" LabelG="" LeftLogo="../images/findincases.png" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=query&amp;result_type=2',8,0)"  >
+        </Item>
+        <Item Text="Cases" LabelE="" LabelN="Routing dossiers" LabelF="Dossiers routing" LabelG="" LeftLogo="../images/findincases.png" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=query&amp;result_type=3',8,0)"  >
+        </Item>
+        <Item Text="Archived Cases" LabelE="" LabelN="Gearchiveerde Routing dossiers" LabelF="Dossiers routing archivé" LabelG="" LeftLogo="../images/findincases.png" NavigateURL="Javascript:Goto('DM_DocumentList.aspx?screenmode=query&amp;result_type=4',8,0)"  >
+        </Item>
+
+        <Item Text="Search All (Popup)" LabelE="" LabelN="Alles(Popup)" LabelF="Tous" LabelG="" LeftLogo="../images/find.png" NavigateURL ="Javascript:OpenNormalWindow('Default.aspx?screenmode=query&amp;dm_screen_id=-1&amp;hidetree=Y','POPUP');" >
+        </Item>
+      </Group>
+    </Item>
+
+    <Item Text="Options" LabelE="" LabelN="Opties" LabelF="Options" LabelG="" AccessKey="O" Roles="" >
+      <Group Flow="Vertical">
+        <Item Text="Open Mail Client" LabelE="" LabelN="Mailbox openen" LabelF="Ouvrir mon courriel" LabelG="" leftlogo="../images/myEmails.png" NavigateURL="Javascript:Goto('./MailClient/Default.aspx',9,0);"/>
+        <Item IsSeparator="True" />
+        <Item Text="My Preferences" LabelE="" LabelN="Mijn Instellingen" LabelF="Mes préférences" LabelG="" NavigateURL="Javascript:OpenRadWindow('DM_USER_PREFS.aspx','Prefs','RELOAD');"/>
+        <Item Text="My Profile" LeftLogo="../Images/UserProfile.png"  LabelE="" LabelN="Mijn profiel" LabelF="Mon profil" LabelG="" NavigateURL="Javascript:GotoWorkFlowPage('WF_MyProfile.asp');"/>
+        <Item Text="My Delegates" LeftLogo="../Images/UserDelegate.png"  LabelE="" LabelN="Mijn delegaties" LabelF="" LabelG="" NavigateURL="Javascript:GotoWorkFlowPage('WF_MyDelegates.asp');"/>
+        <Item IsSeparator="True" />
+        <Item Text="Organise toolbar" LabelE="" LabelN="Aanpassen Werkbalk" LabelF="Modifier la barre d'outils" LabelG="" NavigateUrl="javascript:OpenRadWindow('Toolbarconfig.aspx','TBConfig', 'RELOAD');" />
+      </Group>
+    </Item>
+
+    <Item Text="Admin" LabelE="" LabelN="Administratie" LabelF="Administration" LabelG="" AccessKey="A" Roles="" AdminOnly="Y" >
+      <Group Flow="Vertical">
+        <Item Text="Application Server" LeftLogo="../Images/ApplicationServer.png"  LabelE="" LabelN="" LabelF="" AdminOnly="Y" LabelG="" NavigateURL="Javascript:OpenRadWindow('DM_AppServer.aspx','AppServer','RELOAD');"/>
+        <Item Text="Batch Jobs" LeftLogo="../Images/BatchJobs.png"  LabelE="" LabelN="Batch Jobs" LabelF="Batch jobs" AdminOnly="Y" LabelG="" NavigateURL="Javascript:OpenRadWindow('DM_Jobs.aspx','Jobs','RELOAD');"/>
+        <Item Text="File Servers" LeftLogo="../Images/FileServer.png"  LabelE="" LabelN="Bestandsservers" LabelF="Gestion des serveurs de fichier" LabelG="" AdminOnly="Y" NavigateUrl="Javascript:OpenRadWindow('dm_fileservers.aspx','FileServers','RELOAD');"/>
+        <Item Text="File Extensions" LeftLogo="../Images/FileTypes.png"  LabelE="" LabelN="Bestandsextensies" AdminOnly="Y" LabelF="Gestion des extensions" LabelG="" NavigateURL="Javascript:OpenRadWindow('DM_FILETYPES.aspx','FileExt','RELOAD');"/>
+        <Item Text="Administration" LabelE="" LabelN="Administratie" LabelF="" LabelG="" NavigateURL="Javascript:GotoWorkFlowPage('WF_Admin.asp');" AdminOnly="Y"/>
+        <Item IsSeparator="True" AdminOnly="Y" />
+
+       
+        <Item Text="Manage Lists" LeftLogo="../Images/ManageLists.png"  LabelE="List Manager" LabelN="Lijsten beheren" LabelF="Manage Lists" AdminOnly="Y" LabelG="" NavigateURL="Javascript:OpenRadWindow('./CatalogMaint/DM_Catalog.aspx','CatMaint','RELOAD');"/>
+       
+        <Item IsSeparator="True" AdminOnly="Y" />
+
+
+        <Item Text="Action Profiles" LeftLogo="../Images/ActionProfiles.png"  LabelE="" LabelN="Actie Profielen" LabelF="Gestion des profils d'actions" LabelG="" AdminOnly="Y" NavigateUrl="Javascript:OpenRadWindow('dm_action_profiles.aspx','ActionProfiles','RELOAD');"/>
+        <Item Text="Manage Users" LeftLogo="../Images/ManageUsers.png"  LabelE="Manage Users" LabelN="Gebruikers beheren" LabelF="Manage Users" AdminOnly="Y" LabelG="" NavigateURL="Javascript:OpenRadWindow('./UserBrowser/DM_Userbrowser.aspx','Userbrowser','RELOAD');"/>
+        <Item IsSeparator="True" AdminOnly="Y" />
+
+        <Item Text="Reload environment"  LabelE="" LabelN="Omgevingsvariabelen herladen" LabelF="Rafraichir environement" AdminOnly="Y" LabelG="" NavigateURL="Javascript:OpenNormalWindow('DM_ClearCache.aspx','Clear');"/>
+
+       
+        <Item IsSeparator="True" AdminOnly="Y" />
+
+        <Item Text="IFilters" NavigateUrl="Javascript:OpenRadWindow('DM_IFILTERS.aspx','IFILTERS','RELOAD');" AdminOnly="Y"/>
+        <Item Text="Versions" NavigateUrl="Javascript:OpenRadWindow('DM_ABOUT.aspx','Versions','RELOAD');" AdminOnly="Y"/>
+
+      </Group>
+    </Item>
+  </Group>
+</Menu>

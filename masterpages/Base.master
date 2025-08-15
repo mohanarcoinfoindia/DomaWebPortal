@@ -1,0 +1,24 @@
+﻿<%@ Master Language="VB" CodeFile="Base.master.vb" Inherits="masterpages_Base" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />    
+    
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="HeaderPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body id="MasterPageBodyTag" runat="server" class="domaBody">
+    <form id="form1" runat="server">
+
+        <asp:ContentPlaceHolder ID="Plh1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

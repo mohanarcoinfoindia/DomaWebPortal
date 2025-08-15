@@ -1,0 +1,18 @@
+﻿/// <reference path="../Variables.less" />
+
+.RadProgressBar.RadProgressBar_Default.rpbHorizontal {
+    background-image: none;
+    background-color: @color-shade-10;
+
+    > .rpbLabelWrapper {
+        border-color: @color-border-darker;
+        border-radius: @input-border-radius;
+    }
+
+    > .rpbStateSelected, > .rpbStateSelected:hover {
+        border-color: transparent;
+        border-radius: @input-border-radius 0 0 @input-border-radius;
+        background-image: none;
+        background-color: @color-primary-light;
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\FileGrid.xsd">
+<OrderBy>FILE_ATT ASC,FILE_TITLE asc</OrderBy>
+  <columns>
+    <column name="title"></column>
+    <column name="replace"></column>
+    <column name="delete"></column>
+    
+  </columns>
+</screendef>

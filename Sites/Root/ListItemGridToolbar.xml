@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Toolbar enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\GridToolbar.xsd">
+<Item Text="Show Sidepanel" LabelN="Zijpaneel tonen" LabelF="Montrer le panneau latéral" ImageClass="icon-chevron-expand icon-color-light" NavigateUrl="javascript:#GRID#.ToggleShowSideBar();"/> 
+ <Item Text="Refresh" ImageClass="icon-refresh" LabelN="Hernieuwen" LabelF="Rafraîchir" NavigateUrl="javascript:#GRID#.Reload();"/>
+   
+  <Item Text="What's new" ImageClass="icon-folder-mynewdocs" ShowText="false" LabelE="" LabelF="Quoi de neuf" LabelN="Nieuwe items" LabelG="Neuigkeiten" NavigateUrl="javascript:#GRID#.ToggleWhatsNew();"/> 
+  <Item isSeparator="true"/>
+  <Item Text="Add" LabelE="Add" LabelN="Toevoegen" LabelF="Ajouter" LabelG="Add" ImageClass="icon-add-new" NavigateUrl="javascript:#GRID#.AddNew();"/>
+
+  <Item Text="Delete" ToggleOnMultiSelect="true" LabelE="Delete" LabelN="Verwijderen" LabelF="Supprimer" LabelG="Löschen" ImageClass="icon-delete" NavigateUrl="javascript:#GRID#.DoDocumentListAction(4,0);"/>
+   <Item isSeparator="true"></Item>
+  <Item Text="Print" LabelE="Print" LabelN="Afdrukken" LabelF="Imprimer" LabelG="Abdrucken" ImageClass="icon-printer"  NavigateUrl="javascript:#GRID#.PrintGrid();"/>
+  <Item Text="Export to Excel" LabelE="Export to Excel" LabelN="Exporteren naar Excel" LabelF="Exporter vers Excel" LabelG="Export to Excel" ImageClass="icon-filetype-excel"  NavigateUrl="javascript:#GRID#.PrintGridToExcel('auto');"/>
+ 
+  <Item isSeparator="true"></Item>
+  <Item Text="Add to Clipboard" ToggleOnMultiSelect="true" ImageClass="icon-copy-clipboard"  LabelE="Add to Docroom Clipboard" LabelN="Toevoegen aan het DocRoom Klembord" LabelF="Ajouter au Clipboard" LabelG="" NavigateUrl="Javascript:#GRID#.AddToSelection(7);" />
+</Toolbar>
+

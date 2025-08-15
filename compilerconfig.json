@@ -1,0 +1,30 @@
+﻿[
+  {
+    "outputFile": "App_Themes/kbc/StyleSheet.css",
+    "inputFile": "App_Themes/kbc/Less/Bundle.less",
+    "minify": {
+      "enabled": false
+    }
+  },
+  {
+    "outputFile": "App_Themes/Common/Icons.css",
+    "inputFile": "App_Themes/Common/Less/Icons.less",
+    "minify": {
+      "enabled": false
+    }
+  },
+  {
+    "outputFile": "App_Themes/Common/StyleSheet.css",
+    "inputFile": "App_Themes/Common/Less/StyleSheet.less",
+    "minify": {
+      "enabled": false
+    }
+  },
+  {
+    "outputFile": "App_Themes/ArcoInfo/StyleSheet.css",
+    "inputFile": "App_Themes/ArcoInfo/Less/Bundle.less",
+    "minify": {
+      "enabled": false
+    }
+  }
+]

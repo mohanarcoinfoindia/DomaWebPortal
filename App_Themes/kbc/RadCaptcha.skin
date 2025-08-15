@@ -1,0 +1,3 @@
+﻿<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<telerik:RadCaptcha runat="server" CaptchaTextBoxLabel="" Width="400px" TextBoxDecoration-TabIndex="2" EnableRefreshImage="true" CaptchaImage-BackgroundNoise="High" CaptchaImage-LineNoise="High" CaptchaImage-FontWarp="Extreme" />

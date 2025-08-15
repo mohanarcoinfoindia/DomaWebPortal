@@ -1,0 +1,37 @@
+﻿// JScript File
+var UIMessages = new Array(33);
+
+UIMessages[0] = "Bitte erst ein Element auswählen";
+UIMessages[1] = "Möchten Sie diese Dokumente wirklich löschen?";
+UIMessages[2] = "Möchten Sie diese Datei wirklich löschen?";
+UIMessages[3] = "Kein Dokument angeheftet";
+UIMessages[4] = "Möchten Sie dieses Dokument wirklich löschen?";
+UIMessages[5] = "Inhalt wird geladen - bitte warten";
+UIMessages[6] = "Diese Seite unterstützt die Druckoption nicht";
+UIMessages[7] = "Möchten Sie den Papierkorb wirklich vollständig leeren?";
+UIMessages[8] = "Möchten Sie die ausgewählten Dokumente wirklich löschen?";
+UIMessages[9] = "Show files";
+UIMessages[10] = "Hide files";
+UIMessages[11] = "Show all files";
+UIMessages[12] = "Hide all files";
+UIMessages[13] = "Select all";
+UIMessages[14] = "Deselect all";
+UIMessages[15] = "Are you sure you wish to continue without saving, all changes will be lost?";
+UIMessages[16] = "Are you sure you want to move this item?";
+UIMessages[17] = "Your subscription has been created";
+UIMessages[18] = "The item has been added to the package";
+UIMessages[19] = "The items have been added to the selection";
+UIMessages[20] = "Are you sure you want to finish this workflow?";
+UIMessages[21] = "Möchten Sie dieses rei wirklich löschen?";
+UIMessages[22] = "The recyclebin has been marked for clearing";
+UIMessages[23] = "The selected items have been marked for clearing";
+UIMessages[24] = "By doing this all customized security on the sub objects will be lost, continue?";
+UIMessages[25] = "Kommentar hinzufügen";
+UIMessages[26] = "Are you sure you want to finish the selected workflows?";
+UIMessages[27] = "Are you sure you want to remove this link?";
+UIMessages[28] = "Are you sure you want to remove all links?";
+UIMessages[29] = "Möchten Sie #ITEM# wirklich löschen?";
+UIMessages[30] = "Are you sure you want to unlock all the work for this user?";
+UIMessages[31] = "Are you sure you want to transfer all the work for this user?";
+UIMessages[32] = "Are you sure you want to delete all rows?";
+UIMessages[33] = "Your browser is probably blocking some popups. Please change your browser settings to allow popups for this website.";

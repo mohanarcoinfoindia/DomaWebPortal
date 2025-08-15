@@ -1,0 +1,111 @@
+﻿.LoginPage {
+    display: flex;
+    height: 100%
+}
+
+.PanelPage {
+    background-image: unset;
+    background-color: #FDFDFD;
+}
+
+    .PanelPage .LoginUsingDoma {
+        display: none !important;
+    }
+
+    .PanelPage .BigLogo {
+        position: static !important;
+        margin-bottom: 25px;
+    }
+
+    .PanelPage .Panel.Centered {
+        border-color: #fff;
+    }
+
+        .PanelPage .Panel.Centered .Content {
+            border-radius: 10px;
+            border: 1px solid #fff;
+            box-shadow: -40px 40px 160px 0 rgba(0, 0, 0, 0.08), -8px 8px 15px 0 rgba(120, 120, 120, 0.04), 3px 3px 30px 0 rgba(0, 0, 0, 0.04) !important;
+        }
+
+            .PanelPage .Panel.Centered .Content Label {
+                font-weight: bold;
+            }
+
+            .PanelPage .Panel.Centered .Content .LabelInline {
+                display: inline-block !important;
+            }
+
+            .PanelPage .Panel.Centered .Content .TooltipImg {
+                font-size: 22px;
+            }
+
+                .PanelPage .Panel.Centered .Content .TooltipImg:hover {
+                    cursor: help;
+                }
+
+            .PanelPage .Panel.Centered .Content .Title {
+                font-weight: bold;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+
+            .PanelPage .Panel.Centered .Content .forgotWrapper a {
+                text-decoration: none;
+                font-weight: bold;
+                color: #00AEEF;
+            }
+
+                .PanelPage .Panel.Centered .Content .forgotWrapper a.ForgotUserName {
+                    display: none
+                }
+
+            .PanelPage .Panel.Centered .Content ol > li a.button.positive {
+                width: 100%;
+                margin-left: unset;
+            }
+
+    .PanelPage .langList li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .PanelPage .langList li:first-child {
+            border-right: 1px solid rgb(0,54,101);
+        }
+
+        .PanelPage .langList li .code a {
+            border: unset;
+            text-decoration: unset;
+            color: rgb(0,54,101);
+            margin: unset;
+            font-weight: bold;
+            font-size: 16px !important;
+            height: unset;
+            line-height: unset;
+        }
+
+            .PanelPage .langList li .code a:hover {
+                background-color: unset !important;
+                color: #00AEEF !important;
+                text-decoration: underline;
+            }
+
+.authInput div {
+    line-height: 14px;
+}
+
+.checkboxDoma {
+    margin-top: unset;
+}
+
+    .checkboxDoma label {
+        font-size: 14px !important;
+        font-weight: 300 !important;
+    }
+
+.Footer {
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+}

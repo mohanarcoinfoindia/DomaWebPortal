@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grouping enabled="y" width="220px" height="100%" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Gridgrouping.xsd">
+  <grouper id="1" usergrouper="false" applyfiltertogrouper="true" LabelE="Category" LabelN="Categorie" LabelF="Catégorie" LabelG="Category" orderbyvalue="false" >
+    <field value="CAT_ID"/>
+  </grouper>
+</grouping>

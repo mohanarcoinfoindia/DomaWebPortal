@@ -1,0 +1,37 @@
+﻿// JScript File
+var UIMessages = new Array(33);
+
+UIMessages[0] = "Gelieve eerst een selectie te maken";
+UIMessages[1] = "Bent u zeker dat u deze items wil verwijderen?";
+UIMessages[2] = "Bent u zeker dat u dit bestand wil verwijderen?";
+UIMessages[3] = "Gelieve eerst een item te pinnen";
+UIMessages[4] = "Bent u zeker dat u dit item wil verwijderen?";
+UIMessages[5] = "Bezig met het laden van de inhoud - Even geduld aub";
+UIMessages[6] = "Afdrukken is niet ondersteund op deze pagina";
+UIMessages[7] = "Bent u zeker dat u de volledige prullenmand wil leegmaken?";
+UIMessages[8] = "Bent u zeker dat u de geselecteerde items wil verwijderen?";
+UIMessages[9] = "Bestanden tonen";
+UIMessages[10] = "Bestanden verbergen";
+UIMessages[11] = "Alle bestanden tonen";
+UIMessages[12] = "Alle bestanden verbergen";
+UIMessages[13] = "Alles selecteren";
+UIMessages[14] = "Selectie ongedaan maken";
+UIMessages[15] = "Bent u zeker dat u wil verdergaan zonder de gegevens eerst op te slaan?";
+UIMessages[16] = "Bent u zeker dat u dit item wil verplaatsen?";
+UIMessages[17] = "Uw abonnement is aangemaakt";
+UIMessages[18] = "Het item is nu gekoppeld aan de package";
+UIMessages[19] = "De items zijn toegevoegd aan uw selectie";
+UIMessages[20] = "Bent u zeker dat u deze workflow wil beëindigen?";
+UIMessages[21] = "Bent u zeker dat u deze rij wil verwijderen?";
+UIMessages[22] = "De prullenmand is aangeduid als leeg te maken";
+UIMessages[23] = "De geselecteerde items zijn aangeduid als te verwijderen";
+UIMessages[24] = "Door deze actie uit te voeren zullen alle aanpassingen aan de beveiliging van de onderliggende objecten verloren gaan, verder gaan?";
+UIMessages[25] = "Commentaar toevoegen";
+UIMessages[26] = "Bent u zeker dat u de geselecteerde workflows wil beëindigen?";
+UIMessages[27] = "Bent u zeker dat u deze link wil verwijderen?";
+UIMessages[28] = "Bent u zeker dat u alle links wil verwijderen?";
+UIMessages[29] = "Bent u zeker dat u #ITEM# wil verwijderen?";
+UIMessages[30] = "Bent u zeker dat u al het werk van deze gebruiker wil ontgrendelen?";
+UIMessages[31] = "Bent u zeker dat u al het werk van deze gebruiker wil transfereren?";
+UIMessages[32] = "Bent u zeker dat u alle rijen wil verwijderen?";
+UIMessages[33] = "Uw browser is mogelijks een aantal popups aan het blokkeren. Gelieve de instellingen van uw browser te wijzigen zodat popups voor deze website worden toegestaan.";

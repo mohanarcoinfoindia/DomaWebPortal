@@ -1,0 +1,6 @@
+﻿
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="Telerik" %>
+<Telerik:RadEditor runat="server" SaveInFile="False" Height="300px" ToolsFile="~/Editors/EditHTMLField.xml" NewLineMode="Br" Width="100%" ShowSubmitCancelButtons="false" SkinID="EditHtmlField" EditModes="Design" Skin="Default"></Telerik:RadEditor>
+<Telerik:RadEditor runat="server" ToolsFile="~/MailClient/MailBody.xml" ShowSubmitCancelButtons="False" Height="300px" Width="100%"  StripAbsoluteAnchorPaths="false" StripAbsoluteImagesPaths="false" SkinID="EditMailBody" Skin="Default"></Telerik:RadEditor>
+<Telerik:RadEditor runat="server" SaveInFile="False" ToolsFile="~/Editors/EditHTMLDocs.xml" NewLineMode="P" ShowSubmitCancelButtons="false" Width="100%" SkinID="EditHtmlFile" Skin="Default"></Telerik:RadEditor>
+<Telerik:RadEditor runat="server" SaveInFile="False" ToolsFile="~/Editors/EditHTMLCMS.xml" NewLineMode="P" ShowSubmitCancelButtons="false" SkinID="EditHtmlCMS" EditModes="Design" Skin="Default"></Telerik:RadEditor>

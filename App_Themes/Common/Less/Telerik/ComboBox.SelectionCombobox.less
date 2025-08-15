@@ -1,0 +1,39 @@
+/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+
+.RadComboBox_SelectionComboBox {
+    .rcbInput {
+        line-height: 16px;
+    }
+}
+
+.RadComboBox {
+    &.RadComboBox_SelectionComboBox {
+        border-width: 1px;
+        overflow: hidden;
+    }
+
+    &.RadComboBox_SelectionComboBox .rcbInner {
+        border-width: 0;
+        height: 28px;
+        padding: 2px 0 0 0 !important;
+    }
+
+    .rcbActionButton {
+        border-width: 0px !important;
+        height: 22px !important;
+    }
+
+    &.RadComboBox_SelectionComboBox .rcbInput {
+        margin-top: 3px;
+    }
+}
+
+.RadCalendarPopupShadows {
+    & > .rcShadTR,
+    & > .rcShadBL,
+    & > .rcShadBR {
+        display: none;
+    }
+}
+

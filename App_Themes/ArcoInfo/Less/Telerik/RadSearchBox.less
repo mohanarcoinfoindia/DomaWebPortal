@@ -1,0 +1,61 @@
+﻿/// <reference path="../Variables.less" />
+/// <reference path="../typography.less" />
+/// <reference path="../variables-icons.less" />
+/// <reference path="../.less" />
+
+.RadSearchBox,
+.RadSearchBox_Default {
+    .rsbInner {
+        border-color: @color-primary-dark-10 !important;
+    }
+
+    .rsbButtonSearch,
+    .rsbButton:hover {
+        background: @color-primary-light !important;
+    }
+
+    .rsbSCInner {
+        background-color: @color-shade-10 !important;
+        color: @color-shade-100 !important;
+    }
+
+    .rsbSCFocused {
+        color: @color-shade-100 !important;
+    }
+
+    .rsbSCIcon,
+    .rsbIcon {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .rsbSCIcon {
+        &:before {
+            content: @icon-chevron-down-filled;
+            font-size: 10px;
+        }
+    }
+
+    .rsbIconSearch {
+        &:before {
+            content: @icon-action-search;
+            font-size: 18px;
+            color: @color-bg-white;
+        }
+    }
+}
+
+.rsbPopup_Default {
+    .rsbListItem {
+        color: @color-primary-dark !important;
+    }
+
+    .rsbListItemSelected {
+        background-color: @color-primary-light-30 !important;
+    }
+
+    .rsbListItemHovered {
+        background-color: @color-primary-light-10 !important;
+    }
+}

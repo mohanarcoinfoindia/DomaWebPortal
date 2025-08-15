@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\Grid.xsd">
+  <DefaultOrderBy>case DM_OBJECT.OBJ_TYPE when 'Folder' then 1 when 'Dossier' then 2 else 99 end, OBJ_UNAME ASC</DefaultOrderBy>
+  <DefaultFileOrderBy>FILE_TITLE ASC</DefaultFileOrderBy>
+  <FolderText>True</FolderText>
+  <ShowSearchedFor>False</ShowSearchedFor>
+  <ShowQueries>False</ShowQueries>
+  <columns>
+    <column name="multiselect" />
+    <column name="status" />
+    <column name="file" />
+    <column name="title" chars="50" labelE="fgfgfgg" />
+    <column name="version" />
+    <column name="category" filterwidth="50px" />
+    <column name="creationdate" />
+    <column name="read" filterwidth="30px" />
+    <column name="linktome" />
+    <column name="listinfo" />
+    <column name="objecttype" hidden="True" />
+    <column name="basket" hidden="True" />
+    <column name="favorites" hidden="True" />
+    <column name="cdrom" hidden="True" />
+    <column name="comments" hidden="True" />
+    <column name="previousversions" hidden="True" />
+    <column name="info" colspan="0" ShowToolTip="False" />
+    <column name="links" hidden="True" labelE="links E" />
+  </columns>
+</screendef>

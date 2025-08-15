@@ -1,0 +1,341 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+
+.RadGrid_Default,
+.RadGrid_Default .rgMasterTable {
+    border-collapse: collapse !important;
+
+    .rgHeader,
+    .rgFilterRow,
+    .rgAltRow,
+    .rgRow {
+        border-bottom-width: 1px !important;
+
+        td.rgSorted {
+            border-top: none;
+        }
+    }
+}
+
+.List,
+.RadGrid_Default,
+.RadGrid_Default .rgMasterTable {
+    text-align: left;
+
+    tr {
+        border-top-width: 1px;
+        height: @list-row-height;
+    }
+
+    .listSubContentFillerRow {
+        display: none;
+    }
+
+    tr.ListFooter {
+        border: none;
+
+
+        td {
+
+            .selectedScrollItem {
+                border-width: 1px;
+                min-width: 18px;
+                height: 18px;
+                display: inline-block;
+            }
+
+            a.prevPage {
+                width: 24px;
+                height: 13px;
+                text-indent: -999999999px;
+                display: inline-block;
+                padding-top: -23px;
+            }
+
+
+            a.nextPage {
+                width: 24px;
+                height: 13px;
+                text-indent: -999999999px;
+                display: inline-block;
+                padding-top: -23px;
+            }
+        }
+    }
+
+    th {
+        height: 32px;
+    }
+
+    td,
+    td.rgFilterRow {
+        vertical-align: middle;
+        line-height: normal;
+    }
+}
+
+.pnlFilter {
+    padding-bottom: 10px;
+
+    .buttons {
+        margin: 20px 0px 20px 0px;
+    }
+
+    .includeSubFolders {
+        margin-top: 6px;
+
+        label {
+            line-height: 14px !important;
+        }
+    }
+}
+
+.pnlTopSidePanel {
+    padding: 20px 0px 20px 10px;
+
+    .SubList {
+        border-width: 1px !important;
+        border-spacing: 0;
+        border-collapse: separate;
+
+        tr:first-child td:first-child,
+        tr:first-child th:first-child {
+            border-left: none !important;
+        }
+
+        tr:first-child td,
+        tr:first-child th {
+            border-top: none !important;
+        }
+
+        tr:last-child td:first-child,
+        tr:last-child th:first-child {
+            border-left: none !important;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        th, td {
+            text-align: center;
+            border-left-width: 1px !important;
+            border-top-width: 1px !important;
+            border-right: none !important;
+            border-top: none !important;
+            padding: 0 10px;
+        }
+
+        &.GroupingPanel {
+
+            tr, td, th {
+                height: 30px; /* if changed, you need to update property RowHeight in DM_ListControl.GroupingTree */
+            }
+
+            .property-cell {
+                height: 100%;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 90%;
+                    height: 1px;
+                    left: 5%;
+                    z-index: 0;
+                }
+
+                .property-name {
+                    display: inline-block;
+                    padding: 5px 10px;
+                    z-index: 2;
+                    position: relative;
+                }
+            }
+
+            thead, tfoot {
+                th, td {
+                    border: none !important;
+                }
+            }
+
+            thead {
+
+                th {
+                    white-space: normal;
+                    overflow: hidden;
+                }
+            }
+
+            &.with-scrollbar {
+                .grouper-column {
+                    width: 150px;
+                }
+
+                tbody {
+                    display: block;
+                    overflow-y: auto;
+                }
+
+                thead, tfoot, tbody tr {
+                    display: table;
+                    table-layout: fixed;
+                }
+            }
+        }
+
+
+        td:first-child,
+        th:first-child {
+            border-left: none !important;
+        }
+
+        td.Spacer {
+            border-left: none !important;
+        }
+    }
+}
+
+.ListHeader {
+
+    th {
+        height: 32px;
+    }
+
+    td {
+        height: 32px;
+    }
+}
+
+.ListFilter, .SubListFilter {
+
+    > td {
+        border-top: none;
+        height: 32px;
+    }
+
+    input, select, input[type=text] {
+        height: 27px;
+    }
+
+    + tr {
+        border-top: none;
+    }
+}
+
+.SubList {
+
+    th {
+        text-align: left;
+        padding: 4px 4px 4px 4px;
+    }
+
+    tr {
+        border-top-width: 1px;
+        height: @list-row-height;
+    }
+
+    td {
+        vertical-align: middle;
+        line-height: normal;
+    }
+
+    td.Spacer, td.Total {
+        text-align: right;
+    }
+}
+
+.SubSubList {
+    width: 100%;
+
+    tr {
+        height: 28px;
+    }
+}
+
+.Sub
+{
+    white-space: nowrap;
+    float: left;
+    padding-top: 1px;
+    padding-left: 15px;
+    height: 100% !important;
+
+    img {
+        height: 100%;
+        max-height: 30px;
+    }
+
+    .rtbItem.rtbBtn {
+        margin-right: 10px;
+    }
+}
+
+.List tr.listContentHighlighted {
+    border: none;
+    cursor: pointer;
+}
+
+.listControlGridScroller {
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+.SubListHeader3RightFillerDiv,
+.SubListHeader3RightFullFillerDiv,
+.ListHeader3RightFillerDiv {
+    height: 60px !important;
+    min-height: 60px !important;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    border-top-width: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.level1 > .RowCell:not(.col-lg-6) .SubListHeader3RightFullFillerDiv {
+    border-top-width: 1px;
+}
+
+.level1 > .RowCell > .yui-skin-xp {
+    margin-top: 0;
+}
+
+.SubListHeader3LeftSpacerDiv {
+    display: none;
+}
+
+/*.tblSaveQuery, .queries {
+    padding: 20px;
+}*/
+
+.List, .SubList {
+    .checkboxDoma {
+        margin-top: 0;
+    }
+
+    tbody {
+
+        tr.ListContent {
+            .checkboxDoma {
+                input[type="checkbox"] + label {
+                    visibility: hidden;
+                }
+
+                input[type="checkbox"]:checked + label {
+                    visibility: visible;
+                }
+            }
+
+            &:hover .checkboxDoma input[type="checkbox"] + label {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.ListContent {
+    cursor: pointer;
+}

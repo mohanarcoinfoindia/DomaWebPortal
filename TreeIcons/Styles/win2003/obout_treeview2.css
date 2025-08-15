@@ -1,0 +1,138 @@
+/* for div where treeview is placed */
+div.ob_tree	{
+	overflow: auto;
+}
+
+/*Spacing after each rootnode*/
+div.ob_d2b
+{
+  
+}
+/* for node text */
+td.ob_t2 {
+    vertical-align: middle;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: nowrap;
+}
+
+/* for node text highlighted/selected */
+td.ob_t3 {
+    vertical-align: middle;
+    border: 1px solid #3399cc;
+    background-color: #ccddee;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: nowrap;
+}
+
+/* for node when edited */
+input.ob_t3		{
+	
+}
+
+/* links in all nodes */
+td.ob_t2 A		{
+	
+}
+
+/* link in selected node */
+td.ob_t3 A		{
+	
+}
+	
+/* for icons */
+td.ob_t4 {
+	vertical-align: top;
+}
+
+/* for icons */
+div.ob_d4 {
+	width: 18px;
+	font: 6pt Tahoma;
+    pointer-events: none;
+}
+
+/* for vertical lines (indent) */
+div.ob_d5 {
+	width: 15px;
+	vertical-align: top;
+	font: 5px Verdana;
+}
+
+td.ob_t5v
+{
+	background-image: url(vertical.gif);
+}
+
+/* for plus-minus images */
+td.ob_t6 {
+	width:19px;
+	vertical-align: top;
+}
+
+/* for plus-minus images */
+td.ob_t6v		{
+	width:19px;
+	vertical-align:top;	
+	background-image: url(vertical.gif);
+}
+
+/* for plus-minus images of the root node*/
+td.ob_t8 {
+	width:19px;
+	vertical-align: top;	
+}
+
+/* for message "Loading ..." */
+td.ob_t7 {
+	font-size: 7.5pt; 
+	background-color: #ffffff; 
+	border: 1px solid #666666; 
+	color: #666666; 
+	width: 80px; 
+	text-align: center; 
+	padding-left: 15px;
+}
+
+/* for links */
+A.ob_a2 {
+
+	color: inherit;
+	text-decoration: none;
+   
+}
+
+.ob_t2c 
+{		
+	border-collapse: separate;	
+	border-spacing: 0px;
+}
+
+.ob_t2b 
+{	
+	border-collapse: separate;	
+	border-spacing: 0px;
+}
+
+.ob_t2g
+{	
+	border-collapse: separate;	
+	border-spacing: 0px;
+}
+.ob_t2g td
+{
+	padding:0px;	
+}
+
+.ob_t2b td
+{
+	padding:0px;
+}
+
+.ob_t2c td
+{
+	padding:0px;
+}

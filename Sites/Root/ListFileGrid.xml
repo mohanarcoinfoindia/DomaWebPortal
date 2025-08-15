@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<screendef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Xsd\FileGrid.xsd">
+  <OrderBy>IsAttachment asc,Name asc</OrderBy>
+  <columns>
+    <column name="status"/>
+    <column name="icon"></column>
+  
+    <column name="thumbnail"></column>
+    <column name="title"></column>
+  </columns>
+</screendef>

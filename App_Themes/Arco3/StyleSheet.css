@@ -1,0 +1,4055 @@
+﻿/*#region Font Codes */
+/*#endregion */
+@font-face {
+  font-family: "gt-regular";
+  src: url(fonts/GT-Eesti-Display-Light.otf) format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans-100.otf) format('opentype');
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans-100Italic.otf) format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans-300.otf) format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans-300Italic.otf) format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans-500.otf) format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans-500Italic.otf) format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans-700.otf) format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans-700Italic.otf) format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans-900.otf) format('opentype');
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans-900Italic.otf) format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+.font-default {
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+.font-large {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif;
+}
+.font-header {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "gt-regular", sans-serif;
+}
+.font-small {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif;
+}
+.PanelPage {
+  padding: 50px;
+  min-height: 100%;
+  height: auto;
+}
+.PanelPage .Panel.Centered {
+  border-style: solid;
+  border-color: #E1E1E1;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-width: 1px;
+  position: relative;
+}
+.PanelPage .Panel.Centered .Content {
+  width: auto !important;
+  float: unset !important;
+  padding: 20px 40px 20px 40px;
+}
+.PanelPage .Panel.Centered .Content fieldset legend {
+  display: block;
+  text-align: center;
+  color: #21123d /* original #006F8B */;
+}
+.PanelPage .Panel.Centered .Content ol > li {
+  padding-top: 5px;
+  width: 100%;
+}
+.PanelPage .Panel.Centered .Content ol > li #pnlExtra {
+  width: 100% !important;
+}
+.PanelPage .Panel.Centered .Content ol > li input[type=text],
+.PanelPage .Panel.Centered .Content ol > li input[type=password],
+.PanelPage .Panel.Centered .Content ol > li input[type=email] {
+  width: 100% !important;
+}
+.PanelPage .Panel.Centered .Content ol > li input[type=submit] {
+  width: unset !important;
+}
+.PanelPage .Panel.Centered .Content ol > li .ArcoButton {
+  float: right;
+}
+.PanelPage .Panel.Centered .Content ol > li .RadCaptcha > span {
+  display: none;
+}
+.PanelPage .Panel.Centered .Content ol > li .RadCaptcha.rcInvalid > span {
+  display: block;
+}
+.PanelPage .Panel.Centered .Content ol > li .RadCaptcha.RadCaptcha_Default {
+  width: 100% !important;
+}
+.PanelPage .Panel.Centered .Content input[type=text],
+.PanelPage .Panel.Centered .Content input[type=email],
+.PanelPage .Panel.Centered .Content input[type=password],
+.PanelPage .Panel.Centered .Content input,
+.PanelPage .Panel.Centered .Content input:hover,
+.PanelPage .Panel.Centered .Content input:focus,
+.PanelPage .Panel.Centered .Content input:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  border-radius: 5px;
+  border-color: rgba(0, 111, 139, 0.2);
+}
+.PanelPage .Panel.Centered .Content input[type=text],
+.PanelPage .Panel.Centered .Content input[type=email],
+.PanelPage .Panel.Centered .Content input[type=password],
+.PanelPage .Panel.Centered .Content input:-webkit-autofill,
+.PanelPage .Panel.Centered .Content input:-webkit-autofill:hover,
+.PanelPage .Panel.Centered .Content input:-webkit-autofill:focus,
+.PanelPage .Panel.Centered .Content input:-webkit-autofill:active {
+  height: 40px;
+}
+.PanelPage .Panel.Centered .Content .riStrengthBar.riStrengthBarL0 {
+  width: unset !important;
+}
+.PanelPage .Panel.Centered .Content select {
+  border-radius: 5px;
+  border-color: rgba(0, 111, 139, 0.2);
+  height: 40px;
+}
+.PanelPage .langList {
+  display: flex;
+  justify-content: center;
+}
+.PanelPage .langList li .flag {
+  display: none;
+}
+.PanelPage .langList li .code {
+  display: inline-block;
+}
+.PanelPage .langList li .code a {
+  color: #73b746;
+  width: 50px;
+  text-align: center;
+}
+.PanelPage .langList li .code a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.PanelPage .BigLogo {
+  position: fixed;
+  top: 30px;
+  left: 50px;
+}
+.PanelPage .BigLogo img {
+  max-width: 400px;
+}
+.ShowPassword {
+  /*background-image: @url-showpassword;*/
+}
+.PanelPage.SelectTenantPage .Panel.Centered .Content input.rcbInput {
+  height: 1.42857143em;
+}
+@font-face {
+  font-family: 'Soluzio-Icon-Selection';
+  src: url('fonts/Soluzio-Icon-Selection.eot?hao1lf');
+  src: url('fonts/Soluzio-Icon-Selection.eot?hao1lf#iefix') format('embedded-opentype'), url('fonts/Soluzio-Icon-Selection.ttf?hao1lf') format('truetype'), url('fonts/Soluzio-Icon-Selection.woff?hao1lf') format('woff'), url('fonts/Soluzio-Icon-Selection.svg?hao1lf#Soluzio-Icon-Selection') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/*#region GENERAL ICON LAYOUT */
+.icon,
+.icon-stacked,
+.RadToolBar .rtbIcon,
+.RadToolBar .rtbIconOnly .rtbImage,
+.RadToolBar .rtbChoiceArrow,
+.RadToolBar.RadToolBar_DefaultToolbar .radIcon .RadToolBarDropDown .rtbIcon,
+.RadDock .rdCenter .rdCommands a .icon,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon,
+.RadSearchBox_Default .rsbSCIcon,
+.RadSearchBox .rsbButton span.rsbIcon,
+.icon-convert {
+  color: #21123d /* original #006F8B */;
+  font-family: 'Soluzio-Icon-Selection' !important;
+}
+.icon.icon-disabled,
+.icon-stacked.icon-disabled,
+.RadToolBar .rtbIcon.icon-disabled,
+.RadToolBar .rtbIconOnly .rtbImage.icon-disabled,
+.RadToolBar .rtbChoiceArrow.icon-disabled,
+.RadToolBar.RadToolBar_DefaultToolbar .radIcon .RadToolBarDropDown .rtbIcon.icon-disabled,
+.RadDock .rdCenter .rdCommands a .icon.icon-disabled,
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell .icon.icon-disabled,
+.RadSearchBox_Default .rsbSCIcon.icon-disabled,
+.RadSearchBox .rsbButton span.rsbIcon.icon-disabled,
+.icon-convert.icon-disabled {
+  opacity: 0.3;
+}
+/*#region Icon layout helper classes */
+.icon-in-circle-s {
+  color: #FFFFFF;
+  border-radius: 50%;
+  background-color: #f3a2aa;
+}
+.icon-in-circle-lg {
+  color: #FFFFFF;
+  border-radius: 50%;
+  background-color: #21123d;
+}
+.icon-color-light:before {
+  color: #21123d !important;
+}
+.icon-color-dark:before {
+  color: #21123d /* original #006F8B */ !important;
+}
+.icon-clickable {
+  cursor: pointer;
+}
+.icon-bold:before {
+  font-weight: bold;
+}
+.icon-disabled,
+.aspNetDisabled .icon {
+  opacity: 0.3;
+  cursor: default;
+}
+.icon-suspended {
+  color: #D64040;
+  opacity: 0.6;
+}
+.icon-stack-container .icon-stack-xs.icon:not(:first-child),
+.icon-stack-container .icon-stack-s.icon:not(:first-child) {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.button[class*="icon-"]:before {
+  font-family: 'Soluzio-Icon-Selection' !important;
+}
+/*#endregion */
+/*#endregion */
+/*#region OVERWRITE STYLES */
+a.icon:hover {
+  text-decoration: none;
+  color: #21123d /* original #006F8B */;
+}
+a .icon:hover {
+  text-decoration: none;
+  color: #21123d /* original #006F8B */;
+}
+a .icon.icon-in-circle:hover {
+  background-color: #f3a2aa /* #5c9238 */;
+}
+a .icon.icon-in-circle:hover:before {
+  color: white;
+}
+.button:before {
+  font-family: 'Soluzio-Icon-Selection';
+}
+.button.secondary .icon:before {
+  color: #21123d;
+}
+.button.positive .icon:before {
+  color: #FFFFFF;
+}
+/*#endregion */
+/*#region ICON CLASSES */
+/*#region Invoice icons*/
+.icon-invoice:before {
+  content: "\e966";
+}
+.icon-invoice-approved:before {
+  content: "\e967";
+}
+.icon-invoice-blocked:before {
+  content: "\e96c";
+}
+.icon-invoice-rejected:before {
+  content: "\e96d";
+}
+.icon-approver:before {
+  content: "\e968";
+}
+.icon-approver-add:before {
+  content: "\e969";
+}
+.icon-approver-edit:before {
+  content: "\e96a";
+}
+.icon-approver-sendback:before {
+  content: "\e96b";
+}
+.icon-accounting:before {
+  content: "\e963";
+}
+/*#endregion*/
+/*#region Arrows and navigation icons*/
+.icon-arrow-left:before {
+  content: "\e879";
+}
+.icon-arrow-right:before {
+  content: "\e87a";
+}
+.icon-arrow-up:before {
+  content: "\e877";
+}
+.icon-arrow-up-xs:before {
+  content: "\e877";
+}
+.icon-arrow-down:before {
+  content: "\e878";
+}
+.icon-arrow-down-xs:before {
+  content: "\e878";
+}
+.icon-chevron-left:before {
+  content: "\e875";
+}
+.icon-chevron-right:before {
+  content: "\e876";
+}
+.icon-chevron-up:before,
+.icon-grouper-collapse:before {
+  content: "\e873";
+}
+.icon-chevron-up-xs:before {
+  content: "\e873";
+}
+.icon-chevron-down-xs:before {
+  content: "\e874";
+}
+.icon-dropdown:before,
+.icon-grouper-collapse.collapsed:before {
+  content: "\e874";
+}
+.icon-chevron-expand:before {
+  content: "\e93e";
+}
+.icon-page-next:before {
+  content: "\e965";
+}
+.icon-page-previous:before {
+  content: "\e964";
+}
+.icon-arrow-reply:before {
+  content: "\e69a";
+}
+.icon-arrow-reply-all:before {
+  content: "\e69b";
+}
+.icon-collapse:before {
+  content: "\e95b";
+}
+.icon-uncollapse:before {
+  content: "\e95a";
+}
+.icon-shortcut:before {
+  content: "\e93b";
+}
+/*#endregion */
+/*#region Time and date icons */
+.icon-calendar:before {
+  content: "\e789";
+}
+.icon-clock:before {
+  content: "\e8e8";
+}
+.icon-deadline:before {
+  content: "\e91a";
+  opacity: 0.8;
+}
+.icon-deadline-urgent:before {
+  content: "\e91a";
+  color: #EE7105;
+  opacity: 0.8;
+}
+.icon-deadline-expired:before {
+  content: "\e91a";
+  color: #D64040;
+}
+.icon-history:before {
+  content: "\e863";
+}
+.icon-versionhistory:before {
+  content: "\e78b";
+}
+.icon-calendar-insert:before {
+  content: "\e78a";
+}
+/*#endregion */
+/*#region User action icons */
+.icon-add-new:before {
+  content: "\e881";
+}
+.icon-close:before {
+  content: "\e870";
+}
+.icon-delete {
+  cursor: pointer;
+}
+.icon-delete:before {
+  content: "\e811";
+}
+.icon-clear:before {
+  content: "\e611";
+}
+.icon-cancel:before {
+  content: "\e880";
+}
+.icon-save:before {
+  content: "\e6ae";
+}
+.icon-save-next:before {
+  content: "\e935";
+}
+.icon-save-exit:before {
+  content: "\e933";
+}
+.icon-home:before {
+  content: "\e602";
+}
+.icon-refresh {
+  cursor: pointer;
+}
+.icon-refresh:before {
+  content: "\e862";
+}
+.icon-return:before {
+  content: "\e69a";
+}
+.icon-edit {
+  cursor: pointer;
+}
+.icon-edit:before {
+  content: "\e802";
+}
+.icon-edit-page:before {
+  content: "\e802";
+  color: #FFFFFF;
+  border-radius: 50%;
+  background-color: #21123d;
+}
+.icon-edit-page:hover:before {
+  background-color: #f3a2aa /* #5c9238 */;
+}
+.icon-rename:before {
+  content: "\e6d1";
+}
+.icon-full-screen:before {
+  content: "\e94a";
+}
+.icon-exit:before {
+  content: "\e6d5";
+}
+.icon-search:before {
+  content: "\e86f";
+}
+.icon-filter:before {
+  content: "\e97c";
+}
+.icon-copy-clipboard:before {
+  content: "\e6c8";
+}
+.icon-copy-clipboard-addto:before {
+  content: "\e958";
+}
+.icon-download:before {
+  content: "\e6ad";
+}
+.icon-download-zip:before {
+  content: "\e934";
+}
+.icon-import:before {
+  content: "\e6d4";
+}
+.icon-export:before {
+  content: "\e6d5";
+}
+/*#endregion */
+/*#region Status icons */
+.icon-status-warning::before {
+  content: "\e87c";
+  color: #EE7105;
+}
+.icon-status-increation:before {
+  content: "\e674";
+}
+.icon-status-CHin:before {
+  content: "\e8f5";
+}
+.icon-status-CHout:before {
+  content: "\e8f6";
+}
+.icon-status-locked:before {
+  content: "\e80f";
+}
+.icon-status-unlocked:before {
+  content: "\e66d";
+}
+.icon-status-edit:before {
+  content: "\e802";
+}
+.icon-status-ok:before {
+  content: "\e938";
+}
+.icon-status-ok:before {
+  color: #21123d !important;
+}
+.icon-status-complete:before {
+  content: "\e938";
+}
+.icon-status-done:before {
+  content: "\e87f";
+}
+.icon-status-finish:before {
+  content: "\e817";
+}
+.icon-status-blocked:before {
+  content: "\e99c";
+  color: #D64040;
+}
+.icon-status-pending:before {
+  content: "\e8ef";
+  color: #EE7105;
+  font-weight: bold;
+}
+.icon-status-error:before {
+  content: "\e880";
+  color: #D64040;
+}
+.icon-status-disabled:before {
+  opacity: 0.3;
+  cursor: default;
+  content: "\e99c";
+  color: #D64040;
+}
+/*#endregion */
+/*#region Action icons */
+.icon-action-activate:before {
+  content: "\e8ef";
+}
+.icon-action-activate:before {
+  color: #21123d !important;
+}
+.icon-action-undo:before {
+  content: "\e860";
+}
+.icon-action-stop:before {
+  content: "\e99c";
+}
+.icon-action-reject:before {
+  content: "\e880";
+}
+.icon-action-suspend:before,
+.icon-action-show-suspended:before {
+  content: "\e8f0";
+}
+.icon-action-release:before {
+  content: "\e912";
+}
+.icon-action-finish:before {
+  content: "\e938";
+}
+.icon-action-restart:before {
+  content: "\e862";
+}
+.icon-subscription:before {
+  content: "\e8ad";
+}
+.icon-subscriptions-add:before {
+  content: "\e94d";
+}
+.icon-subscriptions:before {
+  content: "\e94e";
+}
+.icon-cdrom-add:before {
+  content: "\e944";
+}
+.icon-cdrom-remove:before {
+  content: "\e945";
+}
+/*#endregion */
+/*#region Document icons */
+.icon-document:before {
+  content: "\e81d";
+}
+.icon-document-new:before {
+  content: "\e927";
+}
+.icon-document-add:before {
+  content: "\e924";
+}
+.icon-document-addto:before {
+  content: "\e925";
+}
+.icon-document-CHin:before {
+  content: "\e8f5";
+}
+.icon-document-CHout:before {
+  content: "\e8f6";
+}
+.icon-document-compare:before {
+  content: "\e6b9";
+}
+.icon-document-add-link:before {
+  content: "\e91b";
+}
+.icon-document-CHout-cancel:before {
+  content: "\e91c";
+}
+/*#endregion */
+/*#region File icons */
+.icon-file-general:before {
+  content: "\e819";
+}
+.icon-file-general -disabled:before {
+  content: "\e819";
+  opacity: 0.3;
+  cursor: default;
+}
+.icon-file-attachment:before {
+  content: "\e819";
+}
+.icon-file-compare:before {
+  content: "\e942";
+}
+.icon-file-copy:before,
+.icon-copy:before {
+  content: "\e6b8";
+}
+.icon-file-check:before {
+  content: "\e6b5";
+}
+.icon-file-replace:before {
+  content: "\e950";
+}
+.icon-file-add:before {
+  content: "\e819";
+}
+/*#endregion */
+/*#region Filetype icons */
+.icon-filetype-mov:before {
+  content: "\e95f";
+}
+.icon-filetype-wmv:before {
+  content: "\e961";
+}
+.icon-filetype-flv:before {
+  content: "\e95e";
+}
+.icon-filetype-avi:before {
+  content: "\e962";
+}
+.icon-filetype-mp4:before {
+  content: "\e960";
+}
+.icon-filetype-img:before {
+  content: "\e827";
+}
+.icon-filetype-csv:before {
+  content: "\e902";
+}
+.icon-filetype-default:before {
+  content: "\e819";
+}
+.icon-filetype-doc:before {
+  content: "\e903";
+}
+.icon-filetype-docx:before {
+  content: "\e904";
+}
+.icon-filetype-eml:before {
+  content: "\e905";
+}
+.icon-filetype-gif:before {
+  content: "\e906";
+}
+.icon-filetype-jpg:before {
+  content: "\e907";
+}
+.icon-filetype-pdf:before {
+  content: "\e908";
+}
+.icon-filetype-png:before {
+  content: "\e909";
+}
+.icon-filetype-ppt:before {
+  content: "\e90a";
+}
+.icon-filetype-txt:before {
+  content: "\e90b";
+}
+.icon-filetype-xls:before {
+  content: "\e90c";
+}
+.icon-filetype-xlsx:before {
+  content: "\e90d";
+}
+.icon-filetype-xml:before {
+  content: "\e90e";
+}
+.icon-filetype-zip:before {
+  content: "\e90f";
+}
+.icon-filetype-pdf:before {
+  content: "\e908";
+}
+.icon-filetype-excel:before {
+  content: "\e90c";
+}
+.icon-filetype-misc:before {
+  content: "\e81d";
+}
+.icon-filetype-tif:before {
+  content: "\e94c";
+}
+.icon-filetype-bmp:before {
+  content: "\e946";
+}
+.icon-filetype-msg:before {
+  content: "\e949";
+}
+.icon-filetype-htm:before {
+  content: "\e947";
+}
+.icon-filetype-html:before {
+  content: "\e948";
+}
+.icon-filetype-rtf:before {
+  content: "\e94b";
+}
+.icon-filetype-pptx:before {
+  content: "\e959";
+}
+/*#endregion */
+/*#region Information icons */
+.icon-error:before {
+  content: "\e880";
+  color: #D64040;
+}
+.icon-error-critical:before {
+  content: "\e900";
+  color: #D64040;
+}
+.icon-list:before,
+.icon-listitem:before {
+  content: "\e872";
+}
+.icon-details:before {
+  content: "\e6cc";
+}
+.icon-help:before {
+  content: "\e901";
+}
+.icon-warning:before {
+  content: "\e87c";
+}
+.icon-checkmark:before {
+  content: "\e938";
+}
+.icon-checkbox-checked:before {
+  content: "\e999";
+}
+.icon-ok:before {
+  content: "\e938";
+}
+.icon-flag:before {
+  content: "\e817";
+}
+.icon-flag-error {
+  color: #D64040;
+}
+.icon-flag-error:before {
+  content: "\e817";
+}
+.icon-info {
+  font-weight: bold;
+}
+.icon-info:before {
+  content: "\e95c";
+}
+/*#endregion */
+/*#region Messaging icons */
+.icon-read:before {
+  content: "\e697";
+}
+.icon-unread:before {
+  content: "\e818";
+}
+.icon-message:before {
+  content: "\e92c";
+}
+.icon-message-nomessages:before {
+  content: "\e92c";
+}
+.icon-message-add:before {
+  content: "\e92d";
+}
+.icon-message-attach:before {
+  content: "\e92f";
+}
+.icon-message-paperplane:before {
+  content: "\e699";
+}
+.icon-message-mail:before {
+  content: "\e91f";
+}
+.icon-message-mail-add:before {
+  content: "\e920";
+}
+.icon-message-mail-forward:before {
+  content: "\e87a";
+}
+.icon-message-mail-attach:before {
+  content: "\e921";
+}
+.icon-comments:before,
+.icon-comments-view:before {
+  content: "\e919";
+}
+.icon-comments-disabled:before {
+  content: "\e919";
+  opacity: 0.3;
+  cursor: default;
+}
+.icon-notes-add:before,
+.icon-notes-new:before {
+  content: "\e918";
+}
+.icon-comments-new:before,
+.icon-comments-add:before {
+  content: "\e917";
+}
+.icon-comments-edit:before {
+  content: "\e7dc";
+}
+/*#endregion */
+/*#region User management icons */
+.icon-acl:before {
+  content: "\e721";
+}
+.icon-user-avatar:before {
+  content: "\e82a";
+}
+.icon-user-profile:before,
+.icon-user-user:before {
+  content: "\e82a";
+}
+.icon-user-role:before {
+  content: "\e726";
+}
+.icon-user-group:before {
+  content: "\e82b";
+}
+.icon-user-assignee:before {
+  content: "\e722";
+}
+/*#endregion */
+/*#region Workflow icons */
+.icon-work-edit:before {
+  content: "\e810";
+}
+.icon-work-calc:before {
+  content: "\e6ee";
+}
+.icon-case:before {
+  content: "\e6ef";
+}
+.icon-workflow:before {
+  content: "\e6ef";
+}
+.icon-workflow-suspended:before {
+  content: "\e6ef";
+  opacity: 0.3;
+  cursor: default;
+}
+.icon-workflow-group:before {
+  content: "\e82b";
+}
+.icon-workflow-open:before {
+  content: "\e94f";
+}
+.icon-workflow-transfer:before {
+  content: "\e936";
+}
+.icon-case-mywork:before {
+  content: "\e92e";
+}
+.icon-case-edit:before {
+  content: "\e82b";
+}
+.icon-task:before {
+  content: "\e6c9";
+}
+/*#endregion */
+/*#region Tools and object icons */
+.icon-building-office:before {
+  content: "\e801";
+}
+.icon-building-factory:before {
+  content: "\e67e";
+}
+.icon-tools-gears:before {
+  content: "\e810";
+}
+.icon-tools-key:before {
+  content: "\e66e";
+}
+.icon-tools-wrench:before {
+  content: "\e674";
+}
+.icon-printer:before {
+  content: "\e81c";
+}
+.icon-scanner:before {
+  content: "\e937";
+}
+.icon-basket:before {
+  content: "\e74d";
+}
+.icon-basket-add:before {
+  content: "\e750";
+}
+.icon-basket-addto:before {
+  content: "\e957";
+}
+.icon-basket-remove:before {
+  content: "\e753";
+}
+.icon-basket-remove-all:before {
+  content: "\e911";
+}
+.icon-lock-open:before,
+.icon-unlock:before {
+  content: "\e66d";
+}
+.icon-lock-closed:before,
+.icon-lock:before {
+  content: "\e80f";
+}
+.icon-query:before {
+  content: "\e86f";
+}
+/*#endregion */
+/*#region Folder - Dossier - Package icons */
+.icon-folder:before {
+  content: "\e6ba";
+}
+.icon-folder-mynewdocs:before {
+  content: "\e92a";
+}
+.icon-folder-explore:before {
+  content: "\e6bb";
+}
+.icon-folder-moveto:before {
+  content: "\e929";
+}
+.icon-folder-suspended:before {
+  content: "\e6ba";
+  color: #D64040;
+  opacity: 0.6;
+}
+.icon-folder-linksep:before {
+  content: "\e912";
+  font-size: 10px;
+}
+.icon-dossier:before {
+  content: "\e91d";
+}
+.icon-dossier-add:before {
+  content: "\e93c";
+}
+.icon-dossier-removefrom:before {
+  content: "\e940";
+}
+.icon-dossier-addto:before {
+  content: "\e91e";
+}
+.icon-dossier-reopen:before {
+  content: "\e941";
+}
+.icon-dossier-close:before {
+  content: "\e93d";
+}
+.icon-package:before {
+  content: "\e69f";
+}
+.icon-package-new:before {
+  content: "\e915";
+}
+.icon-package-add:before {
+  content: "\e913";
+}
+.icon-package-addto:before {
+  content: "\e914";
+}
+.icon-package-removefrom:before {
+  content: "\e916";
+}
+/*#endregion */
+/*#region Other */
+.icon-at-sign:before {
+  content: "\e695";
+}
+.icon-object:before {
+  content: "\e953";
+}
+.icon-payment-tag:before {
+  content: "\e82f";
+}
+.icon-address:before {
+  content: "\e833";
+}
+.icon-backup:before {
+  content: "\e65e";
+}
+.icon-link:before {
+  content: "\e86b";
+}
+.icon-link-break:before {
+  content: "\e86c";
+}
+.icon-favorites:before {
+  content: "\e68d";
+}
+.icon-favorites-add:before {
+  content: "\e951";
+}
+.icon-favorites-remove:before {
+  content: "\e952";
+}
+.icon-favorites-true:before {
+  content: "\e68d";
+}
+.icon-favorites-false:before {
+  content: "\e68f";
+}
+.icon-favorites-remove-all:before {
+  content: "\e910";
+}
+/*#endregion */
+/*#endregion */
+body {
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+  color: #21123d /* original #006F8B */;
+  background-color: #FFFFFF !important;
+}
+body.domaBodyModal {
+  background-color: #FFFFFF !important;
+}
+form {
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+  color: #21123d /* original #006F8B */;
+}
+.PreviewPage {
+  background-color: #FFFFFF !important;
+}
+html body .RadInput_Default .riTextBox,
+html body .RadInputMgr_Default {
+  border-color: rgba(0, 111, 139, 0.2) !important;
+  color: #21123d /* original #006F8B */ !important;
+  font-family: "gt-regular", sans-serif !important;
+}
+iframe[style*="background-color: rgb(255, 255, 255)"] {
+  background-color: transparent !important;
+}
+a.FolderLink,
+.FolderLink {
+  font-size: 10px;
+  color: #21123d;
+  text-decoration: none;
+}
+.Panel .Header {
+  font-size: 2em;
+  font-weight: 700;
+}
+a:hover {
+  color: inherit;
+}
+.ButtonLink {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.ButtonLink:hover {
+  text-decoration: underline;
+}
+.IconLink {
+  cursor: pointer;
+  text-decoration: none;
+}
+.IconLink:hover {
+  text-decoration: none;
+}
+/*.ButtonLink {
+    color: @color-primary-light;
+    text-decoration: underline;
+}*/
+.SideLink {
+  text-decoration: underline;
+}
+.DetailHeaderContent {
+  font-size: 17px;
+  text-decoration: none;
+  background-repeat: repeat-x;
+}
+.suspendeddoctitle {
+  font-style: italic;
+}
+tr.PanelHeader {
+  background-color: #21123d;
+}
+.PanelHeader TD,
+.Panel TH {
+  background-color: #FFFFFF;
+  color: #21123d;
+  text-decoration: none;
+  font-weight: 700;
+}
+.mandatoryMarker {
+  color: #EE7105;
+}
+b,
+strong {
+  font-weight: 700;
+}
+.ajax_tooltip_content form {
+  font-size: 10px !important;
+}
+.form-dropdown {
+  border-radius: 5px;
+}
+.form-dropdown-item:hover {
+  background-color: rgba(237, 247, 231, 0.25);
+}
+.form-dropdown-item.selected {
+  background-color: #f3a2aa;
+}
+.form-dropdown-item.selected.multi-select {
+  background-color: transparent;
+}
+.form-dropdown > a:first-of-type,
+.form-dropdown-item.first-visible {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.form-dropdown > a:last-of-type,
+.form-dropdown-item.last-visible {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.form-dropdown-items {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.form-dropdown-items .form-dropdown > a:first-of-type,
+.form-dropdown-items .form-dropdown-item.first-visible {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-dropdown-items.multiselect {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-dropdown-items.multiselect .form-dropdown > a:last-of-type,
+.form-dropdown-items.multiselect .form-dropdown-item.last-visible {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-dropdown.expand-right > .form-dropdown-expansion {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.form-dropdown.expand-left > .form-dropdown-expansion {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.form-dropdown-expansion,
+.form-dropdown-header,
+.form-dropdown-footer {
+  background-color: #f3a2aa;
+}
+.filter-container > .clear {
+  font-size: 20px;
+  font-weight: 400;
+}
+.gridfilter,
+input[type="text"].gridfilter {
+  color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #f4f1ed;
+}
+.gridfilter-btn {
+  background-color: #21123d;
+  font-weight: 500;
+}
+.numberfilter .form-dropdown-expansion input {
+  font-size: 12px !important;
+}
+.RadDock .rdTop .rdTitleBar span {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif;
+  color: #21123d /* original #006F8B */;
+}
+#mailReceivers .RadAutoCompleteBox_Default .racTokenList {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgba(0, 111, 139, 0.2);
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+.table-striped tbody tr.tbl-footer {
+  background-color: transparent;
+}
+.tbl-footer td.button-cell {
+  background-color: #f3a2aa;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.multi-items-table td {
+  border-top-style: solid;
+  border-top-color: #F5F5F5;
+}
+.panelitem-row.highlight {
+  background-color: #F5F5F5;
+}
+.messages {
+  font-weight: 300;
+}
+.messages .message.self .card {
+  border-style: solid;
+  border-color: #edf7e7;
+}
+.messages .message.self .card-header,
+.messages .message.self .card-footer {
+  background-color: #f3a2aa;
+}
+.messages .message.self .datetime {
+  color: #a6cecb;
+}
+.messages .message.other .card {
+  border-color: #F5F5F5;
+}
+.messages .message.other .card-header {
+  color: #666666;
+  background-color: #F5F5F5;
+}
+.messages .message.other .card-footer {
+  background-color: #FFFFFF;
+  border-top: 1px solid #edf7e7;
+  margin: 0px 10px;
+}
+.messages .message.other .datetime {
+  color: #999999;
+}
+.messages .message .from {
+  font-weight: 500;
+  font-size: 17px;
+}
+.messages .message .card-body {
+  color: #333333;
+}
+.messages .avatar {
+  color: #21123d;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 16px;
+  border-style: solid;
+  border-color: #21123d;
+}
+.messages .avatar.picture {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 53px;
+  color: transparent !important;
+}
+#ttcont {
+  color: #21123d /* original #006F8B */;
+  background-color: #FFFFFF;
+  border-color: #21123d /* original #006F8B */;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.18);
+}
+.stepgroup-progress {
+  background-color: #EBEBEB;
+}
+.stepgroup-step .stepgroup-step-icon {
+  background-color: #EBEBEB;
+}
+.stepgroup-step.active .stepgroup-step-icon {
+  background-color: #21123d;
+}
+.stepgroup-step.active p {
+  color: #21123d;
+}
+.cl-label {
+  color: #999999;
+}
+.RadDock .rdTop .rdTitleBar span {
+  font-size: 14px;
+}
+.cms-page-container.edit-mode .RadDock {
+  background-color: #FFFFFF;
+}
+.RadDock_Default tr.rdMiddle td.rdCenter,
+.RadDock_Default tr.rdBottom td.rdCenter {
+  background-color: transparent;
+}
+.cms-page-container.edit-mode .RadDockZone {
+  background-color: #F5F5F5;
+  border-style: solid !important;
+  border-color: #FFFFFF !important;
+}
+.cms-page-container.edit-mode .RadDockZone.IsDropZone {
+  background-color: #f3a2aa;
+}
+.panelEdit {
+  border-style: dotted;
+  border-color: #333333;
+}
+.cms-form-button {
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+.rdNoBorder .rdMiddle .rdLeft,
+.rdNoBorder .rdMiddle .rdRight,
+.rdNoBorder .rdBottom .rdLeft,
+.rdNoBorder .rdBottom .rdCenter,
+.rdNoBorder .rdBottom .rdRight,
+.rdNoBorder .rdTop .rdLeft,
+.rdNoBorder .rdTop .rdCenter,
+.rdNoBorder .rdTop .rdRight {
+  background-image: none !important;
+}
+.cms-global-search .TextBox {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.cms-global-search .button {
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-image: url("Img/mainbar-search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+.cms-highlight-zone {
+  background-color: #F8FBFC;
+  border-right: 1px solid #EEF5F8;
+  border-bottom: 1px solid #EEF5F8;
+}
+.cms-thumbnail-container .cms-thumbnail {
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+.cms-thumbnail-container .cms-thumbnail.selected {
+  background-color: #aad590;
+}
+.cms-thumbnail-container .cms-thumbnail .cms-thumbnail-row .cms-thumbnail-col {
+  border: 1px solid #f4f1ed;
+  background-color: white;
+}
+.cms-thumbnail-container .cms-thumbnail .cms-thumbnail-row .cms-thumbnail-col.cms-thumbnail-highlight {
+  background-color: #f3a2aa;
+}
+.multi-items-table tr.highlighted {
+  background-color: #f3a2aa;
+}
+.action-btn {
+  background-color: #FFFFFF;
+  background-clip: border-box;
+  border-style: solid;
+  color: inherit;
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+.action-btn h6 {
+  font-weight: 300;
+}
+.tile {
+  border-color: #EEF5F8;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px lightgrey;
+}
+.tile:hover {
+  box-shadow: 2px 2px 4px -2px #f3a2aa;
+  border-style: solid;
+  border-color: #21123d;
+}
+.tile.active {
+  border-style: solid;
+  border-color: #21123d;
+}
+.action-btn:active {
+  box-shadow: none;
+}
+.cms-button {
+  border-color: transparent;
+}
+.cms-buttons-vertical .cms-button {
+  border-bottom-color: #f4f1ed;
+}
+.cms-buttons-vertical .cms-button:last-of-type {
+  border-bottom-color: transparent;
+}
+.cms-buttons-vertical .cms-button:hover {
+  border-right-color: #EEF5F8;
+}
+.cms-buttons-vertical .cms-button.active {
+  border-right-color: #21123d;
+}
+.cms-buttons-horizontal .cms-button {
+  border-right-color: #f4f1ed;
+}
+.cms-buttons-horizontal .cms-button:last-of-type {
+  border-right-color: transparent;
+}
+.cms-buttons-horizontal .cms-button:hover {
+  border-bottom-color: #EEF5F8;
+}
+.cms-buttons-horizontal .cms-button.active {
+  border-bottom-color: #21123d;
+}
+.btn-counter {
+  background-color: #21123d;
+  color: #FFFFFF;
+}
+.small-tiles h6 {
+  font-size: 14px;
+}
+.bg-img {
+  opacity: 0.1;
+}
+.imagelist-tile .tile-title {
+  font-size: 12px;
+}
+.status-content {
+  font-weight: 300;
+  font-size: 12px;
+}
+.status-indicator {
+  border-radius: 50%;
+}
+.status-ok .status-content {
+  color: #00E061;
+}
+.status-ok .status-indicator,
+.status-ok.status-indicator {
+  background-color: #00E061;
+}
+.status-warning .status-content {
+  color: #ffa726;
+}
+.status-warning .status-indicator,
+.status-warning.status-indicator {
+  background-color: #ffa726;
+}
+.status-error .status-content {
+  color: #D64040;
+}
+.status-error .status-indicator,
+.status-error.status-indicator {
+  background-color: #EF534F;
+}
+.status-disabled .status-content {
+  color: #999999;
+}
+.status-disabled .status-indicator,
+.status-disabled.status-indicator {
+  background-color: #D3D3D3;
+}
+.PanelPage {
+  background-image: url("Img/login_background.jpeg");
+  background-color: #D3D3D3;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.PanelPage .Panel.Centered {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-style: solid;
+  border-color: #f4f1ed;
+  border-radius: 10px;
+}
+.PanelPage .Panel.Centered .Content fieldset legend {
+  color: #21123d /* original #006F8B */;
+}
+.PanelPage .Panel.Centered .Content ol > li a {
+  font-size: 14px;
+}
+.PanelPage .Panel.Centered .Content span,
+.PanelPage .Panel.Centered .Content Label {
+  font-weight: 300;
+  font-size: 17px;
+}
+.PanelPage .Panel.Centered .Content input[type=text],
+.PanelPage .Panel.Centered .Content input[type=email],
+.PanelPage .Panel.Centered .Content input[type=password],
+.PanelPage .Panel.Centered .Content input,
+.PanelPage .Panel.Centered .Content input:hover,
+.PanelPage .Panel.Centered .Content input:focus,
+.PanelPage .Panel.Centered .Content input:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  border-radius: 5px;
+  border-color: rgba(0, 111, 139, 0.2);
+}
+.PanelPage .Panel.Centered .Content select {
+  border-radius: 5px;
+  border-color: rgba(0, 111, 139, 0.2);
+}
+.PanelPage .langList li .code a {
+  color: #21123d /* original #006F8B */;
+}
+.PanelPage .langList li .code a:hover {
+  color: #21123d;
+  text-decoration: none;
+}
+.ShowPassword {
+  background-image: url("Img/show-password.png");
+}
+.paneMenuAndHeaderHeight {
+  border-bottom-style: solid;
+  border-bottom-color: #EEF5F8;
+  background-color: #FFFFFF;
+}
+.MainMenu_header a {
+  color: #21123d;
+}
+.MainMenu_NavLink {
+  font-size: 17px;
+}
+.MainMenu_Text {
+  color: #21123d /* original #006F8B */;
+  font-size: 17px;
+}
+.MainMenu_AppName {
+  font-size: 20px;
+  font-weight: 500;
+}
+.MainMenu_header {
+  font-family: "gt-regular", sans-serif;
+  background-color: #FFFFFF;
+}
+/* When navbar is collapsed */
+.MainMenu_MainNav {
+  background-color: #21123d;
+  border-bottom-style: solid;
+  border-bottom-color: #D3D3D3;
+}
+.MainMenu_MainNav .MainMenu_NavItem .dropdown-item:focus,
+.MainMenu_MainNav .MainMenu_NavItem .dropdown-item:hover {
+  color: #21123d /* original #006F8B */;
+  text-decoration: none;
+}
+.MainMenu_DropDownItemSmall {
+  font-size: 12px;
+  font-weight: 300;
+  color: #666666 !important;
+  padding: 3px 10px 3px 30px !important;
+}
+/* When navbar items are visible */
+/* Based on bootstrap breakpoint xl (navbar-expand-xl) */
+@media only screen and (min-width: 1200px) {
+  .MainMenu_DropDown {
+    padding: 0;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+    border: 1px solid #F5F5F5;
+  }
+  .MainMenu_DropDown a.dropdown-item:not(.MainMenu_DropDownItemSmall) {
+    padding: 10px 20px 10px 20px;
+  }
+  .MainMenu_DropDown a.dropdown-item:not(.MainMenu_DropDownItemSmall):active,
+  .MainMenu_DropDown a.dropdown-item:not(.MainMenu_DropDownItemSmall).active {
+    color: inherit;
+  }
+  .MainMenu_DropDown a.dropdown-item:not(.MainMenu_DropDownItemSmall):hover {
+    background-color: #f3a2aa;
+  }
+  .MainMenu_MainNav {
+    background-color: transparent;
+    border-bottom: none;
+  }
+  .MainMenu_Triangle {
+    left: 20px;
+  }
+  .TriangleBorderColor {
+    border-bottom-color: #262626;
+    border-width: 8px;
+  }
+  .TriangleBackgroundColor {
+    border-bottom-color: #FFFFFF;
+    border-width: 8px;
+  }
+  .TriangleBorderColor {
+    border-bottom-color: #f4f1ed;
+  }
+  .dropdown-item:first-of-type:hover ~ .TriangleBackgroundColor {
+    border-bottom-color: #edf7e7;
+  }
+}
+.MainMenu_Toggler {
+  color: #21123d /* original #006F8B */;
+  border-color: #21123d /* original #006F8B */;
+  font-size: 17px;
+}
+.MainMenu_TogglerIcon {
+  background-image: url("Img/menu_toggler.svg");
+}
+@media only screen and (min-width: 768px) {
+  .MainMenu_TogglerIcon {
+    background-image: none;
+  }
+}
+.profileActionLink:hover {
+  background-color: #f3a2aa;
+}
+.profileActionLink:not(:last-child) {
+  border-bottom-style: solid;
+  border-bottom-color: #D3D3D3;
+}
+.profileActionLink a {
+  background: none;
+  color: #21123d /* original #006F8B */;
+  box-shadow: none;
+}
+.profileActionLink a:active {
+  background: none;
+}
+.MainMenuTable {
+  background-color: #FFFFFF;
+}
+/*.RadSearchBox_Default .rsbButtonSearch span.rsbIcon {
+    background-image: @url-search;
+    background-position: top;
+    background-size: 15px;
+}*/
+.GroupingPanel .Header {
+  text-decoration: none;
+  background-image: none;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "gt-regular", sans-serif;
+}
+.GroupingPanel .Content .Item {
+  font-size: 14px;
+}
+.GroupingPanel .Content .Item a {
+  color: #21123d /* original #006F8B */;
+}
+.GroupingPanel .Content .Item a span.Label {
+  font-weight: 700;
+  cursor: default;
+}
+.DocPage .listControlSide {
+  background-color: #FFFFFF;
+}
+.DocPage .listControlBody {
+  background-color: #FFFFFF;
+}
+.DocPage #pagefooter {
+  background-color: #FFFFFF;
+}
+.DocPage img[src*="./Images/Expand.gif"] {
+  background-image: url("img/ArrowRight.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.DocPage img[src*="./Images/Collapse.gif"] {
+  background-image: url("img/ArrowDown.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.DocPage .StickyHeaders .RadToolBar.RadToolBar_GridToolbar {
+  background-color: #FFFFFF;
+}
+.DocPage .StickyHeaders .List .ListHeader > th {
+  background-color: #FFFFFF;
+}
+.DocPage .StickyHeaders .List .ListFilter > td {
+  background-color: #FFFFFF;
+}
+.List.StickyHeaders .ListHeader > th,
+.List.StickyHeaders .ListHeaderLevel2 > th {
+  background-color: #FFFFFF;
+}
+.List.StickyHeaders .ListFilter > td {
+  background-color: #FFFFFF;
+}
+.CustomStickyListHeader {
+  background-color: #FFFFFF;
+}
+.detailMain {
+  background-color: #FFFFFF;
+}
+.detailView {
+  background-color: #FFFFFF;
+}
+.detailView + center {
+  background-color: #FFFFFF;
+}
+.detailView .SubListDiv {
+  border-radius: 0 0 5px 5px;
+  background-color: #FFFFFF;
+}
+.detailView .SubList {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.detailView .SubList th,
+.detailView .SubList td {
+  border-bottom-style: solid !important;
+  border-bottom-color: #F5F5F5 !important;
+}
+.detailView .listControlGridScroller {
+  border-radius: 0 0 5px 5px;
+}
+.detailRadPaneNavigationInclRowTabs {
+  border-bottom-style: solid;
+  border-bottom-color: #EEF5F8;
+}
+.toolWindowPopup {
+  border-top-style: solid;
+  border-top-color: #EEF5F8;
+}
+#rowToolbar {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #F5F5F5;
+}
+div.detailToolbarIcons > div.rmpView {
+  font-size: 24px;
+}
+.DetailTable .detail-form-row .LabelCell {
+  font-size: 14px;
+  font-weight: normal;
+  color: #999999;
+}
+.DetailTable .detail-form-row .ReadOnlyFieldCell {
+  font-size: 14px;
+  font-weight: normal;
+}
+.dmViewToolbar a {
+  text-decoration: none;
+}
+.dmViewToolbar img {
+  vertical-align: top;
+}
+.dmViewToolbar tr {
+  background-color: #FFFFFF;
+}
+@keyframes appearAndDisappear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.help-eye-catcher {
+  opacity: 0;
+  background-color: #FFFFFF;
+  border-color: #21123d /* original #006F8B */;
+  border-style: solid;
+  border-radius: 5px;
+  animation-name: appearAndDisappear;
+  animation-duration: 7000ms;
+}
+.help-eye-catcher:before {
+  background-color: #FFFFFF;
+  border-left-color: #21123d /* original #006F8B */;
+  border-top-color: #21123d /* original #006F8B */;
+  border-left-style: solid;
+  border-top-style: solid;
+}
+.RadGrid {
+  border-style: none !important;
+}
+.RadGrid:focus {
+  outline: none;
+}
+.RadGrid_Default .rgPager td.rgPagerCell {
+  background-color: #FFFFFF;
+  border-style: none;
+}
+.RadGrid_Default,
+.RadGrid_Default .rgMasterTable {
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+  border-bottom-color: #C3C3C3 !important;
+}
+.RadGrid_Default .rgHeader,
+.RadGrid_Default .rgMasterTable .rgHeader {
+  color: #21123d;
+}
+.RadGrid_Default .rgHeader,
+.RadGrid_Default .rgMasterTable .rgHeader,
+.RadGrid_Default .rgFilterRow,
+.RadGrid_Default .rgMasterTable .rgFilterRow,
+.RadGrid_Default .rgAltRow,
+.RadGrid_Default .rgMasterTable .rgAltRow,
+.RadGrid_Default .rgRow,
+.RadGrid_Default .rgMasterTable .rgRow {
+  background: none !important;
+  background-color: #FFFFFF !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: #F5F5F5 !important;
+}
+.RadGrid_Default .rgHeader a,
+.RadGrid_Default .rgMasterTable .rgHeader a,
+.RadGrid_Default .rgFilterRow a,
+.RadGrid_Default .rgMasterTable .rgFilterRow a,
+.RadGrid_Default .rgAltRow a,
+.RadGrid_Default .rgMasterTable .rgAltRow a,
+.RadGrid_Default .rgRow a,
+.RadGrid_Default .rgMasterTable .rgRow a {
+  color: #21123d !important;
+  font-weight: 500;
+}
+.RadGrid_Default .rgHeader td.rgSorted,
+.RadGrid_Default .rgMasterTable .rgHeader td.rgSorted,
+.RadGrid_Default .rgFilterRow td.rgSorted,
+.RadGrid_Default .rgMasterTable .rgFilterRow td.rgSorted,
+.RadGrid_Default .rgAltRow td.rgSorted,
+.RadGrid_Default .rgMasterTable .rgAltRow td.rgSorted,
+.RadGrid_Default .rgRow td.rgSorted,
+.RadGrid_Default .rgMasterTable .rgRow td.rgSorted {
+  background-color: transparent;
+}
+.RadGrid_Default .rgFilterRow > td,
+.RadGrid_Default .rgMasterTable .rgFilterRow > td,
+.RadGrid_Default .rgAltRow > td,
+.RadGrid_Default .rgMasterTable .rgAltRow > td,
+.RadGrid_Default .rgRow > td,
+.RadGrid_Default .rgMasterTable .rgRow > td {
+  border-bottom-style: none !important;
+}
+.RadGrid_Default .rgFilterRow:hover,
+.RadGrid_Default .rgMasterTable .rgFilterRow:hover,
+.RadGrid_Default .rgAltRow:hover,
+.RadGrid_Default .rgMasterTable .rgAltRow:hover,
+.RadGrid_Default .rgRow:hover,
+.RadGrid_Default .rgMasterTable .rgRow:hover {
+  background-color: #f3a2aa21 !important;
+}
+.RadGrid_Default .rgSelectedRow > td,
+.RadGrid_Default .rgMasterTable .rgSelectedRow > td,
+.RadGrid_Default .rgSelectedRow > td.rgSorted,
+.RadGrid_Default .rgMasterTable .rgSelectedRow > td.rgSorted {
+  border-bottom-style: none;
+  background-color: #f3a2aa;
+}
+.List tr {
+  border-top-style: solid;
+  border-top-color: #F5F5F5;
+}
+.List,
+.RadGrid_Default,
+.RadGrid_Default .rgMasterTable {
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+  color: #21123d;
+  background-color: #FFFFFF;
+}
+.List tr:hover,
+.RadGrid_Default tr:hover,
+.RadGrid_Default .rgMasterTable tr:hover {
+  background-color: #f3a2aa21 !important;
+}
+.List tr:hover + tr.ListSubContent,
+.RadGrid_Default tr:hover + tr.ListSubContent,
+.RadGrid_Default .rgMasterTable tr:hover + tr.ListSubContent {
+  background-color: #f3a2aa21;
+}
+.List tr:hover th,
+.RadGrid_Default tr:hover th,
+.RadGrid_Default .rgMasterTable tr:hover th {
+  background-color: #FFFFFF;
+}
+.List tr.ListSubContent:hover,
+.RadGrid_Default tr.ListSubContent:hover,
+.RadGrid_Default .rgMasterTable tr.ListSubContent:hover {
+  background-color: #FFFFFF;
+}
+.List tr.ListFooter:hover,
+.RadGrid_Default tr.ListFooter:hover,
+.RadGrid_Default .rgMasterTable tr.ListFooter:hover {
+  background-color: #FFFFFF;
+}
+.List tr.ListFooter td,
+.RadGrid_Default tr.ListFooter td,
+.RadGrid_Default .rgMasterTable tr.ListFooter td {
+  color: #21123d /*rgba(0, 111, 139, 0.6)*/;
+  font-size: 12px !important;
+}
+.List tr.ListFooter td a,
+.RadGrid_Default tr.ListFooter td a,
+.RadGrid_Default .rgMasterTable tr.ListFooter td a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #21123d /* original #006F8B */;
+}
+.List tr.ListFooter td a.aspNetDisabled,
+.RadGrid_Default tr.ListFooter td a.aspNetDisabled,
+.RadGrid_Default .rgMasterTable tr.ListFooter td a.aspNetDisabled {
+  color: #f4f1ed;
+  opacity: 0.3;
+}
+.List tr.ListFooter td .selectedScrollItem,
+.RadGrid_Default tr.ListFooter td .selectedScrollItem,
+.RadGrid_Default .rgMasterTable tr.ListFooter td .selectedScrollItem {
+  border-style: solid;
+  border-color: #21123d /* original #006F8B */;
+  border-radius: 30px;
+  color: #21123d /* original #006F8B */;
+}
+.List tr.ListFooter td a.prevPage,
+.RadGrid_Default tr.ListFooter td a.prevPage,
+.RadGrid_Default .rgMasterTable tr.ListFooter td a.prevPage {
+  background-image: url("img/arrows_long_left.png");
+  background-position: 0px 2px;
+  background-repeat: no-repeat;
+}
+.List tr.ListFooter td a.nextPage,
+.RadGrid_Default tr.ListFooter td a.nextPage,
+.RadGrid_Default .rgMasterTable tr.ListFooter td a.nextPage {
+  background-image: url("img/arrows_long_right.png");
+  background-position: 0px 2px;
+  background-repeat: no-repeat;
+}
+.List thead > tr:hover,
+.RadGrid_Default thead > tr:hover,
+.RadGrid_Default .rgMasterTable thead > tr:hover {
+  background-color: #FFFFFF;
+}
+.List td,
+.RadGrid_Default td,
+.RadGrid_Default .rgMasterTable td,
+.List td.rgFilterRow,
+.RadGrid_Default td.rgFilterRow,
+.RadGrid_Default .rgMasterTable td.rgFilterRow {
+  font-size: 12px;
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+  color: #666666;
+}
+.List .doctitle,
+.RadGrid_Default .doctitle,
+.RadGrid_Default .rgMasterTable .doctitle {
+  color: #21123d /* original #006F8B */;
+  font-weight: 500;
+}
+.pnlFilter {
+  background-color: #FFFFFF;
+}
+.pnlFilter .includeSubFolders label {
+  font-size: 14px !important;
+  color: #999999;
+}
+.pnlTopSidePanel {
+  background-color: #FFFFFF;
+}
+.pnlTopSidePanel .SubList.GroupingPanel .Spacer {
+  background-color: transparent !important;
+}
+.pnlTopSidePanel .SubList {
+  border-style: solid !important;
+  border-color: #D3D3D3 !important;
+  border-radius: 10px;
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+.pnlTopSidePanel .SubList td {
+  font-size: 12px !important;
+  color: #21123d;
+}
+.pnlTopSidePanel .SubList th,
+.pnlTopSidePanel .SubList td {
+  border-left-style: solid !important;
+  border-top-style: solid !important;
+  border-left-color: #EBEBEB !important;
+  border-top-color: #EBEBEB !important;
+}
+.pnlTopSidePanel .SubList th a,
+.pnlTopSidePanel .SubList td a {
+  color: #21123d /* original #006F8B */;
+}
+.pnlTopSidePanel .SubList th a.ButtonLink,
+.pnlTopSidePanel .SubList td a.ButtonLink {
+  font-weight: 300;
+  text-decoration: underline;
+}
+.pnlTopSidePanel .SubList.GroupingPanel .property-cell {
+  color: #21123d;
+}
+.pnlTopSidePanel .SubList.GroupingPanel .property-cell::before {
+  background-color: #C3C3C3;
+}
+.pnlTopSidePanel .SubList.GroupingPanel .property-cell .property-name {
+  background-color: #FFFFFF;
+}
+.pnlTopSidePanel .SubList.GroupingPanel thead {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 0px 1px 0px 0px #EBEBEB;
+}
+.pnlTopSidePanel .SubList.GroupingPanel tfoot {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 0px -1px 0px 0px #f4f1ed;
+}
+tr.ListHeader:hover {
+  background-color: #FFFFFF;
+}
+.ListHeader {
+  color: #21123d;
+  background-color: #FFFFFF;
+}
+tr.ListFilter,
+tr.SubListFilter {
+  color: #21123d;
+  background-color: #FFFFFF;
+}
+tr.ListFilter:hover,
+tr.SubListFilter:hover {
+  background-color: #FFFFFF;
+}
+tr.ListFilter > td,
+tr.SubListFilter > td {
+  background-clip: padding-box;
+}
+tr.ListFilter input,
+tr.SubListFilter input,
+tr.ListFilter select,
+tr.SubListFilter select,
+tr.ListFilter input[type=text],
+tr.SubListFilter input[type=text] {
+  color: #333333;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #f4f1ed;
+}
+tr.ListFilter + tr,
+tr.SubListFilter + tr {
+  border-top: none;
+}
+.SubList th {
+  font-size: 14px;
+  font-family: "gt-regular", sans-serif;
+  color: #21123d;
+  text-decoration: none;
+  font-weight: 500;
+}
+.SubList tr {
+  border-top-style: solid;
+  border-top-color: #EEF5F8;
+}
+.SubList td {
+  font-size: 12px;
+  font-family: "gt-regular", sans-serif;
+  color: #666666;
+  font-weight: 300;
+}
+.Sub {
+  background: none;
+}
+.ListSubContent td {
+  font-style: italic;
+}
+.List tr.listContentHighlighted,
+.SubList tr.listContentHighlighted {
+  background-color: #f3a2aa24;
+}
+.List tr.listContentHighlighted:hover,
+.SubList tr.listContentHighlighted:hover {
+  background-color: #f3a2aa24;
+}
+.List tr:first-child,
+.SubList tr:first-child {
+  border-top: none;
+}
+.List tr.ListSubContent,
+.SubList tr.ListSubContent {
+  border-top: none;
+}
+.List .SubSubList tr,
+.SubList .SubSubList tr {
+  border-top: none;
+}
+.listControlGridScroller {
+  background: #FFFFFF;
+}
+.SubListHeader3RightFillerDiv,
+.SubListHeader3RightFullFillerDiv,
+.ListHeader3RightFillerDiv {
+  background-color: #FFFFFF;
+  font-size: 17px;
+  border-radius: 5px 5px 0 0;
+  border-top-style: solid;
+  border-top-color: #EEF5F8;
+}
+.level1 > .RowCell:not(.col-lg-6) .SubListHeader3RightFullFillerDiv {
+  border-top-style: solid;
+  border-top-color: #EEF5F8;
+  border-radius: 0;
+}
+/*.tblSaveQuery, .queries {
+    background-color: @color-bg-white;
+}*/
+.SubSubList td {
+  font-size: 12px !important;
+  color: #999999;
+}
+.SubSubList td b {
+  font-weight: 500;
+}
+.RadMultiPage {
+  border-style: solid;
+  border-color: #EEF5F8;
+  border-radius: 5px;
+}
+.RadTabStrip_Simple,
+.nav-tabs {
+  border-style: solid !important;
+  border-color: #EEF5F8 !important;
+  background-color: #f3a2aa21 /* original rgba(237, 247, 231, 0.3)*/;
+}
+.RadTabStrip_Simple li,
+.nav-tabs li {
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+.RadTabStrip_Simple li a,
+.nav-tabs li a,
+.RadTabStrip_Simple li a.rtsLink,
+.nav-tabs li a.rtsLink {
+  color: inherit !important;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: transparent;
+  border-bottom-style: solid !important;
+  border-bottom-color: transparent !important;
+}
+.RadTabStrip_Simple li a em,
+.nav-tabs li a em,
+.RadTabStrip_Simple li a.rtsLink em,
+.nav-tabs li a.rtsLink em,
+.RadTabStrip_Simple li a .rtsTxt,
+.nav-tabs li a .rtsTxt,
+.RadTabStrip_Simple li a.rtsLink .rtsTxt,
+.nav-tabs li a.rtsLink .rtsTxt {
+  color: inherit !important;
+  font-size: 15px;
+  font-weight: 300;
+}
+.RadTabStrip_Simple li a:hover,
+.nav-tabs li a:hover,
+.RadTabStrip_Simple li a.rtsLink:hover,
+.nav-tabs li a.rtsLink:hover {
+  background: none;
+}
+.RadTabStrip_Simple li a.rtsSelected,
+.nav-tabs li a.rtsSelected,
+.RadTabStrip_Simple li a.rtsLink.rtsSelected,
+.nav-tabs li a.rtsLink.rtsSelected,
+.RadTabStrip_Simple li a.nav-link.active,
+.nav-tabs li a.nav-link.active,
+.RadTabStrip_Simple li a.rtsLink.nav-link.active,
+.nav-tabs li a.rtsLink.nav-link.active {
+  border-bottom-color: #21123d !important;
+  color: #21123d !important;
+  background-color: transparent;
+}
+.RadTabStrip_Simple li a.nav-link,
+.nav-tabs li a.nav-link {
+  font-size: 15px;
+}
+.RadTabStrip_Simple li.selected,
+.nav-tabs li.selected {
+  border-bottom-style: solid;
+  border-bottom-color: #21123d;
+  color: #21123d;
+}
+.nav-tabs .nav-item {
+  margin-bottom: -3px;
+}
+/*#region skin: DetailWindowTabStrip */
+.RadTabStrip_DetailWindowTabStrip .rtsLink {
+  color: #999999;
+  font: "Museo Sans", sans-serif;
+  background: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+.RadTabStrip_DetailWindowTabStrip .rtsLink.rtsSelected {
+  color: #21123d /* original #006F8B */;
+  font-weight: 500;
+  border-bottom-color: #21123d /* original #006F8B */;
+}
+.RadTabStrip_DetailWindowTabStrip .rtsLink.rtsDisabled {
+  color: #C3C3C3;
+  cursor: default;
+}
+/*#endregion*/
+.comments .commentLines .commentLine .commentInfo {
+  color: #666666;
+  font-style: normal;
+}
+.comments .commentLines .commentLine tr {
+  background-color: #FFFFFF;
+}
+.RowCell .comments {
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-bottom-color: #EEF5F8;
+  border-left-color: #EEF5F8;
+  border-right-color: #EEF5F8;
+  border-radius: 0 0 5px 5px;
+  background-color: #FFFFFF;
+}
+.detailView .detail-form-container .detail-form-row .ReadOnlyFieldCell span {
+  font-size: 14px;
+  font-weight: normal;
+}
+.detail-form-container .detail-form-row input:not(.gridfilter) {
+  border-radius: 5px;
+}
+.detail-form-container .detail-form-row .FieldCell {
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+.detail-form-container .detail-form-row .FieldCell input[type=text]:not(.rcbInput),
+.detail-form-container .detail-form-row .FieldCell input[type=password] {
+  font-size: 14px !important;
+}
+.detail-form-container .detail-form-row .FieldCell .RadListBox_Default {
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+.detail-form-container .detail-form-row .FieldCell .RadListBox_Default .rlbGroup {
+  color: #21123d /* original #006F8B */;
+}
+.detail-form-container .detail-form-row .RowCell {
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+.detail-form-container .detail-form-row .LabelCell {
+  font-size: 14px !important;
+  font-weight: normal !important;
+  color: #999999;
+}
+.tooltip-icon {
+  background-image: url("Img/help.svg");
+}
+.GroupingDiv {
+  border-radius: 5px;
+}
+.groupingRow {
+  background-color: #FFFFFF;
+  border-radius: 0 0 5px 5px;
+}
+.level0 > .RowCell > .yui-skin-xp {
+  border-style: solid;
+  border-color: #EEF5F8;
+}
+.level0 > .GroupingDiv > .SubListHeader3RightFullFillerDiv + .groupingRow {
+  border-left-style: solid;
+  border-left-color: #EEF5F8;
+  border-right-style: solid;
+  border-right-color: #EEF5F8;
+  border-bottom-style: solid;
+  border-bottom-color: #EEF5F8;
+}
+.level0 > .GroupingDiv > .SubListHeader3RightFillerDiv,
+.level0 > .GroupingDiv > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > div > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > div > div > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > span > .SubListHeader3RightFullFillerDiv,
+.level0 > .RowCell > span > span > div > div > div > div > div > .SubListHeader3RightFullFillerDiv,
+.ListHeader3RightFillerDiv {
+  border-top-style: solid !important;
+  border-top-color: #EEF5F8 !important;
+  border-left-style: solid !important;
+  border-left-color: #EEF5F8 !important;
+  border-right-style: solid !important;
+  border-right-color: #EEF5F8 !important;
+  background-color: rgb(243 162 170 / 20%);
+}
+.level0 > .GroupingDiv > .SubListHeader3RightFillerDiv.collapsed,
+.level0 > .GroupingDiv > .SubListHeader3RightFullFillerDiv.collapsed,
+.level0 > .RowCell > .SubListHeader3RightFullFillerDiv.collapsed,
+.level0 > .RowCell > span > div > .SubListHeader3RightFullFillerDiv.collapsed,
+.level0 > .RowCell > span > div > div > .SubListHeader3RightFullFillerDiv.collapsed,
+.level0 > .RowCell > span > span > .SubListHeader3RightFullFillerDiv.collapsed,
+.level0 > .RowCell > span > span > div > div > div > div > div > .SubListHeader3RightFullFillerDiv.collapsed,
+.ListHeader3RightFillerDiv.collapsed {
+  border-bottom-style: solid !important;
+  border-bottom-color: #EEF5F8 !important;
+  border-radius: 5px;
+}
+.level0 > .RowCell > .SubListDiv,
+.level0 > .RowCell > span > div > .SubListDiv,
+.level0 > .RowCell > span > div > div > .SubListDiv,
+.level0 > .RowCell > span > span > .SubListDiv,
+.level0 > .RowCell > span > span > div > div > div > div > div > .SubListDiv,
+.ListDiv {
+  border-left-style: solid;
+  border-left-color: #EEF5F8;
+  border-right-style: solid;
+  border-right-color: #EEF5F8;
+  border-bottom-style: solid;
+  border-bottom-color: #EEF5F8;
+}
+.level0 > .GroupingDiv.layout-card > .SubListHeader3RightFillerDiv,
+.level1 > .GroupingDiv.layout-card > .SubListHeader3RightFillerDiv,
+.level0 > .GroupingDiv.layout-card > .SubListHeader3RightFullFillerDiv,
+.level1 > .GroupingDiv.layout-card > .SubListHeader3RightFullFillerDiv {
+  border-top-style: solid;
+  border-top-color: #f4f1ed !important;
+  border-left-style: solid;
+  border-left-color: #f4f1ed !important;
+  border-right-style: solid;
+  border-right-color: #f4f1ed !important;
+  background-color: #FFFFFF;
+}
+.level0 > .GroupingDiv.layout-card > .SubListHeader3RightFillerDiv.collapsed,
+.level1 > .GroupingDiv.layout-card > .SubListHeader3RightFillerDiv.collapsed,
+.level0 > .GroupingDiv.layout-card > .SubListHeader3RightFullFillerDiv.collapsed,
+.level1 > .GroupingDiv.layout-card > .SubListHeader3RightFullFillerDiv.collapsed {
+  border-bottom-color: #f4f1ed !important;
+}
+.level0 > .GroupingDiv.layout-card > .SubListHeader3RightFillerDiv + .groupingRow,
+.level1 > .GroupingDiv.layout-card > .SubListHeader3RightFillerDiv + .groupingRow,
+.level0 > .GroupingDiv.layout-card > .SubListHeader3RightFullFillerDiv + .groupingRow,
+.level1 > .GroupingDiv.layout-card > .SubListHeader3RightFullFillerDiv + .groupingRow {
+  border-left-style: solid;
+  border-left-color: #f4f1ed;
+  border-right-style: solid;
+  border-right-color: #f4f1ed;
+  border-bottom-style: solid;
+  border-bottom-color: #f4f1ed;
+}
+.level0 > .GroupingDiv.layout-card .groupingRow:first-child,
+.level1 > .GroupingDiv.layout-card .groupingRow:first-child {
+  border-style: solid;
+  border-color: #f4f1ed;
+  border-radius: 5px;
+}
+textarea.MultiLine {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgba(0, 111, 139, 0.2);
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+select,
+.RadInput.riSingle input.riTextBox,
+.RadInput.RadInput_Default .riTextBox,
+.RadUpload_Default .ruFakeInput {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgba(0, 111, 139, 0.2);
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+.detailView .RadComboBox .rcbInput {
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+textarea {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgba(0, 111, 139, 0.2);
+  font-weight: 300;
+  color: #21123d /* original #006F8B */;
+}
+.invalidField {
+  border-style: solid !important;
+  border-color: #AB3333 !important;
+  color: #AB3333 !important;
+}
+html body .detailView .RadInput_Default .riTextBox,
+html body .detailView .RadInputMgr_Default {
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+select {
+  background-position: right 7px top 11px;
+  background-size: 7px;
+  background-image: url("Img/dropdown-arrow.svg");
+  background-repeat: no-repeat;
+}
+.FormField-Message {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: #999999;
+}
+.checkboxDoma input[type=checkbox] + label:after,
+.RadButton.rbToggleButton input[type=checkbox] + label:after,
+.checkboxDoma .rbPrimaryIcon + label:after,
+.RadButton.rbToggleButton .rbPrimaryIcon + label:after,
+.checkboxDoma input[type=checkbox]:checked + label:after,
+.RadButton.rbToggleButton input[type=checkbox]:checked + label:after,
+.checkboxDoma .rbPrimaryIcon:checked + label:after,
+.RadButton.rbToggleButton .rbPrimaryIcon:checked + label:after,
+.checkboxDoma input[type=checkbox].rbToggleCheckbox + .rbText:after,
+.RadButton.rbToggleButton input[type=checkbox].rbToggleCheckbox + .rbText:after,
+.checkboxDoma .rbPrimaryIcon.rbToggleCheckbox + .rbText:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleCheckbox + .rbText:after,
+.checkboxDoma input[type=checkbox].rbToggleCheckboxChecked + .rbText:after,
+.RadButton.rbToggleButton input[type=checkbox].rbToggleCheckboxChecked + .rbText:after,
+.checkboxDoma .rbPrimaryIcon.rbToggleCheckboxChecked + .rbText:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleCheckboxChecked + .rbText:after {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: rgba(0, 111, 139, 0.2);
+  border-radius: 5px;
+}
+.checkboxDoma input[type=checkbox]:enabled + label:hover:after,
+.RadButton.rbToggleButton input[type=checkbox]:enabled + label:hover:after,
+.checkboxDoma .rbPrimaryIcon:enabled + label:hover:after,
+.RadButton.rbToggleButton .rbPrimaryIcon:enabled + label:hover:after,
+.checkboxDoma input[type=checkbox]:checked:enabled + label:hover:after,
+.RadButton.rbToggleButton input[type=checkbox]:checked:enabled + label:hover:after,
+.checkboxDoma .rbPrimaryIcon:checked:enabled + label:hover:after,
+.RadButton.rbToggleButton .rbPrimaryIcon:checked:enabled + label:hover:after,
+.checkboxDoma input[type=checkbox].rbToggleCheckbox + .rbText:hover:after,
+.RadButton.rbToggleButton input[type=checkbox].rbToggleCheckbox + .rbText:hover:after,
+.checkboxDoma .rbPrimaryIcon.rbToggleCheckbox + .rbText:hover:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleCheckbox + .rbText:hover:after,
+.checkboxDoma input[type=checkbox].rbToggleCheckboxChecked + .rbText:hover:after,
+.RadButton.rbToggleButton input[type=checkbox].rbToggleCheckboxChecked + .rbText:hover:after,
+.checkboxDoma .rbPrimaryIcon.rbToggleCheckboxChecked + .rbText:hover:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleCheckboxChecked + .rbText:hover:after {
+  background-color: #f4f1ed /* Original #EBEBEB */;
+}
+.checkboxDoma input[type=checkbox]:checked + label:before,
+.RadButton.rbToggleButton input[type=checkbox]:checked + label:before,
+.checkboxDoma .rbPrimaryIcon:checked + label:before,
+.RadButton.rbToggleButton .rbPrimaryIcon:checked + label:before,
+.checkboxDoma input[type=checkbox].rbToggleCheckboxChecked + .rbText:before,
+.RadButton.rbToggleButton input[type=checkbox].rbToggleCheckboxChecked + .rbText:before,
+.checkboxDoma .rbPrimaryIcon.rbToggleCheckboxChecked + .rbText:before,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleCheckboxChecked + .rbText:before {
+  border-style: solid;
+  border-color: #21123d;
+}
+.checkboxDoma input[type=checkbox][disabled] + label,
+.RadButton.rbToggleButton input[type=checkbox][disabled] + label,
+.checkboxDoma .rbPrimaryIcon[disabled] + label,
+.RadButton.rbToggleButton .rbPrimaryIcon[disabled] + label,
+.checkboxDoma input[type=checkbox][readonly] + label,
+.RadButton.rbToggleButton input[type=checkbox][readonly] + label,
+.checkboxDoma .rbPrimaryIcon[readonly] + label,
+.RadButton.rbToggleButton .rbPrimaryIcon[readonly] + label {
+  opacity: 0.3;
+  cursor: default;
+}
+.RadButton.rbToggleButton.rbDisabled .rbPrimaryIcon.rbToggleCheckbox + .rbText,
+.RadButton.rbToggleButton.rbDisabled .rbPrimaryIcon.rbToggleCheckboxChecked + .rbText {
+  opacity: 0.3;
+  cursor: default;
+}
+.bootstrap-switch {
+  border-color: rgba(0, 111, 139, 0.2);
+}
+.bootstrap-switch.bootstrap-switch-focused {
+  border-color: rgba(0, 111, 139, 0.2);
+  box-shadow: none;
+}
+.bootstrap-switch .bootstrap-switch-container span {
+  word-break: keep-all !important;
+}
+.bootstrap-switch .bootstrap-switch-container span.bootstrap-switch-primary {
+  background-color: #21123d;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadio + .rbText:before,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadioChecked + .rbText:before {
+  border-style: solid;
+  border-color: rgba(0, 111, 139, 0.2);
+  border-radius: 100%;
+  background: #FFFFFF;
+}
+[type="radio"]:checked + label:hover:before,
+[type="radio"]:not(:checked) + label:hover:before,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadio + .rbText:hover:before,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadioChecked + .rbText:hover:before {
+  background-color: #f4f1ed /* Original #EBEBEB */;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadio + .rbText:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadioChecked + .rbText:after {
+  background: #f3a2aa;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadio + .rbText:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after,
+.RadButton.rbToggleButton .rbPrimaryIcon.rbToggleRadioChecked + .rbText:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.button {
+  display: inline-block;
+  border-radius: 20px;
+  margin-left: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 7px 20px 7px 20px;
+  text-align: center;
+  border: none;
+  min-width: 100px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.button.positive {
+  background-color: #21123d;
+  color: #fff;
+}
+.button.positive:hover,
+.button.positive:active,
+.button.positive:focus {
+  background-color: white !important;
+  text-decoration: none;
+  color: #21123d;
+  border: 1px solid #21123d;
+}
+.button.positive:disabled {
+  background-color: rgba(0, 111, 139, 0.1);
+  color: rgba(0, 111, 139, 0.4);
+}
+.button.negative,
+.button.secondary {
+  background-color: white;
+  border: 1px solid #f3a2aa;
+  color: #21123d;
+}
+.button.negative:hover,
+.button.secondary:hover,
+.button.negative:active,
+.button.secondary:active,
+.button.negative:focus,
+.button.secondary:focus {
+  border: 1px solid #eb808f;
+  background-color: #eb808f;
+  color: #white;
+  text-decoration: none;
+  color: white;
+}
+.button.negative:disabled,
+.button.secondary:disabled {
+  border: 1px solid rgba(0, 111, 139, 0.1);
+  color: rgba(0, 111, 139, 0.4);
+  background-color: white;
+}
+.button img {
+  vertical-align: text-bottom;
+  max-height: 20px;
+}
+[class^="button positive"].secondary,
+[class^="button positive"].negative {
+  background-color: white;
+  border: 1px solid #f3a2aa;
+  color: #21123d;
+}
+[class^="button positive"].secondary:hover,
+[class^="button positive"].negative:hover,
+[class^="button positive"].secondary:active,
+[class^="button positive"].negative:active,
+[class^="button positive"].secondary:focus,
+[class^="button positive"].negative:focus {
+  border: 1px solid #f3a2aa /* #5c9238 */;
+  color: #f3a2aa /* #5c9238 */;
+  text-decoration: none;
+  background-color: white;
+}
+[class^="button positive"].secondary:disabled,
+[class^="button positive"].negative:disabled {
+  border: 1px solid rgba(0, 111, 139, 0.1);
+  color: rgba(0, 111, 139, 0.4);
+  background-color: white;
+}
+[class^="button secondary"].positive,
+[class^="button negative"].positive {
+  background-color: #21123d;
+  color: #fff;
+}
+[class^="button secondary"].positive:hover,
+[class^="button negative"].positive:hover,
+[class^="button secondary"].positive:active,
+[class^="button negative"].positive:active,
+[class^="button secondary"].positive:focus,
+[class^="button negative"].positive:focus {
+  background-color: #f3a2aa /* #5c9238 */;
+  text-decoration: none;
+  color: #fff;
+}
+[class^="button secondary"].positive:disabled,
+[class^="button negative"].positive:disabled {
+  background-color: rgba(0, 111, 139, 0.1);
+  color: rgba(0, 111, 139, 0.4);
+}
+.title-main,
+.title-header,
+.title-sub,
+.content-main,
+.content-special {
+  font-family: "gt-regular", sans-serif !important;
+  color: #21123d /* original #006F8B */;
+}
+.title-header {
+  color: #21123d;
+}
+.title-main,
+.title-header,
+.detail-form-container .detail-form-row .title-main,
+.detail-form-container .detail-form-row .title-header {
+  font-weight: 700;
+}
+.title-main,
+.detail-form-container .detail-form-row .title-main {
+  font-size: 24px;
+}
+.title-header,
+.detail-form-container .detail-form-row .title-header {
+  font-size: 20px;
+}
+.title-sub,
+.detail-form-container .detail-form-row .title-sub {
+  font-weight: 700;
+  font-size: 17px;
+}
+.content-main,
+.detail-form-container .detail-form-row .content-main {
+  font-weight: 300;
+  font-size: 14px;
+}
+.content-special,
+.detail-form-container .detail-form-row .content-special {
+  background-color: #f3a2aa;
+  font-weight: 300;
+  font-size: 14px;
+  border-radius: 22px;
+}
+.header-box,
+.detail-form-container .detail-form-row .header-box {
+  font-family: "gt-regular", sans-serif !important;
+  color: #21123d /* original #006F8B */;
+  background-color: #f3a2aa;
+  font-weight: 300;
+  font-size: 14px;
+  border-radius: 22px;
+  font-weight: 500;
+  font-size: 17px;
+}
+.disabled,
+.detail-form-container .detail-form-row .disabled {
+  color: #C3C3C3;
+}
+.InfoMessage,
+.detail-form-container .detail-form-row .InfoMessage {
+  color: #000000;
+}
+.ErrorMessage,
+.detail-form-container .detail-form-row .ErrorMessage {
+  color: #D64040;
+}
+.SuccessMessage,
+.detail-form-container .detail-form-row .SuccessMessage {
+  color: #00E061;
+}
+.ErrorLabel,
+.InfoLabel,
+.WarningLabel,
+.SuccessLabel,
+.detail-form-container .detail-form-row .ErrorLabel,
+.detail-form-container .detail-form-row .InfoLabel,
+.detail-form-container .detail-form-row .WarningLabel,
+.detail-form-container .detail-form-row .SuccessLabel {
+  border-style: solid;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: center;
+  font-size: 14px;
+}
+.ErrorLabel .ButtonLink,
+.InfoLabel .ButtonLink,
+.WarningLabel .ButtonLink,
+.SuccessLabel .ButtonLink,
+.detail-form-container .detail-form-row .ErrorLabel .ButtonLink,
+.detail-form-container .detail-form-row .InfoLabel .ButtonLink,
+.detail-form-container .detail-form-row .WarningLabel .ButtonLink,
+.detail-form-container .detail-form-row .SuccessLabel .ButtonLink {
+  text-decoration: underline;
+}
+.ErrorLabel,
+.detail-form-container .detail-form-row .ErrorLabel {
+  color: #AB3333;
+  border-color: #AB3333;
+  background-image: url("Img/error.svg");
+}
+.SuccessLabel,
+.detail-form-container .detail-form-row .SuccessLabel {
+  color: #00b34d;
+  border-color: #00b34d;
+  background-image: url("Img/success.svg");
+}
+.InfoLabel,
+.detail-form-container .detail-form-row .InfoLabel {
+  border-color: #EEF5F8;
+  background-image: url("Img/info.svg");
+}
+.WarningLabel,
+.detail-form-container .detail-form-row .WarningLabel {
+  color: #EE7105;
+  border-color: #EE7105;
+  background-image: url("Img/warning.svg");
+}
+.button.small-button {
+  border-radius: 10px;
+  padding: 1px 10px;
+  min-width: unset;
+}
+.button.small-button.positive {
+  padding-top: 2px;
+}
+.divider,
+.divider-left,
+.divider-right,
+.detail-form-container .detail-form-row .divider,
+.detail-form-container .detail-form-row .divider-left,
+.detail-form-container .detail-form-row .divider-right {
+  color: #21123d;
+  font-weight: bolder;
+}
+.divider:before,
+.divider-left:before,
+.divider-right:before,
+.detail-form-container .detail-form-row .divider:before,
+.detail-form-container .detail-form-row .divider-left:before,
+.detail-form-container .detail-form-row .divider-right:before {
+  background-color: #21123d;
+}
+.divider:after,
+.divider-left:after,
+.divider-right:after,
+.detail-form-container .detail-form-row .divider:after,
+.detail-form-container .detail-form-row .divider-left:after,
+.detail-form-container .detail-form-row .divider-right:after {
+  background-color: #21123d;
+}
+.font-size-normal {
+  font-size: 14px !important;
+}
+.font-size-smaller {
+  font-size: 12px !important;
+}
+.font-size-larger {
+  font-size: 17px !important;
+}
+table.RadCalendar_Default {
+  border-color: #EEF5F8;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+table.RadCalendar_Default caption {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+table.RadCalendar_Default .rcTitlebar {
+  padding: 0;
+  border-color: #EEF5F8;
+  background-image: none;
+  background-color: rgb(243 162 170 / 20%);
+  color: #21123d /* original #006F8B */;
+  border-radius: 5px 5px 0 0;
+  height: 50px;
+  vertical-align: middle;
+}
+table.RadCalendar_Default .rcTitlebar table {
+  font: 14px "Museo Sans", sans-serif;
+}
+table.RadCalendar_Default .rcTitlebar .rcPrev,
+table.RadCalendar_Default .rcTitlebar .rcNext,
+table.RadCalendar_Default .rcTitlebar .rcFastPrev,
+table.RadCalendar_Default .rcTitlebar .rcFastNext {
+  margin: 4px;
+  width: 20px !important;
+  height: 20px !important;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  position: relative;
+  color: #21123d;
+  background-image: none !important;
+}
+table.RadCalendar_Default .rcTitlebar .rcPrev:after {
+  content: '';
+  top: 5px;
+  left: 7px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #f3a2aa;
+}
+table.RadCalendar_Default .rcTitlebar .rcFastPrev:after {
+  content: '';
+  top: 5px;
+  left: 4px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #f3a2aa;
+}
+table.RadCalendar_Default .rcTitlebar .rcFastPrev:before {
+  content: '';
+  top: 5px;
+  bottom: 0;
+  left: 9px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #f3a2aa;
+}
+table.RadCalendar_Default .rcTitlebar .rcNext:after {
+  content: '';
+  top: 5px;
+  left: 7px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #f3a2aa;
+}
+table.RadCalendar_Default .rcTitlebar .rcFastNext:after {
+  content: '';
+  top: 5px;
+  left: 6px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #f3a2aa;
+}
+table.RadCalendar_Default .rcTitlebar .rcFastNext:before {
+  content: '';
+  top: 5px;
+  bottom: 0;
+  left: 11px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #f3a2aa;
+}
+table.RadCalendar_Default .rcMain {
+  border-color: #dedede;
+  border-radius: 0 0 4px 4px;
+  background-color: #FFFFFF;
+}
+table.RadCalendar_Default .rcMain .rcRow td {
+  border-color: transparent;
+  background-image: none;
+  background-color: #FFFFFF;
+}
+table.RadCalendar_Default .rcMain .rcRow a,
+table.RadCalendar_Default .rcMain .rcRow span {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #333333;
+  text-align: center;
+  line-height: 2.3;
+}
+table.RadCalendar_Default .rcMain .rcRow .rcToday a {
+  border-color: #666666;
+}
+table.RadCalendar_Default .rcMain .rcRow .rcSelected a {
+  border-color: #21123d;
+  background-color: #21123d;
+  color: #FFFFFF;
+}
+table.RadCalendar_Default .rcMain .rcRow .rcHover a {
+  border-color: #21123d;
+  background-color: #FFFFFF;
+  color: #333333;
+}
+table.RadCalendar_Default .rcMain .rcRow .rcWeekend a {
+  color: #999999;
+}
+table.RadCalendar_Default .rcMain .rcRow .rcOtherMonth a,
+table.RadCalendar_Default .rcMain .rcRow .rcOutOfRange span {
+  color: #C3C3C3;
+}
+table.RadCalendar_Default .rcMainTable {
+  font: 14px "Museo Sans", sans-serif;
+  padding: 10px;
+}
+table.RadCalendar_Default .rcCalendars > .rcMainTable {
+  border-collapse: collapse;
+}
+table.RadCalendar_Default .rcHeader,
+table.RadCalendar_Default .rcFooter {
+  border-color: #EEF5F8;
+}
+table.RadCalendar_Default th.rcViewSel {
+  padding: 6px 14px;
+  width: 6px;
+  background: rgb(243 162 170 / 20%);
+  border-right: 1px solid #EEF5F8;
+}
+table.RadCalendar_Default .rcWeek th {
+  margin-left: 1px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #333333;
+  text-align: center !important;
+}
+table.RadCalendar_Default .rcRow th {
+  border-right: 1px solid #EEF5F8;
+  background-color: rgb(243 162 170 / 20%);
+  color: #999999;
+}
+.RadCalendarMultiView_Default .rcTitlebar {
+  padding: 0;
+  border-bottom: 0 none;
+  background: #F5F5F5;
+}
+.RadCalendarMultiView_Default .rcMain {
+  border-color: #EEF5F8;
+  border-radius: 0 0 5px 5px;
+  border-width: 0 1px 1px 0;
+}
+.RadCalendarMultiView_Default .rcCalendar {
+  border-color: #EEF5F8;
+  border-width: 1px 0 0 1px;
+}
+.RadCalendarMultiView_Default .rcMainTable .rcTitle {
+  border-color: #f4f1ed;
+  background: #FFFFFF;
+  color: #333333;
+  line-height: 35px;
+}
+table.RadCalendarMonthView_Default {
+  width: 203px;
+  font: 14px "Museo Sans", sans-serif;
+  border-radius: 5px;
+  border-color: #EEF5F8;
+  background: #FFFFFF;
+  color: #333333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  padding: 5px;
+}
+table.RadCalendarMonthView_Default tr td {
+  padding: 0 0 0 3px;
+}
+table.RadCalendarMonthView_Default #rcMView_Feb,
+table.RadCalendarMonthView_Default #rcMView_Apr,
+table.RadCalendarMonthView_Default #rcMView_Jun,
+table.RadCalendarMonthView_Default #rcMView_Aug,
+table.RadCalendarMonthView_Default #rcMView_Oct,
+table.RadCalendarMonthView_Default #rcMView_Dec {
+  border-right: 1px solid #EEF5F8;
+}
+table.RadCalendarMonthView_Default a {
+  margin: 1px;
+  padding: 0;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  color: #333333;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+table.RadCalendarMonthView_Default a:hover {
+  background-color: #FFFFFF;
+  border-color: #21123d;
+}
+table.RadCalendarMonthView_Default .rcSelected a {
+  margin: 1px;
+  padding: 0;
+  border-radius: 5px;
+  border-color: #21123d;
+  background: #f3a2aa;
+  color: #FFFFFF;
+}
+table.RadCalendarMonthView_Default #rcMView_PrevY a,
+table.RadCalendarMonthView_Default #rcMView_NextY a {
+  text-indent: 0;
+}
+table.RadCalendarMonthView_Default #rcMView_PrevY a:hover,
+table.RadCalendarMonthView_Default #rcMView_NextY a:hover {
+  background-color: #FFFFFF;
+  border-color: transparent;
+  color: #21123d;
+}
+table.RadCalendarMonthView_Default .rcButtons {
+  padding: 7px 0 7px 1px;
+}
+table.RadCalendarMonthView_Default .rcButtons input {
+  margin: 0 5px 5px;
+  height: 28px;
+  float: left;
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+  color: #21123d;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1px solid #f3a2aa;
+}
+table.RadCalendarMonthView_Default .rcButtons input:hover {
+  background: #FFFFFF;
+  color: #f3a2aa /* #5c9238 */;
+  border-color: #f3a2aa /* #5c9238 */;
+}
+table.RadCalendarMonthView_Default #rcMView_Today {
+  margin: 0 11px 0 5px;
+}
+table.RadCalendarMonthView_Default #rcMView_OK {
+  margin: 0 5px 0 0;
+  background: #f3a2aa;
+  color: #FFFFFF;
+}
+table.RadCalendarMonthView_Default #rcMView_OK:hover {
+  background-color: #5c9238;
+  border-color: #f3a2aa /* original #5c9238 */;
+}
+table.RadCalendarMonthView_Default #rcMView_Cancel {
+  margin-right: 5px;
+  float: right;
+  color: #21123d;
+}
+table.RadCalendarMonthView_Default #rcMView_Cancel:hover {
+  color: #f3a2aa /* original #5c9238 */;
+}
+table.RadCalendarTimeView_Default td {
+  border-color: #EEF5F8;
+}
+.RadPicker_Default.RadPicker.dateSearchDatePicker,
+.RadPicker_Default.RadPicker.dateSearchDatePicker,
+.RadPicker_Default.RadPicker.dateSearchTimePicker,
+.RadPicker_Default.RadPicker.dateSearchTimePicker {
+  width: 30px !important;
+}
+.RadCalendarPopup.RadCalendarPopupShadows {
+  margin-left: 30px;
+}
+.RadCalendarPopup .RadCalendar_Default {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border-radius: 5px;
+}
+.RadPicker.RadPicker_Default a.rcCalPopup,
+.RadPicker.RadPicker_Default a.rcCalPopup {
+  width: 25px;
+  height: 25px;
+  background-image: url("Img/calendar.svg");
+  background-size: 20px 20px;
+  background-position: 2px 2px;
+}
+.RadPicker.RadPicker_Default a.rcCalPopup:hover,
+.RadPicker.RadPicker_Default a.rcCalPopup:hover {
+  background-position: 2px 2px;
+}
+.RadPicker.RadTimePicker.dateSearchTimePicker,
+.RadPicker.RadDateTimePicker.dateSearchTimePicker {
+  width: 30px !important;
+}
+.RadPicker.RadTimePicker .rcInputCell input:not(.HiddenDatePicker),
+.RadPicker.RadDateTimePicker .rcInputCell input:not(.HiddenDatePicker) {
+  min-width: 160px;
+}
+.RadPicker.RadTimePicker.RadPicker_Default a.rcTimePopup,
+.RadPicker.RadDateTimePicker.RadPicker_Default a.rcTimePopup,
+.RadPicker.RadTimePicker.RadPicker_Default a.rcTimePopup:hover,
+.RadPicker.RadDateTimePicker.RadPicker_Default a.rcTimePopup:hover,
+.RadPicker.RadTimePicker.RadPicker_Default a.rcTimePopup,
+.RadPicker.RadDateTimePicker.RadPicker_Default a.rcTimePopup,
+.RadPicker.RadTimePicker.RadPicker_Default a.rcTimePopup:hover,
+.RadPicker.RadDateTimePicker.RadPicker_Default a.rcTimePopup:hover {
+  background-image: url("Img/calendartime.svg");
+  background-position: 2px 2px;
+  height: 25px;
+  width: 25px;
+  background-size: 20px 20px;
+}
+.RadPicker.RadDateTimePicker.RadPicker_Default a.rcCalPopup {
+  background-image: url("Img/calendar.svg");
+  background-size: 20px 20px;
+  background-position: 2px 2px;
+}
+.RadPicker.RadDateTimePicker.RadPicker_Default a.rcCalPopup:hover {
+  background-position: 2px 2px;
+}
+.RadCalendarTimeView.RadCalendarTimeView_Default {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border-radius: 5px;
+  border: 1px solid #C3C3C3;
+  color: #333333;
+  line-height: 1.8;
+  background-color: #FFFFFF;
+}
+.RadCalendarTimeView.RadCalendarTimeView_Default th {
+  border-bottom: 1px solid #C3C3C3;
+  padding: 0 0 1px;
+  background: none;
+  color: inherit;
+  line-height: 23px;
+}
+.RadCalendarTimeView.RadCalendarTimeView_Default td.rcHover a {
+  border-color: #21123d;
+  background: none;
+  background-color: #FFFFFF;
+}
+.RadCalendarTimeView.RadCalendarTimeView_Default td.rcSelected a {
+  color: #FFFFFF;
+  border-color: #21123d;
+  background: #f3a2aa;
+}
+.RadCalendarTimeView.RadCalendarTimeView_Default td.rcSelected a,
+.RadCalendarTimeView.RadCalendarTimeView_Default td.rcHover a {
+  padding: 1px 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.RadCalendarMonthView .rcHover a,
+.RadCalendarMonthView .rcSelected a {
+  border-radius: 5px;
+}
+.RadCalendarMonthView.RadCalendarMonthView_Default {
+  background-color: #FFFFFF;
+  border: 1px solid #C3C3C3;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+.RadCalendarMonthView a {
+  color: #333333;
+}
+.RadCalendarMonthView td.rcButtons input[type=button]:not(#rcMView_Today) {
+  border-radius: 20px;
+  padding: 0 12px;
+  float: right;
+}
+.rcTable.rcSingle tr:hover {
+  background-color: transparent;
+}
+.RadComboBox_SelectionComboBox {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif;
+}
+.RadComboBox_SelectionComboBox .rcbInputCell,
+.RadComboBox_SelectionComboBox .rcbArrowCell {
+  background-image: url("SelectionCombobox/radFormSprite.png");
+}
+.RadComboBox_SelectionComboBox .rcbInput {
+  font-size: 12px;
+}
+.RadComboBox_SelectionComboBox .rcbHovered .rcbInput {
+  color: #21123d /* original #006F8B */;
+}
+.RadComboBox_SelectionComboBox .rcbFocused .rcbInput {
+  color: #21123d /* original #006F8B */;
+}
+.RadComboBox_SelectionComboBox .rcbReadOnly .rcbInput {
+  color: #21123d /* original #006F8B */;
+}
+.RadComboBox_SelectionComboBox .rcbHovered .rcbReadOnly .rcbInput {
+  color: #21123d /* original #006F8B */;
+}
+.RadComboBox_SelectionComboBox .rcbFocused .rcbReadOnly .rcbInput {
+  color: #FFFFFF;
+}
+.RadComboBoxDropDown_SelectionComboBox {
+  border-color: #C3C3C3;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif;
+}
+.RadComboBoxDropDown_SelectionComboBox .rcbSeparator {
+  color: #333333;
+  background-color: #f4f1ed;
+}
+.RadComboBoxDropDown_SelectionComboBox .rcbHovered {
+  color: #21123d /* original #006F8B */;
+  background-color: #f4f1ed;
+}
+.RadComboBoxDropDown_SelectionComboBox .rcbSelected {
+  color: #FFFFFF;
+  background-color: #999999;
+}
+.RadComboBoxDropDown_SelectionComboBox .rcbLoading {
+  color: #000000;
+  background-color: #f4f1ed;
+}
+.RadComboBoxDropDown_SelectionComboBox .rcbItem em {
+  color: #000000;
+  background-color: #f4f1ed;
+}
+.RadComboBox.RadComboBox_SelectionComboBox {
+  border-style: solid;
+  border-color: rgba(0, 111, 139, 0.2);
+  border-radius: 5px;
+}
+.RadComboBox.RadComboBox_SelectionComboBox .rcbInner {
+  background-color: white;
+}
+.RadComboBox.RadComboBox_SelectionComboBox .rcbInput {
+    color: #21123d /*  original #006F8B */ !important;
+    font-size: 14px;
+}
+.RadComboBox.RadComboBox_SelectionComboBox.gridfilter-btn .rcbInput {
+    color: #fff !important;
+}
+.RadToolBar_DefaultToolbar .rtbItemFocused .rtbWrap,
+.RadToolBar_GridToolbar .rtbItemFocused .rtbWrap,
+.RadToolBar_DefaultToolbar .rtbItemHovered .rtbWrap,
+.RadToolBar_GridToolbar .rtbItemHovered .rtbWrap {
+  color: #333333;
+}
+.RadToolBar_DefaultToolbar .rtbDropDownExpanded .rtbWrap,
+.RadToolBar_GridToolbar .rtbDropDownExpanded .rtbWrap,
+.RadToolBar_DefaultToolbar .rtbSplBtnExpanded .rtbWrap,
+.RadToolBar_GridToolbar .rtbSplBtnExpanded .rtbWrap,
+.RadToolBar_DefaultToolbar .rtbChecked .rtbWrap,
+.RadToolBar_GridToolbar .rtbChecked .rtbWrap,
+.RadToolBar_DefaultToolbar .rtbItemClicked .rtbWrap,
+.RadToolBar_GridToolbar .rtbItemClicked .rtbWrap {
+  color: #FFFFFF;
+}
+.RadToolBar_DefaultToolbar .rtbChecked,
+.RadToolBar_GridToolbar .rtbChecked {
+  background-color: #f4f1ed /* Original #EBEBEB */;
+  border-radius: 5px;
+}
+.RadToolBar_DefaultToolbar .rtbSplBtn .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbSplBtn .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbItem .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbItem .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbDisabled .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbDisabled .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbDisabled .rtbWrap .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbDisabled .rtbWrap .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .RadToolBar.RadToolBar_DefaultToolbar.radIconDown,
+.RadToolBar_GridToolbar .RadToolBar.RadToolBar_DefaultToolbar.radIconDown {
+  width: 12px !important;
+  padding: 0px !important;
+}
+.RadToolBar_DefaultToolbar .rtbSplBtn .rtbChoiceArrow:before,
+.RadToolBar_GridToolbar .rtbSplBtn .rtbChoiceArrow:before,
+.RadToolBar_DefaultToolbar .rtbItem .rtbVOriented .rtbChoiceArrow:before,
+.RadToolBar_GridToolbar .rtbItem .rtbVOriented .rtbChoiceArrow:before,
+.RadToolBar_DefaultToolbar .rtbChoiceArrow:before,
+.RadToolBar_GridToolbar .rtbChoiceArrow:before,
+.RadToolBar_DefaultToolbar .rtbDisabled .rtbChoiceArrow:before,
+.RadToolBar_GridToolbar .rtbDisabled .rtbChoiceArrow:before,
+.RadToolBar_DefaultToolbar .rtbDisabled .rtbWrap .rtbChoiceArrow:before,
+.RadToolBar_GridToolbar .rtbDisabled .rtbWrap .rtbChoiceArrow:before,
+.RadToolBar_DefaultToolbar .RadToolBar.RadToolBar_DefaultToolbar.radIconDown:before,
+.RadToolBar_GridToolbar .RadToolBar.RadToolBar_DefaultToolbar.radIconDown:before {
+  content: "\e955";
+  font-size: 12px;
+}
+.RadToolBar_DefaultToolbar .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbExpandUp .rtbVOriented .rtbChoiceArrow {
+  background-image: url("DefaultToolbar/ToolBar/rtbUpArrows.png");
+}
+.RadToolBar_DefaultToolbar .rtbSplBtnClicked .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbSplBtnClicked .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbItemClicked .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbItemClicked .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbSplBtnClicked .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbSplBtnClicked .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbItemClicked .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbItemClicked .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbSplBtnClicked .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbSplBtnClicked .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbItemClicked .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbItemClicked .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbSplBtnClicked .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbSplBtnClicked .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbItemClicked .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbItemClicked .rtbChoiceArrow {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("DefaultToolbar/ToolBar/rtbClickedDropArrows.png");
+}
+.RadToolBar_DefaultToolbar .rtbSplBtnClicked .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbSplBtnClicked .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbItemClicked .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbItemClicked .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbSplBtnClicked .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbSplBtnClicked .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbItemClicked .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbItemClicked .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbSplBtnClicked .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbSplBtnClicked .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbItemClicked .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbItemClicked .rtbExpandUp .rtbVOriented .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbSplBtnClicked .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbSplBtnClicked .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_DefaultToolbar .rtbItemClicked .rtbExpandUp .rtbChoiceArrow,
+.RadToolBar_GridToolbar .rtbItemClicked .rtbExpandUp .rtbChoiceArrow {
+  background-image: url("DefaultToolbar/ToolBar/rtbClickedUpArrows.png");
+}
+.RadToolBar_DefaultToolbar .rtbDisabled .rtbWrap,
+.RadToolBar_GridToolbar .rtbDisabled .rtbWrap {
+  color: #999999;
+}
+.RadToolBar_DefaultToolbar .rtbDisabled .rtbWrap:hover,
+.RadToolBar_GridToolbar .rtbDisabled .rtbWrap:hover,
+.RadToolBar_DefaultToolbar .rtbDisabled .rtbWrap:hover .rtbOut,
+.RadToolBar_GridToolbar .rtbDisabled .rtbWrap:hover .rtbOut,
+.RadToolBar_DefaultToolbar .rtbDisabled .rtbWrap:hover .rtbMid,
+.RadToolBar_GridToolbar .rtbDisabled .rtbWrap:hover .rtbMid,
+.RadToolBar_DefaultToolbar .rtbDisabled .rtbWrap:hover .rtbIn,
+.RadToolBar_GridToolbar .rtbDisabled .rtbWrap:hover .rtbIn {
+  background: none;
+}
+.RadToolBar_DefaultToolbar_Horizontal li.rtbSeparator,
+.RadToolBar_GridToolbar_Horizontal li.rtbSeparator {
+  border: none;
+}
+.RadToolBar_DefaultToolbar_Vertical li.rtbSeparator,
+.RadToolBar_GridToolbar_Vertical li.rtbSeparator {
+  border-top: 1px solid #999999;
+  background: #F5F5F5;
+}
+.RadToolBar_GridToolbar .rtbMiddle,
+.RadToolBar_DefaultToolbar .rtbMiddle,
+.RadToolBar_Horizontal .rtbOuter,
+.cellToolbars {
+  background: none;
+}
+.RadToolBar .rtbText {
+  font-size: 14px;
+  font-family: "gt-regular", sans-serif;
+  color: #21123d /* original #006F8B */;
+}
+.RadToolBar .rtbDisabled {
+  opacity: 0.3 !important;
+}
+.RadToolBar_DefaultToolbar .rtbItemHovered .rtbWrap,
+.RadToolBar_DefaultToolbar .rtbItemHovered .rtbIn,
+.RadToolBar_DefaultToolbar .rtbItemHovered .rtbMid,
+.RadToolBar_DefaultToolbar .rtbItemHovered .rtbOut {
+  background: none;
+}
+#radSplitterMain .RadToolBar.RadToolBar_Horizontal.RadToolBar_DefaultToolbar.RadToolBar_DefaultToolbar_Horizontal .rtbOuter .rtbMiddle .rtbInner ul.rtbUL li.rtbDropDownExpanded a.rtbWrap,
+#radSplitterMain .RadToolBar.RadToolBar_Horizontal.RadToolBar_DefaultToolbar.RadToolBar_DefaultToolbar_Horizontal .rtbOuter .rtbMiddle .rtbInner ul.rtbUL li.rtbDropDownExpanded .rtbOut,
+#radSplitterMain .RadToolBar.RadToolBar_Horizontal.RadToolBar_DefaultToolbar.RadToolBar_DefaultToolbar_Horizontal .rtbOuter .rtbMiddle .rtbInner ul.rtbUL li.rtbDropDownExpanded .rtbMid,
+#radSplitterMain .RadToolBar.RadToolBar_Horizontal.RadToolBar_DefaultToolbar.RadToolBar_DefaultToolbar_Horizontal .rtbOuter .rtbMiddle .rtbInner ul.rtbUL li.rtbDropDownExpanded .rtbIn {
+  background-image: none;
+}
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar,
+.rtbPopup_DefaultToolbar {
+  background-image: none;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+  border-style: solid;
+  border-color: #F5F5F5;
+  border-radius: 5px;
+}
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar li.rtbItem,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar li.rtbItem,
+.rtbPopup_DefaultToolbar li.rtbItem {
+  background-color: #FFFFFF;
+}
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar li.rtbItem.rtbItemHovered,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar li.rtbItem.rtbItemHovered,
+.rtbPopup_DefaultToolbar li.rtbItem.rtbItemHovered,
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar .rtbLI.rtbItem.rtbHovered,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar .rtbLI.rtbItem.rtbHovered,
+.rtbPopup_DefaultToolbar .rtbLI.rtbItem.rtbHovered {
+  background-color: #f3a2aa;
+  background-image: none;
+}
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar li.rtbItem.rtbItemHovered a.rtbWrap,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar li.rtbItem.rtbItemHovered a.rtbWrap,
+.rtbPopup_DefaultToolbar li.rtbItem.rtbItemHovered a.rtbWrap,
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar .rtbLI.rtbItem.rtbHovered a.rtbWrap,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar .rtbLI.rtbItem.rtbHovered a.rtbWrap,
+.rtbPopup_DefaultToolbar .rtbLI.rtbItem.rtbHovered a.rtbWrap {
+  background-image: none;
+}
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar .rtbDisabled,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar .rtbDisabled,
+.rtbPopup_DefaultToolbar .rtbDisabled {
+  opacity: 1;
+}
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar .rtbDisabled .rtbWrap,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar .rtbDisabled .rtbWrap,
+.rtbPopup_DefaultToolbar .rtbDisabled .rtbWrap {
+  color: #999999;
+}
+.RadToolBarDropDown.RadToolBarDropDown_DefaultToolbar .rtbSeparator,
+.RadToolBarDropDown.RadToolBarDropDown_GridToolbar .rtbSeparator,
+.rtbPopup_DefaultToolbar .rtbSeparator {
+  border-color: #999999;
+  background: #F5F5F5;
+}
+.detailTblToolbar .RadMultiPage {
+  border: none;
+}
+.RadToolBar.RadToolBar_DefaultToolbar.radIconDown:before {
+  content: "\e955";
+}
+.rtbPopup {
+  background-color: #FFFFFF;
+}
+.rtbPopup .rtbMenu:before {
+  border: none !important;
+}
+.rtbPopup .rtbLink {
+  border: none;
+}
+.rtbPopup .rtbUL > .rtbSeparator {
+  border-style: none;
+  margin: 2px;
+}
+.rtbPopup .rtbItem .rtbInner {
+  display: inline-block;
+  padding: 10px 32px;
+}
+.RadWindow.RadWindow_Default {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #999999;
+}
+.RadWindow.RadWindow_Default .rwTopLeft,
+.RadWindow.RadWindow_Default .rwTopRight,
+.RadWindow.RadWindow_Default .rwTitlebar,
+.RadWindow.RadWindow_Default .rwFooterLeft,
+.RadWindow.RadWindow_Default .rwFooterRight,
+.RadWindow.RadWindow_Default .rwFooterCenter,
+.RadWindow.RadWindow_Default .rwTopResize,
+.RadWindow.RadWindow_Default .rwStatusbar div,
+.RadWindow.RadWindow_Default .rwStatusbar,
+.RadWindow.RadWindow_Default .rwPopupButton,
+.RadWindow.RadWindow_Default .rwPopupButton span,
+.RadWindow.RadWindow_Default.rwMinimizedWindow .rwCorner,
+.RadWindow.RadWindow_Default .rwBodyLeft,
+.RadWindow.RadWindow_Default .rwBodyRight,
+.RadWindow.RadWindow_Default .rwStatusbarRow .rwCorner {
+  background: none !important;
+}
+.RadWindow.RadWindow_Default .rwControlButtons a,
+.RadWindow.RadWindow_Default .rwControlButtons a:hover {
+  background: none !important;
+}
+.RadWindow.RadWindow_Default .rwTitlebarControls a.rwMaximizeButton {
+  background-image: url("Img/fullscreen.svg") !important;
+  background-repeat: no-repeat !important;
+}
+.RadWindow.RadWindow_Default .rwTitlebarControls a.rwCloseButton {
+  background-image: url("Img/Close.svg") !important;
+  background-repeat: no-repeat !important;
+}
+.RadWindow.RadWindow_Default .rwTitlebarControls td em {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif;
+}
+body.domaBodyModal .DetailTable .detail-form-container {
+  padding: 0 10px 0 10px;
+}
+.RadWindow.RadWindow_Default.rwNormalWindow.rwTransparentWindow {
+  height: unset !important;
+}
+.TelerikModalOverlay {
+  background-color: #000000 !important;
+  opacity: 0.4 !important;
+}
+.RadEditor.Default.reWrapper {
+  background-color: #FFFFFF;
+}
+.RadEditor.Default.reWrapper .reContentCell {
+  border-color: rgba(0, 111, 139, 0.2);
+  border-radius: 5px;
+  border-style: solid;
+}
+.RadEditor.Default.reWrapper .reToolCell {
+  background-color: #FFFFFF;
+}
+.RadEditor.Default.reWrapper .Default .reToolbar li {
+  background-image: none;
+}
+.RadEditor.Default.reWrapper .reTool span.Bold {
+  background-image: url("img/edit/bold.png");
+  background-position: center;
+}
+.RadEditor.Default.reWrapper .reTool span.Italic {
+  background-image: url("img/edit/italic.png");
+  background-position: center;
+}
+.RadEditor.Default.reWrapper .reTool span.Underline {
+  background-image: url("img/edit/underline_filled.png");
+  background-position: center;
+}
+.RadEditor.Default.reWrapper .reTool span.StrikeThrough {
+  background-image: url("img/edit/strikethrough_filled.png");
+  background-position: center;
+}
+.RadEditor.Default.reWrapper .reTool span.ForeColor {
+  background-image: url("img/edit/sentence_case_filled.png");
+  background-position: center;
+}
+.RadEditor.Default.reWrapper .reTool span.BackColor {
+  background-image: url("img/edit/fill_color.png");
+  background-position: center;
+}
+.RadEditor.Default.reWrapper .reTool span.JustifyLeft {
+  background-image: url("img/edit/align_left.png");
+  background-position: center;
+}
+.RadEditor.Default.reWrapper .reTool span.JustifyFull {
+  background-image: url("img/edit/align_justify.png");
+  background-position: center;
+}
+.RadEditor.Default.reWrapper .reTool span.JustifyCenter {
+  background-image: url("img/edit/align_center.png");
+  background-position: center;
+}
+.RadEditor.Default.reWrapper .reTool span.JustifyRight {
+  background-image: url("img/edit/align_right.png");
+  background-position: center;
+}
+.RadEditor.Default.reWrapper .reTool span.JustifyNone {
+  background-image: url("img/edit/align_none.png");
+  background-position: center;
+}
+#radSplitterMain table.RadSplitter.RadSplitter_Default {
+  border-color: transparent;
+  font-family: "gt-regular", sans-serif;
+}
+#radSplitterMain table.RadSplitter.RadSplitter_Default .rspResizeBarHorizontal {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+}
+.RadSplitter .RadSplitter_Default .rspNested .rspPane,
+.RadSplitter_Default .rspPane {
+  border-color: #f4f1ed !important;
+}
+.RadSplitter .RadSplitter_Default .rspNested .rspResizeBar,
+.RadSplitter_Default .rspResizeBar {
+  background-image: none;
+  background: none !important;
+  border-color: #f4f1ed;
+}
+.RadSplitter .RadSplitter_Default .rspNested .rspResizeBar .rspCollapseBarExpand,
+.RadSplitter_Default .rspResizeBar .rspCollapseBarExpand {
+  background-image: url("Img/collapsebar_col.svg");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  background-color: #F5F5F5;
+}
+.RadSplitter .RadSplitter_Default .rspNested .rspResizeBar .rspCollapseBarExpand.rspCollapseBarExpandOver,
+.RadSplitter_Default .rspResizeBar .rspCollapseBarExpand.rspCollapseBarExpandOver {
+  background-color: #f4f1ed;
+}
+.RadSplitter .RadSplitter_Default .rspNested .rspResizeBar .rspCollapseBarCollapse,
+.RadSplitter_Default .rspResizeBar .rspCollapseBarCollapse {
+  background-image: url("Img/collapsebar_exp.svg");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  background-color: #F5F5F5;
+}
+.RadSplitter .RadSplitter_Default .rspNested .rspResizeBar .rspCollapseBarCollapse.rspCollapseBarCollapseOver,
+.RadSplitter_Default .rspResizeBar .rspCollapseBarCollapse.rspCollapseBarCollapseOver {
+  background-color: #f4f1ed;
+}
+.RadSplitter .RadSplitter_Default .rspNested .rspResizeBarOver,
+.RadSplitter_Default .rspResizeBarOver {
+  background-image: none;
+  background: none;
+}
+.RadUpload.RadUpload_Default *,
+.RadUpload.RadUpload_Default a,
+.RadUpload.RadUpload_Default input {
+  font-size: 14px !important;
+  font-weight: 300;
+  font-family: "gt-regular", sans-serif !important;
+}
+.RadUpload.RadUpload_Default .ruButton {
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  text-decoration: underline;
+  background-image: none !important;
+  display: inline-block;
+  border-radius: 20px;
+  margin-left: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 7px 20px 7px 20px;
+  text-align: center;
+  border: none;
+  min-width: 100px;
+  font-size: 14px;
+  vertical-align: middle;
+  color: #999999;
+}
+.RadUpload.RadUpload_Default .ruButton.ruBrowse {
+  background-image: none;
+  background-position: unset;
+  border-style: solid;
+  border-color: rgba(0, 111, 139, 0.2);
+  background-color: #F8FBFC;
+  font-size: 12px !important;
+  font-weight: 300;
+}
+.RadUpload.RadUpload_Default .ruButton.ruBrowse:hover,
+.RadUpload.RadUpload_Default .ruButton.ruBrowse:active {
+  color: #21123d;
+}
+.RadUpload.RadUpload_Default .ruButton.ruRemove {
+  background-image: url("Img/delete.svg") !important;
+}
+.RadUpload.RadUpload_Default .ruDropZone {
+  background-color: transparent;
+  border-style: solid;
+  border-color: #21123d;
+  border-radius: 5px;
+}
+.RadUpload.RadUpload_Default .ruUploadSuccess {
+  background-position: 0 4px;
+  background-image: url("img/ArrowRight.png");
+}
+.RadListBox.RadListBox_Default.RadListBoxScrollable {
+  border-style: solid;
+  border-color: rgba(0, 111, 139, 0.2);
+  border-radius: 5px;
+}
+.RadMenu_Context .rmGroup .rmLeftImage {
+  background: none;
+}
+.RadMenu_Default .rmGroup {
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+}
+.RadMenu_MainNavigation {
+  text-align: left;
+  text-decoration: none;
+}
+.RadMenu_MainNavigation a.rmSelected .rmText {
+  font-weight: bold !important;
+}
+.RadMenu_MainNavigation .rmLink {
+  font-family: "gt-regular", sans-serif;
+  font-size: 17px;
+  color: #21123d /* original #006F8B */;
+  background: none;
+  text-decoration: none;
+}
+.RadMenu_MainNavigation .rmLink img.rmLeftImage[src*="Images/FolderLinkSep.png"] {
+  background-image: url("Img/dropdown-arrow.svg");
+}
+.RadMenu_MainNavigation.RadMenu .rmGroup {
+  background-image: none;
+}
+.RadMenu_MainNavigation.RadMenu .rmGroup.rmVertical > .rmSeparator .rmText {
+  border-color: #21123d;
+}
+.RadMenu_MainNavigation.RadMenu .rmGroup .rmVertical > .rmSeparator {
+  border-top: 1px solid #f3a2aa;
+}
+.RadMenu_MainNavigation.RadMenu .rmGroup .rmItem .rmLink:hover {
+  background-color: #f3a2aa;
+}
+.RadMenu_MainNavigation .rmVertical.rmGroup,
+.RadMenu_MainNavigation .rmScrollWrap.rmGroup {
+  border-style: solid;
+  border-color: #D3D3D3;
+  background-color: #FFFFFF;
+  color: #21123d /* original #006F8B */;
+  border-radius: 5px;
+  font-size: 14px;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+}
+.RadMenu_MainNavigation .rmText {
+  background: none;
+}
+.RadMenu_MainNavigation .rmDisabled,
+.RadMenu_MainNavigation .rmDisabled:hover {
+  color: #f4f1ed;
+  background-color: transparent;
+}
+.RadMenu_MainNavigation .rmSlide .rmScrollWrap {
+  background-image: none;
+}
+.RadMenu_MainNavigation .rmRootGroup .rmHorizontal {
+  background-image: none;
+}
+.RadMenu_MainNavigation a.rmTopArrow,
+.RadMenu_MainNavigation a.rmBottomArrow {
+  background-color: #FFFFFF;
+}
+.RadMenu_MainNavigation a.rmTopArrow:before,
+.RadMenu_MainNavigation a.rmBottomArrow:before {
+  border: solid #f3a2aa;
+  border-width: 0 2px 2px 0;
+}
+.RadMenu.RadMenu_Default .rmRootGroup {
+  background-image: none;
+  background-color: #FFFFFF;
+  border: none;
+}
+.RadMenu.RadMenu_Default .rmRootGroup .rmLink {
+  border: none;
+  padding: 5px 20px;
+  color: #21123d /* original #006F8B */;
+  font-family: "gt-regular", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.RadMenu.RadMenu_Default .rmRootGroup .rmLink:hover {
+  border: none;
+  background-color: #f3a2aa21;
+}
+.RadToolTip_Default {
+  border: 1px solid #D3D3D3;
+  background-color: #FFFFFF;
+  color: #21123d /* original #006F8B */;
+  border-radius: 5px;
+  font-family: "gt-regular", sans-serif;
+  font-size: 14px;
+  top: 70px;
+}
+.RadToolTip_Default.rtShadow {
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+}
+.RadToolTip_Default table.rtWrapper tr.rtVisibleTitleBar td {
+  height: 34px;
+}
+.RadToolTip_Default .rtWrapperTopCenter div.rtTitlebar {
+  margin: 0 0 0 7px;
+  font: 17px/22px "Museo Sans", sans-serif;
+}
+.RadToolTip_Default.rtLoading {
+  background: url("Tooltip/loading.gif") no-repeat center;
+  box-shadow: none;
+}
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton,
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:hover,
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:active,
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:focus {
+  background-image: url("Tooltip/radActionsSprite.png");
+  background-position: -115px -1915px;
+  width: 20px;
+  height: 20px;
+  border-radius: 45px;
+  margin: -2px -2px 0 0;
+  *background-color: #21123d /* original #006F8B */;
+}
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton span {
+  background-color: #21123d /* original #006F8B */;
+  *background-color: transparent;
+  position: relative;
+  z-index: -1;
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 45px;
+}
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:hover span {
+  background-color: #21123d /* original #006F8B */;
+  *background-color: transparent;
+}
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:active span,
+.RadToolTip_Default table.rtWrapper tr td a.rtCloseButton:focus span {
+  background-color: #21123d /* original #006F8B */;
+  *background-color: transparent;
+}
+.RadToolTip_Default table.rtWrapper td.rtWrapperContent {
+  background-color: transparent;
+  color: #21123d /* original #006F8B */;
+  font-family: "gt-regular", sans-serif;
+  font-size: 14px;
+  padding: 0;
+}
+.RadToolTip_Default.rtVisibleCallout div.rtCallout {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-right: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  z-index: -1;
+}
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutTopRight,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutTopCenter,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutTopLeft {
+  background-position: 0 0;
+  margin-top: -7px;
+}
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutTopRight {
+  margin-left: -40px;
+}
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomRight,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomCenter,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomLeft {
+  background-position: 0 -10px;
+}
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutMiddleRight {
+  background-position: 7px -40px;
+}
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutMiddleLeft {
+  background-position: 0 -60px;
+  margin-left: -7px;
+}
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomRight,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomCenter,
+.RadToolTip_Default.rtVisibleCallout .rtCallout.rtCalloutBottomLeft {
+  background-position: 0 -13px;
+}
+.RadToolTip_Default.RadToolTip_rtl table.rtShadow .rtCloseButton,
+.RadToolTip_Default.RadToolTip_rtl table.rtShadow .rtCloseButton:hover {
+  left: -8px;
+}
+.rtWrapperLeftMiddle,
+.rtWrapperRightMiddle,
+.rtWrapperTopLeft,
+.rtWrapperTopCenter,
+.rtWrapperTopRight,
+.rtWrapperBottomLeft,
+.rtWrapperBottomCenter,
+.rtWrapperBottomRight {
+  display: none;
+}
+.RadPanelBar.RadPanelBar_Default .rpRootGroup {
+  border: none;
+}
+.RadPanelBar.RadPanelBar_Default .rpTemplate {
+  font-family: "gt-regular", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.RadPanelBar.RadPanelBar_Default a.rpLink {
+  background-image: none;
+  background-color: #FFFFFF;
+  line-height: 22px;
+  font-family: "gt-regular", sans-serif;
+  border-bottom: none;
+  border-top: 1px solid #edf7e7;
+  border-left: 8px solid #edf7e7;
+  font-size: 12px;
+  font-weight: 300;
+  color: #666666;
+  /*text-align: center;*/
+}
+.RadPanelBar.RadPanelBar_Default a.rpLink .rpOut {
+  border: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.RadPanelBar.RadPanelBar_Default a.rpLink .rpOut .rpText {
+  flex-grow: 1;
+  text-align: center;
+}
+.RadPanelBar.RadPanelBar_Default a.rpLink .rpOut .rpImage {
+  margin-left: 5px;
+}
+.RadPanelBar.RadPanelBar_Default a.rpLink.rpSelected {
+  font-weight: 500;
+  background-color: #f3a2aa;
+}
+.RadPanelBar.RadPanelBar_Default a.rpLink:hover .rpOut,
+.RadPanelBar.RadPanelBar_Default a.rpLink.rpSelected .rpOut {
+  padding-bottom: 0;
+}
+.RadPanelBar.RadPanelBar_Default a.rpLink:hover {
+  border-left-color: #c7e3b5;
+}
+.RadPanelBar.RadPanelBar_Default .rpLast a.rpLink {
+  border-bottom: 1px solid #edf7e7;
+}
+.RadSearchBox .rsbInner,
+.RadSearchBox_Default .rsbInner {
+  border-color: rgba(0, 111, 139, 0.1) !important;
+}
+.RadSearchBox .rsbButtonSearch,
+.RadSearchBox_Default .rsbButtonSearch,
+.RadSearchBox .rsbButton:hover,
+.RadSearchBox_Default .rsbButton:hover {
+  background: #f3a2aa !important;
+  display: inline !important;
+}
+.RadSearchBox .rsbSCInner,
+.RadSearchBox_Default .rsbSCInner {
+  background-color: #FAFAFA !important;
+  color: #333333 !important;
+}
+.RadSearchBox .rsbSCFocused,
+.RadSearchBox_Default .rsbSCFocused {
+  color: #333333 !important;
+}
+.RadSearchBox .rsbSCIcon:hover,
+.RadSearchBox_Default .rsbSCIcon:hover,
+.RadSearchBox .rsbIcon:hover,
+.RadSearchBox_Default .rsbIcon:hover {
+  cursor: pointer;
+}
+.RadSearchBox .rsbSCIcon:before,
+.RadSearchBox_Default .rsbSCIcon:before {
+  content: "\e955";
+  font-size: 10px;
+}
+.RadSearchBox .rsbIconSearch:before,
+.RadSearchBox_Default .rsbIconSearch:before {
+  content: "\e86f";
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.rsbPopup_Default .rsbListItem {
+  color: #21123d /* original #006F8B */ !important;
+}
+.rsbPopup_Default .rsbListItemSelected {
+  background-color: #c7e3b5 !important;
+}
+.rsbPopup_Default .rsbListItemHovered {
+  background-color: #f3a2aa94 !important;
+}
+.RadProgressBar.RadProgressBar_Default.rpbHorizontal {
+  background-image: none;
+  background-color: #FAFAFA;
+}
+.RadProgressBar.RadProgressBar_Default.rpbHorizontal > .rpbLabelWrapper {
+  border-color: #f4f1ed;
+  border-radius: 5px;
+}
+.RadProgressBar.RadProgressBar_Default.rpbHorizontal > .rpbStateSelected,
+.RadProgressBar.RadProgressBar_Default.rpbHorizontal > .rpbStateSelected:hover {
+  border-color: transparent;
+  border-radius: 5px 0 0 5px;
+  background-image: none;
+  background-color: #21123d;
+}
+.PaddedTable > tbody> tr>td>table>tbody>tr>td> img {
+    height: 20px;
+}

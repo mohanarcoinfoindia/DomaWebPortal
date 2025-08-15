@@ -1,0 +1,37 @@
+﻿// JScript File
+var UIMessages = new Array(33);
+
+UIMessages[0] = "Vous n'avez rien sélectionné";
+UIMessages[1] = "Êtes-vous sûr de vouloir supprimer ces objets?";
+UIMessages[2] = "Êtes-vous sûr de vouloir supprimer ce fichier?";
+UIMessages[3] = "Aucun document n'a été sélectionné comme punaise";
+UIMessages[4] = "Êtes-vous sûr de vouloir supprimer cet objet?";
+UIMessages[5] = "Chargement du contenu - veuillez patienter";
+UIMessages[6] = "Cette page ne supporte pas l'option d'impression";
+UIMessages[7] = "Êtes-vous sûr de vouloir vider la poubelle?";
+UIMessages[8] = "Êtes-vous sûr de vouloir supprimer les objets sélectionnés?";
+UIMessages[9] = "Montrer les fichiers";
+UIMessages[10] = "Cacher les fichiers";
+UIMessages[11] = "Montrer tous les fichiers";
+UIMessages[12] = "Cacher tous les fichiers";
+UIMessages[13] = "Sélectionner tout";
+UIMessages[14] = "Déselectionner tout";
+UIMessages[15] = "Êtes-vous certain que vous voulez continuer sans sauvegarder? Tous les changements seront perdus.";
+UIMessages[16] = "Êtes-vous sûr de vouloir déplacer cet objet?";
+UIMessages[17] = "Votre souscription a été créée";
+UIMessages[18] = "L'objet est ajouté au package";
+UIMessages[19] = "Les objets sont ajoutés dans la sélection";
+UIMessages[20] = "Êtes-vous sûr de vouloir terminer ce workflow?";
+UIMessages[21] = "Êtes-vous sûr de vouloir supprimer cette ligne?";
+UIMessages[22] = "La poubelle est marquée comme à vider";
+UIMessages[23] = "Les objets sélectionnés ont été marqué comme à supprimer";
+UIMessages[24] = "Cette action annulera toute modification à la sécurité customisée des objets sous-jacents, continuer?"
+UIMessages[25] = "Ajouter commentaire";
+UIMessages[26] = "Êtes-vous sûr de vouloir terminer les workflows sélectionnées?";
+UIMessages[27] = "Êtes-vous sûr de vouloir supprimer ce lien?";
+UIMessages[28] = "Êtes-vous sûr de vouloir supprimer tous les liens?";
+UIMessages[29] = "Êtes-vous sûr de vouloir supprimer #ITEM#?";
+UIMessages[30] = "Êtes-vous sûr de vouloir déverrouiller tout le travail pour cet utilisateur?";
+UIMessages[31] = "Êtes-vous sûr de vouloir transferer tout le travail pour cet utilisateur?";
+UIMessages[32] = "Êtes-vous sûr de vouloir supprimer toutes lignes?";
+UIMessages[33] = "Attention : Un bloqueur de pop-up peut empêcher l'accès aux résultats. Désactivez le pop-up blocker de votre browser"; 

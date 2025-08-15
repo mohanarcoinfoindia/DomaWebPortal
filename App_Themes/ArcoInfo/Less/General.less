@@ -1,0 +1,332 @@
+﻿/// <reference path="Variables.less" />
+/// <reference path="typography.less" />
+/// <reference path="Paths.less" />
+
+
+body {
+    //font-family: roboto, sans-serif !important;
+    .font-default();
+    color: @color-primary-dark;
+    background-color: @color-bg-white !important;
+}
+
+body.domaBodyModal {
+    background-color: @color-bg-white !important;
+}
+
+form {
+    .font-default();
+    color: @color-primary-dark;
+}
+
+.PreviewPage {
+    background-color: @color-bg-grey !important;
+}
+
+html body .RadInput_Default .riTextBox,
+html body .RadInputMgr_Default {
+    border-color: @color-border-input !important;
+    color: @color-primary-dark !important;
+    font-family: @baseFontFamily !important;
+}
+
+iframe[style*="background-color: rgb(255, 255, 255)"] {
+    background-color: transparent !important;
+}
+
+a.FolderLink, .FolderLink {
+    font-size: @tinyFontSize;
+    color: @color-primary-light;
+    text-decoration: underline;
+}
+
+.Panel .Header {
+    font-size: 2em;
+    font-weight: @boldFontWeight;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.ButtonLink {
+    cursor: pointer;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.IconLink {
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/*.ButtonLink {
+    color: @color-primary-light;
+    text-decoration: underline;
+}*/
+.SideLink {
+    text-decoration: underline;
+}
+
+.DetailHeaderContent {
+    font-size: @largeFontSize;
+    text-decoration: none;
+    background-repeat: repeat-x;
+}
+
+.suspendeddoctitle {
+    font-style: italic;
+}
+
+tr.PanelHeader {
+    background-color: @color-primary-light
+}
+
+.PanelHeader TD, .Panel TH {
+    background-color: @color-bg-white;
+    color: @color-primary-light;
+    text-decoration: none;
+    font-weight: @boldFontWeight;
+}
+
+
+.mandatoryMarker {
+    color: @color-mandatory;
+}
+
+b, strong {
+    font-weight: @boldFontWeight;
+}
+
+.ajax_tooltip_content form {
+    font-size: @tinyFontSize !important;
+}
+
+.form-dropdown {
+    border-radius: @input-border-radius;
+}
+
+.form-dropdown-item:hover {
+    background-color: fade(@color-primary-light-10, 25%);
+}
+
+.form-dropdown-item.selected {
+    background-color: @color-primary-light-10;
+
+    &.multi-select {
+        background-color: transparent;
+    }
+}
+
+.form-dropdown > a:first-of-type,
+.form-dropdown-item.first-visible {
+    border-top-left-radius: @input-border-radius;
+    border-top-right-radius: @input-border-radius;
+}
+
+.form-dropdown > a:last-of-type,
+.form-dropdown-item.last-visible {
+    border-bottom-left-radius: @input-border-radius;
+    border-bottom-right-radius: @input-border-radius;
+}
+
+.form-dropdown-items {
+    border-bottom-left-radius: @input-border-radius;
+    border-bottom-right-radius: @input-border-radius;
+
+    .form-dropdown > a:first-of-type,
+    .form-dropdown-item.first-visible {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    &.multiselect {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        .form-dropdown > a:last-of-type,
+        .form-dropdown-item.last-visible {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+}
+
+.form-dropdown.expand-right > .form-dropdown-expansion {
+    border-top-right-radius: @input-border-radius;
+    border-bottom-right-radius: @input-border-radius;
+}
+
+.form-dropdown.expand-left > .form-dropdown-expansion {
+    border-top-left-radius: @input-border-radius;
+    border-bottom-left-radius: @input-border-radius;
+}
+
+.form-dropdown-expansion, .form-dropdown-header, .form-dropdown-footer {
+    background-color: @color-primary-light-10;
+}
+
+.filter-container > .clear {
+    font-size: @headerFontSize;
+    font-weight: 400;
+}
+
+.gridfilter,
+input[type="text"].gridfilter {
+    color: @color-shade-100;
+    border-radius: @input-border-radius;
+    border-style: solid;
+    border-color: @color-shade-50;
+}
+
+.gridfilter-btn {
+    background-color: @color-primary-light-10;
+    font-weight: @semiBoldFontWeight;
+}
+
+.numberfilter .form-dropdown-expansion input {
+    font-size: @smallFontSize !important;
+}
+
+.RadDock .rdTop .rdTitleBar span {
+    .font-large();
+    color: @color-primary-dark;
+}
+
+#mailReceivers {
+
+    .RadAutoCompleteBox_Default .racTokenList {
+        border-radius: @input-border-radius;
+        border-style: solid;
+        border-color: @color-border-input;
+        .font-default();
+    }
+}
+
+.table-striped tbody tr.tbl-footer {
+    background-color: transparent;
+}
+
+.tbl-footer td.button-cell {
+    background-color: @color-primary-light-10;
+    border-bottom-left-radius: @input-border-radius;
+    border-bottom-right-radius: @input-border-radius;
+}
+
+.multi-items-table td {
+    border-top-style: solid;
+    border-top-color: @color-shade-20;
+}
+
+.panelitem-row.highlight {
+    background-color: @color-shade-20;
+}
+
+.messages {
+    font-weight: @baseFontWeight;
+
+    .message {
+
+        &.self {
+            .card {
+                border-style: solid;
+                border-color: @color-primary-light-10;
+            }
+
+            .card-header, .card-footer {
+                background-color: @color-primary-light-10;
+            }
+
+            .datetime {
+                color: @color-primary-headerlight;
+            }
+        }
+
+        &.other {
+
+            .card {
+                border-color: @color-shade-20;
+            }
+
+            .card-header {
+                color: @color-shade-90;
+                background-color: @color-shade-20;
+            }
+
+            .card-footer {
+                background-color: @color-bg-white;
+                border-top: 1px solid @color-primary-light-10;
+                margin: 0px 10px;
+            }
+
+            .datetime {
+                color: @color-shade-80;
+            }
+        }
+
+        .from {
+            font-weight: @semiBoldFontWeight;
+            font-size: @largeFontSize;
+        }
+
+        .card-body {
+            color: @color-shade-100;
+        }
+    }
+
+    .avatar {
+        color: @color-primary-light;
+        background-color: transparent;
+        border-radius: 50%;
+        font-size: 16px;
+        border-style: solid;
+        border-color: @color-primary-light;
+
+        &.picture {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 53px;
+            color: transparent !important;
+        }
+    }
+}
+
+#ttcont {
+    color: @color-primary-dark;
+    background-color: @color-bg-white;
+    border-color: @color-primary-dark;
+    border-radius: @input-border-radius;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.18);
+}
+
+.stepgroup-progress {
+    background-color: @color-shade-30;
+}
+
+.stepgroup-step {
+
+    .stepgroup-step-icon {
+        background-color: @color-shade-30;
+    }
+
+    &.active {
+        .stepgroup-step-icon {
+            background-color: @color-primary-light;
+        }
+
+        p {
+            color: @color-primary-light;
+        }
+    }
+}
+
+.cl-label {
+    color: @color-label;
+}
